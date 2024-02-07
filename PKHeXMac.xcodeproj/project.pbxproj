@@ -7,19 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF31D2DE2B71C72800EB420C /* PokeSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2DD2B71C72800EB420C /* PokeSize.swift */; };
+		FF31D2E02B71CB3F00EB420C /* OriginMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2DF2B71CB3F00EB420C /* OriginMark.swift */; };
+		FF31D2E22B71CC5900EB420C /* PKM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2E12B71CC5900EB420C /* PKM.swift */; };
+		FF31D2E52B71CD4400EB420C /* SpeciesForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2E42B71CD4400EB420C /* SpeciesForm.swift */; };
+		FF31D2E82B71CDF900EB420C /* ITrainerID.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2E72B71CDF900EB420C /* ITrainerID.swift */; };
+		FF31D2EA2B71D04700EB420C /* ITrainerID32.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2E92B71D04700EB420C /* ITrainerID32.swift */; };
+		FF31D2ED2B71E79F00EB420C /* EntityContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2EC2B71E79F00EB420C /* EntityContext.swift */; };
+		FF31D2F12B71E8C800EB420C /* GameVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2F02B71E8C800EB420C /* GameVersion.swift */; };
+		FF31D2F32B71ED9300EB420C /* GameConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2F22B71ED9300EB420C /* GameConsole.swift */; };
+		FF31D2F52B72AA1800EB420C /* GameUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2F42B72AA1800EB420C /* GameUtil.swift */; };
+		FF31D2F82B73081A00EB420C /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2F72B73081A00EB420C /* Core.swift */; };
+		FF31D2FA2B7309D400EB420C /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2F92B7309D400EB420C /* Species.swift */; };
+		FF31D2FC2B730A2A00EB420C /* Ability.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2FB2B730A2A00EB420C /* Ability.swift */; };
+		FF31D2FE2B730AA000EB420C /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2FD2B730AA000EB420C /* Ball.swift */; };
+		FF31D3002B730B3F00EB420C /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2FF2B730B3F00EB420C /* Gender.swift */; };
+		FF31D3022B730BC900EB420C /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D3012B730BC900EB420C /* Move.swift */; };
+		FF31D3042B730C1900EB420C /* MoveType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D3032B730C1900EB420C /* MoveType.swift */; };
+		FF31D3062B731E2A00EB420C /* Nature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D3052B731E2A00EB420C /* Nature.swift */; };
+		FF31D30A2B73224200EB420C /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D3092B73224200EB420C /* Region.swift */; };
+		FF31D30C2B7322A400EB420C /* LanguageID.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D30B2B7322A400EB420C /* LanguageID.swift */; };
 		FF4A9D5C2B71BD1E00C4B5F5 /* PKHeXMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A9D5B2B71BD1E00C4B5F5 /* PKHeXMacApp.swift */; };
 		FF4A9D5E2B71BD1E00C4B5F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A9D5D2B71BD1E00C4B5F5 /* ContentView.swift */; };
 		FF4A9D602B71BD1F00C4B5F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF4A9D5F2B71BD1F00C4B5F5 /* Assets.xcassets */; };
 		FF4A9D632B71BD1F00C4B5F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF4A9D622B71BD1F00C4B5F5 /* Preview Assets.xcassets */; };
+		FF4A9D6E2B71BD5E00C4B5F5 /* PokeSizeDetailed.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A9D6D2B71BD5E00C4B5F5 /* PokeSizeDetailed.swift */; };
+		FF4A9D702B71C0B000C4B5F5 /* AlcremieDecoration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A9D6F2B71C0B000C4B5F5 /* AlcremieDecoration.swift */; };
+		FF4A9D722B71C17E00C4B5F5 /* GroundTileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A9D712B71C17E00C4B5F5 /* GroundTileType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF31D2DD2B71C72800EB420C /* PokeSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeSize.swift; sourceTree = "<group>"; };
+		FF31D2DF2B71CB3F00EB420C /* OriginMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginMark.swift; sourceTree = "<group>"; };
+		FF31D2E12B71CC5900EB420C /* PKM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKM.swift; sourceTree = "<group>"; };
+		FF31D2E42B71CD4400EB420C /* SpeciesForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesForm.swift; sourceTree = "<group>"; };
+		FF31D2E72B71CDF900EB420C /* ITrainerID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITrainerID.swift; sourceTree = "<group>"; };
+		FF31D2E92B71D04700EB420C /* ITrainerID32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITrainerID32.swift; sourceTree = "<group>"; };
+		FF31D2EC2B71E79F00EB420C /* EntityContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityContext.swift; sourceTree = "<group>"; };
+		FF31D2F02B71E8C800EB420C /* GameVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVersion.swift; sourceTree = "<group>"; };
+		FF31D2F22B71ED9300EB420C /* GameConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConsole.swift; sourceTree = "<group>"; };
+		FF31D2F42B72AA1800EB420C /* GameUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameUtil.swift; sourceTree = "<group>"; };
+		FF31D2F72B73081A00EB420C /* Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
+		FF31D2F92B7309D400EB420C /* Species.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Species.swift; sourceTree = "<group>"; };
+		FF31D2FB2B730A2A00EB420C /* Ability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ability.swift; sourceTree = "<group>"; };
+		FF31D2FD2B730AA000EB420C /* Ball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ball.swift; sourceTree = "<group>"; };
+		FF31D2FF2B730B3F00EB420C /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		FF31D3012B730BC900EB420C /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
+		FF31D3032B730C1900EB420C /* MoveType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveType.swift; sourceTree = "<group>"; };
+		FF31D3052B731E2A00EB420C /* Nature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nature.swift; sourceTree = "<group>"; };
+		FF31D3092B73224200EB420C /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		FF31D30B2B7322A400EB420C /* LanguageID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageID.swift; sourceTree = "<group>"; };
 		FF4A9D582B71BD1E00C4B5F5 /* PKHeXMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PKHeXMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF4A9D5B2B71BD1E00C4B5F5 /* PKHeXMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKHeXMacApp.swift; sourceTree = "<group>"; };
 		FF4A9D5D2B71BD1E00C4B5F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FF4A9D5F2B71BD1F00C4B5F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF4A9D622B71BD1F00C4B5F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FF4A9D642B71BD1F00C4B5F5 /* PKHeXMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PKHeXMac.entitlements; sourceTree = "<group>"; };
+		FF4A9D6D2B71BD5E00C4B5F5 /* PokeSizeDetailed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeSizeDetailed.swift; sourceTree = "<group>"; };
+		FF4A9D6F2B71C0B000C4B5F5 /* AlcremieDecoration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcremieDecoration.swift; sourceTree = "<group>"; };
+		FF4A9D712B71C17E00C4B5F5 /* GroundTileType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundTileType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +79,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF31D2E32B71CCB500EB420C /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				FF31D2E62B71CDE600EB420C /* Metadata */,
+				FF31D2E72B71CDF900EB420C /* ITrainerID.swift */,
+				FF31D2E92B71D04700EB420C /* ITrainerID32.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		FF31D2E62B71CDE600EB420C /* Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				FF31D2E42B71CD4400EB420C /* SpeciesForm.swift */,
+			);
+			path = Metadata;
+			sourceTree = "<group>";
+		};
+		FF31D2EB2B71E79400EB420C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				FF31D2EC2B71E79F00EB420C /* EntityContext.swift */,
+				FF31D2F22B71ED9300EB420C /* GameConsole.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		FF31D2EE2B71E8B800EB420C /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				FF31D2EF2B71E8BC00EB420C /* Enums */,
+				FF31D2F42B72AA1800EB420C /* GameUtil.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		FF31D2EF2B71E8BC00EB420C /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				FF31D2F02B71E8C800EB420C /* GameVersion.swift */,
+				FF31D2F92B7309D400EB420C /* Species.swift */,
+				FF31D2FB2B730A2A00EB420C /* Ability.swift */,
+				FF31D2FD2B730AA000EB420C /* Ball.swift */,
+				FF31D2FF2B730B3F00EB420C /* Gender.swift */,
+				FF31D3012B730BC900EB420C /* Move.swift */,
+				FF31D3032B730C1900EB420C /* MoveType.swift */,
+				FF31D3052B731E2A00EB420C /* Nature.swift */,
+				FF31D3092B73224200EB420C /* Region.swift */,
+				FF31D30B2B7322A400EB420C /* LanguageID.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		FF31D2F62B73080E00EB420C /* Legality */ = {
+			isa = PBXGroup;
+			children = (
+				FF31D2F72B73081A00EB420C /* Core.swift */,
+			);
+			path = Legality;
+			sourceTree = "<group>";
+		};
 		FF4A9D4F2B71BD1E00C4B5F5 = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +159,7 @@
 		FF4A9D5A2B71BD1E00C4B5F5 /* PKHeXMac */ = {
 			isa = PBXGroup;
 			children = (
+				FF4A9D6A2B71BD3600C4B5F5 /* Core */,
 				FF4A9D5B2B71BD1E00C4B5F5 /* PKHeXMacApp.swift */,
 				FF4A9D5D2B71BD1E00C4B5F5 /* ContentView.swift */,
 				FF4A9D5F2B71BD1F00C4B5F5 /* Assets.xcassets */,
@@ -67,6 +175,39 @@
 				FF4A9D622B71BD1F00C4B5F5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FF4A9D6A2B71BD3600C4B5F5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FF31D2F62B73080E00EB420C /* Legality */,
+				FF31D2EE2B71E8B800EB420C /* Game */,
+				FF4A9D6B2B71BD4200C4B5F5 /* PKM */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FF4A9D6B2B71BD4200C4B5F5 /* PKM */ = {
+			isa = PBXGroup;
+			children = (
+				FF31D2EB2B71E79400EB420C /* Util */,
+				FF31D2E32B71CCB500EB420C /* Interfaces */,
+				FF4A9D6C2B71BD4900C4B5F5 /* Enums */,
+				FF31D2E12B71CC5900EB420C /* PKM.swift */,
+			);
+			path = PKM;
+			sourceTree = "<group>";
+		};
+		FF4A9D6C2B71BD4900C4B5F5 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				FF4A9D6D2B71BD5E00C4B5F5 /* PokeSizeDetailed.swift */,
+				FF4A9D6F2B71C0B000C4B5F5 /* AlcremieDecoration.swift */,
+				FF4A9D712B71C17E00C4B5F5 /* GroundTileType.swift */,
+				FF31D2DD2B71C72800EB420C /* PokeSize.swift */,
+				FF31D2DF2B71CB3F00EB420C /* OriginMark.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,7 +238,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					FF4A9D572B71BD1E00C4B5F5 = {
 						CreatedOnToolsVersion = 15.0.1;
@@ -140,7 +281,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF4A9D5E2B71BD1E00C4B5F5 /* ContentView.swift in Sources */,
+				FF31D2F32B71ED9300EB420C /* GameConsole.swift in Sources */,
+				FF31D2EA2B71D04700EB420C /* ITrainerID32.swift in Sources */,
+				FF31D2E52B71CD4400EB420C /* SpeciesForm.swift in Sources */,
+				FF31D2E82B71CDF900EB420C /* ITrainerID.swift in Sources */,
+				FF31D2ED2B71E79F00EB420C /* EntityContext.swift in Sources */,
+				FF31D2E02B71CB3F00EB420C /* OriginMark.swift in Sources */,
+				FF31D3022B730BC900EB420C /* Move.swift in Sources */,
+				FF31D2DE2B71C72800EB420C /* PokeSize.swift in Sources */,
+				FF4A9D722B71C17E00C4B5F5 /* GroundTileType.swift in Sources */,
+				FF31D2FE2B730AA000EB420C /* Ball.swift in Sources */,
+				FF31D2E22B71CC5900EB420C /* PKM.swift in Sources */,
+				FF31D2FC2B730A2A00EB420C /* Ability.swift in Sources */,
+				FF4A9D702B71C0B000C4B5F5 /* AlcremieDecoration.swift in Sources */,
+				FF31D2F52B72AA1800EB420C /* GameUtil.swift in Sources */,
+				FF31D30C2B7322A400EB420C /* LanguageID.swift in Sources */,
+				FF31D3062B731E2A00EB420C /* Nature.swift in Sources */,
+				FF31D2F12B71E8C800EB420C /* GameVersion.swift in Sources */,
+				FF31D3042B730C1900EB420C /* MoveType.swift in Sources */,
 				FF4A9D5C2B71BD1E00C4B5F5 /* PKHeXMacApp.swift in Sources */,
+				FF31D3002B730B3F00EB420C /* Gender.swift in Sources */,
+				FF31D30A2B73224200EB420C /* Region.swift in Sources */,
+				FF31D2F82B73081A00EB420C /* Core.swift in Sources */,
+				FF4A9D6E2B71BD5E00C4B5F5 /* PokeSizeDetailed.swift in Sources */,
+				FF31D2FA2B7309D400EB420C /* Species.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +345,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -244,6 +409,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -274,6 +440,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"PKHeXMac/Preview Content\"";
 				DEVELOPMENT_TEAM = YT3ZW2DTCZ;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -301,6 +468,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"PKHeXMac/Preview Content\"";
 				DEVELOPMENT_TEAM = YT3ZW2DTCZ;
 				ENABLE_HARDENED_RUNTIME = YES;
