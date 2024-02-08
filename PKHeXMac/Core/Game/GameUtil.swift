@@ -14,9 +14,7 @@ class GameUtil {
     }
     
     func GetValidGameVersions() -> [GameVersion] {
-        var all = GameVersion.allCases;
-        
-        var valid = all.filter({ IsValidSavedVersion(game: $0) })
+        let valid = GameVersion.allCases.filter({ IsValidSavedVersion(game: $0) })
         return valid.reversed()
     }
 }

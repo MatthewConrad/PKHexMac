@@ -57,6 +57,7 @@
 		FF31D3052B731E2A00EB420C /* Nature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nature.swift; sourceTree = "<group>"; };
 		FF31D3092B73224200EB420C /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		FF31D30B2B7322A400EB420C /* LanguageID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageID.swift; sourceTree = "<group>"; };
+		FF31D3102B74499900EB420C /* Progress.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Progress.md; sourceTree = "<group>"; };
 		FF4A9D582B71BD1E00C4B5F5 /* PKHeXMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PKHeXMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF4A9D5B2B71BD1E00C4B5F5 /* PKHeXMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKHeXMacApp.swift; sourceTree = "<group>"; };
 		FF4A9D5D2B71BD1E00C4B5F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -118,16 +119,16 @@
 		FF31D2EF2B71E8BC00EB420C /* Enums */ = {
 			isa = PBXGroup;
 			children = (
-				FF31D2F02B71E8C800EB420C /* GameVersion.swift */,
-				FF31D2F92B7309D400EB420C /* Species.swift */,
 				FF31D2FB2B730A2A00EB420C /* Ability.swift */,
 				FF31D2FD2B730AA000EB420C /* Ball.swift */,
+				FF31D2F02B71E8C800EB420C /* GameVersion.swift */,
 				FF31D2FF2B730B3F00EB420C /* Gender.swift */,
+				FF31D30B2B7322A400EB420C /* LanguageID.swift */,
 				FF31D3012B730BC900EB420C /* Move.swift */,
 				FF31D3032B730C1900EB420C /* MoveType.swift */,
 				FF31D3052B731E2A00EB420C /* Nature.swift */,
 				FF31D3092B73224200EB420C /* Region.swift */,
-				FF31D30B2B7322A400EB420C /* LanguageID.swift */,
+				FF31D2F92B7309D400EB420C /* Species.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -143,6 +144,7 @@
 		FF4A9D4F2B71BD1E00C4B5F5 = {
 			isa = PBXGroup;
 			children = (
+				FF31D3102B74499900EB420C /* Progress.md */,
 				FF4A9D5A2B71BD1E00C4B5F5 /* PKHeXMac */,
 				FF4A9D592B71BD1E00C4B5F5 /* Products */,
 			);
