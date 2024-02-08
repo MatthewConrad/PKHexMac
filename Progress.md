@@ -184,9 +184,9 @@
 
 ## Game
 
-- [ ] ComboItem
-- [ ] GameUtil
-- [ ] IBasicStrings
+- [x] ComboItem
+- [x] GameUtil *(combined with Enums/GameVersion)*
+- [x] IBasicStrings
 
 ### Enums
 

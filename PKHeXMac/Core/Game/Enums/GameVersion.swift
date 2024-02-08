@@ -177,6 +177,7 @@ enum GameVersion: Int, CaseIterable, Comparable
     Stadium2
     
     /// Most recent Version ID utilized by official games
+    /// - remark: Originally from Game/GameUtil
     static var HighestGameId: GameVersion = .RB
     
     static func < (lhs: GameVersion, rhs: GameVersion) -> Bool {
@@ -186,6 +187,7 @@ enum GameVersion: Int, CaseIterable, Comparable
     /// Checks if the Game Version contains a given version
     /// - parameters:
     ///     - game: the Game Version to check that `self` contains
+    /// - remark: Originally from Game/GameUtil
     func contains(game: GameVersion) -> Bool {
         if(self == game || self == .AnyGame) {
             return  true;
@@ -276,12 +278,14 @@ enum GameVersion: Int, CaseIterable, Comparable
     
     /// Indiicates if the Game Version value is a game value or an aggregate indicator
     /// - returns: Whether the Game Version represents a valid game.
+    /// - remark: Originally from Game/GameUtil
     func isValidSavedVersion() -> Bool {
         return self > .AnyGame && self < .HighestGameId
     }
     
     /// Gets all possible GameVersion values representing games
     /// - returns: An array of valid game versions, roughly by most recent games first
+    /// - remark: Originally from Game/GameUtil
     static func getValidGameVersions() -> [GameVersion] {
         var all: [GameVersion] = GameVersion.allCases
         var valid = all.filter({ $0.isValidSavedVersion()})
@@ -291,6 +295,7 @@ enum GameVersion: Int, CaseIterable, Comparable
     
     ///  Determines the Version Grouping of an input Version ID
     /// - returns: Version Group ID or `InvalidGame` if type cannot be determined
+    /// - remark: Originally from Game/GameUtil
     func getMetLocationVersionGroup () -> GameVersion {
         switch self {
             // side games
@@ -359,6 +364,7 @@ enum GameVersion: Int, CaseIterable, Comparable
     /// Gets a version ID from the end of that Generation
     /// - parameters:
     ///   - generation: an `Int` representing the generation
+    /// - remark: Originally from Game/GameUtil
     static func getVersion(generation: Int) -> GameVersion {
         switch generation {
         case 1:
@@ -386,6 +392,7 @@ enum GameVersion: Int, CaseIterable, Comparable
     
     /// Gets the Generation the Game Version belongs to.
     /// - returns: An `Int` representing the Generation ID
+    /// - remark: Originally from Game/GameUtil
     func getGeneration() -> Int {
         return if GameVersion.Gen1.contains(game: self) {
             1
@@ -414,6 +421,7 @@ enum GameVersion: Int, CaseIterable, Comparable
     
     /// Translates a main series GameVersion to the corresponding GCVersion.
     /// - returns: A GameCube series `GCVersion` Version ID
+    /// - remark: Originally defined in Game/Enums/GCVersion as `GetCXDVersionID`
     func getGCGeneration() -> GCVersion {
         switch self {
         case .S:
@@ -432,7 +440,7 @@ enum GameVersion: Int, CaseIterable, Comparable
             return GCVersion.None
         }
     }
-    
+        
     /// Lists the possible versions within the generation.
     /// - parameters:
     ///   - generation: the generation number
@@ -441,6 +449,7 @@ enum GameVersion: Int, CaseIterable, Comparable
         return GameVersion.allCases.filter({ $0.getGeneration() == generation})
     }
     
+    /// - remark: Originally from Game/GameUtil
     func getVersionsWithinRange(limit: Int) -> [GameVersion] {
         // TODO: implement me
         return [GameVersion.AS]
@@ -450,12 +459,14 @@ enum GameVersion: Int, CaseIterable, Comparable
     /// - parameters:
     ///   - source: the array to retrieve versions from
     /// - returns: an array of `GameVersion`s contained by the GameVersion
+    /// - remark: Originally from Game/GameUtil
     func getVersionsWithinRange(source: [GameVersion]) -> [GameVersion] {
         return source.filter({ self.contains(game: $0)} )
     }
     
     /// Gets the maximum Species ID for the game version.
     /// - returns: The max valid `Species` for the game version.
+    /// - remark: Originally from Game/GameUtil
     func getMaxSpeciesID() -> Int {
         return if GameVersion.Gen1.contains(game: self) {
             Legal.MaxSpeciesID_1.rawValue
@@ -492,6 +503,7 @@ enum GameVersion: Int, CaseIterable, Comparable
 }
 
 /// Game version analogues used by Colosseum/XD instead of the main-series values.
+/// - remark: originally defined in Enums/GCVersion
 enum GCVersion: Int, CaseIterable, Comparable {
     case None = 0,
          FR = 1,
@@ -507,6 +519,7 @@ enum GCVersion: Int, CaseIterable, Comparable {
     
     /// Translates a GameCube series `GCVersion` Version ID to the corresponding `GameVersion`.
     /// - returns: A main series Version ID
+    /// - remark: Originally from Game/GCVersion
     func getG3VersionID () -> GameVersion {
         switch self {
         case .S:
