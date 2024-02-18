@@ -208,33 +208,33 @@
 - [ ] FilteredGameDataSource
 - [ ] GameDataSource
 - [ ] GameInfo
-- [ ] GameLanguage
-- [ ] GameStrings
+- [/] GameLanguage (in progress, need to come up with better file solution)
+- [/] GameStrings (started, need to make more progress on GameLanguage)
 - [ ] GeoLocation
 - [ ] MemoryStrings
 - [ ] MetDataSource
-- [ ] ProgramLanguage
+- [x] ProgramLanguage
 
 #### LocationSet
 
-- [ ] ILocationSet
-- [ ] LocationSet0
-- [ ] LocationSet4
-- [ ] LocationSet6
+- [x] ILocationSet
+- [x] LocationSet0
+- [x] LocationSet4
+- [x] LocationSet6
 
 ### Locations
 
-- [ ] Locations
-- [ ] Locations4
-- [ ] Locations5
-- [ ] Locations6
-- [ ] Locations7
-- [ ] Locations7b
-- [ ] Locations8
-- [ ] Locations8a
-- [ ] Locations8b
-- [ ] Locations9
-- [ ] LocationsHOME
+- [x] Locations
+- [x] Locations4
+- [x] Locations5
+- [x] Locations6
+- [x] Locations7
+- [x] Locations7b
+- [x] Locations8
+- [x] Locations8a
+- [x] Locations8b
+- [x] Locations9
+- [x] LocationsHOME
 
 ## Items
 

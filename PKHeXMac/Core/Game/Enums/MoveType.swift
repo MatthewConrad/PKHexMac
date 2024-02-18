@@ -37,7 +37,7 @@ import Foundation
      }
      
      static func - (lhs: MoveType, rhs: Int) -> MoveType {
-         var rawSubtract = lhs.rawValue - rhs
+         let rawSubtract = lhs.rawValue - rhs
          return MoveType.init(rawValue: rawSubtract) ?? .AnyMoveType
      }
      

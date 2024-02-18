@@ -7,9 +7,9 @@
 
 import Foundation
 
-class GameStrings: IBasicStrings {
+struct GameStrings: IBasicStrings {
     
-    var Species: [String] =
+    var Species: [String]
     
     var Item: [String]
     

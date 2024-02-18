@@ -287,8 +287,8 @@ enum GameVersion: Int, CaseIterable, Comparable
     /// - returns: An array of valid game versions, roughly by most recent games first
     /// - remark: Originally from Game/GameUtil
     static func getValidGameVersions() -> [GameVersion] {
-        var all: [GameVersion] = GameVersion.allCases
-        var valid = all.filter({ $0.isValidSavedVersion()})
+        let all: [GameVersion] = GameVersion.allCases
+        let valid = all.filter({ $0.isValidSavedVersion()})
         
         return valid.reversed()
     }
