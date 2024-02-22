@@ -50,6 +50,13 @@
 		FF31D3412B827B7D00EB420C /* Locations9.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D3402B827B7D00EB420C /* Locations9.swift */; };
 		FF31D3432B827C9100EB420C /* LocationsHOME.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D3422B827C9100EB420C /* LocationsHOME.swift */; };
 		FF31D3452B82863F00EB420C /* LocationRemapState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D3442B82863F00EB420C /* LocationRemapState.swift */; };
+		FF31D3482B82897A00EB420C /* HeldItemLumpImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D3472B82897A00EB420C /* HeldItemLumpImage.swift */; };
+		FF31D34A2B858A4100EB420C /* IItemStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D3492B858A4100EB420C /* IItemStorage.swift */; };
+		FF31D34F2B858AD300EB420C /* InventoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D34E2B858AD300EB420C /* InventoryType.swift */; };
+		FF31D3512B85AA4300EB420C /* ItemStorage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D3502B85AA4300EB420C /* ItemStorage1.swift */; };
+		FF31D3532B85AAED00EB420C /* ItemStorage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D3522B85AAED00EB420C /* ItemStorage2.swift */; };
+		FF31D35D2B86E70300EB420C /* ItemStorage3.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D35C2B86E70300EB420C /* ItemStorage3.swift */; };
+		FF31D35F2B86EF9600EB420C /* ItemStorage4.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D35E2B86EF9600EB420C /* ItemStorage4.swift */; };
 		FF4A9D5C2B71BD1E00C4B5F5 /* PKHeXMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A9D5B2B71BD1E00C4B5F5 /* PKHeXMacApp.swift */; };
 		FF4A9D5E2B71BD1E00C4B5F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A9D5D2B71BD1E00C4B5F5 /* ContentView.swift */; };
 		FF4A9D602B71BD1F00C4B5F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF4A9D5F2B71BD1F00C4B5F5 /* Assets.xcassets */; };
@@ -104,6 +111,13 @@
 		FF31D3402B827B7D00EB420C /* Locations9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations9.swift; sourceTree = "<group>"; };
 		FF31D3422B827C9100EB420C /* LocationsHOME.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsHOME.swift; sourceTree = "<group>"; };
 		FF31D3442B82863F00EB420C /* LocationRemapState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRemapState.swift; sourceTree = "<group>"; };
+		FF31D3472B82897A00EB420C /* HeldItemLumpImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeldItemLumpImage.swift; sourceTree = "<group>"; };
+		FF31D3492B858A4100EB420C /* IItemStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IItemStorage.swift; sourceTree = "<group>"; };
+		FF31D34E2B858AD300EB420C /* InventoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryType.swift; sourceTree = "<group>"; };
+		FF31D3502B85AA4300EB420C /* ItemStorage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStorage1.swift; sourceTree = "<group>"; };
+		FF31D3522B85AAED00EB420C /* ItemStorage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStorage2.swift; sourceTree = "<group>"; };
+		FF31D35C2B86E70300EB420C /* ItemStorage3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStorage3.swift; sourceTree = "<group>"; };
+		FF31D35E2B86EF9600EB420C /* ItemStorage4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStorage4.swift; sourceTree = "<group>"; };
 		FF4A9D582B71BD1E00C4B5F5 /* PKHeXMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PKHeXMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF4A9D5B2B71BD1E00C4B5F5 /* PKHeXMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKHeXMacApp.swift; sourceTree = "<group>"; };
 		FF4A9D5D2B71BD1E00C4B5F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -240,6 +254,43 @@
 			path = Locations;
 			sourceTree = "<group>";
 		};
+		FF31D3462B82896F00EB420C /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				FF31D3472B82897A00EB420C /* HeldItemLumpImage.swift */,
+				FF31D3492B858A4100EB420C /* IItemStorage.swift */,
+				FF31D3502B85AA4300EB420C /* ItemStorage1.swift */,
+				FF31D3522B85AAED00EB420C /* ItemStorage2.swift */,
+				FF31D35C2B86E70300EB420C /* ItemStorage3.swift */,
+				FF31D35E2B86EF9600EB420C /* ItemStorage4.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		FF31D34B2B858ABE00EB420C /* Saves */ = {
+			isa = PBXGroup;
+			children = (
+				FF31D34C2B858AC300EB420C /* Substructures */,
+			);
+			path = Saves;
+			sourceTree = "<group>";
+		};
+		FF31D34C2B858AC300EB420C /* Substructures */ = {
+			isa = PBXGroup;
+			children = (
+				FF31D34D2B858ACA00EB420C /* Inventory */,
+			);
+			path = Substructures;
+			sourceTree = "<group>";
+		};
+		FF31D34D2B858ACA00EB420C /* Inventory */ = {
+			isa = PBXGroup;
+			children = (
+				FF31D34E2B858AD300EB420C /* InventoryType.swift */,
+			);
+			path = Inventory;
+			sourceTree = "<group>";
+		};
 		FF4A9D4F2B71BD1E00C4B5F5 = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +333,8 @@
 		FF4A9D6A2B71BD3600C4B5F5 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				FF31D34B2B858ABE00EB420C /* Saves */,
+				FF31D3462B82896F00EB420C /* Items */,
 				FF31D2EE2B71E8B800EB420C /* Game */,
 				FF31D2F62B73080E00EB420C /* Legality */,
 				FF4A9D6B2B71BD4200C4B5F5 /* PKM */,
@@ -392,6 +445,7 @@
 				FF31D2E52B71CD4400EB420C /* SpeciesForm.swift in Sources */,
 				FF31D2E82B71CDF900EB420C /* ITrainerID.swift in Sources */,
 				FF31D2ED2B71E79F00EB420C /* EntityContext.swift in Sources */,
+				FF31D3512B85AA4300EB420C /* ItemStorage1.swift in Sources */,
 				FF31D3142B746BB400EB420C /* IBasicStrings.swift in Sources */,
 				FF31D3282B79721B00EB420C /* LocationSet0.swift in Sources */,
 				FF31D2E02B71CB3F00EB420C /* OriginMark.swift in Sources */,
@@ -399,17 +453,20 @@
 				FF31D3022B730BC900EB420C /* Move.swift in Sources */,
 				FF31D32A2B79750600EB420C /* LocationSet4.swift in Sources */,
 				FF31D33B2B8278C400EB420C /* Locations8.swift in Sources */,
+				FF31D3482B82897A00EB420C /* HeldItemLumpImage.swift in Sources */,
 				FF31D2DE2B71C72800EB420C /* PokeSize.swift in Sources */,
 				FF31D3172B746FE800EB420C /* ProgramLanguage.swift in Sources */,
 				FF31D3332B7B0D8800EB420C /* Locations5.swift in Sources */,
 				FF4A9D722B71C17E00C4B5F5 /* GroundTileType.swift in Sources */,
 				FF31D3192B74703700EB420C /* GameStrings.swift in Sources */,
 				FF31D3392B82782400EB420C /* Locations7b.swift in Sources */,
+				FF31D34F2B858AD300EB420C /* InventoryType.swift in Sources */,
 				FF31D3312B7B0A5000EB420C /* Locations4.swift in Sources */,
 				FF31D2FE2B730AA000EB420C /* Ball.swift in Sources */,
 				FF31D3412B827B7D00EB420C /* Locations9.swift in Sources */,
 				FF31D33F2B827AB200EB420C /* Locations8b.swift in Sources */,
 				FF31D2E22B71CC5900EB420C /* PKM.swift in Sources */,
+				FF31D35F2B86EF9600EB420C /* ItemStorage4.swift in Sources */,
 				FF31D32F2B79CC3900EB420C /* Locations.swift in Sources */,
 				FF31D3372B82777100EB420C /* Locations7.swift in Sources */,
 				FF31D2FC2B730A2A00EB420C /* Ability.swift in Sources */,
@@ -420,11 +477,14 @@
 				FF31D2F12B71E8C800EB420C /* GameVersion.swift in Sources */,
 				FF31D3042B730C1900EB420C /* MoveType.swift in Sources */,
 				FF4A9D5C2B71BD1E00C4B5F5 /* PKHeXMacApp.swift in Sources */,
+				FF31D3532B85AAED00EB420C /* ItemStorage2.swift in Sources */,
 				FF31D3002B730B3F00EB420C /* Gender.swift in Sources */,
 				FF31D30A2B73224200EB420C /* Region.swift in Sources */,
 				FF31D2F82B73081A00EB420C /* Core.swift in Sources */,
+				FF31D34A2B858A4100EB420C /* IItemStorage.swift in Sources */,
 				FF31D31F2B74777700EB420C /* ResourceUtil.swift in Sources */,
 				FF31D31B2B7470A600EB420C /* GameLanguage.swift in Sources */,
+				FF31D35D2B86E70300EB420C /* ItemStorage3.swift in Sources */,
 				FF31D3262B796FBE00EB420C /* ILocationSet.swift in Sources */,
 				FF31D3122B746A2300EB420C /* ComboItem.swift in Sources */,
 				FF4A9D6E2B71BD5E00C4B5F5 /* PokeSizeDetailed.swift in Sources */,

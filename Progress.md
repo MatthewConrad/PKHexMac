@@ -238,19 +238,19 @@
 
 ## Items
 
-- [ ] HeldItemLumpImage
-- [ ] IItemStorage
-- [ ] ItemStorage1
-- [ ] ItemStorage2
-- [ ] ItemStorage3Colo
-- [ ] ItemStorage3E
-- [ ] ItemStorage3FRLG
-- [ ] ItemStorage3RS
-- [ ] ItemStorage3XD
-- [ ] ItemStorage4
-- [ ] ItemStorage4DP
-- [ ] ItemStorage4HGSS
-- [ ] ItemStorage4Pt
+- [x] HeldItemLumpImage
+- [x] IItemStorage
+- [x] ItemStorage1
+- [x] ItemStorage2
+- [x] ItemStorage3Colo *(all gen 3 storage condensed to single file)*
+- [x] ItemStorage3E
+- [x] ItemStorage3FRLG
+- [x] ItemStorage3RS
+- [x] ItemStorage3XD
+- [x] ItemStorage4 *(all gen 4 storage condensed to single file)*
+- [x] ItemStorage4DP
+- [x] ItemStorage4HGSS
+- [x] ItemStorage4Pt
 - [ ] ItemStorage5
 - [ ] ItemStorage5B2W2
 - [ ] ItemStorage5BW
