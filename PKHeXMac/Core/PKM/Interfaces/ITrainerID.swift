@@ -28,21 +28,21 @@ protocol ITrainerID {
 
 extension ITrainerID {
     var TrainerIDFormatStringTID: String {
-        return if(TrainerIDDisplayFormat == TrainerIDFormat.SixDigit){
+        return if TrainerIDDisplayFormat == TrainerIDFormat.SixDigit {
             "D6"
         } else {
             "D5"
         }
     }
-    
+
     var TrainerIDFormatStringSID: String {
-        return if(TrainerIDDisplayFormat == TrainerIDFormat.SixDigit) {
+        return if TrainerIDDisplayFormat == TrainerIDFormat.SixDigit {
             "D4"
         } else {
             "D5"
         }
     }
-    
+
     // this should be implemented by IGeneration extension, PKM/Format/Version
     func getTrainerIDFormat() -> TrainerIDFormat {
         // finish me pls

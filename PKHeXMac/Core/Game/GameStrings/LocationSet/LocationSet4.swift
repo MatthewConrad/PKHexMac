@@ -11,9 +11,9 @@ struct LocationSet4: ILocationSet {
     var Met0: [String] = []
     var Met2: [String] = []
     var Met3: [String] = []
-    
+
     func GetLocationNames(bankId: Int) -> [String] {
-        switch bankId{
+        switch bankId {
         case 0:
             return Met0
         case 2:
@@ -24,7 +24,7 @@ struct LocationSet4: ILocationSet {
             return []
         }
     }
-    
+
     func Get(names: [String], index: Int) -> String {
         return if index >= names.count {
             ""
@@ -32,7 +32,7 @@ struct LocationSet4: ILocationSet {
             names[index]
         }
     }
-    
+
     func GetLocationName(locationId: Int) -> String {
         return if locationId >= 3000 {
             Get(names: Met3, index: locationId-3000)
@@ -42,8 +42,8 @@ struct LocationSet4: ILocationSet {
             Get(names: Met0, index: locationId)
         }
     }
-    
-    func GetAll() -> [Int : [String]] {
-        return [ 0: Met0, 2: Met2, 3: Met3]
+
+    func GetAll() -> [Int: [String]] {
+        return [0: Met0, 2: Met2, 3: Met3]
     }
 }

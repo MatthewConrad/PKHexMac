@@ -929,7 +929,7 @@ enum Move: UInt32, CaseIterable, Comparable {
          UpperHand,
          MalignantChain,
          MAX_COUNT
-    
+
     static func < (lhs: Move, rhs: Move) -> Bool {
         return lhs.rawValue < rhs.rawValue
     }

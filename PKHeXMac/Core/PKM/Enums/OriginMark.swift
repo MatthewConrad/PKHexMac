@@ -12,8 +12,5 @@ enum OriginMark {
 }
 
 class OriginMarkUtil {
-    func getOriginMark ( ) {
-        
-    }
-    
+    func getOriginMark() {}
 }

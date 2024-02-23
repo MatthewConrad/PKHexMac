@@ -15,7 +15,7 @@ protocol IBasicStrings {
     var Ability: [String] { get }
     var Types: [String] { get }
     var Natures: [String] { get }
-    
+
     /// Name an Egg has when obtained on this language
     var EggName: String { get }
 }

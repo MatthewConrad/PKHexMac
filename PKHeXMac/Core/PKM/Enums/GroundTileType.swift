@@ -25,7 +25,7 @@ enum GroundTileType: Int {
     case Marsh = 10
     case Bridge = 11 // no encounters from this tile type
     case Max_DP = 12 // unspecific, catch-all for D/P undefined tiles
-    
+
     // added tile types in Pt
     // no encounters from these tile types
     case Elite4_1 = 13 // Elite Four Room #1
@@ -39,17 +39,15 @@ enum GroundTileType: Int {
     case BattleArcade = 21
     case BattleCastle = 22
     case BattleHall = 23
-    
+
     case Distortion = 24
     case Max_Pt = 25 // unspecific, catch-all for Pt undefined tiles
 }
 
 class GroundTileTypeExtensions {
-    
-    func isObtainable (tileType: GroundTileType) -> Bool {
+    func isObtainable(tileType: GroundTileType) -> Bool {
         return (0b110000000000101101011011 >> tileType.rawValue) & 1 == 1
     }
-    
+
     let ValidTileTypes = [GroundTileType.None, GroundTileType.Sand, GroundTileType.Grass, GroundTileType.Rock, GroundTileType.Cave, GroundTileType.Water, GroundTileType.Building, GroundTileType.Marsh, GroundTileType.Max_DP, GroundTileType.Max_Pt, GroundTileType.Distortion]
 }
-

@@ -9,43 +9,43 @@ import Foundation
 
 enum LanguageID: Int, CaseIterable, Comparable {
     case
-    /// Undefined Language ID, usually indicative of a value not being set. Gen5 Japanese In-game Trades happen to not have their Language value set, and express Language=0.
-    Hacked = 0,
+        /// Undefined Language ID, usually indicative of a value not being set. Gen5 Japanese In-game Trades happen to not have their Language value set, and express Language=0.
+        Hacked = 0,
 
-    /// Japanese (日本語)
-    Japanese = 1,
+        /// Japanese (日本語)
+        Japanese = 1,
 
-    /// English (US/UK/AU)
-    English = 2,
+        /// English (US/UK/AU)
+        English = 2,
 
-    /// French (Français)
-    French = 3,
-    
-    /// Italian (Italiano)
-    Italian = 4,
+        /// French (Français)
+        French = 3,
 
-    /// German (Deutsch)
-    German = 5,
+        /// Italian (Italiano)
+        Italian = 4,
 
-    /// Unused Language ID. Was reserved for Korean in Gen3 but never utilized.
-    UNUSED_6 = 6,
-    
-    /// Spanish (Español)
-    Spanish = 7,
-    
-    /// Korean (한국어)
-    Korean = 8,
-    
-    /// Chinese Simplified (简体中文)
-    ChineseS = 9,
-    
-    /// Chinese Traditional (繁體中文)
-    ChineseT = 10
-    
+        /// German (Deutsch)
+        German = 5,
+
+        /// Unused Language ID. Was reserved for Korean in Gen3 but never utilized.
+        UNUSED_6 = 6,
+
+        /// Spanish (Español)
+        Spanish = 7,
+
+        /// Korean (한국어)
+        Korean = 8,
+
+        /// Chinese Simplified (简体中文)
+        ChineseS = 9,
+
+        /// Chinese Traditional (繁體中文)
+        ChineseT = 10
+
     static func < (lhs: LanguageID, rhs: LanguageID) -> Bool {
         return lhs.rawValue < rhs.rawValue
     }
-    
+
     /// Converts `LanguageID`  to `LanguageGC`.
     func toLanguageGC() -> LanguageGC {
         switch self {
@@ -71,34 +71,35 @@ enum LanguageID: Int, CaseIterable, Comparable {
 
 enum LanguageGC: Int, CaseIterable, Comparable {
     case
-    /// Undefined Language ID, usually indicative of a value not being set. Gen5 Japanese In-game Trades happen to not have their Language value set, and express Language=0.
-    Hacked = 0,
+        /// Undefined Language ID, usually indicative of a value not being set.
+        /// Gen5 Japanese In-game Trades happen to not have their Language value set, and express Language=0.
+        Hacked = 0,
 
-    /// Japanese (日本語)
-    Japanese = 1,
+        /// Japanese (日本語)
+        Japanese = 1,
 
-    /// English (US/UK/AU)
-    English = 2,
+        /// English (US/UK/AU)
+        English = 2,
 
-    /// German (Deutsch)
-    German = 3,
+        /// German (Deutsch)
+        German = 3,
 
-    /// French (Français)
-    French = 4,
+        /// French (Français)
+        French = 4,
 
-    /// Italian (Italiano)
-    Italian = 5,
+        /// Italian (Italiano)
+        Italian = 5,
 
-    /// Spanish (Español)
-    Spanish = 6,
+        /// Spanish (Español)
+        Spanish = 6,
 
-    /// Unused Language ID. Was reserved for Korean in Gen3 but never utilized.
-    UNUSED_6 = 7
-    
+        /// Unused Language ID. Was reserved for Korean in Gen3 but never utilized.
+        UNUSED_6 = 7
+
     static func < (lhs: LanguageGC, rhs: LanguageGC) -> Bool {
         return lhs.rawValue < rhs.rawValue
     }
-    
+
     /// Converts `LanguageGC`  to `LanguageID`.
     func toLanguageID() -> LanguageID {
         switch self {

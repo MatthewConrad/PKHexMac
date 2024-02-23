@@ -24,7 +24,7 @@ enum EntityContext: Int, CaseIterable, Comparable {
     case Gen7 = 7
     case Gen8 = 8
     case Gen9 = 9
-    
+
     // internal separator to pivot between adjacent contexts
     case SplitInvalid
     // Let's Go
@@ -35,11 +35,11 @@ enum EntityContext: Int, CaseIterable, Comparable {
     case Gen8b
     // internal separator to bounds check count
     case MaxInvalid
-    
+
     static func < (lhs: EntityContext, rhs: EntityContext) -> Bool {
         return lhs.rawValue < rhs.rawValue
     }
-    
+
     /// Gets the genration number of the context
     func generation() -> Int {
         return if self < EntityContext.SplitInvalid {
@@ -54,15 +54,15 @@ enum EntityContext: Int, CaseIterable, Comparable {
             -1
         }
     }
-    
+
     /// checks if the context is a defined value
-    func isValid () -> Bool {
+    func isValid() -> Bool {
         return self != .None && self != .SplitInvalid && self < .MaxInvalid
     }
-    
+
     /// get a pre-defined single game version associated with the context
     /// Game ID choice here is the developer's choice; if multiple game sets exist for a context, one from the most recent was chosen.
-    func getSingleGameVersion () -> GameVersion {
+    func getSingleGameVersion() -> GameVersion {
         return if self == .Gen1 {
             GameVersion.RD
         } else if self == .Gen2 {
@@ -75,13 +75,13 @@ enum EntityContext: Int, CaseIterable, Comparable {
             GameVersion.W2
         } else if self == .Gen6 {
             GameVersion.AS
-        }else if self == .Gen7 {
+        } else if self == .Gen7 {
             GameVersion.UM
         } else if self == .Gen8 {
             GameVersion.SH
         } else if self == .Gen9 {
             GameVersion.VL
-        }else if self == .Gen7b {
+        } else if self == .Gen7b {
             GameVersion.GP
         } else if self == .Gen8a {
             GameVersion.PLA
@@ -91,25 +91,25 @@ enum EntityContext: Int, CaseIterable, Comparable {
             GameVersion.Unknown
         }
     }
-    
+
     /// Gets the game console associated with the context
-    func getConsole () -> GameConsole {
-        switch self{
-        case .Gen1,.Gen2:
+    func getConsole() -> GameConsole {
+        switch self {
+        case .Gen1, .Gen2:
             return GameConsole.GB
         case .Gen3:
             return GameConsole.GBA
-        case .Gen4,.Gen5:
+        case .Gen4, .Gen5:
             return GameConsole.NDS
-        case .Gen6,.Gen7:
+        case .Gen6, .Gen7:
             return GameConsole._3DS
         default:
             return GameConsole.NX
         }
     }
-    
+
     /// Gets the corresponding lumped GameVersion for the context.
-    func getVersionLump () -> GameVersion {
+    func getVersionLump() -> GameVersion {
         switch self {
         case .Gen1:
             return GameVersion.Gen1
@@ -139,19 +139,19 @@ enum EntityContext: Int, CaseIterable, Comparable {
             return GameVersion.Unknown
         }
     }
-    
+
     /// Gets all GameVersion values within the context.
     func getVersionsWithin(source: [GameVersion]) -> [GameVersion] {
         return self.getVersionLump().getVersionsWithinRange(source: source)
     }
-    
+
     /// Gets the corresponding EntityContext for a given GameVerson
     /// - parameters:
     ///     - version: a `GameVersion` to get the context for
     /// - returns: the `EntityContext`
     static func getContext(version: GameVersion) -> EntityContext {
         switch version {
-        case GameVersion.GP,GameVersion.GE,GameVersion.GO:
+        case GameVersion.GP, GameVersion.GE, GameVersion.GO:
             return .Gen7b
         case GameVersion.PLA:
             return .Gen8a
@@ -161,5 +161,4 @@ enum EntityContext: Int, CaseIterable, Comparable {
             return EntityContext(rawValue: version.getGeneration()) ?? .None
         }
     }
-    
 }

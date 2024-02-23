@@ -17,7 +17,6 @@ enum PokeSizeDetailed {
     case XL
     case XXL
     case XXXL
-    
 }
 
 class PokeSizeDetailedUtil {
@@ -41,6 +40,5 @@ class PokeSizeDetailedUtil {
         } else {
             PokeSizeDetailed.XXXL
         }
-        
     }
 }

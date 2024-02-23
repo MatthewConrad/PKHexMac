@@ -20,7 +20,7 @@ enum Region3DSIndex: Int, CaseIterable, Comparable {
          China = 4,
          Korea = 5,
          Taiwan = 6
-    
+
     static func < (lhs: Region3DSIndex, rhs: Region3DSIndex) -> Bool {
         return lhs.rawValue < rhs.rawValue
     }

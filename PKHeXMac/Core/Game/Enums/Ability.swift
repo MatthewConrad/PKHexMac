@@ -321,7 +321,7 @@ enum Ability: Int, CaseIterable, Comparable {
          TeraformZero,
          PoisonPuppeteer,
          MAX_COUNT
-    
+
     static func < (lhs: Ability, rhs: Ability) -> Bool {
         return lhs.rawValue < rhs.rawValue
     }

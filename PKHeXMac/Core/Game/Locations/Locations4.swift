@@ -9,10 +9,10 @@ import Foundation
 
 /// Locations for `GameVersion.Gen4`
 struct Locations4 {
-    
+
     private static let SafariLocation_HGSS = 202
     private static let MarshLocation_DPPt = 52
-    
+
     /// Available location list for the 00000 set of location names
     static let Met0: [Int] = [
         000, 001, 002, 003, 004, 005, 006, 007, 008, 009,
@@ -38,16 +38,16 @@ struct Locations4 {
         200, 201, 202, 203, 204, 205, 206, 207, 208, 209,
         210, 211, 212, 213, 214, 215, 216, 217, 218, 219,
         220, 221, 222, 223, 224, 225, 226, 227, 228, 229,
-        230, 231, 232, 233, 234,
+        230, 231, 232, 233, 234
     ]
-    
+
     /// Available location list for the 02000 set of location names
     static let Met2: [Int] = [
         // Ignore the --- met location at index 7.
         2000, 2001, 2002, 2003, 2004, 2005, 2006, -1, 2008, 2009,
-        2010, 2011, 2012, 2013, 2014,
+        2010, 2011, 2012, 2013, 2014
     ]
-    
+
     /// Available location list for the 03000 set of location names.
     static let Met3: [Int] = [
         3000, 3001, 3002, 3003, 3004, 3005, 3006, 3007, 3008, 3009,
@@ -57,9 +57,9 @@ struct Locations4 {
         3040, 3041, 3042, 3043, 3044, 3045, 3046, 3047, 3048, 3049,
         3050, 3051, 3052, 3053, 3054, 3055, 3056, 3057, 3058, 3059,
         3060, 3061, 3062, 3063, 3064, 3065, 3066, 3067, 3068, 3069,
-        3070, 3071, 3072, 3073, 3074, 3075, 3076,
+        3070, 3071, 3072, 3073, 3074, 3075, 3076
     ]
-    
+
     static func IsSafariZoneLocation (location: Int) -> Bool {
         return [SafariLocation_HGSS, MarshLocation_DPPt].contains(location)
     }

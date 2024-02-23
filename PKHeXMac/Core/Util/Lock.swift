@@ -7,8 +7,6 @@
 
 import Foundation
 
-
-
 func lock<T>(obj: Any, block: () throws -> T) rethrows -> T {
     objc_sync_enter(obj)
     defer {

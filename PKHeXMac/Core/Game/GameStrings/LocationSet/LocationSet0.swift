@@ -9,7 +9,7 @@ import Foundation
 
 struct LocationSet0: ILocationSet {
     var Met0: [String] = []
-    
+
     func GetLocationNames(bankId: Int) -> [String] {
         switch bankId {
         case 0:
@@ -18,7 +18,7 @@ struct LocationSet0: ILocationSet {
             return []
         }
     }
-    
+
     func GetLocationName(locationId: Int) -> String {
         return if locationId >= Met0.count {
             ""
@@ -26,8 +26,8 @@ struct LocationSet0: ILocationSet {
             Met0[locationId]
         }
     }
-    
-    func GetAll() -> [Int : [String]] {
-        return [0 : Met0]
+
+    func GetAll() -> [Int: [String]] {
+        return [0: Met0]
     }
 }

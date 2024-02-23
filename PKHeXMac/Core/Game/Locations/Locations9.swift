@@ -8,11 +8,10 @@
 import Foundation
 
 /// Locations for `GameVersion.SV`
-struct Locations9
-{
+struct Locations9 {
     /// Available location list for the 00000 set of location names.
     static let Met0: [Int] = [
-        -1,   002, 004, 006, 008,
+        -1, 002, 004, 006, 008,
          010, 012, 014, 016, 018,
          020, 022, 024, 026, 028,
          030, 032, 034, 036, 038,
@@ -25,7 +24,7 @@ struct Locations9
          102, 104, 106, 108, 110,
          110, 112, 114, 116, 118,
          120, 122, 124, 126, 128,
-         
+
          067, 069,
          099, 101, 103, 105, 107, 109,
          111, 113, 115, 117,
@@ -36,16 +35,16 @@ struct Locations9
          176, 178, 180, 182, 184, 186,
          188, 190, 192, 194, 196, 198,
          200
-    ];
-    
+    ]
+
     /// Available location list for the 30000 set of location names.
     static let Met3: [Int] =
     [
-        -1,     30001, -1,    30003, 30004, 30005, 30006, 30007, 30008, 30009,
+        -1, 30001, -1, 30003, 30004, 30005, 30006, 30007, 30008, 30009,
          30010, 30011, 30012, 30013, 30014, 30015, 30016, 30017, 30018, 30019,
-         30020, 30021, 30022, 30023, 30024,
-    ];
-    
+         30020, 30021, 30022, 30023, 30024
+    ]
+
     /// Available location list for the 40000 set of location names.
     static let Met4: [Int] =
     [
@@ -57,32 +56,32 @@ struct Locations9
         40050, 40051, 40052, 40053, 40054, 40055, 40056, 40057, 40058, 40059,
         40060, 40061, 40062, 40063, 40064, 40065, 40066, 40067, 40068, 40069,
         40070, 40071, 40072, 40073, 40074, 40075, 40076, 40077, 40078, 40079,
-        40080, 40081, 40082, 40083, 40084, 40085, 40086,
-    ];
-    
+        40080, 40081, 40082, 40083, 40084, 40085, 40086
+    ]
+
     /// Available location list for the 60000 set of location names.
     static let Met6: [Int] =  [
         /* X/Y */
         60001, 60003,
         /* OR/AS */
         60004
-    ];
-    
+    ]
+
     /// Checks if the location is accessible in Paldea without DLC
     static func isAccessiblePreDLC(location: Int) -> Bool {
         return location <= 131
     }
-    
+
     /// Checks if the location is accessible in Kitakami
     static func isKitakami(location: Int) -> Bool {
         return  location >= 132 && location <= 170
     }
-    
+
     /// Checks if the location is accessible in Blueberry Academy
     static func isBlueberry(location: Int) -> Bool {
         return location >= 172 && location <= 194
     }
-    
+
     /// Checks if the location is Area Zero Underdepths
     static func isPaldeaDLC(location: Int) -> Bool {
         return location == 196 || location == 198

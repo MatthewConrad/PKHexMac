@@ -9,7 +9,7 @@ import Foundation
 
 struct ItemStorage1: IItemStorage {
     static let instance = ItemStorage1()
-    
+
     private static let pouchItems: [Int] = [
         000, 001, 002, 003, 004, 005, 006, 010, 011, 012, 013, 014, 015,
         016, 017, 018, 019, 020, 029, 030, 031, 032, 033, 034, 035, 036, 037, 038, 039, 040, 041, 042, 043,
@@ -20,14 +20,12 @@ struct ItemStorage1: IItemStorage {
         216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235,
         236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250
     ]
-    
+
     func isLegal(type: InventoryType, itemIndex: Int, itemCount: Int) -> Bool {
         return true
     }
-    
+
     func getItems(type: InventoryType) -> [Int] {
         return ItemStorage1.pouchItems
     }
-    
-    
 }

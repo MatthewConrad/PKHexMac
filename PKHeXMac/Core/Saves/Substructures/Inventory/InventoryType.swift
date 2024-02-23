@@ -25,5 +25,4 @@ enum InventoryType {
          Candy,
          Treasure,
          Ingredients
-    
 }

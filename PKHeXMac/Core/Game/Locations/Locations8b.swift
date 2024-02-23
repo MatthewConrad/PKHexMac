@@ -7,10 +7,8 @@
 
 import Foundation
 
-
 /// Locations for `GameVersion.BDSP`
-struct Locations8b
-{
+struct Locations8b {
     /// Available location list for the 00000 set of location names.
     static let Met0: [Int] = [
         000, 001, 002, 003, 004, 005, 006, 007, 008, 009,
@@ -76,21 +74,21 @@ struct Locations8b
         600, 601, 602, 603, 604, 605, 606, 607, 608, 609,
         610, 611, 612, 613, 614, 615, 616, 617, 618, 619,
         620, 621, 622, 623, 624, 625, 626,
-        
+
         // Skip the secret base met location IDs because no Pokémon can be obtained in them.
-        
+
         // Ramanas Park rooms with lights out
-        648, 649, 650, 651, 652, 653, 654, 655, 656, 657,
-    ];
-    
+        648, 649, 650, 651, 652, 653, 654, 655, 656, 657
+    ]
+
     /// Available location list for the 30000 set of location names.
     static let Met3: [Int] =
     [
-        -1,     30001, -1,    30003, 30004, 30005, 30006, 30007, -1,    30009,
+        -1, 30001, -1, 30003, 30004, 30005, 30006, 30007, -1, 30009,
          30010, 30011, 30012, 30013, 30014, 30015, 30016, 30017, 30018, 30019,
-         30020, -1,    30022,
-    ];
-    
+         30020, -1, 30022
+    ]
+
     /// Available location list for the 40000 set of location names.
     static let Met4: [Int] =
     [
@@ -102,24 +100,24 @@ struct Locations8b
         40050, 40051, 40052, 40053, 40054, 40055, 40056, 40057, 40058, 40059,
         40060, 40061, 40062, 40063, 40064, 40065, 40066, 40067, 40068, 40069,
         40070, 40071, 40072, 40073, 40074, 40075, 40076, 40077, 40078, 40079,
-        40080, 40081, 40082, 40083, 40084, 40085, 40086,
-    ];
-    
+        40080, 40081, 40082, 40083, 40084, 40085, 40086
+    ]
+
     /// Available location list for the 60000 set of location names.
     static let Met6: [Int] =  [
         /* X/Y */
         60001, 60003,
         /* OR/AS */
         60004
-    ];
-    
+    ]
+
     /// Checks if the location is a Grand Underground location.
     static func isUnderground(location: Int) -> Bool {
-        return location >= 508 && location <= 617;
+        return location >= 508 && location <= 617
     }
-    
+
     /// Check if the location is a Great Marsh location.
     static func isMarsh(location: Int) -> Bool {
-        return location >= 219 && location <= 224;
+        return location >= 219 && location <= 224
     }
 }

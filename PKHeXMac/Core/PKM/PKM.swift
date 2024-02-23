@@ -6,7 +6,7 @@
 //
 
 import Foundation
- 
+
 protocol PKM: ISpeciesForm, ITrainerID32 {
-    
+
 }
