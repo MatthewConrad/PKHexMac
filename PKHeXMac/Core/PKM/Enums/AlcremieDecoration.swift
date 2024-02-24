@@ -8,11 +8,11 @@
 import Foundation
 
 public enum AlcremieDecoration: Int {
-    case Strawberry = 0
-    case Berry = 1
-    case Love = 2
-    case Star = 3
-    case Clover = 4
-    case Flower = 5
-    case Ribbon = 6
+    case Strawberry = 0,
+         Berry = 1,
+         Love = 2,
+         Star = 3,
+         Clover = 4,
+         Flower = 5,
+         Ribbon = 6
 }

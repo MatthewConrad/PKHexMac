@@ -8,37 +8,35 @@
 import Foundation
 
 enum PokeSizeDetailed {
-    case XXXS
-    case XXS
-    case XS
-    case S
-    case AV
-    case L
-    case XL
-    case XXL
-    case XXXL
-}
-
-class PokeSizeDetailedUtil {
-    func getSizeRating(scalar: Int) -> PokeSizeDetailed {
+    case XXXS,
+         XXS,
+         XS,
+         S,
+         AV,
+         L,
+         XL,
+         XXL,
+         XXXL
+    
+    static func getSizeRating(scalar: Int) -> PokeSizeDetailed {
         return if scalar == 0 {
-            PokeSizeDetailed.XXXS
+            .XXXS
         } else if scalar <= 24 {
-            PokeSizeDetailed.XXS
+            .XXS
         } else if scalar <= 59 {
-            PokeSizeDetailed.XS
+            .XS
         } else if scalar < 100 {
-            PokeSizeDetailed.S
+            .S
         } else if scalar <= 155 {
-            PokeSizeDetailed.AV
+            .AV
         } else if scalar <= 195 {
-            PokeSizeDetailed.L
+            .L
         } else if scalar <= 230 {
-            PokeSizeDetailed.XL
+            .XL
         } else if scalar < 255 {
-            PokeSizeDetailed.XXL
+            .XXL
         } else {
-            PokeSizeDetailed.XXXL
+            .XXXL
         }
     }
 }

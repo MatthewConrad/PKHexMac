@@ -9,40 +9,38 @@ import Foundation
 
 enum PokeSize {
     case XS, S, AV, L, XL
-}
-
-class PokeSizeUtil {
-    func getSizeRating(scalar: Int) -> PokeSize {
+    
+    static func getSizeRating(scalar: Int) -> PokeSize {
         return if scalar < 0x10 {
-            PokeSize.XS
+            .XS
         } else if scalar < 0x30 {
-            PokeSize.S
+            .S
         } else if scalar < 0xd0 {
-            PokeSize.AV
+            .AV
         } else if scalar < 0xf0 {
-            PokeSize.L
+            .L
         } else {
-            PokeSize.XL
+            .XL
         }
     }
 
-    func getRandomScalar() -> Int {
+    static func getRandomScalar() -> Int {
         return Int.random(in: 0..<0x81) + Int.random(in: 0..<0x80)
     }
 
-    func getRandomScalar(size: PokeSize) -> Int {
-        return if size == PokeSize.XS {
+    static func getRandomScalar(size: PokeSize) -> Int {
+        return if size == .XS {
             Int.random(in: 0..<0x10)
-        } else if size == PokeSize.S {
+        } else if size == .S {
             Int.random(in: 0..<0x20) + 0x10
-        } else if size == PokeSize.AV {
+        } else if size == .AV {
             Int.random(in: 0..<0xa0) + 0x30
-        } else if size == PokeSize.L {
+        } else if size == .L {
             Int.random(in: 0..<0x20) + 0xd0
-        } else if size == PokeSize.XL {
+        } else if size == .XL {
             Int.random(in: 0..<0x10) + 0xf0
         } else {
-            getRandomScalar()
+            PokeSize.getRandomScalar()
         }
     }
 }
