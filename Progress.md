@@ -251,9 +251,9 @@
 - [x] ItemStorage4DP
 - [x] ItemStorage4HGSS
 - [x] ItemStorage4Pt
-- [ ] ItemStorage5
-- [ ] ItemStorage5B2W2
-- [ ] ItemStorage5BW
+- [x] ItemStorage5
+- [x] ItemStorage5B2W2
+- [x] ItemStorage5BW *( all gen 5 storage condensed to single file)*
 - [ ] ItemStorage6AO
 - [ ] ItemStorage6XY
 - [ ] ItemStorage7GG
