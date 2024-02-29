@@ -254,15 +254,15 @@
 - [x] ItemStorage5
 - [x] ItemStorage5B2W2
 - [x] ItemStorage5BW *( all gen 5 storage condensed to single file)*
-- [ ] ItemStorage6AO
-- [ ] ItemStorage6XY
-- [ ] ItemStorage7GG
-- [ ] ItemStorage7SM
-- [ ] ItemStorage7USUM
-- [ ] ItemStorage8BDSP
-- [ ] ItemStorage8LA
-- [ ] ItemStorage8SWSH
-- [ ] ItemStorage9SV
+- [x] ItemStorage6AO
+- [x] ItemStorage6XY *(all gen 6 storage condensed to single file)*
+- [x] ItemStorage7GG
+- [x] ItemStorage7SM
+- [x] ItemStorage7USUM *( SM & USUM condensed to single file)*
+- [x] ItemStorage8BDSP
+- [x] ItemStorage8LA
+- [x] ItemStorage8SWSH
+- [x] ItemStorage9SV
 
 ## Legality
 

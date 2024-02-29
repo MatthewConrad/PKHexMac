@@ -68,6 +68,10 @@
 		FF5067FE2B8A4C1900DF64A8 /* ItemStorage6.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5067FD2B8A4C1900DF64A8 /* ItemStorage6.swift */; };
 		FF5068002B8A50F000DF64A8 /* ItemStorage7GG.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5067FF2B8A50F000DF64A8 /* ItemStorage7GG.swift */; };
 		FF5068022B9132F500DF64A8 /* ItemStorage7.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068012B9132F500DF64A8 /* ItemStorage7.swift */; };
+		FF5068042B9139E800DF64A8 /* ItemStorage8BDSP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068032B9139E800DF64A8 /* ItemStorage8BDSP.swift */; };
+		FF5068062B913DB600DF64A8 /* ItemStorage8LA.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068052B913DB600DF64A8 /* ItemStorage8LA.swift */; };
+		FF5068082B913E9900DF64A8 /* ItemStorage8SWSH.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068072B913E9900DF64A8 /* ItemStorage8SWSH.swift */; };
+		FF50680A2B91434F00DF64A8 /* ItemStorage9.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068092B91434F00DF64A8 /* ItemStorage9.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -135,6 +139,10 @@
 		FF5067FD2B8A4C1900DF64A8 /* ItemStorage6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStorage6.swift; sourceTree = "<group>"; };
 		FF5067FF2B8A50F000DF64A8 /* ItemStorage7GG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStorage7GG.swift; sourceTree = "<group>"; };
 		FF5068012B9132F500DF64A8 /* ItemStorage7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStorage7.swift; sourceTree = "<group>"; };
+		FF5068032B9139E800DF64A8 /* ItemStorage8BDSP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStorage8BDSP.swift; sourceTree = "<group>"; };
+		FF5068052B913DB600DF64A8 /* ItemStorage8LA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStorage8LA.swift; sourceTree = "<group>"; };
+		FF5068072B913E9900DF64A8 /* ItemStorage8SWSH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStorage8SWSH.swift; sourceTree = "<group>"; };
+		FF5068092B91434F00DF64A8 /* ItemStorage9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStorage9.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +283,10 @@
 				FF5067FD2B8A4C1900DF64A8 /* ItemStorage6.swift */,
 				FF5067FF2B8A50F000DF64A8 /* ItemStorage7GG.swift */,
 				FF5068012B9132F500DF64A8 /* ItemStorage7.swift */,
+				FF5068032B9139E800DF64A8 /* ItemStorage8BDSP.swift */,
+				FF5068052B913DB600DF64A8 /* ItemStorage8LA.swift */,
+				FF5068072B913E9900DF64A8 /* ItemStorage8SWSH.swift */,
+				FF5068092B91434F00DF64A8 /* ItemStorage9.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -458,6 +470,7 @@
 				FF31D2E82B71CDF900EB420C /* ITrainerID.swift in Sources */,
 				FF31D2ED2B71E79F00EB420C /* EntityContext.swift in Sources */,
 				FF5068022B9132F500DF64A8 /* ItemStorage7.swift in Sources */,
+				FF5068082B913E9900DF64A8 /* ItemStorage8SWSH.swift in Sources */,
 				FF31D3512B85AA4300EB420C /* ItemStorage1.swift in Sources */,
 				FF31D3142B746BB400EB420C /* IBasicStrings.swift in Sources */,
 				FF31D3282B79721B00EB420C /* LocationSet0.swift in Sources */,
@@ -470,6 +483,7 @@
 				FF31D2DE2B71C72800EB420C /* PokeSize.swift in Sources */,
 				FF31D3172B746FE800EB420C /* ProgramLanguage.swift in Sources */,
 				FF5067FC2B8A422000DF64A8 /* ItemStorage5.swift in Sources */,
+				FF5068042B9139E800DF64A8 /* ItemStorage8BDSP.swift in Sources */,
 				FF31D3332B7B0D8800EB420C /* Locations5.swift in Sources */,
 				FF4A9D722B71C17E00C4B5F5 /* GroundTileType.swift in Sources */,
 				FF31D3192B74703700EB420C /* GameStrings.swift in Sources */,
@@ -485,6 +499,7 @@
 				FF31D32F2B79CC3900EB420C /* Locations.swift in Sources */,
 				FF31D3372B82777100EB420C /* Locations7.swift in Sources */,
 				FF31D2FC2B730A2A00EB420C /* Ability.swift in Sources */,
+				FF50680A2B91434F00DF64A8 /* ItemStorage9.swift in Sources */,
 				FF4A9D702B71C0B000C4B5F5 /* AlcremieDecoration.swift in Sources */,
 				FF31D30C2B7322A400EB420C /* LanguageID.swift in Sources */,
 				FF31D33D2B8279E800EB420C /* Locations8a.swift in Sources */,
@@ -504,6 +519,7 @@
 				FF31D3262B796FBE00EB420C /* ILocationSet.swift in Sources */,
 				FF31D3122B746A2300EB420C /* ComboItem.swift in Sources */,
 				FF4A9D6E2B71BD5E00C4B5F5 /* PokeSizeDetailed.swift in Sources */,
+				FF5068062B913DB600DF64A8 /* ItemStorage8LA.swift in Sources */,
 				FF31D3432B827C9100EB420C /* LocationsHOME.swift in Sources */,
 				FF31D2FA2B7309D400EB420C /* Species.swift in Sources */,
 				FF31D3232B74838500EB420C /* Lock.swift in Sources */,
