@@ -1036,6 +1036,10 @@ enum Species: Int, CaseIterable, Comparable {
          Terapagos,
          Pecharunt,
          MAX_COUNT
+    
+    init(intValue: Int) {
+        self = Species(rawValue: intValue) ?? .None
+    }
 
     static func < (lhs: Species, rhs: Species) -> Bool {
         return lhs.rawValue < rhs.rawValue

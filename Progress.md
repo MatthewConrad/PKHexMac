@@ -269,7 +269,7 @@
 - [ ] BinLinkerAccessor
 - [ ] Breeding
 - [ ] BulkGenerator
-- [ ] Core
+- [/] Core
 - [ ] LegalityAnalysis
 - [ ] LegalityAnalyzer
 - [ ] MoveListSuggest
@@ -786,7 +786,7 @@
 - [ ] IEggSource
 - [ ] ILearnSource
 - [ ] IReminderSource
-- [ ] LearnOption
+- [x] LearnOption
 - [ ] LearnSource1
 - [ ] LearnSource2
 - [ ] LearnSource3
@@ -920,11 +920,11 @@
 
 ### Tables
 
-- [ ] FormChangeUtil
+- [x] FormChangeUtil
 - [ ] FormInfo
 - [ ] FormItem
 - [ ] MysteryMew
-- [ ] SpeciesCategory
+- [x] SpeciesCategory
 
 ### Verifiers
 
