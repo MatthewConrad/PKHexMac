@@ -193,7 +193,7 @@
 - [X] Ability
 - [x] Ball
 - [x] GCVersion *(combined with GameVersion; GCRegion moved to new file Region)* 
-- [x] GameVersion
+- [/] GameVersion
 - [x] Gender
 - [x] LanguageGC *(combined with LanguageID)*
 - [x] LanguageID
@@ -851,7 +851,7 @@
 #### Algorithms
 
 - [ ] ARNG
-- [ ] LCRNG
+- [x] LCRNG
 - [ ] LCRNGReversal
 - [ ] LCRNGReversalSkip
 - [ ] XDRNG
@@ -922,8 +922,8 @@
 
 - [x] FormChangeUtil
 - [x] FormInfo
-- [ ] FormItem
-- [ ] MysteryMew
+- [x] FormItem
+- [x] MysteryMew
 - [x] SpeciesCategory
 
 ### Verifiers

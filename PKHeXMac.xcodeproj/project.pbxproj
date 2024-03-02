@@ -78,6 +78,10 @@
 		FF5068162B91943400DF64A8 /* LearnOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068152B91943400DF64A8 /* LearnOption.swift */; };
 		FF5068182B92C0A700DF64A8 /* FormInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068172B92C0A700DF64A8 /* FormInfo.swift */; };
 		FF50681C2B92D19600DF64A8 /* IPersonalFormInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50681B2B92D19600DF64A8 /* IPersonalFormInfo.swift */; };
+		FF50681E2B92D2DF00DF64A8 /* FormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50681D2B92D2DF00DF64A8 /* FormItem.swift */; };
+		FF5068202B92D71900DF64A8 /* MystryMew.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50681F2B92D71900DF64A8 /* MystryMew.swift */; };
+		FF5068232B92D7AE00DF64A8 /* PIDType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068222B92D7AE00DF64A8 /* PIDType.swift */; };
+		FF5068262B92DD6400DF64A8 /* LCRNG.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068252B92DD6400DF64A8 /* LCRNG.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -155,6 +159,10 @@
 		FF5068152B91943400DF64A8 /* LearnOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnOption.swift; sourceTree = "<group>"; };
 		FF5068172B92C0A700DF64A8 /* FormInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormInfo.swift; sourceTree = "<group>"; };
 		FF50681B2B92D19600DF64A8 /* IPersonalFormInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPersonalFormInfo.swift; sourceTree = "<group>"; };
+		FF50681D2B92D2DF00DF64A8 /* FormItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormItem.swift; sourceTree = "<group>"; };
+		FF50681F2B92D71900DF64A8 /* MystryMew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MystryMew.swift; sourceTree = "<group>"; };
+		FF5068222B92D7AE00DF64A8 /* PIDType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIDType.swift; sourceTree = "<group>"; };
+		FF5068252B92DD6400DF64A8 /* LCRNG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCRNG.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +235,7 @@
 		FF31D2F62B73080E00EB420C /* Legality */ = {
 			isa = PBXGroup;
 			children = (
+				FF5068212B92D7A200DF64A8 /* RNG */,
 				FF5068122B91941400DF64A8 /* LearnSource */,
 				FF50680D2B918E3600DF64A8 /* Tables */,
 				FF31D2F72B73081A00EB420C /* Core.swift */,
@@ -412,6 +421,8 @@
 				FF50680E2B918E6600DF64A8 /* SpeciesCategory.swift */,
 				FF5068102B91920400DF64A8 /* FormChange.swift */,
 				FF5068172B92C0A700DF64A8 /* FormInfo.swift */,
+				FF50681D2B92D2DF00DF64A8 /* FormItem.swift */,
+				FF50681F2B92D71900DF64A8 /* MystryMew.swift */,
 			);
 			path = Tables;
 			sourceTree = "<group>";
@@ -454,6 +465,23 @@
 				FF50681B2B92D19600DF64A8 /* IPersonalFormInfo.swift */,
 			);
 			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		FF5068212B92D7A200DF64A8 /* RNG */ = {
+			isa = PBXGroup;
+			children = (
+				FF5068242B92DD4700DF64A8 /* Algorithms */,
+				FF5068222B92D7AE00DF64A8 /* PIDType.swift */,
+			);
+			path = RNG;
+			sourceTree = "<group>";
+		};
+		FF5068242B92DD4700DF64A8 /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				FF5068252B92DD6400DF64A8 /* LCRNG.swift */,
+			);
+			path = Algorithms;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -552,15 +580,18 @@
 				FF5068042B9139E800DF64A8 /* ItemStorage8BDSP.swift in Sources */,
 				FF31D3332B7B0D8800EB420C /* Locations5.swift in Sources */,
 				FF4A9D722B71C17E00C4B5F5 /* GroundTileType.swift in Sources */,
+				FF5068232B92D7AE00DF64A8 /* PIDType.swift in Sources */,
 				FF31D3192B74703700EB420C /* GameStrings.swift in Sources */,
 				FF31D3392B82782400EB420C /* Locations7b.swift in Sources */,
 				FF31D34F2B858AD300EB420C /* InventoryType.swift in Sources */,
 				FF31D3312B7B0A5000EB420C /* Locations4.swift in Sources */,
 				FF31D2FE2B730AA000EB420C /* Ball.swift in Sources */,
 				FF5068002B8A50F000DF64A8 /* ItemStorage7GG.swift in Sources */,
+				FF5068202B92D71900DF64A8 /* MystryMew.swift in Sources */,
 				FF31D3412B827B7D00EB420C /* Locations9.swift in Sources */,
 				FF31D33F2B827AB200EB420C /* Locations8b.swift in Sources */,
 				FF31D2E22B71CC5900EB420C /* PKM.swift in Sources */,
+				FF50681E2B92D2DF00DF64A8 /* FormItem.swift in Sources */,
 				FF31D35F2B86EF9600EB420C /* ItemStorage4.swift in Sources */,
 				FF50680C2B91776000DF64A8 /* Breeding.swift in Sources */,
 				FF31D32F2B79CC3900EB420C /* Locations.swift in Sources */,
@@ -584,6 +615,7 @@
 				FF31D31F2B74777700EB420C /* ResourceUtil.swift in Sources */,
 				FF5067FE2B8A4C1900DF64A8 /* ItemStorage6.swift in Sources */,
 				FF31D31B2B7470A600EB420C /* GameLanguage.swift in Sources */,
+				FF5068262B92DD6400DF64A8 /* LCRNG.swift in Sources */,
 				FF31D35D2B86E70300EB420C /* ItemStorage3.swift in Sources */,
 				FF31D3262B796FBE00EB420C /* ILocationSet.swift in Sources */,
 				FF31D3122B746A2300EB420C /* ComboItem.swift in Sources */,
