@@ -921,7 +921,7 @@
 ### Tables
 
 - [x] FormChangeUtil
-- [ ] FormInfo
+- [x] FormInfo
 - [ ] FormItem
 - [ ] MysteryMew
 - [x] SpeciesCategory
@@ -1075,7 +1075,7 @@
 - [ ] IPersonalAbility
 - [ ] IPersonalEgg
 - [ ] IPersonalEncounter
-- [ ] IPersonalFormInfo
+- [x] IPersonalFormInfo
 - [ ] IPersonalMisc
 - [ ] IPersonalTable
 - [ ] IPersonalType
