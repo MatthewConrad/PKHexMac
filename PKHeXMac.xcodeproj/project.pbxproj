@@ -100,6 +100,20 @@
 		FF5068482B94F8E800DF64A8 /* PersonalInfo1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068472B94F8E800DF64A8 /* PersonalInfo1.swift */; };
 		FF50684B2B95081100DF64A8 /* PersonalTable1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50684A2B95081100DF64A8 /* PersonalTable1.swift */; };
 		FF50684D2B951A6E00DF64A8 /* PokeblockFlavor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50684C2B951A6E00DF64A8 /* PokeblockFlavor.swift */; };
+		FF5068502B951E8400DF64A8 /* MoveInfo1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50684F2B951E8400DF64A8 /* MoveInfo1.swift */; };
+		FF5068522B951EF200DF64A8 /* MoveInfo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068512B951EF200DF64A8 /* MoveInfo2.swift */; };
+		FF5068542B951F1300DF64A8 /* MoveInfo3.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068532B951F1300DF64A8 /* MoveInfo3.swift */; };
+		FF5068562B951F3F00DF64A8 /* MoveInfo4.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068552B951F3F00DF64A8 /* MoveInfo4.swift */; };
+		FF5068582B951F6000DF64A8 /* MoveInfo5.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068572B951F6000DF64A8 /* MoveInfo5.swift */; };
+		FF50685A2B951F9E00DF64A8 /* MoveInfo6.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068592B951F9E00DF64A8 /* MoveInfo6.swift */; };
+		FF50685C2B951FC000DF64A8 /* MoveInfo7.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50685B2B951FC000DF64A8 /* MoveInfo7.swift */; };
+		FF50685E2B951FEE00DF64A8 /* MoveInfo7b.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50685D2B951FEE00DF64A8 /* MoveInfo7b.swift */; };
+		FF5068602B95206600DF64A8 /* MoveInfo8.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50685F2B95206600DF64A8 /* MoveInfo8.swift */; };
+		FF5068622B9520F400DF64A8 /* MoveInfo8a.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068612B9520F400DF64A8 /* MoveInfo8a.swift */; };
+		FF5068642B95213900DF64A8 /* MoveInfo8b.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068632B95213900DF64A8 /* MoveInfo8b.swift */; };
+		FF5068662B95216600DF64A8 /* MoveInfo9.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068652B95216600DF64A8 /* MoveInfo9.swift */; };
+		FF5068682B9521E000DF64A8 /* MoveInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068672B9521E000DF64A8 /* MoveInfo.swift */; };
+		FF50686A2B9527A900DF64A8 /* BattleMoves.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068692B9527A900DF64A8 /* BattleMoves.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -199,6 +213,20 @@
 		FF5068472B94F8E800DF64A8 /* PersonalInfo1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfo1.swift; sourceTree = "<group>"; };
 		FF50684A2B95081100DF64A8 /* PersonalTable1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalTable1.swift; sourceTree = "<group>"; };
 		FF50684C2B951A6E00DF64A8 /* PokeblockFlavor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeblockFlavor.swift; sourceTree = "<group>"; };
+		FF50684F2B951E8400DF64A8 /* MoveInfo1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveInfo1.swift; sourceTree = "<group>"; };
+		FF5068512B951EF200DF64A8 /* MoveInfo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveInfo2.swift; sourceTree = "<group>"; };
+		FF5068532B951F1300DF64A8 /* MoveInfo3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveInfo3.swift; sourceTree = "<group>"; };
+		FF5068552B951F3F00DF64A8 /* MoveInfo4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveInfo4.swift; sourceTree = "<group>"; };
+		FF5068572B951F6000DF64A8 /* MoveInfo5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveInfo5.swift; sourceTree = "<group>"; };
+		FF5068592B951F9E00DF64A8 /* MoveInfo6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveInfo6.swift; sourceTree = "<group>"; };
+		FF50685B2B951FC000DF64A8 /* MoveInfo7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveInfo7.swift; sourceTree = "<group>"; };
+		FF50685D2B951FEE00DF64A8 /* MoveInfo7b.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveInfo7b.swift; sourceTree = "<group>"; };
+		FF50685F2B95206600DF64A8 /* MoveInfo8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveInfo8.swift; sourceTree = "<group>"; };
+		FF5068612B9520F400DF64A8 /* MoveInfo8a.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveInfo8a.swift; sourceTree = "<group>"; };
+		FF5068632B95213900DF64A8 /* MoveInfo8b.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveInfo8b.swift; sourceTree = "<group>"; };
+		FF5068652B95216600DF64A8 /* MoveInfo9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveInfo9.swift; sourceTree = "<group>"; };
+		FF5068672B9521E000DF64A8 /* MoveInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveInfo.swift; sourceTree = "<group>"; };
+		FF5068692B9527A900DF64A8 /* BattleMoves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleMoves.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +246,7 @@
 				FF31D2E62B71CDE600EB420C /* Metadata */,
 				FF31D2E72B71CDF900EB420C /* TrainerID.swift */,
 				FF31D2E92B71D04700EB420C /* TrainerID32.swift */,
+				FF5068692B9527A900DF64A8 /* BattleMoves.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -419,6 +448,7 @@
 		FF4A9D6A2B71BD3600C4B5F5 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				FF50684E2B951E7C00DF64A8 /* Moves */,
 				FF31D2EE2B71E8B800EB420C /* Game */,
 				FF31D3462B82896F00EB420C /* Items */,
 				FF31D2F62B73080E00EB420C /* Legality */,
@@ -562,6 +592,26 @@
 			path = Table;
 			sourceTree = "<group>";
 		};
+		FF50684E2B951E7C00DF64A8 /* Moves */ = {
+			isa = PBXGroup;
+			children = (
+				FF50684F2B951E8400DF64A8 /* MoveInfo1.swift */,
+				FF5068512B951EF200DF64A8 /* MoveInfo2.swift */,
+				FF5068532B951F1300DF64A8 /* MoveInfo3.swift */,
+				FF5068552B951F3F00DF64A8 /* MoveInfo4.swift */,
+				FF5068572B951F6000DF64A8 /* MoveInfo5.swift */,
+				FF5068592B951F9E00DF64A8 /* MoveInfo6.swift */,
+				FF50685B2B951FC000DF64A8 /* MoveInfo7.swift */,
+				FF50685D2B951FEE00DF64A8 /* MoveInfo7b.swift */,
+				FF50685F2B95206600DF64A8 /* MoveInfo8.swift */,
+				FF5068612B9520F400DF64A8 /* MoveInfo8a.swift */,
+				FF5068632B95213900DF64A8 /* MoveInfo8b.swift */,
+				FF5068652B95216600DF64A8 /* MoveInfo9.swift */,
+				FF5068672B9521E000DF64A8 /* MoveInfo.swift */,
+			);
+			path = Moves;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -634,6 +684,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF4A9D5E2B71BD1E00C4B5F5 /* ContentView.swift in Sources */,
+				FF5068542B951F1300DF64A8 /* MoveInfo3.swift in Sources */,
 				FF31D2F32B71ED9300EB420C /* GameConsole.swift in Sources */,
 				FF31D3452B82863F00EB420C /* LocationRemapState.swift in Sources */,
 				FF31D32C2B79762300EB420C /* LocationSet6.swift in Sources */,
@@ -641,11 +692,14 @@
 				FF31D2EA2B71D04700EB420C /* TrainerID32.swift in Sources */,
 				FF31D2E52B71CD4400EB420C /* SpeciesForm.swift in Sources */,
 				FF31D2E82B71CDF900EB420C /* TrainerID.swift in Sources */,
+				FF5068642B95213900DF64A8 /* MoveInfo8b.swift in Sources */,
 				FF50684D2B951A6E00DF64A8 /* PokeblockFlavor.swift in Sources */,
 				FF31D2ED2B71E79F00EB420C /* EntityContext.swift in Sources */,
 				FF5068022B9132F500DF64A8 /* ItemStorage7.swift in Sources */,
+				FF50685C2B951FC000DF64A8 /* MoveInfo7.swift in Sources */,
 				FF5068082B913E9900DF64A8 /* ItemStorage8SWSH.swift in Sources */,
 				FF31D3512B85AA4300EB420C /* ItemStorage1.swift in Sources */,
+				FF50685E2B951FEE00DF64A8 /* MoveInfo7b.swift in Sources */,
 				FF31D3142B746BB400EB420C /* BasicStrings.swift in Sources */,
 				FF31D3282B79721B00EB420C /* LocationSet0.swift in Sources */,
 				FF31D2E02B71CB3F00EB420C /* OriginMark.swift in Sources */,
@@ -657,15 +711,19 @@
 				FF31D3482B82897A00EB420C /* HeldItemLumpImage.swift in Sources */,
 				FF31D2DE2B71C72800EB420C /* PokeSize.swift in Sources */,
 				FF31D3172B746FE800EB420C /* ProgramLanguage.swift in Sources */,
+				FF5068502B951E8400DF64A8 /* MoveInfo1.swift in Sources */,
 				FF5068482B94F8E800DF64A8 /* PersonalInfo1.swift in Sources */,
 				FF5067FC2B8A422000DF64A8 /* ItemStorage5.swift in Sources */,
 				FF5068042B9139E800DF64A8 /* ItemStorage8BDSP.swift in Sources */,
 				FF5068412B94EF0F00DF64A8 /* PersonalType.swift in Sources */,
+				FF5068682B9521E000DF64A8 /* MoveInfo.swift in Sources */,
 				FF50683F2B94EE8C00DF64A8 /* PersonalMisc.swift in Sources */,
 				FF31D3332B7B0D8800EB420C /* Locations5.swift in Sources */,
 				FF4A9D722B71C17E00C4B5F5 /* GroundTileType.swift in Sources */,
 				FF5068232B92D7AE00DF64A8 /* PIDType.swift in Sources */,
 				FF31D3192B74703700EB420C /* GameStrings.swift in Sources */,
+				FF50685A2B951F9E00DF64A8 /* MoveInfo6.swift in Sources */,
+				FF5068562B951F3F00DF64A8 /* MoveInfo4.swift in Sources */,
 				FF31D3392B82782400EB420C /* Locations7b.swift in Sources */,
 				FF5068452B94EFEC00DF64A8 /* PersonalInfo.swift in Sources */,
 				FF31D34F2B858AD300EB420C /* InventoryType.swift in Sources */,
@@ -684,7 +742,9 @@
 				FF50684B2B95081100DF64A8 /* PersonalTable1.swift in Sources */,
 				FF50680C2B91776000DF64A8 /* Breeding.swift in Sources */,
 				FF31D32F2B79CC3900EB420C /* Locations.swift in Sources */,
+				FF5068662B95216600DF64A8 /* MoveInfo9.swift in Sources */,
 				FF31D3372B82777100EB420C /* Locations7.swift in Sources */,
+				FF5068602B95206600DF64A8 /* MoveInfo8.swift in Sources */,
 				FF50683B2B94EE5800DF64A8 /* PersonalTR.swift in Sources */,
 				FF31D2FC2B730A2A00EB420C /* Ability.swift in Sources */,
 				FF5068182B92C0A700DF64A8 /* FormInfo.swift in Sources */,
@@ -702,12 +762,14 @@
 				FF50681C2B92D19600DF64A8 /* PersonalFormInfo.swift in Sources */,
 				FF50682D2B94E26B00DF64A8 /* BaseStat.swift in Sources */,
 				FF31D2F82B73081A00EB420C /* Core.swift in Sources */,
+				FF5068582B951F6000DF64A8 /* MoveInfo5.swift in Sources */,
 				FF5068352B94ED3100DF64A8 /* PersonalEgg.swift in Sources */,
 				FF31D34A2B858A4100EB420C /* ItemStorage.swift in Sources */,
 				FF31D31F2B74777700EB420C /* ResourceUtil.swift in Sources */,
 				FF5067FE2B8A4C1900DF64A8 /* ItemStorage6.swift in Sources */,
 				FF31D31B2B7470A600EB420C /* GameLanguage.swift in Sources */,
 				FF5068262B92DD6400DF64A8 /* LCRNG.swift in Sources */,
+				FF5068622B9520F400DF64A8 /* MoveInfo8a.swift in Sources */,
 				FF31D35D2B86E70300EB420C /* ItemStorage3.swift in Sources */,
 				FF31D3262B796FBE00EB420C /* LocationSet.swift in Sources */,
 				FF31D3122B746A2300EB420C /* ComboItem.swift in Sources */,
@@ -719,8 +781,10 @@
 				FF5068372B94ED8A00DF64A8 /* PersonalEncounter.swift in Sources */,
 				FF31D3432B827C9100EB420C /* LocationsHOME.swift in Sources */,
 				FF31D2FA2B7309D400EB420C /* Species.swift in Sources */,
+				FF5068522B951EF200DF64A8 /* MoveInfo2.swift in Sources */,
 				FF31D3232B74838500EB420C /* Lock.swift in Sources */,
 				FF5068162B91943400DF64A8 /* LearnOption.swift in Sources */,
+				FF50686A2B9527A900DF64A8 /* BattleMoves.swift in Sources */,
 				FF50682F2B94E75900DF64A8 /* EffortValueYield.swift in Sources */,
 				FF5068312B94E79E00DF64A8 /* GenderDetail.swift in Sources */,
 			);

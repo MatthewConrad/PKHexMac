@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol PKM: SpeciesForm, TrainerID32 {
-
+protocol PKM: SpeciesForm, BattleMoves, TrainerID32 {
+    var context: EntityContext { get }
 }

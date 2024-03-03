@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Move: UInt32, CaseIterable, Comparable {
+enum Move: UInt16, CaseIterable, Comparable {
     case None,
          Pound,
          KarateChop,
