@@ -98,6 +98,7 @@
 		FF5068432B94EFAD00DF64A8 /* PersonalTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068422B94EFAD00DF64A8 /* PersonalTable.swift */; };
 		FF5068452B94EFEC00DF64A8 /* PersonalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068442B94EFEC00DF64A8 /* PersonalInfo.swift */; };
 		FF5068482B94F8E800DF64A8 /* PersonalInfo1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068472B94F8E800DF64A8 /* PersonalInfo1.swift */; };
+		FF50684B2B95081100DF64A8 /* PersonalTable1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50684A2B95081100DF64A8 /* PersonalTable1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -195,6 +196,7 @@
 		FF5068422B94EFAD00DF64A8 /* PersonalTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalTable.swift; sourceTree = "<group>"; };
 		FF5068442B94EFEC00DF64A8 /* PersonalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfo.swift; sourceTree = "<group>"; };
 		FF5068472B94F8E800DF64A8 /* PersonalInfo1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfo1.swift; sourceTree = "<group>"; };
+		FF50684A2B95081100DF64A8 /* PersonalTable1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalTable1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -488,6 +490,7 @@
 		FF5068192B92D17800DF64A8 /* PersonalInfo */ = {
 			isa = PBXGroup;
 			children = (
+				FF5068492B95080600DF64A8 /* Table */,
 				FF5068462B94F8DF00DF64A8 /* Info */,
 				FF50681A2B92D18800DF64A8 /* Interfaces */,
 			);
@@ -546,6 +549,14 @@
 				FF5068472B94F8E800DF64A8 /* PersonalInfo1.swift */,
 			);
 			path = Info;
+			sourceTree = "<group>";
+		};
+		FF5068492B95080600DF64A8 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				FF50684A2B95081100DF64A8 /* PersonalTable1.swift */,
+			);
+			path = Table;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -666,6 +677,7 @@
 				FF31D2E22B71CC5900EB420C /* PKM.swift in Sources */,
 				FF50681E2B92D2DF00DF64A8 /* FormItem.swift in Sources */,
 				FF31D35F2B86EF9600EB420C /* ItemStorage4.swift in Sources */,
+				FF50684B2B95081100DF64A8 /* PersonalTable1.swift in Sources */,
 				FF50680C2B91776000DF64A8 /* Breeding.swift in Sources */,
 				FF31D32F2B79CC3900EB420C /* Locations.swift in Sources */,
 				FF31D3372B82777100EB420C /* Locations7.swift in Sources */,

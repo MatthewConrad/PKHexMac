@@ -1048,7 +1048,7 @@ NOTE - originally cloned base PKHeX repo @ commit 10c5adadb
 
 ## PersonalInfo
 
-- [ ] PersonalInfo
+- [x] PersonalInfo _(incorporated as extension to PersonalTable protocol)_
 - [ ] PersonalTable
 
 ### Info

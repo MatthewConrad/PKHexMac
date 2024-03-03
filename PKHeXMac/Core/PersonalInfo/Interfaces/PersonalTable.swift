@@ -11,7 +11,7 @@ import Foundation
 protocol PersonalTable {
     associatedtype T: PersonalInfo
     
-    var maxSpeciesID: Int { get }
+    var maxSpecies: Species { get }
 
     /// Gets an index from the inner array.
     /// - remark: Should have built in length checks, returning empty entry if out of range.
