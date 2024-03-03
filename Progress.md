@@ -825,7 +825,7 @@
 - [ ] HomeTrackerUtil
 - [ ] ItemRestrictions
 - [ ] Locale3DS
-- [ ] Vivillon3DS
+- [x] Vivillon3DS
 - [ ] WordFilter
 
 #### Memories

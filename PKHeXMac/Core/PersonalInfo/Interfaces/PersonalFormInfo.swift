@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol IPersonalFormInfo {
+protocol PersonalFormInfo {
     /// Count of Forms the PKM can have
     var formCount: Int { get set }
     

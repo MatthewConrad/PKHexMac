@@ -77,13 +77,26 @@
 		FF5068112B91920400DF64A8 /* FormChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068102B91920400DF64A8 /* FormChange.swift */; };
 		FF5068162B91943400DF64A8 /* LearnOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068152B91943400DF64A8 /* LearnOption.swift */; };
 		FF5068182B92C0A700DF64A8 /* FormInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068172B92C0A700DF64A8 /* FormInfo.swift */; };
-		FF50681C2B92D19600DF64A8 /* IPersonalFormInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50681B2B92D19600DF64A8 /* IPersonalFormInfo.swift */; };
+		FF50681C2B92D19600DF64A8 /* PersonalFormInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50681B2B92D19600DF64A8 /* PersonalFormInfo.swift */; };
 		FF50681E2B92D2DF00DF64A8 /* FormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50681D2B92D2DF00DF64A8 /* FormItem.swift */; };
 		FF5068202B92D71900DF64A8 /* MystryMew.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50681F2B92D71900DF64A8 /* MystryMew.swift */; };
 		FF5068232B92D7AE00DF64A8 /* PIDType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068222B92D7AE00DF64A8 /* PIDType.swift */; };
 		FF5068262B92DD6400DF64A8 /* LCRNG.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068252B92DD6400DF64A8 /* LCRNG.swift */; };
 		FF5068282B94C9BA00DF64A8 /* GameValueLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068272B94C9BA00DF64A8 /* GameValueLimit.swift */; };
 		FF50682B2B94D77000DF64A8 /* Vivillon3DS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50682A2B94D76F00DF64A8 /* Vivillon3DS.swift */; };
+		FF50682D2B94E26B00DF64A8 /* BaseStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50682C2B94E26B00DF64A8 /* BaseStat.swift */; };
+		FF50682F2B94E75900DF64A8 /* EffortValueYield.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50682E2B94E75900DF64A8 /* EffortValueYield.swift */; };
+		FF5068312B94E79E00DF64A8 /* GenderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068302B94E79E00DF64A8 /* GenderDetail.swift */; };
+		FF5068332B94E99800DF64A8 /* PersonalAbility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068322B94E99800DF64A8 /* PersonalAbility.swift */; };
+		FF5068352B94ED3100DF64A8 /* PersonalEgg.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068342B94ED3100DF64A8 /* PersonalEgg.swift */; };
+		FF5068372B94ED8A00DF64A8 /* PersonalEncounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068362B94ED8A00DF64A8 /* PersonalEncounter.swift */; };
+		FF5068392B94EDE800DF64A8 /* PersonalTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068382B94EDE800DF64A8 /* PersonalTM.swift */; };
+		FF50683B2B94EE5800DF64A8 /* PersonalTR.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50683A2B94EE5800DF64A8 /* PersonalTR.swift */; };
+		FF50683D2B94EE7300DF64A8 /* PersonalTutorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50683C2B94EE7300DF64A8 /* PersonalTutorType.swift */; };
+		FF50683F2B94EE8C00DF64A8 /* PersonalMisc.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50683E2B94EE8C00DF64A8 /* PersonalMisc.swift */; };
+		FF5068412B94EF0F00DF64A8 /* PersonalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068402B94EF0F00DF64A8 /* PersonalType.swift */; };
+		FF5068432B94EFAD00DF64A8 /* PersonalTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068422B94EFAD00DF64A8 /* PersonalTable.swift */; };
+		FF5068452B94EFEC00DF64A8 /* PersonalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068442B94EFEC00DF64A8 /* PersonalInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -160,13 +173,26 @@
 		FF5068102B91920400DF64A8 /* FormChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormChange.swift; sourceTree = "<group>"; };
 		FF5068152B91943400DF64A8 /* LearnOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnOption.swift; sourceTree = "<group>"; };
 		FF5068172B92C0A700DF64A8 /* FormInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormInfo.swift; sourceTree = "<group>"; };
-		FF50681B2B92D19600DF64A8 /* IPersonalFormInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPersonalFormInfo.swift; sourceTree = "<group>"; };
+		FF50681B2B92D19600DF64A8 /* PersonalFormInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalFormInfo.swift; sourceTree = "<group>"; };
 		FF50681D2B92D2DF00DF64A8 /* FormItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormItem.swift; sourceTree = "<group>"; };
 		FF50681F2B92D71900DF64A8 /* MystryMew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MystryMew.swift; sourceTree = "<group>"; };
 		FF5068222B92D7AE00DF64A8 /* PIDType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIDType.swift; sourceTree = "<group>"; };
 		FF5068252B92DD6400DF64A8 /* LCRNG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCRNG.swift; sourceTree = "<group>"; };
 		FF5068272B94C9BA00DF64A8 /* GameValueLimit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameValueLimit.swift; sourceTree = "<group>"; };
 		FF50682A2B94D76F00DF64A8 /* Vivillon3DS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vivillon3DS.swift; sourceTree = "<group>"; };
+		FF50682C2B94E26B00DF64A8 /* BaseStat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseStat.swift; sourceTree = "<group>"; };
+		FF50682E2B94E75900DF64A8 /* EffortValueYield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffortValueYield.swift; sourceTree = "<group>"; };
+		FF5068302B94E79E00DF64A8 /* GenderDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderDetail.swift; sourceTree = "<group>"; };
+		FF5068322B94E99800DF64A8 /* PersonalAbility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalAbility.swift; sourceTree = "<group>"; };
+		FF5068342B94ED3100DF64A8 /* PersonalEgg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalEgg.swift; sourceTree = "<group>"; };
+		FF5068362B94ED8A00DF64A8 /* PersonalEncounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalEncounter.swift; sourceTree = "<group>"; };
+		FF5068382B94EDE800DF64A8 /* PersonalTM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalTM.swift; sourceTree = "<group>"; };
+		FF50683A2B94EE5800DF64A8 /* PersonalTR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalTR.swift; sourceTree = "<group>"; };
+		FF50683C2B94EE7300DF64A8 /* PersonalTutorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalTutorType.swift; sourceTree = "<group>"; };
+		FF50683E2B94EE8C00DF64A8 /* PersonalMisc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalMisc.swift; sourceTree = "<group>"; };
+		FF5068402B94EF0F00DF64A8 /* PersonalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalType.swift; sourceTree = "<group>"; };
+		FF5068422B94EFAD00DF64A8 /* PersonalTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalTable.swift; sourceTree = "<group>"; };
+		FF5068442B94EFEC00DF64A8 /* PersonalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -468,7 +494,20 @@
 		FF50681A2B92D18800DF64A8 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
-				FF50681B2B92D19600DF64A8 /* IPersonalFormInfo.swift */,
+				FF50682C2B94E26B00DF64A8 /* BaseStat.swift */,
+				FF50682E2B94E75900DF64A8 /* EffortValueYield.swift */,
+				FF5068302B94E79E00DF64A8 /* GenderDetail.swift */,
+				FF5068322B94E99800DF64A8 /* PersonalAbility.swift */,
+				FF5068342B94ED3100DF64A8 /* PersonalEgg.swift */,
+				FF5068362B94ED8A00DF64A8 /* PersonalEncounter.swift */,
+				FF50681B2B92D19600DF64A8 /* PersonalFormInfo.swift */,
+				FF5068382B94EDE800DF64A8 /* PersonalTM.swift */,
+				FF50683A2B94EE5800DF64A8 /* PersonalTR.swift */,
+				FF50683C2B94EE7300DF64A8 /* PersonalTutorType.swift */,
+				FF50683E2B94EE8C00DF64A8 /* PersonalMisc.swift */,
+				FF5068402B94EF0F00DF64A8 /* PersonalType.swift */,
+				FF5068422B94EFAD00DF64A8 /* PersonalTable.swift */,
+				FF5068442B94EFEC00DF64A8 /* PersonalInfo.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -573,6 +612,7 @@
 				FF31D2F32B71ED9300EB420C /* GameConsole.swift in Sources */,
 				FF31D3452B82863F00EB420C /* LocationRemapState.swift in Sources */,
 				FF31D32C2B79762300EB420C /* LocationSet6.swift in Sources */,
+				FF5068332B94E99800DF64A8 /* PersonalAbility.swift in Sources */,
 				FF31D2EA2B71D04700EB420C /* ITrainerID32.swift in Sources */,
 				FF31D2E52B71CD4400EB420C /* SpeciesForm.swift in Sources */,
 				FF31D2E82B71CDF900EB420C /* ITrainerID.swift in Sources */,
@@ -593,25 +633,31 @@
 				FF31D3172B746FE800EB420C /* ProgramLanguage.swift in Sources */,
 				FF5067FC2B8A422000DF64A8 /* ItemStorage5.swift in Sources */,
 				FF5068042B9139E800DF64A8 /* ItemStorage8BDSP.swift in Sources */,
+				FF5068412B94EF0F00DF64A8 /* PersonalType.swift in Sources */,
+				FF50683F2B94EE8C00DF64A8 /* PersonalMisc.swift in Sources */,
 				FF31D3332B7B0D8800EB420C /* Locations5.swift in Sources */,
 				FF4A9D722B71C17E00C4B5F5 /* GroundTileType.swift in Sources */,
 				FF5068232B92D7AE00DF64A8 /* PIDType.swift in Sources */,
 				FF31D3192B74703700EB420C /* GameStrings.swift in Sources */,
 				FF31D3392B82782400EB420C /* Locations7b.swift in Sources */,
+				FF5068452B94EFEC00DF64A8 /* PersonalInfo.swift in Sources */,
 				FF31D34F2B858AD300EB420C /* InventoryType.swift in Sources */,
 				FF31D3312B7B0A5000EB420C /* Locations4.swift in Sources */,
+				FF5068392B94EDE800DF64A8 /* PersonalTM.swift in Sources */,
 				FF31D2FE2B730AA000EB420C /* Ball.swift in Sources */,
 				FF5068002B8A50F000DF64A8 /* ItemStorage7GG.swift in Sources */,
 				FF5068202B92D71900DF64A8 /* MystryMew.swift in Sources */,
 				FF31D3412B827B7D00EB420C /* Locations9.swift in Sources */,
 				FF5068282B94C9BA00DF64A8 /* GameValueLimit.swift in Sources */,
 				FF31D33F2B827AB200EB420C /* Locations8b.swift in Sources */,
+				FF50683D2B94EE7300DF64A8 /* PersonalTutorType.swift in Sources */,
 				FF31D2E22B71CC5900EB420C /* PKM.swift in Sources */,
 				FF50681E2B92D2DF00DF64A8 /* FormItem.swift in Sources */,
 				FF31D35F2B86EF9600EB420C /* ItemStorage4.swift in Sources */,
 				FF50680C2B91776000DF64A8 /* Breeding.swift in Sources */,
 				FF31D32F2B79CC3900EB420C /* Locations.swift in Sources */,
 				FF31D3372B82777100EB420C /* Locations7.swift in Sources */,
+				FF50683B2B94EE5800DF64A8 /* PersonalTR.swift in Sources */,
 				FF31D2FC2B730A2A00EB420C /* Ability.swift in Sources */,
 				FF5068182B92C0A700DF64A8 /* FormInfo.swift in Sources */,
 				FF50680A2B91434F00DF64A8 /* ItemStorage9.swift in Sources */,
@@ -625,8 +671,10 @@
 				FF31D3532B85AAED00EB420C /* ItemStorage2.swift in Sources */,
 				FF31D3002B730B3F00EB420C /* Gender.swift in Sources */,
 				FF31D30A2B73224200EB420C /* Region.swift in Sources */,
-				FF50681C2B92D19600DF64A8 /* IPersonalFormInfo.swift in Sources */,
+				FF50681C2B92D19600DF64A8 /* PersonalFormInfo.swift in Sources */,
+				FF50682D2B94E26B00DF64A8 /* BaseStat.swift in Sources */,
 				FF31D2F82B73081A00EB420C /* Core.swift in Sources */,
+				FF5068352B94ED3100DF64A8 /* PersonalEgg.swift in Sources */,
 				FF31D34A2B858A4100EB420C /* IItemStorage.swift in Sources */,
 				FF31D31F2B74777700EB420C /* ResourceUtil.swift in Sources */,
 				FF5067FE2B8A4C1900DF64A8 /* ItemStorage6.swift in Sources */,
@@ -637,12 +685,16 @@
 				FF31D3122B746A2300EB420C /* ComboItem.swift in Sources */,
 				FF50680F2B918E6600DF64A8 /* SpeciesCategory.swift in Sources */,
 				FF5068112B91920400DF64A8 /* FormChange.swift in Sources */,
+				FF5068432B94EFAD00DF64A8 /* PersonalTable.swift in Sources */,
 				FF4A9D6E2B71BD5E00C4B5F5 /* PokeSizeDetailed.swift in Sources */,
 				FF5068062B913DB600DF64A8 /* ItemStorage8LA.swift in Sources */,
+				FF5068372B94ED8A00DF64A8 /* PersonalEncounter.swift in Sources */,
 				FF31D3432B827C9100EB420C /* LocationsHOME.swift in Sources */,
 				FF31D2FA2B7309D400EB420C /* Species.swift in Sources */,
 				FF31D3232B74838500EB420C /* Lock.swift in Sources */,
 				FF5068162B91943400DF64A8 /* LearnOption.swift in Sources */,
+				FF50682F2B94E75900DF64A8 /* EffortValueYield.swift in Sources */,
+				FF5068312B94E79E00DF64A8 /* GenderDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
