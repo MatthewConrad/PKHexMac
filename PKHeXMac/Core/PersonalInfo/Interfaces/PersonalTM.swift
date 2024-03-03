@@ -9,5 +9,5 @@ import Foundation
 
 protocol PersonalTM {
     func isLearnTM(index: Int) -> Bool
-    func setLearnTM(index: Int, value: Bool)
+    mutating func setLearnTM(index: Int, value: Bool)
 }

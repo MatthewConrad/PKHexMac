@@ -97,6 +97,7 @@
 		FF5068412B94EF0F00DF64A8 /* PersonalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068402B94EF0F00DF64A8 /* PersonalType.swift */; };
 		FF5068432B94EFAD00DF64A8 /* PersonalTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068422B94EFAD00DF64A8 /* PersonalTable.swift */; };
 		FF5068452B94EFEC00DF64A8 /* PersonalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068442B94EFEC00DF64A8 /* PersonalInfo.swift */; };
+		FF5068482B94F8E800DF64A8 /* PersonalInfo1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068472B94F8E800DF64A8 /* PersonalInfo1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -193,6 +194,7 @@
 		FF5068402B94EF0F00DF64A8 /* PersonalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalType.swift; sourceTree = "<group>"; };
 		FF5068422B94EFAD00DF64A8 /* PersonalTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalTable.swift; sourceTree = "<group>"; };
 		FF5068442B94EFEC00DF64A8 /* PersonalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfo.swift; sourceTree = "<group>"; };
+		FF5068472B94F8E800DF64A8 /* PersonalInfo1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfo1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -486,6 +488,7 @@
 		FF5068192B92D17800DF64A8 /* PersonalInfo */ = {
 			isa = PBXGroup;
 			children = (
+				FF5068462B94F8DF00DF64A8 /* Info */,
 				FF50681A2B92D18800DF64A8 /* Interfaces */,
 			);
 			path = PersonalInfo;
@@ -535,6 +538,14 @@
 				FF50682A2B94D76F00DF64A8 /* Vivillon3DS.swift */,
 			);
 			path = Restrictions;
+			sourceTree = "<group>";
+		};
+		FF5068462B94F8DF00DF64A8 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				FF5068472B94F8E800DF64A8 /* PersonalInfo1.swift */,
+			);
+			path = Info;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -631,6 +642,7 @@
 				FF31D3482B82897A00EB420C /* HeldItemLumpImage.swift in Sources */,
 				FF31D2DE2B71C72800EB420C /* PokeSize.swift in Sources */,
 				FF31D3172B746FE800EB420C /* ProgramLanguage.swift in Sources */,
+				FF5068482B94F8E800DF64A8 /* PersonalInfo1.swift in Sources */,
 				FF5067FC2B8A422000DF64A8 /* ItemStorage5.swift in Sources */,
 				FF5068042B9139E800DF64A8 /* ItemStorage8BDSP.swift in Sources */,
 				FF5068412B94EF0F00DF64A8 /* PersonalType.swift in Sources */,

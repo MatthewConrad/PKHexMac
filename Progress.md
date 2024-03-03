@@ -1,5 +1,7 @@
 # Rewrite Progress
 
+NOTE - originally cloned base PKHeX repo @ commit 10c5adadb
+
 # PKHeX.Core
 
 ## Editing
@@ -57,7 +59,6 @@
 - [ ] ComplexSuggestion
 - [ ] ISuggestModification
 - [ ] TypeSuggestion
-
 
 ### Database
 
@@ -185,23 +186,23 @@
 ## Game
 
 - [x] ComboItem
-- [x] GameUtil *(combined with Enums/GameVersion)*
+- [x] GameUtil _(combined with Enums/GameVersion)_
 - [x] IBasicStrings
 
 ### Enums
 
-- [X] Ability
+- [x] Ability
 - [x] Ball
-- [x] GCVersion *(combined with GameVersion; GCRegion moved to new file Region)* 
+- [x] GCVersion _(combined with GameVersion; GCRegion moved to new file Region)_
 - [/] GameVersion
 - [x] Gender
-- [x] LanguageGC *(combined with LanguageID)*
+- [x] LanguageGC _(combined with LanguageID)_
 - [x] LanguageID
 - [x] Move
 - [x] MoveType
 - [x] Nature
-- [x] Region3DSIndex *(moved to new file Version)*
-- [x] Species 
+- [x] Region3DSIndex _(moved to new file Version)_
+- [x] Species
 
 ### GameStrings
 
@@ -242,23 +243,23 @@
 - [x] IItemStorage
 - [x] ItemStorage1
 - [x] ItemStorage2
-- [x] ItemStorage3Colo *(all gen 3 storage condensed to single file)*
+- [x] ItemStorage3Colo _(all gen 3 storage condensed to single file)_
 - [x] ItemStorage3E
 - [x] ItemStorage3FRLG
 - [x] ItemStorage3RS
 - [x] ItemStorage3XD
-- [x] ItemStorage4 *(all gen 4 storage condensed to single file)*
+- [x] ItemStorage4 _(all gen 4 storage condensed to single file)_
 - [x] ItemStorage4DP
 - [x] ItemStorage4HGSS
 - [x] ItemStorage4Pt
 - [x] ItemStorage5
 - [x] ItemStorage5B2W2
-- [x] ItemStorage5BW *( all gen 5 storage condensed to single file)*
+- [x] ItemStorage5BW _( all gen 5 storage condensed to single file)_
 - [x] ItemStorage6AO
-- [x] ItemStorage6XY *(all gen 6 storage condensed to single file)*
+- [x] ItemStorage6XY _(all gen 6 storage condensed to single file)_
 - [x] ItemStorage7GG
 - [x] ItemStorage7SM
-- [x] ItemStorage7USUM *( SM & USUM condensed to single file)*
+- [x] ItemStorage7USUM _( SM & USUM condensed to single file)_
 - [x] ItemStorage8BDSP
 - [x] ItemStorage8LA
 - [x] ItemStorage8SWSH
@@ -299,7 +300,7 @@
 - [ ] Encounters1
 - [ ] Encounters1GBEra
 - [ ] Encounters1VC
- 
+
 ##### Gen2
 
 - [ ] Encounters2
@@ -309,13 +310,13 @@
 
 - [ ] Encounters3Colo
 - [ ] Encounters3ColoShadow
-- [ ] Encounters3ColoTeams  
-- [ ] Encounters3FRLG  
-- [ ] Encounters3RSE  
-- [ ] Encounters3XD  
-- [ ] Encounters3XDShadow  
-- [ ] Encounters3XDTeams  
-- [ ] EncountersWC3  
+- [ ] Encounters3ColoTeams
+- [ ] Encounters3FRLG
+- [ ] Encounters3RSE
+- [ ] Encounters3XD
+- [ ] Encounters3XDShadow
+- [ ] Encounters3XDTeams
+- [ ] EncountersWC3
 
 ##### Gen4
 
@@ -1052,7 +1053,7 @@
 
 ### Info
 
-- [ ] PersonalInfo1
+- [x] PersonalInfo1
 - [ ] PersonalInfo2
 - [ ] PersonalInfo3
 - [ ] PersonalInfo4
@@ -1069,16 +1070,16 @@
 
 ### Interfaces
 
-- [ ] IBaseState
-- [ ] IEffortValueYield
-- [ ] IGenderDetail
-- [ ] IPersonalAbility
-- [ ] IPersonalEgg
-- [ ] IPersonalEncounter
+- [x] IBaseState
+- [x] IEffortValueYield
+- [x] IGenderDetail
+- [x] IPersonalAbility
+- [x] IPersonalEgg
+- [x] IPersonalEncounter
 - [x] IPersonalFormInfo
-- [ ] IPersonalMisc
-- [ ] IPersonalTable
-- [ ] IPersonalType
+- [x] IPersonalMisc
+- [x] IPersonalTable
+- [x] IPersonalType
 
 ### Table
 
@@ -1939,5 +1940,3 @@
 # PKHeX.WinForms
 
 # Tests/PKHeX.Core.Tests
-
-

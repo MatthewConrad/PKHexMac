@@ -16,5 +16,5 @@ protocol PersonalMisc {
 
     /// Stats are in metric, Meters and Kilograms
     var height: Int { get set }
-    var wight: Int { get set }
+    var weight: Int { get set }
 }
