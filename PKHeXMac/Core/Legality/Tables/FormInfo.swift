@@ -55,7 +55,7 @@ enum FormInfo {
     ]
 
     /// Checks if the form cannot exist outside of battle
-    func isBattleOnlyForm(species: Species, form: Int) -> Bool {
+    static func isBattleOnlyForm(species: Species, form: Int) -> Bool {
         if FormInfo.battleFormsSet.contains(species) {
             return if species == .Slowbro {
                 form == 1 // Mega
@@ -86,7 +86,7 @@ enum FormInfo {
     ///     - form: the entity Form
     ///     - format: the current Generation format
     /// - returns: suggested alt form value
-    func getOutOfBattleForm(species: Species, form: Int, format: Int) -> Int {
+    static func getOutOfBattleForm(species: Species, form: Int, format: Int) -> Int {
         if species == .Zygarde && format > 6 {
             return 3
         }
@@ -106,7 +106,7 @@ enum FormInfo {
     }
 
     /// Indicates if the form is a fused form.
-    func isFusedForm(species: Species, form: Int, format: Int) -> Bool {
+    static func isFusedForm(species: Species, form: Int, format: Int) -> Bool {
         if form != 0 {
             switch species {
             case .Kyurem:
@@ -124,7 +124,7 @@ enum FormInfo {
     }
 
     /// Indicates if the species should be prevents from being traded away.
-    func isUntradable(species: Species, form: Int, formArg: Int, format: Int) -> Bool {
+    static func isUntradable(species: Species, form: Int, formArg: Int, format: Int) -> Bool {
         switch species {
         case .Koraidon, .Miraidon:
             return formArg == 1 // Ride-able Legend
@@ -138,7 +138,7 @@ enum FormInfo {
     }
 
     /// Checks if the form may be different from the original counter detail.
-    func isFormChangeable(species: Species, oldForm: Int, newForm: Int, origin: EntityContext, current: EntityContext) -> Bool {
+    static func isFormChangeable(species: Species, oldForm: Int, newForm: Int, origin: EntityContext, current: EntityContext) -> Bool {
         if FormInfo.changeForms.contains(species) {
             return true
         }
@@ -170,16 +170,16 @@ enum FormInfo {
         return false
     }
 
-    func isFormChangeEggTypes(species: Species) -> Bool {
+    static func isFormChangeEggTypes(species: Species) -> Bool {
         return FormInfo.eggForms.contains(species)
     }
 
-    func hasTotemForm(species: Species) -> Bool {
+    static func hasTotemForm(species: Species) -> Bool {
         return FormInfo.totemForms.contains(species)
     }
 
     /// Checks if the form for the Species is a Totem form
-    func isTotemForm(species: Species, form: Int) -> Bool {
+    static func isTotemForm(species: Species, form: Int) -> Bool {
         return if form == 0 || !hasTotemForm(species: species) {
             false
         } else if species == .Mimikyu {
@@ -191,12 +191,12 @@ enum FormInfo {
         }
     }
 
-    func isTotemForm(species: Species, form: Int, context: EntityContext) -> Bool {
+    static func isTotemForm(species: Species, form: Int, context: EntityContext) -> Bool {
         return context == .Gen7 && isTotemForm(species: species, form: form)
     }
 
     /// Gets the base Form for the Species when the Totem form is reverted
-    func getTotemBaseForm(species: Species, form: Int) -> Int {
+    static func getTotemBaseForm(species: Species, form: Int) -> Int {
         return if species == .Mimikyu {
             0
         } else {
@@ -205,7 +205,7 @@ enum FormInfo {
     }
 
     /// Checks if the form for the Species is a Lord form from PLA
-    func isLordForm(species: Species, form: Int) -> Bool {
+    static func isLordForm(species: Species, form: Int) -> Bool {
         return if species == .Kleavor && form == 1 {
             true
         } else if FormInfo.lordForms.contains(species) && form == 2 {
@@ -215,12 +215,12 @@ enum FormInfo {
         }
     }
 
-    func isLordForm(species: Species, form: Int, context: EntityContext) -> Bool {
+    static func isLordForm(species: Species, form: Int, context: EntityContext) -> Bool {
         return context == .Gen8a && isLordForm(species: species, form: form)
     }
 
     /// Checks if the form exists for the Species without having an associated PersonalInfo index
-    func isValidOutOfBoundsForm(species: Species, form: Int, format: Int) -> Bool {
+    static func isValidOutOfBoundsForm(species: Species, form: Int, format: Int) -> Bool {
         switch species {
         case .Unown:
             return format == 2 ? form < 26 : form < 28 // A-Z : A-Z!?
@@ -233,12 +233,12 @@ enum FormInfo {
         }
     }
 
-    private func hasFormValuesNotIndicatedByPersonal(species: Species) -> Bool {
+    private static func hasFormValuesNotIndicatedByPersonal(species: Species) -> Bool {
         return [.Unown, .Mothim, .Scatterbug, .Spewpa].contains(species)
     }
 
     /// Checks if the PKM data should have a drop-down selection visible for the form value
-    func hasFormSelection(pi: IPersonalFormInfo, species: Species, format: Int) -> Bool {
+    static func hasFormSelection(pi: IPersonalFormInfo, species: Species, format: Int) -> Bool {
         if format <= 3 && species != .Unown {
             return false
         }

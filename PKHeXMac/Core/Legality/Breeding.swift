@@ -115,20 +115,20 @@ struct Breeding {
             true
         }
     }
-    
+
     /// Checks if the Species can be obtained from a daycare egg
     func canHatchAsEgg(species: Species) -> Bool {
         return isAbleToHatchFromEgg(species: species)
     }
-    
+
     /// Checks if the Species-Form can exist as a hatched egg in the given EntityContext
     func canHatchAsEgg(species: Species, form: Int, context: EntityContext) -> Bool {
         return if form == 0 {
             true
-        } else if form == 1 {
-            false // TODO: FormInfo.isTotemForm
-        } else if form == 2 {
-            false // TODO: FormInfo.isLordForm
+        } else if FormInfo.isTotemForm(species: species, form: form, context: context) {
+            false
+        } else if FormInfo.isLordForm(species: species, form: form, context: context) {
+            false
         } else {
             isBreedableForm(species: species, form: form)
         }
