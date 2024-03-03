@@ -1,7 +1,5 @@
 # Rewrite Progress
 
-NOTE - originally cloned base PKHeX repo @ commit 10c5adadb
-
 # PKHeX.Core
 
 ## Editing
@@ -1083,7 +1081,7 @@ NOTE - originally cloned base PKHeX repo @ commit 10c5adadb
 
 ### Table
 
-- [ ] PersonalTable1
+- [x] PersonalTable1
 - [ ] PersonalTable2
 - [ ] PersonalTable3
 - [ ] PersonalTable4
@@ -1123,9 +1121,10 @@ NOTE - originally cloned base PKHeX repo @ commit 10c5adadb
 
 - [x] AlcremieDecoration
 - [x] GroundTileType
-- [ ] OriginMark
+- [/] OriginMark (need further progress in PKM)
 - [x] PokeSize
 - [x] PokeSizeDetailed
+- [x] PokeblockFlavor
 
 ### HOME
 

@@ -8,8 +8,7 @@
 import Foundation
 
 /// Locations for `GameVersion.Gen4`
-struct Locations4 {
-
+enum Locations4 {
     private static let SafariLocation_HGSS = 202
     private static let MarshLocation_DPPt = 52
 
@@ -60,7 +59,15 @@ struct Locations4 {
         3070, 3071, 3072, 3073, 3074, 3075, 3076
     ]
 
-    static func IsSafariZoneLocation (location: Int) -> Bool {
+    static func isSafariBallRequired(location: Int) -> Bool {
         return [SafariLocation_HGSS, MarshLocation_DPPt].contains(location)
+    }
+
+    static func isMarsh(location: Int) -> Bool {
+        location == MarshLocation_DPPt
+    }
+
+    static func isSafari(location: Int) -> Bool {
+        location == SafariLocation_HGSS
     }
 }

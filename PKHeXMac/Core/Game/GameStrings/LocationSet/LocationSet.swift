@@ -1,5 +1,5 @@
 //
-//  ILocationSet.swift
+//  LocationSet.swift
 //  PKHeXMac
 //
 //  Created by Matthew Conrad on 2/11/24.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol ILocationSet {
+protocol LocationSet {
     /// Gets the location name group for the requested location bank group ID.
     func GetLocationNames(bankId: Int) -> [String]
 

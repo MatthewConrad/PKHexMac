@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct LocationSet0: ILocationSet {
+/// Gen 2-3 specific met location name holder
+/// - remark: Single segment, no shift bias
+struct LocationSet0: LocationSet {
     var Met0: [String] = []
 
     func GetLocationNames(bankId: Int) -> [String] {

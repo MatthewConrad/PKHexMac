@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Size groupings for an entity's height and weight
 enum PokeSizeDetailed {
     case XXXS,
          XXS,
@@ -18,12 +19,13 @@ enum PokeSizeDetailed {
          XXL,
          XXXL
     
+    /// Compares the sizing scalar to different thresholds to determine size rating.
     static func getSizeRating(scalar: Int) -> PokeSizeDetailed {
         return if scalar == 0 {
             .XXXS
-        } else if scalar <= 24 {
+        } else if scalar < 25 {
             .XXS
-        } else if scalar <= 59 {
+        } else if scalar < 60 {
             .XS
         } else if scalar < 100 {
             .S

@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct LocationSet6: ILocationSet {
+/// Generation 5+ specific met location name holder
+/// - remark: Multi-segment, large gaps
+struct LocationSet6: LocationSet {
     var Met0: [String] = []
     var Met3: [String] = []
     var Met4: [String] = []

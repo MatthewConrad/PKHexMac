@@ -238,7 +238,7 @@ enum FormInfo {
     }
 
     /// Checks if the PKM data should have a drop-down selection visible for the form value
-    static func hasFormSelection(pi: IPersonalFormInfo, species: Species, format: Int) -> Bool {
+    static func hasFormSelection(pi: PersonalFormInfo, species: Species, format: Int) -> Bool {
         if format <= 3 && species != .Unown {
             return false
         }

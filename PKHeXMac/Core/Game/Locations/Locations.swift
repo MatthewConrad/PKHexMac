@@ -8,8 +8,7 @@
 import Foundation
 
 /// Decorations and logic for Met Location IDs
-struct Locations {
-
+enum Locations {
     static let LinkTrade4 = 2002
     static let LinkTrade5 = 30003
     static let LinkTrade6 = 30002
@@ -114,7 +113,7 @@ struct Locations {
     static let SafariLocation_RSE = 57
     static let SafariLocation_FRLG = 136
 
-    static func TradedEggLocation (generation: Int, version: GameVersion) -> Int {
+    static func TradedEggLocation(generation: Int, version: GameVersion) -> Int {
         return if generation == 4 {
             LinkTrade4
         } else if generation == 5 {
@@ -126,31 +125,35 @@ struct Locations {
         }
     }
 
-    static func IsPtHGSSLocation (location: Int) -> Bool {
+    static func IsPtHGSSLocation(location: Int) -> Bool {
         return location > 111 && location < 2000
     }
 
-    static func IsPtHGSSLocationEgg (location: Int) -> Bool {
+    static func IsPtHGSSLocationEgg(location: Int) -> Bool {
         return location > 2010 && location < 3000
     }
 
-    static func IsEventLocation3 (location: Int) -> Bool {
+    static func IsEventLocation3(location: Int) -> Bool {
         return location == 255
     }
 
-    static func IsEventLocation4 (location: Int) -> Bool {
+    static func IsEventLocation4(location: Int) -> Bool {
         return location >= 3000 && location <= 3076
     }
 
-    static func IsEventLocation5 (location: Int) -> Bool {
+    static func IsEventLocation5(location: Int) -> Bool {
         return location > 40000 && location < 50000
     }
 
-    static func IsSafariZoneLocation3 (location: Int) -> Bool {
+    static func IsSafariZoneLocation3(location: Int) -> Bool {
         return [SafariLocation_RSE, SafariLocation_FRLG].contains(location)
     }
 
-    static func IsEggLocationBred4 (location: Int, version: GameVersion) -> Bool {
+    static func isSafariZoneLocation3RSE(location: Int) -> Bool {
+        location == SafariLocation_RSE
+    }
+
+    static func IsEggLocationBred4(location: Int, version: GameVersion) -> Bool {
         if [Daycare4, LinkTrade4].contains(location) {
             return true
         }
@@ -158,23 +161,23 @@ struct Locations {
         return location == Faraway4 && [GameVersion.Pt, GameVersion.HG, GameVersion.SS].contains(version)
     }
 
-    static func IsEggLocationBred5 (location: Int) -> Bool {
+    static func IsEggLocationBred5(location: Int) -> Bool {
         return [Daycare5, LinkTrade5].contains(location)
     }
 
-    static func IsEggLocationBred6 (location: Int) -> Bool {
+    static func IsEggLocationBred6(location: Int) -> Bool {
         return [Daycare5, LinkTrade6].contains(location)
     }
 
-    static func IsEggLocationBred8b (location: Int) -> Bool {
+    static func IsEggLocationBred8b(location: Int) -> Bool {
         return [Daycare8b, LinkTrade6NPC].contains(location)
     }
 
-    static func IsEggLocationBred9 (location: Int) -> Bool {
+    static func IsEggLocationBred9(location: Int) -> Bool {
         return [Picnic9, LinkTrade6].contains(location)
     }
 
-    static func GetDaycareLocation (generation: Int, version: GameVersion) -> Int {
+    static func GetDaycareLocation(generation: Int, version: GameVersion) -> Int {
         return if [1, 2, 3].contains(generation) {
             0
         } else if generation == 4 {
@@ -269,5 +272,4 @@ struct Locations {
     static func IsMetLocation9SV(location: Int) -> Bool {
         return location <= 200
     }
-
 }

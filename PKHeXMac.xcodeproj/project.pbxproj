@@ -34,7 +34,7 @@
 		FF31D31F2B74777700EB420C /* ResourceUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D31E2B74777700EB420C /* ResourceUtil.swift */; };
 		FF31D3212B747CAB00EB420C /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = FF31D3202B747CAB00EB420C /* Resources */; };
 		FF31D3232B74838500EB420C /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D3222B74838500EB420C /* Lock.swift */; };
-		FF31D3262B796FBE00EB420C /* ILocationSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D3252B796FBE00EB420C /* ILocationSet.swift */; };
+		FF31D3262B796FBE00EB420C /* LocationSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D3252B796FBE00EB420C /* LocationSet.swift */; };
 		FF31D3282B79721B00EB420C /* LocationSet0.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D3272B79721B00EB420C /* LocationSet0.swift */; };
 		FF31D32A2B79750600EB420C /* LocationSet4.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D3292B79750600EB420C /* LocationSet4.swift */; };
 		FF31D32C2B79762300EB420C /* LocationSet6.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D32B2B79762300EB420C /* LocationSet6.swift */; };
@@ -99,6 +99,7 @@
 		FF5068452B94EFEC00DF64A8 /* PersonalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068442B94EFEC00DF64A8 /* PersonalInfo.swift */; };
 		FF5068482B94F8E800DF64A8 /* PersonalInfo1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068472B94F8E800DF64A8 /* PersonalInfo1.swift */; };
 		FF50684B2B95081100DF64A8 /* PersonalTable1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50684A2B95081100DF64A8 /* PersonalTable1.swift */; };
+		FF50684D2B951A6E00DF64A8 /* PokeblockFlavor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50684C2B951A6E00DF64A8 /* PokeblockFlavor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -130,7 +131,7 @@
 		FF31D31E2B74777700EB420C /* ResourceUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceUtil.swift; sourceTree = "<group>"; };
 		FF31D3202B747CAB00EB420C /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
 		FF31D3222B74838500EB420C /* Lock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lock.swift; sourceTree = "<group>"; };
-		FF31D3252B796FBE00EB420C /* ILocationSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILocationSet.swift; sourceTree = "<group>"; };
+		FF31D3252B796FBE00EB420C /* LocationSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSet.swift; sourceTree = "<group>"; };
 		FF31D3272B79721B00EB420C /* LocationSet0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSet0.swift; sourceTree = "<group>"; };
 		FF31D3292B79750600EB420C /* LocationSet4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSet4.swift; sourceTree = "<group>"; };
 		FF31D32B2B79762300EB420C /* LocationSet6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSet6.swift; sourceTree = "<group>"; };
@@ -197,6 +198,7 @@
 		FF5068442B94EFEC00DF64A8 /* PersonalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfo.swift; sourceTree = "<group>"; };
 		FF5068472B94F8E800DF64A8 /* PersonalInfo1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfo1.swift; sourceTree = "<group>"; };
 		FF50684A2B95081100DF64A8 /* PersonalTable1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalTable1.swift; sourceTree = "<group>"; };
+		FF50684C2B951A6E00DF64A8 /* PokeblockFlavor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeblockFlavor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,11 +243,11 @@
 		FF31D2EE2B71E8B800EB420C /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				FF31D32D2B79CC2E00EB420C /* Locations */,
-				FF31D3152B746FC100EB420C /* GameStrings */,
-				FF31D2EF2B71E8BC00EB420C /* Enums */,
 				FF31D3112B746A2300EB420C /* ComboItem.swift */,
+				FF31D2EF2B71E8BC00EB420C /* Enums */,
+				FF31D3152B746FC100EB420C /* GameStrings */,
 				FF31D3132B746BB400EB420C /* IBasicStrings.swift */,
+				FF31D32D2B79CC2E00EB420C /* Locations */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -303,7 +305,7 @@
 		FF31D3242B796FB400EB420C /* LocationSet */ = {
 			isa = PBXGroup;
 			children = (
-				FF31D3252B796FBE00EB420C /* ILocationSet.swift */,
+				FF31D3252B796FBE00EB420C /* LocationSet.swift */,
 				FF31D3272B79721B00EB420C /* LocationSet0.swift */,
 				FF31D3292B79750600EB420C /* LocationSet4.swift */,
 				FF31D32B2B79762300EB420C /* LocationSet6.swift */,
@@ -396,11 +398,11 @@
 		FF4A9D5A2B71BD1E00C4B5F5 /* PKHeXMac */ = {
 			isa = PBXGroup;
 			children = (
-				FF4A9D6A2B71BD3600C4B5F5 /* Core */,
-				FF4A9D5B2B71BD1E00C4B5F5 /* PKHeXMacApp.swift */,
-				FF4A9D5D2B71BD1E00C4B5F5 /* ContentView.swift */,
 				FF4A9D5F2B71BD1F00C4B5F5 /* Assets.xcassets */,
+				FF4A9D5D2B71BD1E00C4B5F5 /* ContentView.swift */,
+				FF4A9D6A2B71BD3600C4B5F5 /* Core */,
 				FF4A9D642B71BD1F00C4B5F5 /* PKHeXMac.entitlements */,
+				FF4A9D5B2B71BD1E00C4B5F5 /* PKHeXMacApp.swift */,
 				FF4A9D612B71BD1F00C4B5F5 /* Preview Content */,
 			);
 			path = PKHeXMac;
@@ -417,12 +419,12 @@
 		FF4A9D6A2B71BD3600C4B5F5 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				FF5068192B92D17800DF64A8 /* PersonalInfo */,
-				FF31D34B2B858ABE00EB420C /* Saves */,
-				FF31D3462B82896F00EB420C /* Items */,
 				FF31D2EE2B71E8B800EB420C /* Game */,
+				FF31D3462B82896F00EB420C /* Items */,
 				FF31D2F62B73080E00EB420C /* Legality */,
+				FF5068192B92D17800DF64A8 /* PersonalInfo */,
 				FF4A9D6B2B71BD4200C4B5F5 /* PKM */,
+				FF31D34B2B858ABE00EB420C /* Saves */,
 				FF31D31D2B74776900EB420C /* Util */,
 			);
 			path = Core;
@@ -442,11 +444,12 @@
 		FF4A9D6C2B71BD4900C4B5F5 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
-				FF4A9D6D2B71BD5E00C4B5F5 /* PokeSizeDetailed.swift */,
 				FF4A9D6F2B71C0B000C4B5F5 /* AlcremieDecoration.swift */,
 				FF4A9D712B71C17E00C4B5F5 /* GroundTileType.swift */,
-				FF31D2DD2B71C72800EB420C /* PokeSize.swift */,
 				FF31D2DF2B71CB3F00EB420C /* OriginMark.swift */,
+				FF31D2DD2B71C72800EB420C /* PokeSize.swift */,
+				FF4A9D6D2B71BD5E00C4B5F5 /* PokeSizeDetailed.swift */,
+				FF50684C2B951A6E00DF64A8 /* PokeblockFlavor.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -638,6 +641,7 @@
 				FF31D2EA2B71D04700EB420C /* ITrainerID32.swift in Sources */,
 				FF31D2E52B71CD4400EB420C /* SpeciesForm.swift in Sources */,
 				FF31D2E82B71CDF900EB420C /* ITrainerID.swift in Sources */,
+				FF50684D2B951A6E00DF64A8 /* PokeblockFlavor.swift in Sources */,
 				FF31D2ED2B71E79F00EB420C /* EntityContext.swift in Sources */,
 				FF5068022B9132F500DF64A8 /* ItemStorage7.swift in Sources */,
 				FF5068082B913E9900DF64A8 /* ItemStorage8SWSH.swift in Sources */,
@@ -705,7 +709,7 @@
 				FF31D31B2B7470A600EB420C /* GameLanguage.swift in Sources */,
 				FF5068262B92DD6400DF64A8 /* LCRNG.swift in Sources */,
 				FF31D35D2B86E70300EB420C /* ItemStorage3.swift in Sources */,
-				FF31D3262B796FBE00EB420C /* ILocationSet.swift in Sources */,
+				FF31D3262B796FBE00EB420C /* LocationSet.swift in Sources */,
 				FF31D3122B746A2300EB420C /* ComboItem.swift in Sources */,
 				FF50680F2B918E6600DF64A8 /* SpeciesCategory.swift in Sources */,
 				FF5068112B91920400DF64A8 /* FormChange.swift in Sources */,
