@@ -227,7 +227,7 @@ enum FormInfo {
         case .Mothim:
             return form < 3 // Burmy base form is kept
         case .Scatterbug, .Spewpa: // Vivillon pre-evos
-            return form <= 1592 // TODO: Vivillon3ds
+            return form <= Vivillon3DS.maxWildFormID
         default:
             return false
         }

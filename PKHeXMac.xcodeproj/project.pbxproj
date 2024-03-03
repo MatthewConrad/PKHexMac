@@ -83,6 +83,7 @@
 		FF5068232B92D7AE00DF64A8 /* PIDType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068222B92D7AE00DF64A8 /* PIDType.swift */; };
 		FF5068262B92DD6400DF64A8 /* LCRNG.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068252B92DD6400DF64A8 /* LCRNG.swift */; };
 		FF5068282B94C9BA00DF64A8 /* GameValueLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068272B94C9BA00DF64A8 /* GameValueLimit.swift */; };
+		FF50682B2B94D77000DF64A8 /* Vivillon3DS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50682A2B94D76F00DF64A8 /* Vivillon3DS.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -165,6 +166,7 @@
 		FF5068222B92D7AE00DF64A8 /* PIDType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIDType.swift; sourceTree = "<group>"; };
 		FF5068252B92DD6400DF64A8 /* LCRNG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCRNG.swift; sourceTree = "<group>"; };
 		FF5068272B94C9BA00DF64A8 /* GameValueLimit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameValueLimit.swift; sourceTree = "<group>"; };
+		FF50682A2B94D76F00DF64A8 /* Vivillon3DS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vivillon3DS.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +240,7 @@
 		FF31D2F62B73080E00EB420C /* Legality */ = {
 			isa = PBXGroup;
 			children = (
+				FF5068292B94D71A00DF64A8 /* Restrictions */,
 				FF5068212B92D7A200DF64A8 /* RNG */,
 				FF5068122B91941400DF64A8 /* LearnSource */,
 				FF50680D2B918E3600DF64A8 /* Tables */,
@@ -487,6 +490,14 @@
 			path = Algorithms;
 			sourceTree = "<group>";
 		};
+		FF5068292B94D71A00DF64A8 /* Restrictions */ = {
+			isa = PBXGroup;
+			children = (
+				FF50682A2B94D76F00DF64A8 /* Vivillon3DS.swift */,
+			);
+			path = Restrictions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -573,6 +584,7 @@
 				FF31D3282B79721B00EB420C /* LocationSet0.swift in Sources */,
 				FF31D2E02B71CB3F00EB420C /* OriginMark.swift in Sources */,
 				FF31D3352B82762500EB420C /* Locations6.swift in Sources */,
+				FF50682B2B94D77000DF64A8 /* Vivillon3DS.swift in Sources */,
 				FF31D3022B730BC900EB420C /* Move.swift in Sources */,
 				FF31D32A2B79750600EB420C /* LocationSet4.swift in Sources */,
 				FF31D33B2B8278C400EB420C /* Locations8.swift in Sources */,
