@@ -82,6 +82,7 @@
 		FF5068202B92D71900DF64A8 /* MystryMew.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50681F2B92D71900DF64A8 /* MystryMew.swift */; };
 		FF5068232B92D7AE00DF64A8 /* PIDType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068222B92D7AE00DF64A8 /* PIDType.swift */; };
 		FF5068262B92DD6400DF64A8 /* LCRNG.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068252B92DD6400DF64A8 /* LCRNG.swift */; };
+		FF5068282B94C9BA00DF64A8 /* GameValueLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068272B94C9BA00DF64A8 /* GameValueLimit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -163,6 +164,7 @@
 		FF50681F2B92D71900DF64A8 /* MystryMew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MystryMew.swift; sourceTree = "<group>"; };
 		FF5068222B92D7AE00DF64A8 /* PIDType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIDType.swift; sourceTree = "<group>"; };
 		FF5068252B92DD6400DF64A8 /* LCRNG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCRNG.swift; sourceTree = "<group>"; };
+		FF5068272B94C9BA00DF64A8 /* GameValueLimit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameValueLimit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				FF31D2E42B71CD4400EB420C /* SpeciesForm.swift */,
+				FF5068272B94C9BA00DF64A8 /* GameValueLimit.swift */,
 			);
 			path = Metadata;
 			sourceTree = "<group>";
@@ -589,6 +592,7 @@
 				FF5068002B8A50F000DF64A8 /* ItemStorage7GG.swift in Sources */,
 				FF5068202B92D71900DF64A8 /* MystryMew.swift in Sources */,
 				FF31D3412B827B7D00EB420C /* Locations9.swift in Sources */,
+				FF5068282B94C9BA00DF64A8 /* GameValueLimit.swift in Sources */,
 				FF31D33F2B827AB200EB420C /* Locations8b.swift in Sources */,
 				FF31D2E22B71CC5900EB420C /* PKM.swift in Sources */,
 				FF50681E2B92D2DF00DF64A8 /* FormItem.swift in Sources */,

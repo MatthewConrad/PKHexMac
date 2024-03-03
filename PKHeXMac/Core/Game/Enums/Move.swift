@@ -625,7 +625,7 @@ enum Move: UInt32, CaseIterable, Comparable {
          ThousandArrows,
          ThousandWaves,
          LandsWrath,
-         LightofRuin,
+         LightOfRuin,
          OriginPulse,
          PrecipiceBlades,
          DragonAscent,

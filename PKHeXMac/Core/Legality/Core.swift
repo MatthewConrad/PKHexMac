@@ -9,92 +9,92 @@ import Foundation
 
 enum Legal {
     static var MaxSpeciesID_1 = Species.Mew
-    static var MaxMoveID_1 = 165
+    static var MaxMoveID_1 = Move.Struggle
     static var MaxItemID_1 = 255
-    static var MaxAbilityID_1 = 0
+    static var MaxAbilityID_1 = Ability.None
 
     static var MaxSpeciesID_2 = Species.Celebi
-    static var MaxMoveID_2 = 251
+    static var MaxMoveID_2 = Move.BeatUp
     static var MaxItemID_2 = 255
-    static var MaxAbilityID_2 = 0
+    static var MaxAbilityID_2 = Ability.None
 
     static var MaxSpeciesID_3 = Species.Deoxys
-    static var MaxMoveID_3 = 354
+    static var MaxMoveID_3 = Move.PsychoBoost
     static var MaxItemID_3 = 374
     static var MaxItemID_3_E = 376
     static var MaxItemID_3_COLO = 547
     static var MaxItemID_3_XD = 593
-    static var MaxAbilityID_3 = 77
-    static var MaxBallID_3 = 0xc
-    static var MaxGameID_3 = 15 // CXD
+    static var MaxAbilityID_3 = Ability.AirLock
+    static var MaxBallID_3 = Ball.Premier
+    static var MaxGameID_3 = GameVersion.CXD
 
     static var MaxSpeciesID_4 = Species.Arceus
-    static var MaxMoveID_4 = 467
+    static var MaxMoveID_4 = Move.ShadowForce
     static var MaxItemID_4_DP = 464
     static var MaxItemID_4_Pt = 467
     static var MaxItemID_4_HGSS = 536
-    static var MaxAbilityID_4 = 123
-    static var MaxBallID_4 = 0x18
-    static var MaxGameID_4 = 15 // CXD
+    static var MaxAbilityID_4 = Ability.BadDreams
+    static var MaxBallID_4 = Ball.Sport
+    static var MaxGameID_4 = GameVersion.CXD
 
     static var MaxSpeciesID_5 = Species.Genesect
-    static var MaxMoveID_5 = 559
+    static var MaxMoveID_5 = Move.FusionBolt
     static var MaxItemID_5_BW = 632
     static var MaxItemID_5_B2W2 = 638
-    static var MaxAbilityID_5 = 164
-    static var MaxBallID_5 = 0x19
-    static var MaxGameID_5 = 23 // B2
+    static var MaxAbilityID_5 = Ability.Teravolt
+    static var MaxBallID_5 = Ball.Dream
+    static var MaxGameID_5 = GameVersion.B2
 
     static var MaxSpeciesID_6 = Species.Volcanion
-    static var MaxMoveID_6_XY = 617
-    static var MaxMoveID_6_AO = 621
+    static var MaxMoveID_6_XY = Move.LightOfRuin
+    static var MaxMoveID_6_AO = Move.HyperspaceFury
     static var MaxItemID_6_XY = 717
     static var MaxItemID_6_AO = 775
-    static var MaxAbilityID_6_XY = 188
-    static var MaxAbilityID_6_AO = 191
-    static var MaxBallID_6 = 0x19
-    static var MaxGameID_6 = 27 // OR
+    static var MaxAbilityID_6_XY = Ability.AuraBreak
+    static var MaxAbilityID_6_AO = Ability.DeltaStream
+    static var MaxBallID_6 = Ball.Dream
+    static var MaxGameID_6 = GameVersion.OR
 
     static var MaxSpeciesID_7 = Species.Marshadow
-    static var MaxMoveID_7 = 719
+    static var MaxMoveID_7 = Move.TenMVoltThunderbolt
     static var MaxItemID_7 = 920
-    static var MaxAbilityID_7 = 232
-    static var MaxBallID_7 = 0x1a // 26
-    static var MaxGameID_7 = 41 // Crystal (VC?)
+    static var MaxAbilityID_7 = Ability.PrismArmor
+    static var MaxBallID_7 = Ball.Beast
+    static var MaxGameID_7 = GameVersion.C
 
     static var MaxSpeciesID_7_USUM = Species.Zeraora
-    static var MaxMoveID_7_USUM = 728
+    static var MaxMoveID_7_USUM = Move.ClangorousSoulblaze
     static var MaxItemID_7_USUM = 959
-    static var MaxAbilityID_7_USUM = 233
+    static var MaxAbilityID_7_USUM = Ability.Neuroforce
 
-    static var MaxSpeciesID_7b = Species.Melmetal // Melmetal
-    static var MaxMoveID_7b = 742 // Double Iron Bash
+    static var MaxSpeciesID_7b = Species.Melmetal
+    static var MaxMoveID_7b = Move.DoubleIronBash
     static var MaxItemID_7b = 1057 // Magmar Candy
     static var MaxBallID_7b = Ball.Beast
     static var MaxGameID_7b = GameVersion.GE
-    static var MaxAbilityID_7b = 233
+    static var MaxAbilityID_7b = Ability.Neuroforce
 
     // Orion (No DLC)
     static var MaxSpeciesID_8_O0 = Species.Eternatus
-    static var MaxMoveID_8_O0 = 796 // Steel Beam
+    static var MaxMoveID_8_O0 = Move.SteelBeam
     static var MaxItemID_8_O0 = 1278 // Rotom Catalog, ignore all catalog parts
-    static var MaxAbilityID_8_O0 = 258 // Hunger Switch
+    static var MaxAbilityID_8_O0 = Ability.HungerSwitch
 
     // Rigel 1 (DLC 1: Isle of Armor)
     static var MaxSpeciesID_8_R1 = Species.Zarude
-    static var MaxMoveID_8_R1 = 818 // Surging Strikes
+    static var MaxMoveID_8_R1 = Move.SurgingStrikes
     static var MaxItemID_8_R1 = 1589 // Mark Charm
-    static var MaxAbilityID_8_R1 = 260 // Unseen Fist
+    static var MaxAbilityID_8_R1 = Ability.UnseenFist
 
     // Rigel 2 (DLC 2: Crown Tundra)
-    static var MaxSpeciesID_8_R2 = Species.Calyrex // Calyrex
-    static var MaxMoveID_8_R2 = 826 // Eerie Spell
+    static var MaxSpeciesID_8_R2 = Species.Calyrex
+    static var MaxMoveID_8_R2 = Move.EerieSpell
     static var MaxItemID_8_R2 = 1607 // Reins of Unity
-    static var MaxAbilityID_8_R2 = 267 // As One (Glastrier)
+    static var MaxAbilityID_8_R2 = Ability.AsOneG
 
     // Current Binaries
     static var MaxSpeciesID_8 = Species.Calyrex
-    static var MaxMoveID_8: Int {
+    static var MaxMoveID_8: Move {
         return MaxMoveID_8_R2
     }
 
@@ -102,7 +102,7 @@ enum Legal {
         return MaxItemID_8_R2
     }
 
-    static var MaxAbilityID_8: Int {
+    static var MaxAbilityID_8: Ability {
         return MaxAbilityID_8_R2
     }
 
@@ -114,19 +114,19 @@ enum Legal {
     static var MaxItemID_8a = 1828 // Legend Plate
     static var MaxBallID_8a = Ball.LAOrigin
     // static var  MaxGameID_8a = GameVersion.SP
-    static var MaxAbilityID_8a: Int {
+    static var MaxAbilityID_8a: Ability {
         return MaxAbilityID_8_R2
     }
 
     static var MaxSpeciesID_8b = Species.Arceus
-    static var MaxMoveID_8b: Int {
+    static var MaxMoveID_8b: Move {
         return MaxMoveID_8_R2
     }
 
     static var MaxItemID_8b = 1822 // DS Sounds
     static var MaxBallID_8b = Ball.LAOrigin
     // static var  MaxGameID_8b = GameVersion.SP
-    static var MaxAbilityID_8b: Int {
+    static var MaxAbilityID_8b: Ability {
         return MaxAbilityID_8_R2
     }
 

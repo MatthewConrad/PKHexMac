@@ -448,10 +448,27 @@ enum GameVersion: Int, CaseIterable, Comparable {
         return GameVersion.allCases.filter { $0.getGeneration() == generation }
     }
 
+    /// List of possible versions with the GameValueLimit criteria
     /// - remark: Originally from Game/GameUtil
-    func getVersionsWithinRange(limit: Int) -> [GameVersion] {
-        // TODO: implement me
-        return [GameVersion.AS]
+    func getVersionsWithinRange(limits: GameValueLimit, minGeneration: Int = 0) -> [GameVersion] {
+        let max = limits.maxGameID
+
+        if max == Legal.MaxGameID_7b {
+            return [.GO, .GP, .GE]
+        }
+
+        var validVersions = GameVersion.allCases.filter { (limits.minGameID ... max).contains($0) }
+        if minGeneration == 0 {
+            return validVersions
+        }
+
+        if max == Legal.MaxGameID_7 && minGeneration == 7 {
+            validVersions = validVersions.filter { $0 != .GO }
+        }
+
+        // HOME allows up-reach to gen 9
+        let maxGeneration = minGeneration >= 8 ? 9 : minGeneration
+        return validVersions.filter { $0.getGeneration() <= maxGeneration }
     }
 
     /// Lists the versions contained within the GameVersion.
