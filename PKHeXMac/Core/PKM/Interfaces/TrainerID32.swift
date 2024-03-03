@@ -1,5 +1,5 @@
 //
-//  ITrainerID32.swift
+//  TrainerID32.swift
 //  PKHeXMac
 //
 //  Created by Matthew Conrad on 2/5/24.
@@ -8,19 +8,19 @@
 import Foundation
 
 // 16-bit Trainer ID
-protocol ITrainerID16: ITrainerID {
+protocol TrainerID16: TrainerID {
     var TID16: Int { get set }
 }
 
 // Object stores a numerical trainer ID
-protocol ITrainerID32: ITrainerID16 {
+protocol TrainerID32: TrainerID16 {
     // 32-bit trainer ID (0-4,294,967,295)
     var ID32: UInt32 { get set }
     // 16-bit secret id (0-65535
     var SID16: Int { get set }
 }
 
-extension ITrainerID32 {
+extension TrainerID32 {
     func getTrainerTID7() -> UInt32 {
         return ID32 % 1000000
     }

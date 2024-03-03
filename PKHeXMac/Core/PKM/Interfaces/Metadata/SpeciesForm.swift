@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol ISpeciesForm {
-    var Species: Int { get }
-    var Form: Int { get }
+protocol SpeciesForm {
+    var species: Species { get }
+    var form: Int { get }
 }

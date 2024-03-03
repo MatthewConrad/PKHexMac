@@ -11,8 +11,8 @@
 		FF31D2E02B71CB3F00EB420C /* OriginMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2DF2B71CB3F00EB420C /* OriginMark.swift */; };
 		FF31D2E22B71CC5900EB420C /* PKM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2E12B71CC5900EB420C /* PKM.swift */; };
 		FF31D2E52B71CD4400EB420C /* SpeciesForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2E42B71CD4400EB420C /* SpeciesForm.swift */; };
-		FF31D2E82B71CDF900EB420C /* ITrainerID.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2E72B71CDF900EB420C /* ITrainerID.swift */; };
-		FF31D2EA2B71D04700EB420C /* ITrainerID32.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2E92B71D04700EB420C /* ITrainerID32.swift */; };
+		FF31D2E82B71CDF900EB420C /* TrainerID.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2E72B71CDF900EB420C /* TrainerID.swift */; };
+		FF31D2EA2B71D04700EB420C /* TrainerID32.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2E92B71D04700EB420C /* TrainerID32.swift */; };
 		FF31D2ED2B71E79F00EB420C /* EntityContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2EC2B71E79F00EB420C /* EntityContext.swift */; };
 		FF31D2F12B71E8C800EB420C /* GameVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2F02B71E8C800EB420C /* GameVersion.swift */; };
 		FF31D2F32B71ED9300EB420C /* GameConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2F22B71ED9300EB420C /* GameConsole.swift */; };
@@ -27,7 +27,7 @@
 		FF31D30A2B73224200EB420C /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D3092B73224200EB420C /* Region.swift */; };
 		FF31D30C2B7322A400EB420C /* LanguageID.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D30B2B7322A400EB420C /* LanguageID.swift */; };
 		FF31D3122B746A2300EB420C /* ComboItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D3112B746A2300EB420C /* ComboItem.swift */; };
-		FF31D3142B746BB400EB420C /* IBasicStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D3132B746BB400EB420C /* IBasicStrings.swift */; };
+		FF31D3142B746BB400EB420C /* BasicStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D3132B746BB400EB420C /* BasicStrings.swift */; };
 		FF31D3172B746FE800EB420C /* ProgramLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D3162B746FE800EB420C /* ProgramLanguage.swift */; };
 		FF31D3192B74703700EB420C /* GameStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D3182B74703700EB420C /* GameStrings.swift */; };
 		FF31D31B2B7470A600EB420C /* GameLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D31A2B7470A600EB420C /* GameLanguage.swift */; };
@@ -51,7 +51,7 @@
 		FF31D3432B827C9100EB420C /* LocationsHOME.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D3422B827C9100EB420C /* LocationsHOME.swift */; };
 		FF31D3452B82863F00EB420C /* LocationRemapState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D3442B82863F00EB420C /* LocationRemapState.swift */; };
 		FF31D3482B82897A00EB420C /* HeldItemLumpImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D3472B82897A00EB420C /* HeldItemLumpImage.swift */; };
-		FF31D34A2B858A4100EB420C /* IItemStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D3492B858A4100EB420C /* IItemStorage.swift */; };
+		FF31D34A2B858A4100EB420C /* ItemStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D3492B858A4100EB420C /* ItemStorage.swift */; };
 		FF31D34F2B858AD300EB420C /* InventoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D34E2B858AD300EB420C /* InventoryType.swift */; };
 		FF31D3512B85AA4300EB420C /* ItemStorage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D3502B85AA4300EB420C /* ItemStorage1.swift */; };
 		FF31D3532B85AAED00EB420C /* ItemStorage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D3522B85AAED00EB420C /* ItemStorage2.swift */; };
@@ -107,8 +107,8 @@
 		FF31D2DF2B71CB3F00EB420C /* OriginMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginMark.swift; sourceTree = "<group>"; };
 		FF31D2E12B71CC5900EB420C /* PKM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKM.swift; sourceTree = "<group>"; };
 		FF31D2E42B71CD4400EB420C /* SpeciesForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesForm.swift; sourceTree = "<group>"; };
-		FF31D2E72B71CDF900EB420C /* ITrainerID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITrainerID.swift; sourceTree = "<group>"; };
-		FF31D2E92B71D04700EB420C /* ITrainerID32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITrainerID32.swift; sourceTree = "<group>"; };
+		FF31D2E72B71CDF900EB420C /* TrainerID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainerID.swift; sourceTree = "<group>"; };
+		FF31D2E92B71D04700EB420C /* TrainerID32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainerID32.swift; sourceTree = "<group>"; };
 		FF31D2EC2B71E79F00EB420C /* EntityContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityContext.swift; sourceTree = "<group>"; };
 		FF31D2F02B71E8C800EB420C /* GameVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVersion.swift; sourceTree = "<group>"; };
 		FF31D2F22B71ED9300EB420C /* GameConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConsole.swift; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 		FF31D30B2B7322A400EB420C /* LanguageID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageID.swift; sourceTree = "<group>"; };
 		FF31D3102B74499900EB420C /* Progress.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Progress.md; sourceTree = "<group>"; };
 		FF31D3112B746A2300EB420C /* ComboItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComboItem.swift; sourceTree = "<group>"; };
-		FF31D3132B746BB400EB420C /* IBasicStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBasicStrings.swift; sourceTree = "<group>"; };
+		FF31D3132B746BB400EB420C /* BasicStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicStrings.swift; sourceTree = "<group>"; };
 		FF31D3162B746FE800EB420C /* ProgramLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramLanguage.swift; sourceTree = "<group>"; };
 		FF31D3182B74703700EB420C /* GameStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStrings.swift; sourceTree = "<group>"; };
 		FF31D31A2B7470A600EB420C /* GameLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLanguage.swift; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 		FF31D3422B827C9100EB420C /* LocationsHOME.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsHOME.swift; sourceTree = "<group>"; };
 		FF31D3442B82863F00EB420C /* LocationRemapState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRemapState.swift; sourceTree = "<group>"; };
 		FF31D3472B82897A00EB420C /* HeldItemLumpImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeldItemLumpImage.swift; sourceTree = "<group>"; };
-		FF31D3492B858A4100EB420C /* IItemStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IItemStorage.swift; sourceTree = "<group>"; };
+		FF31D3492B858A4100EB420C /* ItemStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStorage.swift; sourceTree = "<group>"; };
 		FF31D34E2B858AD300EB420C /* InventoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryType.swift; sourceTree = "<group>"; };
 		FF31D3502B85AA4300EB420C /* ItemStorage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStorage1.swift; sourceTree = "<group>"; };
 		FF31D3522B85AAED00EB420C /* ItemStorage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStorage2.swift; sourceTree = "<group>"; };
@@ -216,8 +216,8 @@
 			isa = PBXGroup;
 			children = (
 				FF31D2E62B71CDE600EB420C /* Metadata */,
-				FF31D2E72B71CDF900EB420C /* ITrainerID.swift */,
-				FF31D2E92B71D04700EB420C /* ITrainerID32.swift */,
+				FF31D2E72B71CDF900EB420C /* TrainerID.swift */,
+				FF31D2E92B71D04700EB420C /* TrainerID32.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -246,7 +246,7 @@
 				FF31D3112B746A2300EB420C /* ComboItem.swift */,
 				FF31D2EF2B71E8BC00EB420C /* Enums */,
 				FF31D3152B746FC100EB420C /* GameStrings */,
-				FF31D3132B746BB400EB420C /* IBasicStrings.swift */,
+				FF31D3132B746BB400EB420C /* BasicStrings.swift */,
 				FF31D32D2B79CC2E00EB420C /* Locations */,
 			);
 			path = Game;
@@ -336,7 +336,7 @@
 			isa = PBXGroup;
 			children = (
 				FF31D3472B82897A00EB420C /* HeldItemLumpImage.swift */,
-				FF31D3492B858A4100EB420C /* IItemStorage.swift */,
+				FF31D3492B858A4100EB420C /* ItemStorage.swift */,
 				FF31D3502B85AA4300EB420C /* ItemStorage1.swift */,
 				FF31D3522B85AAED00EB420C /* ItemStorage2.swift */,
 				FF31D35C2B86E70300EB420C /* ItemStorage3.swift */,
@@ -638,15 +638,15 @@
 				FF31D3452B82863F00EB420C /* LocationRemapState.swift in Sources */,
 				FF31D32C2B79762300EB420C /* LocationSet6.swift in Sources */,
 				FF5068332B94E99800DF64A8 /* PersonalAbility.swift in Sources */,
-				FF31D2EA2B71D04700EB420C /* ITrainerID32.swift in Sources */,
+				FF31D2EA2B71D04700EB420C /* TrainerID32.swift in Sources */,
 				FF31D2E52B71CD4400EB420C /* SpeciesForm.swift in Sources */,
-				FF31D2E82B71CDF900EB420C /* ITrainerID.swift in Sources */,
+				FF31D2E82B71CDF900EB420C /* TrainerID.swift in Sources */,
 				FF50684D2B951A6E00DF64A8 /* PokeblockFlavor.swift in Sources */,
 				FF31D2ED2B71E79F00EB420C /* EntityContext.swift in Sources */,
 				FF5068022B9132F500DF64A8 /* ItemStorage7.swift in Sources */,
 				FF5068082B913E9900DF64A8 /* ItemStorage8SWSH.swift in Sources */,
 				FF31D3512B85AA4300EB420C /* ItemStorage1.swift in Sources */,
-				FF31D3142B746BB400EB420C /* IBasicStrings.swift in Sources */,
+				FF31D3142B746BB400EB420C /* BasicStrings.swift in Sources */,
 				FF31D3282B79721B00EB420C /* LocationSet0.swift in Sources */,
 				FF31D2E02B71CB3F00EB420C /* OriginMark.swift in Sources */,
 				FF31D3352B82762500EB420C /* Locations6.swift in Sources */,
@@ -703,7 +703,7 @@
 				FF50682D2B94E26B00DF64A8 /* BaseStat.swift in Sources */,
 				FF31D2F82B73081A00EB420C /* Core.swift in Sources */,
 				FF5068352B94ED3100DF64A8 /* PersonalEgg.swift in Sources */,
-				FF31D34A2B858A4100EB420C /* IItemStorage.swift in Sources */,
+				FF31D34A2B858A4100EB420C /* ItemStorage.swift in Sources */,
 				FF31D31F2B74777700EB420C /* ResourceUtil.swift in Sources */,
 				FF5067FE2B8A4C1900DF64A8 /* ItemStorage6.swift in Sources */,
 				FF31D31B2B7470A600EB420C /* GameLanguage.swift in Sources */,

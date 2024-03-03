@@ -1,5 +1,5 @@
 //
-//  ITrainerID.swift
+//  TrainerID.swift
 //  PKHeXMac
 //
 //  Created by Matthew Conrad on 2/5/24.
@@ -20,13 +20,13 @@ enum TrainerIDFormat {
          SixDigit
 }
 
-protocol ITrainerID {
+protocol TrainerID {
     var TrainerIDDisplayFormat: TrainerIDFormat { get }
     var TrainerIDFormatStringTID: String { get }
     var TrainerIDFormatStringSID: String { get }
 }
 
-extension ITrainerID {
+extension TrainerID {
     var TrainerIDFormatStringTID: String {
         return if TrainerIDDisplayFormat == TrainerIDFormat.SixDigit {
             "D6"

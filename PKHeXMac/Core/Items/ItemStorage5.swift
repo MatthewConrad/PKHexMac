@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ItemStorage5: IItemStorage {
+struct ItemStorage5: ItemStorage {
     private let version: GameVersion
 
     static let instanceBW = ItemStorage5(version: GameVersion.BW)

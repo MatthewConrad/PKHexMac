@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ItemStorage7GG: IItemStorage {
+struct ItemStorage7GG: ItemStorage {
     static let instance = ItemStorage7GG()
 
     private static let pouchCandy: [Int] = [

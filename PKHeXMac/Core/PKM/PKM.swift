@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol PKM: ISpeciesForm, ITrainerID32 {
+protocol PKM: SpeciesForm, TrainerID32 {
 
 }

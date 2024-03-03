@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ItemStorage8SWSH: IItemStorage {
+struct ItemStorage8SWSH: ItemStorage {
     static let instance = ItemStorage8SWSH()
 
     private static let pouchItems: [Int] = [
