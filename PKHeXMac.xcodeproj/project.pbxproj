@@ -135,6 +135,13 @@
 		FF5068932B96B52500DF64A8 /* Alpha.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068922B96B52500DF64A8 /* Alpha.swift */; };
 		FF5068952B96B53E00DF64A8 /* AppliedMarkings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068942B96B53E00DF64A8 /* AppliedMarkings.swift */; };
 		FF5068972B96B81C00DF64A8 /* Awakened.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068962B96B81C00DF64A8 /* Awakened.swift */; };
+		FF5068992B96C85400DF64A8 /* BattleVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068982B96C85400DF64A8 /* BattleVersion.swift */; };
+		FF50689B2B96CAAB00DF64A8 /* CaughtData2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50689A2B96CAAB00DF64A8 /* CaughtData2.swift */; };
+		FF50689D2B96CAFA00DF64A8 /* ContestStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50689C2B96CAFA00DF64A8 /* ContestStats.swift */; };
+		FF50689F2B96CB6400DF64A8 /* DynamaxLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50689E2B96CB6400DF64A8 /* DynamaxLevel.swift */; };
+		FF5068A12B96CB8C00DF64A8 /* FatefulEncounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068A02B96CB8C00DF64A8 /* FatefulEncounter.swift */; };
+		FF5068A32B96CBCB00DF64A8 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068A22B96CBCB00DF64A8 /* Favorite.swift */; };
+		FF5068A52B96CBF700DF64A8 /* FormArgument.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068A42B96CBF700DF64A8 /* FormArgument.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -269,6 +276,13 @@
 		FF5068922B96B52500DF64A8 /* Alpha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alpha.swift; sourceTree = "<group>"; };
 		FF5068942B96B53E00DF64A8 /* AppliedMarkings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppliedMarkings.swift; sourceTree = "<group>"; };
 		FF5068962B96B81C00DF64A8 /* Awakened.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Awakened.swift; sourceTree = "<group>"; };
+		FF5068982B96C85400DF64A8 /* BattleVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleVersion.swift; sourceTree = "<group>"; };
+		FF50689A2B96CAAB00DF64A8 /* CaughtData2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaughtData2.swift; sourceTree = "<group>"; };
+		FF50689C2B96CAFA00DF64A8 /* ContestStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContestStats.swift; sourceTree = "<group>"; };
+		FF50689E2B96CB6400DF64A8 /* DynamaxLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamaxLevel.swift; sourceTree = "<group>"; };
+		FF5068A02B96CB8C00DF64A8 /* FatefulEncounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FatefulEncounter.swift; sourceTree = "<group>"; };
+		FF5068A22B96CBCB00DF64A8 /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
+		FF5068A42B96CBF700DF64A8 /* FormArgument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormArgument.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,17 +299,24 @@
 		FF31D2E32B71CCB500EB420C /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
-				FF5068772B96A43600DF64A8 /* Templates */,
-				FF31D2E62B71CDE600EB420C /* Metadata */,
-				FF31D2E72B71CDF900EB420C /* TrainerID.swift */,
-				FF31D2E92B71D04700EB420C /* TrainerID32.swift */,
-				FF5068692B9527A900DF64A8 /* BattleMoves.swift */,
 				FF50686B2B969AEE00DF64A8 /* Affection.swift */,
-				FF50687E2B96A8A600DF64A8 /* Hatchable.swift */,
-				FF5068802B96AAED00DF64A8 /* Meetable.swift */,
 				FF5068922B96B52500DF64A8 /* Alpha.swift */,
 				FF5068942B96B53E00DF64A8 /* AppliedMarkings.swift */,
 				FF5068962B96B81C00DF64A8 /* Awakened.swift */,
+				FF5068692B9527A900DF64A8 /* BattleMoves.swift */,
+				FF50687E2B96A8A600DF64A8 /* Hatchable.swift */,
+				FF5068802B96AAED00DF64A8 /* Meetable.swift */,
+				FF31D2E72B71CDF900EB420C /* TrainerID.swift */,
+				FF31D2E92B71D04700EB420C /* TrainerID32.swift */,
+				FF31D2E62B71CDE600EB420C /* Metadata */,
+				FF5068772B96A43600DF64A8 /* Templates */,
+				FF5068982B96C85400DF64A8 /* BattleVersion.swift */,
+				FF50689A2B96CAAB00DF64A8 /* CaughtData2.swift */,
+				FF50689C2B96CAFA00DF64A8 /* ContestStats.swift */,
+				FF50689E2B96CB6400DF64A8 /* DynamaxLevel.swift */,
+				FF5068A02B96CB8C00DF64A8 /* FatefulEncounter.swift */,
+				FF5068A22B96CBCB00DF64A8 /* Favorite.swift */,
+				FF5068A42B96CBF700DF64A8 /* FormArgument.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -758,6 +779,7 @@
 				FF5068542B951F1300DF64A8 /* MoveInfo3.swift in Sources */,
 				FF31D2F32B71ED9300EB420C /* GameConsole.swift in Sources */,
 				FF31D3452B82863F00EB420C /* LocationRemapState.swift in Sources */,
+				FF5068A52B96CBF700DF64A8 /* FormArgument.swift in Sources */,
 				FF31D32C2B79762300EB420C /* LocationSet6.swift in Sources */,
 				FF5068832B96B18D00DF64A8 /* FatefulEncounterReadable.swift in Sources */,
 				FF5068332B94E99800DF64A8 /* PersonalAbility.swift in Sources */,
@@ -785,6 +807,7 @@
 				FF31D32A2B79750600EB420C /* LocationSet4.swift in Sources */,
 				FF31D33B2B8278C400EB420C /* Locations8.swift in Sources */,
 				FF31D3482B82897A00EB420C /* HeldItemLumpImage.swift in Sources */,
+				FF50689F2B96CB6400DF64A8 /* DynamaxLevel.swift in Sources */,
 				FF31D2DE2B71C72800EB420C /* PokeSize.swift in Sources */,
 				FF31D3172B746FE800EB420C /* ProgramLanguage.swift in Sources */,
 				FF5068502B951E8400DF64A8 /* MoveInfo1.swift in Sources */,
@@ -812,6 +835,7 @@
 				FF31D2FE2B730AA000EB420C /* Ball.swift in Sources */,
 				FF5068002B8A50F000DF64A8 /* ItemStorage7GG.swift in Sources */,
 				FF5068202B92D71900DF64A8 /* MystryMew.swift in Sources */,
+				FF5068992B96C85400DF64A8 /* BattleVersion.swift in Sources */,
 				FF50688B2B96B43300DF64A8 /* MemoryOTReadable.swift in Sources */,
 				FF31D3412B827B7D00EB420C /* Locations9.swift in Sources */,
 				FF5068282B94C9BA00DF64A8 /* GameValueLimit.swift in Sources */,
@@ -831,6 +855,7 @@
 				FF50683B2B94EE5800DF64A8 /* PersonalTR.swift in Sources */,
 				FF31D2FC2B730A2A00EB420C /* Ability.swift in Sources */,
 				FF50688F2B96B4B600DF64A8 /* ObedienceLevelReadable.swift in Sources */,
+				FF5068A32B96CBCB00DF64A8 /* Favorite.swift in Sources */,
 				FF5068182B92C0A700DF64A8 /* FormInfo.swift in Sources */,
 				FF50680A2B91434F00DF64A8 /* ItemStorage9.swift in Sources */,
 				FF5068812B96AAED00DF64A8 /* Meetable.swift in Sources */,
@@ -845,6 +870,7 @@
 				FF31D3532B85AAED00EB420C /* ItemStorage2.swift in Sources */,
 				FF31D3002B730B3F00EB420C /* Gender.swift in Sources */,
 				FF31D30A2B73224200EB420C /* Region.swift in Sources */,
+				FF50689D2B96CAFA00DF64A8 /* ContestStats.swift in Sources */,
 				FF50681C2B92D19600DF64A8 /* PersonalFormInfo.swift in Sources */,
 				FF50682D2B94E26B00DF64A8 /* BaseStat.swift in Sources */,
 				FF50686C2B969AEE00DF64A8 /* Affection.swift in Sources */,
@@ -872,6 +898,7 @@
 				FF5068062B913DB600DF64A8 /* ItemStorage8LA.swift in Sources */,
 				FF5068372B94ED8A00DF64A8 /* PersonalEncounter.swift in Sources */,
 				FF31D3432B827C9100EB420C /* LocationsHOME.swift in Sources */,
+				FF5068A12B96CB8C00DF64A8 /* FatefulEncounter.swift in Sources */,
 				FF31D2FA2B7309D400EB420C /* Species.swift in Sources */,
 				FF5068522B951EF200DF64A8 /* MoveInfo2.swift in Sources */,
 				FF31D3232B74838500EB420C /* Lock.swift in Sources */,
@@ -879,6 +906,7 @@
 				FF50686A2B9527A900DF64A8 /* BattleMoves.swift in Sources */,
 				FF50682F2B94E75900DF64A8 /* EffortValueYield.swift in Sources */,
 				FF5068312B94E79E00DF64A8 /* GenderDetail.swift in Sources */,
+				FF50689B2B96CAAB00DF64A8 /* CaughtData2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

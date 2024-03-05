@@ -1149,13 +1149,13 @@
 - [x] IAlpha
 - [x] IAppliedMarkings
 - [/] IAwakened
-- [ ] IBattleVersion
-- [ ] ICaughtData2
-- [ ] IContestStats
-- [ ] IDynamaxLevel
-- [ ] IFatefulEncounter
-- [ ] IFavorite
-- [ ] IFormArgument
+- [x] IBattleVersion
+- [x] ICaughtData2
+- [x] IContestStats
+- [x] IDynamaxLevel
+- [x] IFatefulEncounter
+- [x] IFavorite
+- [/] IFormArgument
 - [ ] IGanbaru
 - [ ] IGeoTrack
 - [ ] IGigantamax
