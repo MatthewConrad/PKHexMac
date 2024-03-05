@@ -7,6 +7,8 @@
 
 import Foundation
 
+/// Exposes information about in-battle movesets.
+/// - remark: moved from original repo's PKM monolith
 protocol BattleMoves {
     var move1: Move { get set }
     var move2: Move { get set }

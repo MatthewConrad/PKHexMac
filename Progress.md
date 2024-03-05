@@ -1007,19 +1007,19 @@
 
 ## Moves
 
-- [ ] MoveInfo
-- [ ] MoveInfo1
-- [ ] MoveInfo2
-- [ ] MoveInfo3
-- [ ] MoveInfo4
-- [ ] MoveInfo5
-- [ ] MoveInfo6
-- [ ] MoveInfo7
-- [ ] MoveInfo7b
-- [ ] MoveInfo8
-- [ ] MoveInfo8a
-- [ ] MoveInfo8b
-- [ ] MoveInfo9
+- [x] MoveInfo
+- [x] MoveInfo1
+- [x] MoveInfo2
+- [x] MoveInfo3
+- [x] MoveInfo4
+- [x] MoveInfo5
+- [x] MoveInfo6
+- [x] MoveInfo7
+- [x] MoveInfo7b
+- [x] MoveInfo8
+- [x] MoveInfo8a
+- [x] MoveInfo8b
+- [x] MoveInfo9
 
 ## Mystery Gifts
 
@@ -1046,7 +1046,7 @@
 
 ## PersonalInfo
 
-- [x] PersonalInfo _(incorporated as extension to PersonalTable protocol)_
+- [x] PersonalInfo _(incorporated as extension to PersonalInfo protocol)_
 - [ ] PersonalTable
 
 ### Info
@@ -1145,10 +1145,10 @@
 
 ### Interfaces
 
-- [ ] IAffection
-- [ ] IAlpha
-- [ ] IAppliedMarkings
-- [ ] IAwakened
+- [x] IAffection
+- [x] IAlpha
+- [x] IAppliedMarkings
+- [/] IAwakened
 - [ ] IBattleVersion
 - [ ] ICaughtData2
 - [ ] IContestStats
@@ -1182,25 +1182,25 @@
 
 #### Metadata
 
-- [ ] IGameValueLimit
-- [ ] IGeneration
-- [ ] ILangNick
-- [ ] IShiny
+- [x] IGameValueLimit
+- [x] IGeneration
+- [x] ILangNick
+- [x] IShiny
 - [x] ISpeciesForm
 
 #### Templates
 
-- [ ] IAlphaReadOnly
-- [ ] IContestStatsReadOnly
-- [ ] IDynamaxLevelReadOnly
-- [ ] IFatefulEncounterReadOnly
-- [ ] IFixedOTFriendship
-- [ ] IGigantamaxReadOnly
-- [ ] ILangNicknamedTemplate
-- [ ] IMemoryOTReadOnly
-- [ ] INatureReadOnly
-- [ ] IObedienceLevelReadOnly
-- [ ] IScaledSizeReadOnly
+- [x] IAlphaReadOnly
+- [x] IContestStatsReadOnly
+- [x] IDynamaxLevelReadOnly
+- [x] IFatefulEncounterReadOnly
+- [x] IFixedOTFriendship
+- [x] IGigantamaxReadOnly
+- [x] ILangNicknamedTemplate
+- [x] IMemoryOTReadOnly
+- [x] INatureReadOnly
+- [x] IObedienceLevelReadOnly
+- [x] IScaledSizeReadOnly
 
 ### Searching
 

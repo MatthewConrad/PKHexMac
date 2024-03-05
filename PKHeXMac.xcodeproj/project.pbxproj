@@ -114,6 +114,27 @@
 		FF5068662B95216600DF64A8 /* MoveInfo9.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068652B95216600DF64A8 /* MoveInfo9.swift */; };
 		FF5068682B9521E000DF64A8 /* MoveInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068672B9521E000DF64A8 /* MoveInfo.swift */; };
 		FF50686A2B9527A900DF64A8 /* BattleMoves.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068692B9527A900DF64A8 /* BattleMoves.swift */; };
+		FF50686C2B969AEE00DF64A8 /* Affection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50686B2B969AEE00DF64A8 /* Affection.swift */; };
+		FF5068702B969C0300DF64A8 /* Generation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50686F2B969C0300DF64A8 /* Generation.swift */; };
+		FF5068722B969C3900DF64A8 /* LangNick.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068712B969C3900DF64A8 /* LangNick.swift */; };
+		FF5068742B969C6900DF64A8 /* Shiny.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068732B969C6900DF64A8 /* Shiny.swift */; };
+		FF5068762B969C7D00DF64A8 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068752B969C7D00DF64A8 /* Version.swift */; };
+		FF5068792B96A48200DF64A8 /* AlphaReadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068782B96A48200DF64A8 /* AlphaReadable.swift */; };
+		FF50687B2B96A4A000DF64A8 /* ContestStatsReadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50687A2B96A4A000DF64A8 /* ContestStatsReadable.swift */; };
+		FF50687D2B96A7BC00DF64A8 /* DynamaxLevelReadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50687C2B96A7BC00DF64A8 /* DynamaxLevelReadable.swift */; };
+		FF50687F2B96A8A600DF64A8 /* Hatchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50687E2B96A8A600DF64A8 /* Hatchable.swift */; };
+		FF5068812B96AAED00DF64A8 /* Meetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068802B96AAED00DF64A8 /* Meetable.swift */; };
+		FF5068832B96B18D00DF64A8 /* FatefulEncounterReadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068822B96B18D00DF64A8 /* FatefulEncounterReadable.swift */; };
+		FF5068852B96B1B500DF64A8 /* FixedOTFriendship.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068842B96B1B500DF64A8 /* FixedOTFriendship.swift */; };
+		FF5068872B96B1D700DF64A8 /* GigantamaxReadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068862B96B1D700DF64A8 /* GigantamaxReadable.swift */; };
+		FF5068892B96B3F400DF64A8 /* LangNicknamedTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068882B96B3F400DF64A8 /* LangNicknamedTemplate.swift */; };
+		FF50688B2B96B43300DF64A8 /* MemoryOTReadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50688A2B96B43300DF64A8 /* MemoryOTReadable.swift */; };
+		FF50688D2B96B46E00DF64A8 /* NatureReadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50688C2B96B46E00DF64A8 /* NatureReadable.swift */; };
+		FF50688F2B96B4B600DF64A8 /* ObedienceLevelReadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50688E2B96B4B600DF64A8 /* ObedienceLevelReadable.swift */; };
+		FF5068912B96B4E200DF64A8 /* ScaledSizeReadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068902B96B4E200DF64A8 /* ScaledSizeReadable.swift */; };
+		FF5068932B96B52500DF64A8 /* Alpha.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068922B96B52500DF64A8 /* Alpha.swift */; };
+		FF5068952B96B53E00DF64A8 /* AppliedMarkings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068942B96B53E00DF64A8 /* AppliedMarkings.swift */; };
+		FF5068972B96B81C00DF64A8 /* Awakened.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068962B96B81C00DF64A8 /* Awakened.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -227,6 +248,27 @@
 		FF5068652B95216600DF64A8 /* MoveInfo9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveInfo9.swift; sourceTree = "<group>"; };
 		FF5068672B9521E000DF64A8 /* MoveInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveInfo.swift; sourceTree = "<group>"; };
 		FF5068692B9527A900DF64A8 /* BattleMoves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleMoves.swift; sourceTree = "<group>"; };
+		FF50686B2B969AEE00DF64A8 /* Affection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Affection.swift; sourceTree = "<group>"; };
+		FF50686F2B969C0300DF64A8 /* Generation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generation.swift; sourceTree = "<group>"; };
+		FF5068712B969C3900DF64A8 /* LangNick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LangNick.swift; sourceTree = "<group>"; };
+		FF5068732B969C6900DF64A8 /* Shiny.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shiny.swift; sourceTree = "<group>"; };
+		FF5068752B969C7D00DF64A8 /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		FF5068782B96A48200DF64A8 /* AlphaReadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaReadable.swift; sourceTree = "<group>"; };
+		FF50687A2B96A4A000DF64A8 /* ContestStatsReadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContestStatsReadable.swift; sourceTree = "<group>"; };
+		FF50687C2B96A7BC00DF64A8 /* DynamaxLevelReadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamaxLevelReadable.swift; sourceTree = "<group>"; };
+		FF50687E2B96A8A600DF64A8 /* Hatchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hatchable.swift; sourceTree = "<group>"; };
+		FF5068802B96AAED00DF64A8 /* Meetable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meetable.swift; sourceTree = "<group>"; };
+		FF5068822B96B18D00DF64A8 /* FatefulEncounterReadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FatefulEncounterReadable.swift; sourceTree = "<group>"; };
+		FF5068842B96B1B500DF64A8 /* FixedOTFriendship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedOTFriendship.swift; sourceTree = "<group>"; };
+		FF5068862B96B1D700DF64A8 /* GigantamaxReadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigantamaxReadable.swift; sourceTree = "<group>"; };
+		FF5068882B96B3F400DF64A8 /* LangNicknamedTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LangNicknamedTemplate.swift; sourceTree = "<group>"; };
+		FF50688A2B96B43300DF64A8 /* MemoryOTReadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryOTReadable.swift; sourceTree = "<group>"; };
+		FF50688C2B96B46E00DF64A8 /* NatureReadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatureReadable.swift; sourceTree = "<group>"; };
+		FF50688E2B96B4B600DF64A8 /* ObedienceLevelReadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObedienceLevelReadable.swift; sourceTree = "<group>"; };
+		FF5068902B96B4E200DF64A8 /* ScaledSizeReadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledSizeReadable.swift; sourceTree = "<group>"; };
+		FF5068922B96B52500DF64A8 /* Alpha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alpha.swift; sourceTree = "<group>"; };
+		FF5068942B96B53E00DF64A8 /* AppliedMarkings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppliedMarkings.swift; sourceTree = "<group>"; };
+		FF5068962B96B81C00DF64A8 /* Awakened.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Awakened.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,10 +285,17 @@
 		FF31D2E32B71CCB500EB420C /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
+				FF5068772B96A43600DF64A8 /* Templates */,
 				FF31D2E62B71CDE600EB420C /* Metadata */,
 				FF31D2E72B71CDF900EB420C /* TrainerID.swift */,
 				FF31D2E92B71D04700EB420C /* TrainerID32.swift */,
 				FF5068692B9527A900DF64A8 /* BattleMoves.swift */,
+				FF50686B2B969AEE00DF64A8 /* Affection.swift */,
+				FF50687E2B96A8A600DF64A8 /* Hatchable.swift */,
+				FF5068802B96AAED00DF64A8 /* Meetable.swift */,
+				FF5068922B96B52500DF64A8 /* Alpha.swift */,
+				FF5068942B96B53E00DF64A8 /* AppliedMarkings.swift */,
+				FF5068962B96B81C00DF64A8 /* Awakened.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -256,6 +305,10 @@
 			children = (
 				FF31D2E42B71CD4400EB420C /* SpeciesForm.swift */,
 				FF5068272B94C9BA00DF64A8 /* GameValueLimit.swift */,
+				FF50686F2B969C0300DF64A8 /* Generation.swift */,
+				FF5068712B969C3900DF64A8 /* LangNick.swift */,
+				FF5068732B969C6900DF64A8 /* Shiny.swift */,
+				FF5068752B969C7D00DF64A8 /* Version.swift */,
 			);
 			path = Metadata;
 			sourceTree = "<group>";
@@ -612,6 +665,24 @@
 			path = Moves;
 			sourceTree = "<group>";
 		};
+		FF5068772B96A43600DF64A8 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				FF5068782B96A48200DF64A8 /* AlphaReadable.swift */,
+				FF50687A2B96A4A000DF64A8 /* ContestStatsReadable.swift */,
+				FF50687C2B96A7BC00DF64A8 /* DynamaxLevelReadable.swift */,
+				FF5068822B96B18D00DF64A8 /* FatefulEncounterReadable.swift */,
+				FF5068842B96B1B500DF64A8 /* FixedOTFriendship.swift */,
+				FF5068862B96B1D700DF64A8 /* GigantamaxReadable.swift */,
+				FF5068882B96B3F400DF64A8 /* LangNicknamedTemplate.swift */,
+				FF50688A2B96B43300DF64A8 /* MemoryOTReadable.swift */,
+				FF50688C2B96B46E00DF64A8 /* NatureReadable.swift */,
+				FF50688E2B96B4B600DF64A8 /* ObedienceLevelReadable.swift */,
+				FF5068902B96B4E200DF64A8 /* ScaledSizeReadable.swift */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -688,6 +759,7 @@
 				FF31D2F32B71ED9300EB420C /* GameConsole.swift in Sources */,
 				FF31D3452B82863F00EB420C /* LocationRemapState.swift in Sources */,
 				FF31D32C2B79762300EB420C /* LocationSet6.swift in Sources */,
+				FF5068832B96B18D00DF64A8 /* FatefulEncounterReadable.swift in Sources */,
 				FF5068332B94E99800DF64A8 /* PersonalAbility.swift in Sources */,
 				FF31D2EA2B71D04700EB420C /* TrainerID32.swift in Sources */,
 				FF31D2E52B71CD4400EB420C /* SpeciesForm.swift in Sources */,
@@ -698,11 +770,15 @@
 				FF5068022B9132F500DF64A8 /* ItemStorage7.swift in Sources */,
 				FF50685C2B951FC000DF64A8 /* MoveInfo7.swift in Sources */,
 				FF5068082B913E9900DF64A8 /* ItemStorage8SWSH.swift in Sources */,
+				FF5068912B96B4E200DF64A8 /* ScaledSizeReadable.swift in Sources */,
 				FF31D3512B85AA4300EB420C /* ItemStorage1.swift in Sources */,
+				FF5068852B96B1B500DF64A8 /* FixedOTFriendship.swift in Sources */,
 				FF50685E2B951FEE00DF64A8 /* MoveInfo7b.swift in Sources */,
 				FF31D3142B746BB400EB420C /* BasicStrings.swift in Sources */,
 				FF31D3282B79721B00EB420C /* LocationSet0.swift in Sources */,
+				FF50687F2B96A8A600DF64A8 /* Hatchable.swift in Sources */,
 				FF31D2E02B71CB3F00EB420C /* OriginMark.swift in Sources */,
+				FF5068722B969C3900DF64A8 /* LangNick.swift in Sources */,
 				FF31D3352B82762500EB420C /* Locations6.swift in Sources */,
 				FF50682B2B94D77000DF64A8 /* Vivillon3DS.swift in Sources */,
 				FF31D3022B730BC900EB420C /* Move.swift in Sources */,
@@ -713,17 +789,21 @@
 				FF31D3172B746FE800EB420C /* ProgramLanguage.swift in Sources */,
 				FF5068502B951E8400DF64A8 /* MoveInfo1.swift in Sources */,
 				FF5068482B94F8E800DF64A8 /* PersonalInfo1.swift in Sources */,
+				FF5068952B96B53E00DF64A8 /* AppliedMarkings.swift in Sources */,
 				FF5067FC2B8A422000DF64A8 /* ItemStorage5.swift in Sources */,
 				FF5068042B9139E800DF64A8 /* ItemStorage8BDSP.swift in Sources */,
+				FF5068892B96B3F400DF64A8 /* LangNicknamedTemplate.swift in Sources */,
 				FF5068412B94EF0F00DF64A8 /* PersonalType.swift in Sources */,
 				FF5068682B9521E000DF64A8 /* MoveInfo.swift in Sources */,
 				FF50683F2B94EE8C00DF64A8 /* PersonalMisc.swift in Sources */,
 				FF31D3332B7B0D8800EB420C /* Locations5.swift in Sources */,
 				FF4A9D722B71C17E00C4B5F5 /* GroundTileType.swift in Sources */,
+				FF5068762B969C7D00DF64A8 /* Version.swift in Sources */,
 				FF5068232B92D7AE00DF64A8 /* PIDType.swift in Sources */,
 				FF31D3192B74703700EB420C /* GameStrings.swift in Sources */,
 				FF50685A2B951F9E00DF64A8 /* MoveInfo6.swift in Sources */,
 				FF5068562B951F3F00DF64A8 /* MoveInfo4.swift in Sources */,
+				FF5068702B969C0300DF64A8 /* Generation.swift in Sources */,
 				FF31D3392B82782400EB420C /* Locations7b.swift in Sources */,
 				FF5068452B94EFEC00DF64A8 /* PersonalInfo.swift in Sources */,
 				FF31D34F2B858AD300EB420C /* InventoryType.swift in Sources */,
@@ -732,6 +812,7 @@
 				FF31D2FE2B730AA000EB420C /* Ball.swift in Sources */,
 				FF5068002B8A50F000DF64A8 /* ItemStorage7GG.swift in Sources */,
 				FF5068202B92D71900DF64A8 /* MystryMew.swift in Sources */,
+				FF50688B2B96B43300DF64A8 /* MemoryOTReadable.swift in Sources */,
 				FF31D3412B827B7D00EB420C /* Locations9.swift in Sources */,
 				FF5068282B94C9BA00DF64A8 /* GameValueLimit.swift in Sources */,
 				FF31D33F2B827AB200EB420C /* Locations8b.swift in Sources */,
@@ -739,19 +820,24 @@
 				FF31D2E22B71CC5900EB420C /* PKM.swift in Sources */,
 				FF50681E2B92D2DF00DF64A8 /* FormItem.swift in Sources */,
 				FF31D35F2B86EF9600EB420C /* ItemStorage4.swift in Sources */,
+				FF50687B2B96A4A000DF64A8 /* ContestStatsReadable.swift in Sources */,
 				FF50684B2B95081100DF64A8 /* PersonalTable1.swift in Sources */,
 				FF50680C2B91776000DF64A8 /* Breeding.swift in Sources */,
 				FF31D32F2B79CC3900EB420C /* Locations.swift in Sources */,
+				FF50687D2B96A7BC00DF64A8 /* DynamaxLevelReadable.swift in Sources */,
 				FF5068662B95216600DF64A8 /* MoveInfo9.swift in Sources */,
 				FF31D3372B82777100EB420C /* Locations7.swift in Sources */,
 				FF5068602B95206600DF64A8 /* MoveInfo8.swift in Sources */,
 				FF50683B2B94EE5800DF64A8 /* PersonalTR.swift in Sources */,
 				FF31D2FC2B730A2A00EB420C /* Ability.swift in Sources */,
+				FF50688F2B96B4B600DF64A8 /* ObedienceLevelReadable.swift in Sources */,
 				FF5068182B92C0A700DF64A8 /* FormInfo.swift in Sources */,
 				FF50680A2B91434F00DF64A8 /* ItemStorage9.swift in Sources */,
+				FF5068812B96AAED00DF64A8 /* Meetable.swift in Sources */,
 				FF4A9D702B71C0B000C4B5F5 /* AlcremieDecoration.swift in Sources */,
 				FF31D30C2B7322A400EB420C /* LanguageID.swift in Sources */,
 				FF31D33D2B8279E800EB420C /* Locations8a.swift in Sources */,
+				FF5068792B96A48200DF64A8 /* AlphaReadable.swift in Sources */,
 				FF31D3062B731E2A00EB420C /* Nature.swift in Sources */,
 				FF31D2F12B71E8C800EB420C /* GameVersion.swift in Sources */,
 				FF31D3042B730C1900EB420C /* MoveType.swift in Sources */,
@@ -761,20 +847,26 @@
 				FF31D30A2B73224200EB420C /* Region.swift in Sources */,
 				FF50681C2B92D19600DF64A8 /* PersonalFormInfo.swift in Sources */,
 				FF50682D2B94E26B00DF64A8 /* BaseStat.swift in Sources */,
+				FF50686C2B969AEE00DF64A8 /* Affection.swift in Sources */,
+				FF5068742B969C6900DF64A8 /* Shiny.swift in Sources */,
 				FF31D2F82B73081A00EB420C /* Core.swift in Sources */,
 				FF5068582B951F6000DF64A8 /* MoveInfo5.swift in Sources */,
 				FF5068352B94ED3100DF64A8 /* PersonalEgg.swift in Sources */,
 				FF31D34A2B858A4100EB420C /* ItemStorage.swift in Sources */,
 				FF31D31F2B74777700EB420C /* ResourceUtil.swift in Sources */,
 				FF5067FE2B8A4C1900DF64A8 /* ItemStorage6.swift in Sources */,
+				FF5068872B96B1D700DF64A8 /* GigantamaxReadable.swift in Sources */,
 				FF31D31B2B7470A600EB420C /* GameLanguage.swift in Sources */,
 				FF5068262B92DD6400DF64A8 /* LCRNG.swift in Sources */,
 				FF5068622B9520F400DF64A8 /* MoveInfo8a.swift in Sources */,
+				FF50688D2B96B46E00DF64A8 /* NatureReadable.swift in Sources */,
 				FF31D35D2B86E70300EB420C /* ItemStorage3.swift in Sources */,
+				FF5068972B96B81C00DF64A8 /* Awakened.swift in Sources */,
 				FF31D3262B796FBE00EB420C /* LocationSet.swift in Sources */,
 				FF31D3122B746A2300EB420C /* ComboItem.swift in Sources */,
 				FF50680F2B918E6600DF64A8 /* SpeciesCategory.swift in Sources */,
 				FF5068112B91920400DF64A8 /* FormChange.swift in Sources */,
+				FF5068932B96B52500DF64A8 /* Alpha.swift in Sources */,
 				FF5068432B94EFAD00DF64A8 /* PersonalTable.swift in Sources */,
 				FF4A9D6E2B71BD5E00C4B5F5 /* PokeSizeDetailed.swift in Sources */,
 				FF5068062B913DB600DF64A8 /* ItemStorage8LA.swift in Sources */,

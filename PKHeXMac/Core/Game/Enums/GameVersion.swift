@@ -97,6 +97,8 @@ enum GameVersion: Int, CaseIterable, Comparable {
          SL = 50,
          // Pokémon Violet (NX)
          VL = 51,
+
+         /* Groups */
          // Pokémon Red &amp; Blue [<see cref="SAV1"/>] identifier.
          RB,
          // Pokémon Red/Blue/Yellow [<see cref="SAV1"/>] identifier.
@@ -280,6 +282,22 @@ enum GameVersion: Int, CaseIterable, Comparable {
     /// - remark: Originally from Game/GameUtil
     func isValidSavedVersion() -> Bool {
         return self > .AnyGame && self < .HighestGameId
+    }
+
+    /// Coalesces group versions into a single version contained in that group.
+    func getSingleVersion() -> GameVersion {
+        if self.isValidSavedVersion() {
+            return self
+        }
+
+        let singleVersions = GameVersion.allCases.filter { $0 >= .S && $0 < GameVersion.HighestGameId && $0 != .BU }
+
+        var game: GameVersion
+        repeat {
+            game = singleVersions.randomElement() ?? .Unknown
+        } while !self.contains(game: game)
+
+        return game
     }
 
     /// Gets all possible GameVersion values representing games
