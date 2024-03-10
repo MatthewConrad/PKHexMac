@@ -144,6 +144,11 @@
 		FF5068A52B96CBF700DF64A8 /* FormArgument.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068A42B96CBF700DF64A8 /* FormArgument.swift */; };
 		FFDA55CE2B9E1DF000376E0E /* Ganbaru.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55CD2B9E1DF000376E0E /* Ganbaru.swift */; };
 		FFDA55D02B9E27F500376E0E /* BattleStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55CF2B9E27F500376E0E /* BattleStats.swift */; };
+		FFDA55D22B9E332600376E0E /* Gigantamaxable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55D12B9E332600376E0E /* Gigantamaxable.swift */; };
+		FFDA55D42B9E336100376E0E /* GroundTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55D32B9E336100376E0E /* GroundTile.swift */; };
+		FFDA55D62B9E33A000376E0E /* HandlerLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55D52B9E33A000376E0E /* HandlerLanguage.swift */; };
+		FFDA55D82B9E33CC00376E0E /* HandlerUpdatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55D72B9E33CC00376E0E /* HandlerUpdatable.swift */; };
+		FFDA55DB2B9E342300376E0E /* TrainerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55DA2B9E342300376E0E /* TrainerInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -287,6 +292,11 @@
 		FF5068A42B96CBF700DF64A8 /* FormArgument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormArgument.swift; sourceTree = "<group>"; };
 		FFDA55CD2B9E1DF000376E0E /* Ganbaru.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ganbaru.swift; sourceTree = "<group>"; };
 		FFDA55CF2B9E27F500376E0E /* BattleStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleStats.swift; sourceTree = "<group>"; };
+		FFDA55D12B9E332600376E0E /* Gigantamaxable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gigantamaxable.swift; sourceTree = "<group>"; };
+		FFDA55D32B9E336100376E0E /* GroundTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundTile.swift; sourceTree = "<group>"; };
+		FFDA55D52B9E33A000376E0E /* HandlerLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandlerLanguage.swift; sourceTree = "<group>"; };
+		FFDA55D72B9E33CC00376E0E /* HandlerUpdatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandlerUpdatable.swift; sourceTree = "<group>"; };
+		FFDA55DA2B9E342300376E0E /* TrainerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainerInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,6 +333,10 @@
 				FF5068A42B96CBF700DF64A8 /* FormArgument.swift */,
 				FFDA55CD2B9E1DF000376E0E /* Ganbaru.swift */,
 				FFDA55CF2B9E27F500376E0E /* BattleStats.swift */,
+				FFDA55D12B9E332600376E0E /* Gigantamaxable.swift */,
+				FFDA55D32B9E336100376E0E /* GroundTile.swift */,
+				FFDA55D52B9E33A000376E0E /* HandlerLanguage.swift */,
+				FFDA55D72B9E33CC00376E0E /* HandlerUpdatable.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -465,6 +479,7 @@
 		FF31D34B2B858ABE00EB420C /* Saves */ = {
 			isa = PBXGroup;
 			children = (
+				FFDA55D92B9E341000376E0E /* Abstractions */,
 				FF31D34C2B858AC300EB420C /* Substructures */,
 			);
 			path = Saves;
@@ -710,6 +725,14 @@
 			path = Templates;
 			sourceTree = "<group>";
 		};
+		FFDA55D92B9E341000376E0E /* Abstractions */ = {
+			isa = PBXGroup;
+			children = (
+				FFDA55DA2B9E342300376E0E /* TrainerInfo.swift */,
+			);
+			path = Abstractions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -826,6 +849,7 @@
 				FF5068412B94EF0F00DF64A8 /* PersonalType.swift in Sources */,
 				FF5068682B9521E000DF64A8 /* MoveInfo.swift in Sources */,
 				FF50683F2B94EE8C00DF64A8 /* PersonalMisc.swift in Sources */,
+				FFDA55D82B9E33CC00376E0E /* HandlerUpdatable.swift in Sources */,
 				FF31D3332B7B0D8800EB420C /* Locations5.swift in Sources */,
 				FF4A9D722B71C17E00C4B5F5 /* GroundTileType.swift in Sources */,
 				FF5068762B969C7D00DF64A8 /* Version.swift in Sources */,
@@ -867,8 +891,10 @@
 				FF5068182B92C0A700DF64A8 /* FormInfo.swift in Sources */,
 				FF50680A2B91434F00DF64A8 /* ItemStorage9.swift in Sources */,
 				FF5068812B96AAED00DF64A8 /* Meetable.swift in Sources */,
+				FFDA55D62B9E33A000376E0E /* HandlerLanguage.swift in Sources */,
 				FF4A9D702B71C0B000C4B5F5 /* AlcremieDecoration.swift in Sources */,
 				FF31D30C2B7322A400EB420C /* LanguageID.swift in Sources */,
+				FFDA55D42B9E336100376E0E /* GroundTile.swift in Sources */,
 				FF31D33D2B8279E800EB420C /* Locations8a.swift in Sources */,
 				FF5068792B96A48200DF64A8 /* AlphaReadable.swift in Sources */,
 				FF31D3062B731E2A00EB420C /* Nature.swift in Sources */,
@@ -893,9 +919,11 @@
 				FF31D31B2B7470A600EB420C /* GameLanguage.swift in Sources */,
 				FF5068262B92DD6400DF64A8 /* LCRNG.swift in Sources */,
 				FF5068622B9520F400DF64A8 /* MoveInfo8a.swift in Sources */,
+				FFDA55D22B9E332600376E0E /* Gigantamaxable.swift in Sources */,
 				FF50688D2B96B46E00DF64A8 /* NatureReadable.swift in Sources */,
 				FF31D35D2B86E70300EB420C /* ItemStorage3.swift in Sources */,
 				FF5068972B96B81C00DF64A8 /* Awakened.swift in Sources */,
+				FFDA55DB2B9E342300376E0E /* TrainerInfo.swift in Sources */,
 				FF31D3262B796FBE00EB420C /* LocationSet.swift in Sources */,
 				FF31D3122B746A2300EB420C /* ComboItem.swift in Sources */,
 				FF50680F2B918E6600DF64A8 /* SpeciesCategory.swift in Sources */,
