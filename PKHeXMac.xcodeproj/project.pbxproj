@@ -142,6 +142,8 @@
 		FF5068A12B96CB8C00DF64A8 /* FatefulEncounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068A02B96CB8C00DF64A8 /* FatefulEncounter.swift */; };
 		FF5068A32B96CBCB00DF64A8 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068A22B96CBCB00DF64A8 /* Favorite.swift */; };
 		FF5068A52B96CBF700DF64A8 /* FormArgument.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068A42B96CBF700DF64A8 /* FormArgument.swift */; };
+		FFDA55CE2B9E1DF000376E0E /* Ganbaru.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55CD2B9E1DF000376E0E /* Ganbaru.swift */; };
+		FFDA55D02B9E27F500376E0E /* BattleStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55CF2B9E27F500376E0E /* BattleStats.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -283,6 +285,8 @@
 		FF5068A02B96CB8C00DF64A8 /* FatefulEncounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FatefulEncounter.swift; sourceTree = "<group>"; };
 		FF5068A22B96CBCB00DF64A8 /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
 		FF5068A42B96CBF700DF64A8 /* FormArgument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormArgument.swift; sourceTree = "<group>"; };
+		FFDA55CD2B9E1DF000376E0E /* Ganbaru.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ganbaru.swift; sourceTree = "<group>"; };
+		FFDA55CF2B9E27F500376E0E /* BattleStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleStats.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +321,8 @@
 				FF5068A02B96CB8C00DF64A8 /* FatefulEncounter.swift */,
 				FF5068A22B96CBCB00DF64A8 /* Favorite.swift */,
 				FF5068A42B96CBF700DF64A8 /* FormArgument.swift */,
+				FFDA55CD2B9E1DF000376E0E /* Ganbaru.swift */,
+				FFDA55CF2B9E27F500376E0E /* BattleStats.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -816,6 +822,7 @@
 				FF5067FC2B8A422000DF64A8 /* ItemStorage5.swift in Sources */,
 				FF5068042B9139E800DF64A8 /* ItemStorage8BDSP.swift in Sources */,
 				FF5068892B96B3F400DF64A8 /* LangNicknamedTemplate.swift in Sources */,
+				FFDA55D02B9E27F500376E0E /* BattleStats.swift in Sources */,
 				FF5068412B94EF0F00DF64A8 /* PersonalType.swift in Sources */,
 				FF5068682B9521E000DF64A8 /* MoveInfo.swift in Sources */,
 				FF50683F2B94EE8C00DF64A8 /* PersonalMisc.swift in Sources */,
@@ -823,6 +830,7 @@
 				FF4A9D722B71C17E00C4B5F5 /* GroundTileType.swift in Sources */,
 				FF5068762B969C7D00DF64A8 /* Version.swift in Sources */,
 				FF5068232B92D7AE00DF64A8 /* PIDType.swift in Sources */,
+				FFDA55CE2B9E1DF000376E0E /* Ganbaru.swift in Sources */,
 				FF31D3192B74703700EB420C /* GameStrings.swift in Sources */,
 				FF50685A2B951F9E00DF64A8 /* MoveInfo6.swift in Sources */,
 				FF5068562B951F3F00DF64A8 /* MoveInfo4.swift in Sources */,
