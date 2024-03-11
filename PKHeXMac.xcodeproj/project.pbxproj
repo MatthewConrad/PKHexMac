@@ -149,6 +149,10 @@
 		FFDA55D62B9E33A000376E0E /* HandlerLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55D52B9E33A000376E0E /* HandlerLanguage.swift */; };
 		FFDA55D82B9E33CC00376E0E /* HandlerUpdatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55D72B9E33CC00376E0E /* HandlerUpdatable.swift */; };
 		FFDA55DB2B9E342300376E0E /* TrainerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55DA2B9E342300376E0E /* TrainerInfo.swift */; };
+		FFDA55DD2B9E411800376E0E /* HomeTrackable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55DC2B9E411800376E0E /* HomeTrackable.swift */; };
+		FFDA55DF2B9E470100376E0E /* HyperTrainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55DE2B9E470100376E0E /* HyperTrainable.swift */; };
+		FFDA55E12B9E5BD100376E0E /* ScaledSizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55E02B9E5BD100376E0E /* ScaledSizable.swift */; };
+		FFDA55E32B9E5EFA00376E0E /* PK9.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55E22B9E5EFA00376E0E /* PK9.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -297,6 +301,10 @@
 		FFDA55D52B9E33A000376E0E /* HandlerLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandlerLanguage.swift; sourceTree = "<group>"; };
 		FFDA55D72B9E33CC00376E0E /* HandlerUpdatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandlerUpdatable.swift; sourceTree = "<group>"; };
 		FFDA55DA2B9E342300376E0E /* TrainerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainerInfo.swift; sourceTree = "<group>"; };
+		FFDA55DC2B9E411800376E0E /* HomeTrackable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTrackable.swift; sourceTree = "<group>"; };
+		FFDA55DE2B9E470100376E0E /* HyperTrainable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyperTrainable.swift; sourceTree = "<group>"; };
+		FFDA55E02B9E5BD100376E0E /* ScaledSizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledSizable.swift; sourceTree = "<group>"; };
+		FFDA55E22B9E5EFA00376E0E /* PK9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PK9.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,6 +345,9 @@
 				FFDA55D32B9E336100376E0E /* GroundTile.swift */,
 				FFDA55D52B9E33A000376E0E /* HandlerLanguage.swift */,
 				FFDA55D72B9E33CC00376E0E /* HandlerUpdatable.swift */,
+				FFDA55DC2B9E411800376E0E /* HomeTrackable.swift */,
+				FFDA55DE2B9E470100376E0E /* HyperTrainable.swift */,
+				FFDA55E02B9E5BD100376E0E /* ScaledSizable.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -562,6 +573,7 @@
 				FF31D2E32B71CCB500EB420C /* Interfaces */,
 				FF4A9D6C2B71BD4900C4B5F5 /* Enums */,
 				FF31D2E12B71CC5900EB420C /* PKM.swift */,
+				FFDA55E22B9E5EFA00376E0E /* PK9.swift */,
 			);
 			path = PKM;
 			sourceTree = "<group>";
@@ -837,9 +849,11 @@
 				FF31D33B2B8278C400EB420C /* Locations8.swift in Sources */,
 				FF31D3482B82897A00EB420C /* HeldItemLumpImage.swift in Sources */,
 				FF50689F2B96CB6400DF64A8 /* DynamaxLevel.swift in Sources */,
+				FFDA55E32B9E5EFA00376E0E /* PK9.swift in Sources */,
 				FF31D2DE2B71C72800EB420C /* PokeSize.swift in Sources */,
 				FF31D3172B746FE800EB420C /* ProgramLanguage.swift in Sources */,
 				FF5068502B951E8400DF64A8 /* MoveInfo1.swift in Sources */,
+				FFDA55DD2B9E411800376E0E /* HomeTrackable.swift in Sources */,
 				FF5068482B94F8E800DF64A8 /* PersonalInfo1.swift in Sources */,
 				FF5068952B96B53E00DF64A8 /* AppliedMarkings.swift in Sources */,
 				FF5067FC2B8A422000DF64A8 /* ItemStorage5.swift in Sources */,
@@ -923,6 +937,7 @@
 				FF50688D2B96B46E00DF64A8 /* NatureReadable.swift in Sources */,
 				FF31D35D2B86E70300EB420C /* ItemStorage3.swift in Sources */,
 				FF5068972B96B81C00DF64A8 /* Awakened.swift in Sources */,
+				FFDA55E12B9E5BD100376E0E /* ScaledSizable.swift in Sources */,
 				FFDA55DB2B9E342300376E0E /* TrainerInfo.swift in Sources */,
 				FF31D3262B796FBE00EB420C /* LocationSet.swift in Sources */,
 				FF31D3122B746A2300EB420C /* ComboItem.swift in Sources */,
@@ -942,6 +957,7 @@
 				FF50686A2B9527A900DF64A8 /* BattleMoves.swift in Sources */,
 				FF50682F2B94E75900DF64A8 /* EffortValueYield.swift in Sources */,
 				FF5068312B94E79E00DF64A8 /* GenderDetail.swift in Sources */,
+				FFDA55DF2B9E470100376E0E /* HyperTrainable.swift in Sources */,
 				FF50689B2B96CAAB00DF64A8 /* CaughtData2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

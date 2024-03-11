@@ -36,8 +36,8 @@ extension TrainerInfo {
         } else if pk.format == 3 {
             true // Gen3 does not check OT Gender nor Pokemon Version
         } else if self.gender != pk.originalTrainerGender {
-            return if pk.format == 2 {
-                pk is CaughtData2 && pk.caughtData == 0
+            if pk.format == 2, let cd = pk as? CaughtData2 {
+                cd.caughtData == 0
             } else {
                 false
             }
@@ -55,19 +55,19 @@ extension TrainerInfo {
         } else if self.gender != pk.originalTrainerGender {
             false
         } else if self.version != pk.version {
-            return if pk is PK9 && pk.version == .AnyGame {
+            if let pk9 = pk as? PK9, pk9.version == .AnyGame {
                 true
             } else {
                 false
             }
-        } else if self.OT !== pk.originalTrainerName {
+        } else if self.OT != pk.originalTrainerName {
             false
         } else {
             true
         }
     }
 
-    /// Checks if the Trainer Info matches the PKM's original trainer data 
+    /// Checks if the Trainer Info matches the PKM's original trainer data
     func isFromTrainer(pk: PKM) -> Bool {
         return if pk.isEgg {
             self.isFromTrainer(pk: pk)

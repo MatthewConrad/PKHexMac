@@ -1121,7 +1121,7 @@
 
 - [x] AlcremieDecoration
 - [x] GroundTileType
-- [/] OriginMark (need further progress in PKM)
+- [x] OriginMark
 - [x] PokeSize
 - [x] PokeSizeDetailed
 - [x] PokeblockFlavor
