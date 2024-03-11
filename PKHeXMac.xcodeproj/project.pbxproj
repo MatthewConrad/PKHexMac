@@ -154,6 +154,11 @@
 		FFDA55E12B9E5BD100376E0E /* ScaledSizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55E02B9E5BD100376E0E /* ScaledSizable.swift */; };
 		FFDA55E32B9E5EFA00376E0E /* PK9.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55E22B9E5EFA00376E0E /* PK9.swift */; };
 		FFDA55E52B9E876500376E0E /* NatureSettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55E42B9E876500376E0E /* NatureSettable.swift */; };
+		FFDA55E82B9E985800376E0E /* MemoryArgType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55E72B9E985800376E0E /* MemoryArgType.swift */; };
+		FFDA55EA2B9E989D00376E0E /* MemoryContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55E92B9E989D00376E0E /* MemoryContext.swift */; };
+		FFDA55EC2B9E9B4900376E0E /* Memories.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55EB2B9E9B4900376E0E /* Memories.swift */; };
+		FFDA55EE2B9E9CE100376E0E /* MemoryContext6.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55ED2B9E9CE100376E0E /* MemoryContext6.swift */; };
+		FFDA55F02B9E9E8000376E0E /* MemoryContext8.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55EF2B9E9E8000376E0E /* MemoryContext8.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -307,6 +312,11 @@
 		FFDA55E02B9E5BD100376E0E /* ScaledSizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledSizable.swift; sourceTree = "<group>"; };
 		FFDA55E22B9E5EFA00376E0E /* PK9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PK9.swift; sourceTree = "<group>"; };
 		FFDA55E42B9E876500376E0E /* NatureSettable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatureSettable.swift; sourceTree = "<group>"; };
+		FFDA55E72B9E985800376E0E /* MemoryArgType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryArgType.swift; sourceTree = "<group>"; };
+		FFDA55E92B9E989D00376E0E /* MemoryContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryContext.swift; sourceTree = "<group>"; };
+		FFDA55EB2B9E9B4900376E0E /* Memories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memories.swift; sourceTree = "<group>"; };
+		FFDA55ED2B9E9CE100376E0E /* MemoryContext6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryContext6.swift; sourceTree = "<group>"; };
+		FFDA55EF2B9E9E8000376E0E /* MemoryContext8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryContext8.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -681,6 +691,7 @@
 		FF5068292B94D71A00DF64A8 /* Restrictions */ = {
 			isa = PBXGroup;
 			children = (
+				FFDA55E62B9E984D00376E0E /* Memories */,
 				FF50682A2B94D76F00DF64A8 /* Vivillon3DS.swift */,
 			);
 			path = Restrictions;
@@ -746,6 +757,18 @@
 				FFDA55DA2B9E342300376E0E /* TrainerInfo.swift */,
 			);
 			path = Abstractions;
+			sourceTree = "<group>";
+		};
+		FFDA55E62B9E984D00376E0E /* Memories */ = {
+			isa = PBXGroup;
+			children = (
+				FFDA55E72B9E985800376E0E /* MemoryArgType.swift */,
+				FFDA55E92B9E989D00376E0E /* MemoryContext.swift */,
+				FFDA55EB2B9E9B4900376E0E /* Memories.swift */,
+				FFDA55ED2B9E9CE100376E0E /* MemoryContext6.swift */,
+				FFDA55EF2B9E9E8000376E0E /* MemoryContext8.swift */,
+			);
+			path = Memories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -840,8 +863,10 @@
 				FF31D3512B85AA4300EB420C /* ItemStorage1.swift in Sources */,
 				FF5068852B96B1B500DF64A8 /* FixedOTFriendship.swift in Sources */,
 				FF50685E2B951FEE00DF64A8 /* MoveInfo7b.swift in Sources */,
+				FFDA55E82B9E985800376E0E /* MemoryArgType.swift in Sources */,
 				FF31D3142B746BB400EB420C /* BasicStrings.swift in Sources */,
 				FF31D3282B79721B00EB420C /* LocationSet0.swift in Sources */,
+				FFDA55EA2B9E989D00376E0E /* MemoryContext.swift in Sources */,
 				FF50687F2B96A8A600DF64A8 /* Hatchable.swift in Sources */,
 				FF31D2E02B71CB3F00EB420C /* OriginMark.swift in Sources */,
 				FF5068722B969C3900DF64A8 /* LangNick.swift in Sources */,
@@ -881,6 +906,7 @@
 				FF31D34F2B858AD300EB420C /* InventoryType.swift in Sources */,
 				FF31D3312B7B0A5000EB420C /* Locations4.swift in Sources */,
 				FF5068392B94EDE800DF64A8 /* PersonalTM.swift in Sources */,
+				FFDA55EC2B9E9B4900376E0E /* Memories.swift in Sources */,
 				FF31D2FE2B730AA000EB420C /* Ball.swift in Sources */,
 				FF5068002B8A50F000DF64A8 /* ItemStorage7GG.swift in Sources */,
 				FF5068202B92D71900DF64A8 /* MystryMew.swift in Sources */,
@@ -902,6 +928,7 @@
 				FF31D3372B82777100EB420C /* Locations7.swift in Sources */,
 				FF5068602B95206600DF64A8 /* MoveInfo8.swift in Sources */,
 				FF50683B2B94EE5800DF64A8 /* PersonalTR.swift in Sources */,
+				FFDA55F02B9E9E8000376E0E /* MemoryContext8.swift in Sources */,
 				FF31D2FC2B730A2A00EB420C /* Ability.swift in Sources */,
 				FF50688F2B96B4B600DF64A8 /* ObedienceLevelReadable.swift in Sources */,
 				FF5068A32B96CBCB00DF64A8 /* Favorite.swift in Sources */,
@@ -935,6 +962,7 @@
 				FF5068872B96B1D700DF64A8 /* GigantamaxReadable.swift in Sources */,
 				FF31D31B2B7470A600EB420C /* GameLanguage.swift in Sources */,
 				FF5068262B92DD6400DF64A8 /* LCRNG.swift in Sources */,
+				FFDA55EE2B9E9CE100376E0E /* MemoryContext6.swift in Sources */,
 				FF5068622B9520F400DF64A8 /* MoveInfo8a.swift in Sources */,
 				FFDA55D22B9E332600376E0E /* Gigantamaxable.swift in Sources */,
 				FFDA55E52B9E876500376E0E /* NatureSettable.swift in Sources */,
