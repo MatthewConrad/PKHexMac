@@ -104,7 +104,7 @@ extension HyperTrainable {
         currentLevel >= self.getHyperTrainMinLevel(context: context)
     }
 
-    mutating func setSuggestedHyperTrainingData(pk: PKM, ivs: [Int]) {
+    mutating func setSuggestedHyperTrainingData(pk: PKMProtocol, ivs: [Int]) {
         self.htHP = ivs[0] != 31
         self.htATK = ivs[1] != 31 && ivs[1] > 2
         self.htDEF = ivs[2] != 31

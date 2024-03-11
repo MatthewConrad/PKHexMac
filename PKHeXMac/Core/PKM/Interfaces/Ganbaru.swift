@@ -49,10 +49,6 @@ extension Ganbaru {
         [self.gvHP, self.gvATK, self.gvDEF, self.gvSPE, self.gvSPA, self.gvSPD]
     }
 
-    func getMax(pk: PKM, index: Int) -> UInt8 {
-        0 // TODO: call PKM.getMaxGanbaru
-    }
-
     /// Gets the added boost for a stat with a base potential IV.
     static func getBias(iv: Int) -> UInt8 {
         switch iv {
@@ -77,6 +73,18 @@ extension Ganbaru {
         self.trueMax - self.getBias(iv: iv)
     }
 
+    func getMaxGanbaru(index: Int) -> UInt8 {
+        return if let pk = self as? PKMProtocol {
+            Self.getMaxGanbaru(iv: pk.ivs[index])
+        } else {
+            0
+        }
+    }
+
+    func getMax(pk: PKMProtocol, index: Int) -> UInt8 {
+        pk.getMaxGanbaru(index: index)
+    }
+
     /// Checks if any of the values is below a reference's corresponding value.
     func isGanbaruValuesBelow(obj: Ganbaru) -> Bool {
         return if self.gvHP < obj.gvHP {
@@ -97,7 +105,7 @@ extension Ganbaru {
     }
 
     /// Checks if all values are at the favorable maximum per setSuggestedGanbaruValues
-    func isGanbaruValuesMax(pk: PKM) -> Bool {
+    func isGanbaruValuesMax(pk: PKMProtocol) -> Bool {
         return if self.gvHP < Self.getMaxGanbaru(iv: pk.ivHP) {
             false
         } else if self.gvDEF < Self.getMaxGanbaru(iv: pk.ivDEF) {
@@ -146,7 +154,7 @@ extension Ganbaru {
     }
 
     /// Sets all values to the maximum except for ATK and SPE, which will be 0 if the IV is 0
-    mutating func setSuggestedGanbaruValues(pk: PKM) {
+    mutating func setSuggestedGanbaruValues(pk: PKMProtocol) {
         self.gvHP = Self.getMaxGanbaru(iv: pk.ivHP)
         self.gvATK = pk.ivATK == 0 ? 0 : Self.getMaxGanbaru(iv: pk.ivATK)
         self.gvDEF = Self.getMaxGanbaru(iv: pk.ivDEF)

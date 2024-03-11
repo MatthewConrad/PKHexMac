@@ -7,7 +7,47 @@
 
 import Foundation
 
-struct PK9: PKM {
+struct PK9: PKMProtocol {
+    var sizeParty: Int
+    
+    var sizeStored: Int
+    
+    var personalInfo: PersonalInfo
+    
+    var data: [UInt8]
+    
+    init() {
+        <#code#>
+    }
+    
+    init(data: [UInt8]) {
+        <#code#>
+    }
+    
+    init(size: Int) {
+        <#code#>
+    }
+    
+    func encrypt() -> [UInt8] {
+        <#code#>
+    }
+    
+    func updateChecksum() {
+        <#code#>
+    }
+    
+    var valid: Bool
+    
+    var nicknameTrash: [UInt8]
+    
+    var originalTrainerTrash: [UInt8]
+    
+    var trainerIDDisplayFormat: TrainerIDFormat
+    
+    var fatefulEncounter: Bool
+    
+    var nature: Nature
+    
     var context: EntityContext
     
     var version: GameVersion

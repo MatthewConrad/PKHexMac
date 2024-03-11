@@ -7,21 +7,82 @@
 
 import Foundation
 
-protocol PKM: SpeciesForm, BattleStats, BattleMoves, Ganbaru, TrainerID32, Meetable, Hatchable, Shiny, LangNick, GameValueLimit {
+protocol PKMProtocol: SpeciesForm, BattleStats, BattleMoves, Ganbaru, TrainerID32, Meetable, Hatchable, Shiny, LangNick, GameValueLimit, FatefulEncounterable, NatureSettable {
+    // TODO: figure out proper way to handle readonly Extensions, Extension
+    
+    var sizeParty: Int { get }
+    var sizeStored: Int { get }
+
+    var personalInfo: PersonalInfo { get }
+
+    var data: [UInt8] { get }
+    var extraBytes: [UInt16] { get }
+
+    init()
+    init(data: [UInt8])
+    init(size: Int)
+
+    func encrypt() -> [UInt8]
+    func write() -> [UInt8]
+    func updateChecksum()
+
+    var encryptedPartyData: [UInt8] { get }
+    var encryptedBoxData: [UInt8] { get }
+    var decryptedPartyData: [UInt8] { get }
+    var decryptedBoxData: [UInt8] { get }
+
+    /// Rough indication if the data is junk or not.
+    var valid: Bool { get set }
+
+    /// Trash bytes
+    var nicknameTrash: [UInt8] { get }
+    var originalTrainerTrash: [UInt8] { get }
+    var handlingTrainerTrash: [UInt8] { get }
+
     var context: EntityContext { get }
     var format: UInt8 { get }
     var version: GameVersion { get set }
+    var trainerIDDisplayFormat: TrainerIDFormat { get }
 
     var originalTrainerName: String { get set }
     var originalTrainerGender: UInt8 { get set }
-    
+
     var language: Int { get set }
 }
 
-extension PKM {
+extension PKMProtocol {
+    var extraBytes: [UInt16] { [] }
+
+    func write() -> [UInt8] {
+        self.updateChecksum()
+        return self.data
+    }
+
+    var encryptedPartyData: [UInt8] {
+        Array(self.encrypt().prefix(self.sizeParty))
+    }
+
+    var encryptedBoxData: [UInt8] {
+        Array(self.encrypt().prefix(self.sizeStored))
+    }
+
+    var decryptedPartyData: [UInt8] {
+        Array(self.write().prefix(self.sizeParty))
+    }
+
+    var decryptedBoxData: [UInt8] {
+        Array(self.write().prefix(self.sizeStored))
+    }
+
+    var handlingTrainerTrash: [UInt8] {
+        []
+    }
+
     var format: UInt8 {
         UInt8(self.context.generation())
     }
+
+    var TrainerIDDisplayFormat: TrainerIDFormat { self.getTrainerIDFormat() }
 
     var RS: Bool { [.R, .S].contains(self.version) }
     var E: Bool { self.version == .E }
@@ -86,12 +147,6 @@ extension PKM {
         }
     }
 
-    /// Gets the max possible value that can be stored for the specific stat.
-    func getMaxGanbaru(index: Int) -> UInt8 {
-        let iv = self.ivs[index]
-        return Self.getMaxGanbaru(iv: iv)
-    }
-
     mutating func applyTrainerInfo(info: TrainerInfo) {
         self.originalTrainerName = info.OT
         self.TID16 = info.TID16
@@ -103,7 +158,7 @@ extension PKM {
         self.originalTrainerGender = info.gender
         self.language = info.language
         self.version = info.version
-        
+
         // TODO: finish after IRegionOrigin
     }
 }

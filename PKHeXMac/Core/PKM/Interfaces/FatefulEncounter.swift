@@ -8,6 +8,6 @@
 import Foundation
 
 /// Exposes whether tagged as a "Fateful Encounter"
-protocol FatefulEncounter: FatefulEncounterReadable {
+protocol FatefulEncounterable: FatefulEncounterReadable {
     var fatefulEncounter: Bool { get set }
 }

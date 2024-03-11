@@ -7,18 +7,18 @@
 
 import Foundation
 
-struct GameStrings: IBasicStrings {
-    var Species: [String]
-
-    var Item: [String]
-
-    var Move: [String]
-
-    var Ability: [String]
-
-    var Types: [String]
-
-    var Natures: [String]
-
-    var EggName: String
+struct GameStrings: BasicStrings {
+    var species: [String]
+    
+    var item: [String]
+    
+    var move: [String]
+    
+    var ability: [String]
+    
+    var types: [String]
+    
+    var natures: [String]
+    
+    var eggName: String
 }

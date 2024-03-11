@@ -10,7 +10,7 @@ import Foundation
 enum OriginMark {
     case None, Gen6Pentagon, Gen7Clover, Gen8Galar, Gen8Trio, Gen8Arc, Gen9Paldea, GameBoy, GO, LetsGo
 
-    static func getOriginMark(pk: PKM) -> OriginMark {
+    static func getOriginMark(pk: PKMProtocol) -> OriginMark {
         return if pk.VC {
             .GameBoy
         } else if pk.GO {

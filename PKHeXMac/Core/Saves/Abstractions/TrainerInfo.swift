@@ -17,7 +17,7 @@ protocol TrainerInfo: TrainerID32 {
 }
 
 extension TrainerInfo {
-    func isMatchVersion(pk: PKM) -> Bool {
+    func isMatchVersion(pk: PKMProtocol) -> Bool {
         return if self.version == pk.version {
             true
         } else if pk.GO_LGPE {
@@ -28,7 +28,7 @@ extension TrainerInfo {
     }
 
     /// Checks if matches the PKM's original trainer data, ignoring version.
-    func isFromTrainerNoVersion(pk: PKM) -> Bool {
+    func isFromTrainerNoVersion(pk: PKMProtocol) -> Bool {
         return if self.ID32 != pk.ID32 {
             false
         } else if self.OT != pk.originalTrainerName {
@@ -47,7 +47,7 @@ extension TrainerInfo {
     }
 
     /// Checks trainer match if entity is still an Egg
-    func isFromTrainerEgg(pk: PKM) -> Bool {
+    func isFromTrainerEgg(pk: PKMProtocol) -> Bool {
         return if self.context != pk.context {
             false
         } else if self.ID32 != pk.ID32 {
@@ -68,7 +68,7 @@ extension TrainerInfo {
     }
 
     /// Checks if the Trainer Info matches the PKM's original trainer data
-    func isFromTrainer(pk: PKM) -> Bool {
+    func isFromTrainer(pk: PKMProtocol) -> Bool {
         return if pk.isEgg {
             self.isFromTrainer(pk: pk)
         } else if !self.isFromTrainerNoVersion(pk: pk) {

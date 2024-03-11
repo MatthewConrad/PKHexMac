@@ -12,12 +12,12 @@ protocol DynamaxLevelReadable {
 }
 
 extension DynamaxLevelReadable {
-    func canHaveDynamaxLevel(pk: PKM) -> Bool {
+    func canHaveDynamaxLevel(pk: PKMProtocol) -> Bool {
         return if pk.isEgg {
             false
         } else {
             // TODO: update when have PK8
-            pk is PKM || Self.canHaveDynamaxLevel(species: pk.species)
+            pk is PKMProtocol || Self.canHaveDynamaxLevel(species: pk.species)
         }
     }
 
@@ -25,7 +25,7 @@ extension DynamaxLevelReadable {
         ![.Zacian, .Zamazenta, .Eternatus].contains(species)
     }
 
-    func getSuggestedDynamaxLevel(pk: PKM, requested: UInt8 = 10) -> UInt8 {
+    func getSuggestedDynamaxLevel(pk: PKMProtocol, requested: UInt8 = 10) -> UInt8 {
         self.canHaveDynamaxLevel(pk: pk) ? requested : 0
     }
 }

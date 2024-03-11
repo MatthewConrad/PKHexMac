@@ -28,7 +28,7 @@ extension BattleVersion {
         }
     }
 
-    mutating func adaptToBattleVersion(pk: inout PKM, version: GameVersion) {
+    mutating func adaptToBattleVersion(pk: inout PKMProtocol, version: GameVersion) {
         // TODO: revisit after Moveset finished
         pk.setMoves(moves: [])
 

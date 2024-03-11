@@ -168,13 +168,13 @@ enum MoveInfo {
         }
     }
 
-    static func isDummiedMove(pk: PKM, move: Move) -> Bool {
+    static func isDummiedMove(pk: PKMProtocol, move: Move) -> Bool {
         isDummiedMove(
             bitflags: getDummiedMovesHashSet(context: pk.context),
             move: move)
     }
 
-    static func isDummiedMove(pk: PKM, moveIndex: Int) -> Bool {
+    static func isDummiedMove(pk: PKMProtocol, moveIndex: Int) -> Bool {
         let bitflags = getDummiedMovesHashSet(context: pk.context)
         return if bitflags.count == 0 {
             false
@@ -184,7 +184,7 @@ enum MoveInfo {
     }
 
     /// Checks if any move in the currently known moves is unusable
-    static func isDummiedMoveAny(pk: PKM) -> Bool {
+    static func isDummiedMoveAny(pk: PKMProtocol) -> Bool {
         let bitflags = getDummiedMovesHashSet(context: pk.context)
         if bitflags.count == 0 {
             return false
