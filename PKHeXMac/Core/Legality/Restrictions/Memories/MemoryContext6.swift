@@ -19,7 +19,7 @@ struct MemoryContext6: MemoryContext {
     private init() {}
     static let instance = MemoryContext6()
     
-    func getCanBeCaptured(species: Species, flags: [UInt8]) -> Bool {
+    static func getCanBeCaptured(species: Species, flags: [UInt8]) -> Bool {
         let offset: Int = species.rawValue >> 3
         if offset >= flags.count {
             return false
@@ -29,7 +29,7 @@ struct MemoryContext6: MemoryContext {
         return (flags[offset] & (1 << bitIndex)) != 0
     }
     
-    func getCanBeCaptured(species: Species, version: GameVersion) -> Bool {
+    static func getCanBeCaptured(species: Species, version: GameVersion) -> Bool {
         let capturableAS = getCanBeCaptured(species: species, flags: MemoryContext6Data.captureFlagsAS)
         let capturableOR = getCanBeCaptured(species: species, flags: MemoryContext6Data.captureFlagsOR)
         let capturableX = getCanBeCaptured(species: species, flags: MemoryContext6Data.captureFlagsX)

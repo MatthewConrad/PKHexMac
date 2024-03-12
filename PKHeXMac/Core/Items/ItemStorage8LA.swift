@@ -53,7 +53,7 @@ struct ItemStorage8LA: ItemStorage {
         1790, 1792, 1793, 1794, 1795, 1796, 1797, 1798, 1799,
         1800, 1801, 1802, 1803, 1804, 1805, 1806, 1807, 1828,
     ]
-    
+
     func getItems(type: InventoryType) -> [UInt16] {
         switch type {
         case .Items, .PCItems:
@@ -68,6 +68,6 @@ struct ItemStorage8LA: ItemStorage {
     }
 
     func isLegal(type: InventoryType, itemIndex: Int, itemCount: Int) -> Bool {
-        return getItems(type: type).contains(itemIndex)
+        return getItems(type: type).contains(UInt16(itemIndex))
     }
 }

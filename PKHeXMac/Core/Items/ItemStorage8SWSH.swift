@@ -149,7 +149,7 @@ struct ItemStorage8SWSH: ItemStorage {
 
     public static let allHeldItems: [UInt16] = pouchItems + pouchBall + pouchBattle + pouchBerries + pouchMedicine + pouchTR + pouchTreasure + pouchIngredients
 
-    func isTechRecord(itemID: Int) -> Bool {
+    static func isTechRecord(itemID: UInt16) -> Bool {
         return ItemStorage8SWSH.pouchTR.contains(itemID)
     }
 
@@ -167,7 +167,7 @@ struct ItemStorage8SWSH: ItemStorage {
         } else if isDynamaxCrystal(item: itemIndex) {
             isDynamaxCrystalAvailable(item: itemIndex)
         } else {
-            !ItemStorage8SWSH.unreleased.contains(itemIndex)
+            !ItemStorage8SWSH.unreleased.contains(UInt16(itemIndex))
         }
     }
 

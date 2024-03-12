@@ -160,6 +160,7 @@
 		FFDA55EE2B9E9CE100376E0E /* MemoryContext6.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55ED2B9E9CE100376E0E /* MemoryContext6.swift */; };
 		FFDA55F02B9E9E8000376E0E /* MemoryContext8.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55EF2B9E9E8000376E0E /* MemoryContext8.swift */; };
 		FFDA55F22B9FE57000376E0E /* MemoryContext6Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55F12B9FE57000376E0E /* MemoryContext6Data.swift */; };
+		FFDA55F42B9FF49700376E0E /* MemoryContext8Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55F32B9FF49700376E0E /* MemoryContext8Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -319,6 +320,7 @@
 		FFDA55ED2B9E9CE100376E0E /* MemoryContext6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryContext6.swift; sourceTree = "<group>"; };
 		FFDA55EF2B9E9E8000376E0E /* MemoryContext8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryContext8.swift; sourceTree = "<group>"; };
 		FFDA55F12B9FE57000376E0E /* MemoryContext6Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryContext6Data.swift; sourceTree = "<group>"; };
+		FFDA55F32B9FF49700376E0E /* MemoryContext8Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryContext8Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -770,6 +772,7 @@
 				FFDA55ED2B9E9CE100376E0E /* MemoryContext6.swift */,
 				FFDA55EF2B9E9E8000376E0E /* MemoryContext8.swift */,
 				FFDA55F12B9FE57000376E0E /* MemoryContext6Data.swift */,
+				FFDA55F32B9FF49700376E0E /* MemoryContext8Data.swift */,
 			);
 			path = Memories;
 			sourceTree = "<group>";
@@ -931,6 +934,7 @@
 				FF31D3372B82777100EB420C /* Locations7.swift in Sources */,
 				FF5068602B95206600DF64A8 /* MoveInfo8.swift in Sources */,
 				FF50683B2B94EE5800DF64A8 /* PersonalTR.swift in Sources */,
+				FFDA55F42B9FF49700376E0E /* MemoryContext8Data.swift in Sources */,
 				FFDA55F02B9E9E8000376E0E /* MemoryContext8.swift in Sources */,
 				FF31D2FC2B730A2A00EB420C /* Ability.swift in Sources */,
 				FF50688F2B96B4B600DF64A8 /* ObedienceLevelReadable.swift in Sources */,
