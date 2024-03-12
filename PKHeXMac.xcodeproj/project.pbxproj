@@ -159,6 +159,7 @@
 		FFDA55EC2B9E9B4900376E0E /* Memories.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55EB2B9E9B4900376E0E /* Memories.swift */; };
 		FFDA55EE2B9E9CE100376E0E /* MemoryContext6.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55ED2B9E9CE100376E0E /* MemoryContext6.swift */; };
 		FFDA55F02B9E9E8000376E0E /* MemoryContext8.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55EF2B9E9E8000376E0E /* MemoryContext8.swift */; };
+		FFDA55F22B9FE57000376E0E /* MemoryContext6Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55F12B9FE57000376E0E /* MemoryContext6Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -317,6 +318,7 @@
 		FFDA55EB2B9E9B4900376E0E /* Memories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memories.swift; sourceTree = "<group>"; };
 		FFDA55ED2B9E9CE100376E0E /* MemoryContext6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryContext6.swift; sourceTree = "<group>"; };
 		FFDA55EF2B9E9E8000376E0E /* MemoryContext8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryContext8.swift; sourceTree = "<group>"; };
+		FFDA55F12B9FE57000376E0E /* MemoryContext6Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryContext6Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -767,6 +769,7 @@
 				FFDA55EB2B9E9B4900376E0E /* Memories.swift */,
 				FFDA55ED2B9E9CE100376E0E /* MemoryContext6.swift */,
 				FFDA55EF2B9E9E8000376E0E /* MemoryContext8.swift */,
+				FFDA55F12B9FE57000376E0E /* MemoryContext6Data.swift */,
 			);
 			path = Memories;
 			sourceTree = "<group>";
@@ -963,6 +966,7 @@
 				FF31D31B2B7470A600EB420C /* GameLanguage.swift in Sources */,
 				FF5068262B92DD6400DF64A8 /* LCRNG.swift in Sources */,
 				FFDA55EE2B9E9CE100376E0E /* MemoryContext6.swift in Sources */,
+				FFDA55F22B9FE57000376E0E /* MemoryContext6Data.swift in Sources */,
 				FF5068622B9520F400DF64A8 /* MoveInfo8a.swift in Sources */,
 				FFDA55D22B9E332600376E0E /* Gigantamaxable.swift in Sources */,
 				FFDA55E52B9E876500376E0E /* NatureSettable.swift in Sources */,

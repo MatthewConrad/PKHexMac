@@ -45,7 +45,7 @@ struct MemoryContext8: MemoryContext {
         <#code#>
     }
     
-    func isUsedKeyItemSpecific(item: Int) -> Bool {
+    func isUsedKeyItemSpecific(item: Int, species: Species) -> Bool {
         <#code#>
     }
     

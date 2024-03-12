@@ -10,7 +10,7 @@ import Foundation
 struct ItemStorage7GG: ItemStorage {
     static let instance = ItemStorage7GG()
 
-    private static let pouchCandy: [Int] = [
+    private static let pouchCandy: [UInt16] = [
         050, // Rare Candy
         960, 961, 962, 963, 964, 965, // S
         966, 967, 968, 969, 970, 971, // L
@@ -27,12 +27,12 @@ struct ItemStorage7GG: ItemStorage {
         1050, 1051, 1052, 1053, 1054, 1055, 1056, 1057,
     ]
 
-    private static let pouchMedicine: [Int] = [
+    private static let pouchMedicine: [UInt16] = [
         017, 018, 019, 020, 021, 022, 023, 024, 025, 026, 027, 028, 029,
         030, 031, 032, 038, 039, 040, 041, 709, 903,
     ]
 
-    private static let pouchTMHM: [Int] = [
+    private static let pouchTMHM: [UInt16] = [
         328, 329, 330, 331, 332, 333, 334, 335, 336, 337,
         338, 339, 340, 341, 342, 343, 344, 345, 346, 347,
         348, 349, 350, 351, 352, 353, 354, 355, 356, 357,
@@ -41,21 +41,21 @@ struct ItemStorage7GG: ItemStorage {
         378, 379, 380, 381, 382, 383, 384, 385, 386, 387,
     ]
 
-    private static let pouchPowerUp: [Int] = [
+    private static let pouchPowerUp: [UInt16] = [
         051, 053, 081, 082, 083, 084, 085, 849,
     ]
 
-    private static let pouchCatching: [Int] = [
+    private static let pouchCatching: [UInt16] = [
         001, 002, 003, 004, 012, 164, 166, 168, 861, 862, 863, 864, 865, 866,
     ]
 
-    private static let pouchBattle: [Int] = [
+    private static let pouchBattle: [UInt16] = [
         055, 056, 057, 058, 059, 060, 061, 062,
         656, 659, 660, 661, 662, 663, 671, 672, 675, 676, 678, 679,
         760, 762, 770, 773,
     ]
 
-    private static let pouchRegular: [Int] = [
+    private static let pouchRegular: [UInt16] = [
         076, 077, 078, 079, 086, 087, 088, 089,
         090, 091, 092, 093, 101, 102, 103, 113, 115,
         121, 122, 123, 124, 125, 126, 127, 128,
@@ -64,7 +64,7 @@ struct ItemStorage7GG: ItemStorage {
         900, 901, 902,
     ]
 
-    private static let pouchKey: [Int] = [
+    private static let pouchKey: [UInt16] = [
         113, // Tea
         115, // Autograph
         121, // Pokémon Box
@@ -104,7 +104,7 @@ struct ItemStorage7GG: ItemStorage {
         return true
     }
 
-    func getItems(type: InventoryType) -> [Int] {
+    func getItems(type: InventoryType) -> [UInt16] {
         switch type {
         case .Medicine:
             return ItemStorage7GG.pouchMedicine

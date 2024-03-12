@@ -10,7 +10,7 @@ import Foundation
 struct ItemStorage8LA: ItemStorage {
     static let instance = ItemStorage8LA()
 
-    private static let pouchItems: [Int] = [
+    private static let pouchItems: [UInt16] = [
         017, 023, 024, 025, 026, 027, 028, 029, 039, 041,
         050, 054, 072, 073, 075, 080, 081, 082, 083, 084,
         085, 090, 091, 092, 107, 108, 109, 110, 149, 150,
@@ -33,7 +33,7 @@ struct ItemStorage8LA: ItemStorage {
         1760, 1761, 1762, 1764, 1785,
     ]
 
-    private static let pouchRecipe: [Int] = [
+    private static let pouchRecipe: [UInt16] = [
         1640, 1641, 1642, 1643, 1644, 1646, 1647, 1648, 1649,
         1650, 1652, 1653, 1654, 1655, 1656, 1657, 1658, 1659,
         1660, 1661, 1662, 1663, 1664, 1665, 1666, 1667, 1668, 1669,
@@ -42,7 +42,7 @@ struct ItemStorage8LA: ItemStorage {
         1729, 1730, 1731, 1751, 1752, 1753, 1783, 1784,
     ]
 
-    private static let pouchKey: [Int] = [
+    private static let pouchKey: [UInt16] = [
         111, 298, 299,
         300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313,
         441, 455, 466,
@@ -54,7 +54,7 @@ struct ItemStorage8LA: ItemStorage {
         1800, 1801, 1802, 1803, 1804, 1805, 1806, 1807, 1828,
     ]
     
-    func getItems(type: InventoryType) -> [Int] {
+    func getItems(type: InventoryType) -> [UInt16] {
         switch type {
         case .Items, .PCItems:
             return ItemStorage8LA.pouchItems

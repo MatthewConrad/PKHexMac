@@ -10,7 +10,7 @@ import Foundation
 struct ItemStorage8SWSH: ItemStorage {
     static let instance = ItemStorage8SWSH()
 
-    private static let pouchItems: [Int] = [
+    private static let pouchItems: [UInt16] = [
         045, 046, 047, 048, 049, 050, 051, 052, 053, 076, 077, 079, 080, 081, 082, 083, 084, 085, 107, 108, 109,
         110, 112, 116, 117, 118, 119, 135, 136, 213, 214, 215, 217, 218, 219, 220, 221, 222, 223, 224, 225, 228,
         229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249,
@@ -45,7 +45,7 @@ struct ItemStorage8SWSH: ItemStorage {
         1592, 1604, 1606,
     ]
 
-    private static let pouchKey: [Int] = [
+    private static let pouchKey: [UInt16] = [
         078, 628, 629, 631, 632, 638, 703, 847, 943, 944, 945, 946,
         1074, 1075, 1076, 1077, 1080, 1081, 1100, 1255, 1266, 1267,
         1269, 1270, 1271, 1278, 1583, 1584, 1585, 1586, 1587, 1589,
@@ -54,20 +54,20 @@ struct ItemStorage8SWSH: ItemStorage {
         1590, 1591, 1593, 1594, 1595, 1596, 1597, 1598, 1599, 1600, 1601, 1602, 1603, 1605, 1607,
     ]
 
-    private static let pouchBall: [Int] = [
+    private static let pouchBall: [UInt16] = [
         001, 002, 003, 004, 005, 006, 007, 008, 009, 010, 011, 012, 013, 014, 015, 016,
         492, 493, 494, 495, 496, 497, 498, 499, 500, 576,
         851,
     ]
 
-    private static let pouchMedicine: [Int] = [
+    private static let pouchMedicine: [UInt16] = [
         017, 018, 019, 020, 021, 022, 023, 024, 025, 026,
         027, 028, 029, 030, 031, 032, 033, 034, 035, 036,
         037, 038, 039, 040, 041, 042, 043, 054,
         134, 504, 591, 708, 709, 852, 903, 1579,
     ]
 
-    private static let pouchBerries: [Int] = [
+    private static let pouchBerries: [UInt16] = [
         149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159,
         160, 161, 162, 163, 169, 170, 171, 172, 173, 174,
         184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199,
@@ -75,7 +75,7 @@ struct ItemStorage8SWSH: ItemStorage {
         686, 687, 688,
     ]
 
-    private static let pouchTR: [Int] = [
+    private static let pouchTR: [UInt16] = [
         1130, 1131, 1132, 1133, 1134, 1135, 1136, 1137, 1138, 1139,
         1140, 1141, 1142, 1143, 1144, 1145, 1146, 1147, 1148, 1149,
         1150, 1151, 1152, 1153, 1154, 1155, 1156, 1157, 1158, 1159,
@@ -88,7 +88,7 @@ struct ItemStorage8SWSH: ItemStorage {
         1220, 1221, 1222, 1223, 1224, 1225, 1226, 1227, 1228, 1229,
     ]
 
-    private static let pouchTMTR: [Int] = [
+    private static let pouchTMTR: [UInt16] = [
         328, 329, 330, 331, 332, 333, 334, 335, 336, 337,
         338, 339, 340, 341, 342, 343, 344, 345, 346, 347,
         348, 349, 350, 351, 352, 353, 354, 355, 356, 357,
@@ -104,23 +104,23 @@ struct ItemStorage8SWSH: ItemStorage {
         690, 691, 692, 693, // 96-99
     ] + pouchTR + [1230]
 
-    private static let pouchBattle: [Int] = [
+    private static let pouchBattle: [UInt16] = [
         055, 056, 057, 058, 059, 060, 061, 062, 063, 1580,
     ]
 
-    private static let pouchTreasure: [Int] = [
+    private static let pouchTreasure: [UInt16] = [
         086, 087, 088, 089, 090, 091, 092, 094, 106,
         571, 580, 581, 582, 583, 795, 796,
         1105, 1106, 1107, 1108,
     ]
 
-    private static let pouchIngredients: [Int] = [
+    private static let pouchIngredients: [UInt16] = [
         1084, 1085, 1086, 1087, 1088, 1089, 1090, 1091, 1092, 1093,
         1094, 1095, 1096, 1097, 1098, 1099, 1256, 1257, 1258, 1259,
         1260, 1261, 1262, 1263, 1264,
     ]
 
-    static let unreleased: [Int] = [
+    static let unreleased: [UInt16] = [
         016, // Cherish Ball
         298, // Flame Plate
         299, // Splash Plate
@@ -147,7 +147,7 @@ struct ItemStorage8SWSH: ItemStorage {
     static let dynamaxRange = (dynamaxStart...dynamaxEnd)
     static let legalDynamaxRange = (dynamaxStart...dynamaxLegalEnd)
 
-    public static let allHeldItems: [Int] = pouchItems + pouchBall + pouchBattle + pouchBerries + pouchMedicine + pouchTR + pouchTreasure + pouchIngredients
+    public static let allHeldItems: [UInt16] = pouchItems + pouchBall + pouchBattle + pouchBerries + pouchMedicine + pouchTR + pouchTreasure + pouchIngredients
 
     func isTechRecord(itemID: Int) -> Bool {
         return ItemStorage8SWSH.pouchTR.contains(itemID)
@@ -171,7 +171,7 @@ struct ItemStorage8SWSH: ItemStorage {
         }
     }
 
-    func getItems(type: InventoryType) -> [Int] {
+    func getItems(type: InventoryType) -> [UInt16] {
         switch type {
         case .Medicine:
             return ItemStorage8SWSH.pouchMedicine

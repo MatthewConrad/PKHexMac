@@ -10,7 +10,7 @@ import Foundation
 struct ItemStorage8BDSP: ItemStorage {
     static let instance = ItemStorage8BDSP()
 
-    private static let pouchItems: [Int] = [
+    private static let pouchItems: [UInt16] = [
         045, 046, 047, 048, 049, 050, 051, 052, 053, 072, 073, 074, 075, 076, 077, 078,
         079, 080, 081, 082, 083, 084, 085, 093, 094, 107, 108, 109, 110, 111, 112, 135,
         136, 213, 214, 215, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228,
@@ -25,19 +25,19 @@ struct ItemStorage8BDSP: ItemStorage {
         1231, 1232, 1233, 1234, 1235, 1236, 1237, 1238,
     ]
 
-    private static let pouchKey: [Int] = [
+    private static let pouchKey: [UInt16] = [
         428, 431, 432, 433, 438, 439, 440, 443, 445, 446, 447, 448, 449, 450, 451, 452,
         453, 454, 455, 459, 460, 461, 462, 463, 464, 466, 467, 631, 632,
 
         1267, 1278, 1822,
     ]
 
-    private static let pouchMedicine: [Int] = [
+    private static let pouchMedicine: [UInt16] = [
         017, 018, 019, 020, 021, 022, 023, 024, 025, 026, 027, 028, 029, 030, 031, 032, 033, 034, 035, 036, 037,
         038, 039, 040, 041, 042, 043, 044, 054,
     ]
 
-    private static let pouchBerries: [Int] = [
+    private static let pouchBerries: [UInt16] = [
         149, 150, 151, 152, 153, 154, 155, 156, 157, 158,
         159, 160, 161, 162, 163, 164, 165, 166, 167, 168,
         169, 170, 171, 172, 173, 174, 175, 176, 177, 178,
@@ -47,16 +47,16 @@ struct ItemStorage8BDSP: ItemStorage {
         209, 210, 211, 212, 686,
     ]
 
-    private static let pouchBall: [Int] = [
+    private static let pouchBall: [UInt16] = [
         001, 002, 003, 004, 005, 006, 007, 008, 009, 010, 011, 012, 013, 014, 015, 016,
         492, 493, 494, 495, 496, 497, 498, 499, 500, 576, 851,
     ]
 
-    private static let pouchBattle: [Int] = [
+    private static let pouchBattle: [UInt16] = [
         055, 056, 057, 058, 059, 060, 061, 062, 063,
     ]
 
-    private static let pouchTMHM: [Int] = [
+    private static let pouchTMHM: [UInt16] = [
         328, 329, 330, 331, 332, 333, 334, 335, 336, 337,
         338, 339, 340, 341, 342, 343, 344, 345, 346, 347,
         348, 349, 350, 351, 352, 353, 354, 355, 356, 357,
@@ -70,15 +70,15 @@ struct ItemStorage8BDSP: ItemStorage {
         420, 421, 422, 423, 424, 425, 426, 427, // Previously called HM0X, in BD/SP they're now called TM93-TM100
     ]
 
-    private static let pouchHeldTreasure: [Int] = [
+    private static let pouchHeldTreasure: [UInt16] = [
         086, 087, 088, 089, 090, 091, 092, 099, 100, 101, 102, 103, 104, 105, 106, 795, 796,
     ]
 
-    private static let pouchTreasure: [Int] = pouchHeldTreasure + [
+    private static let pouchTreasure: [UInt16] = pouchHeldTreasure + [
         1808, 1809, 1810, 1811, 1812, 1813, 1814, 1815, 1816, 1817, 1818, 1819, 1820, 1821,
     ]
 
-    static let unreleased: [Int] = [
+    static let unreleased: [UInt16] = [
         005, // Safari Ball
         016, // Cherish Ball
         044, // Sacred Ash
@@ -110,7 +110,7 @@ struct ItemStorage8BDSP: ItemStorage {
         }
     }
 
-    func getItems(type: InventoryType) -> [Int] {
+    func getItems(type: InventoryType) -> [UInt16] {
         switch type {
         case .Items:
             return ItemStorage8BDSP.pouchItems

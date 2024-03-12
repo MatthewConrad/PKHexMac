@@ -10,7 +10,7 @@ import Foundation
 struct ItemStorage1: ItemStorage {
     static let instance = ItemStorage1()
 
-    private static let pouchItems: [Int] = [
+    private static let pouchItems: [UInt16] = [
         000, 001, 002, 003, 004, 005, 006, 010, 011, 012, 013, 014, 015,
         016, 017, 018, 019, 020, 029, 030, 031, 032, 033, 034, 035, 036, 037, 038, 039, 040, 041, 042, 043,
         045, 046, 047, 048, 049, 051, 052, 053, 054, 055, 056, 057, 058, 060, 061, 062, 063, 064, 065, 066,
@@ -25,7 +25,7 @@ struct ItemStorage1: ItemStorage {
         return true
     }
 
-    func getItems(type: InventoryType) -> [Int] {
+    func getItems(type: InventoryType) -> [UInt16] {
         return ItemStorage1.pouchItems
     }
 }

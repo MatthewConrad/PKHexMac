@@ -14,7 +14,7 @@ struct ItemStorage7: ItemStorage {
     static let instanceUSUM = ItemStorage7(version: GameVersion.USUM)
 
     /* Items */
-    private static let pouchItems: [Int] = [
+    private static let pouchItems: [UInt16] = [
         001, 002, 003, 004, 005, 006, 007, 008, 009, 010, 011, 012, 013, 014, 015, 016,
         055, 056, 057, 058, 059, 060, 061, 062, 063, 064, 068, 069,
         070, 071, 072, 073, 074, 075, 076, 077, 078, 079,
@@ -60,21 +60,21 @@ struct ItemStorage7: ItemStorage {
     ]
 
     /* Key Items */
-    private static let baseKey1: [Int] = [216]
-    private static let baseKey2: [Int] = [
+    private static let baseKey1: [UInt16] = [216]
+    private static let baseKey2: [UInt16] = [
         465, 466, 628, 629, 631, 632, 638,
         705, 706, 765, 773, 797,
         841, 842, 843, 845, 847, 850, 857, 858, 860,
     ]
 
-    private static let pouchKey: [Int] = baseKey1 + baseKey2
+    private static let pouchKey: [UInt16] = baseKey1 + baseKey2
 
-    private static let pouchKeyUSUM: [Int] = baseKey1 + [440] + baseKey2 + [
+    private static let pouchKeyUSUM: [UInt16] = baseKey1 + [440] + baseKey2 + [
         933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948,
     ]
 
     /* TMs & HMs */
-    private static let pouchTMHM: [Int] = [
+    private static let pouchTMHM: [UInt16] = [
         328, 329, 330, 331, 332, 333, 334, 335, 336, 337,
         338, 339, 340, 341, 342, 343, 344, 345, 346, 347,
         348, 349, 350, 351, 352, 353, 354, 355, 356, 357,
@@ -91,14 +91,14 @@ struct ItemStorage7: ItemStorage {
     ]
 
     /* Medicine */
-    private static let pouchMedicine: [Int] = [
+    private static let pouchMedicine: [UInt16] = [
         17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39,
         40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 65, 66, 67, 134,
         504, 565, 566, 567, 568, 569, 570, 591, 645, 708, 709, 852,
     ]
 
     /* Berries */
-    private static let pouchBerries: [Int] = [
+    private static let pouchBerries: [UInt16] = [
         149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169,
         170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189,
         190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209,
@@ -106,30 +106,30 @@ struct ItemStorage7: ItemStorage {
     ]
 
     /* Z Crystals */
-    private static let pouchZCrystals: [Int] = [
+    private static let pouchZCrystals: [UInt16] = [
         807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819,
         820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835,
     ]
 
-    private static let pouchZCrystalsUSUM: [Int] = pouchZCrystals + [
+    private static let pouchZCrystalsUSUM: [UInt16] = pouchZCrystals + [
         927, 928, 929, 930, 931, 932,
     ]
 
-    private static let pouchZCrystalsHeld: [Int] = [
+    private static let pouchZCrystalsHeld: [UInt16] = [
         776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789,
         790, 791, 792, 793, 794, 798, 799, 800, 801, 802, 803, 804, 805, 806, 836,
     ]
 
-    private static let pouchZCrystalsHeldUSUM: [Int] = pouchZCrystalsHeld + [
+    private static let pouchZCrystalsHeldUSUM: [UInt16] = pouchZCrystalsHeld + [
         921, 922, 923, 924, 925, 926,
     ]
 
     /* Roto Items */
-    private static let pouchRotoUSUM: [Int] = [
+    private static let pouchRotoUSUM: [UInt16] = [
         949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959,
     ]
 
-    static let unreleased: [Int] = [
+    static let unreleased: [UInt16] = [
         005, // Safari Ball
         016, // Cherish Ball
         064, // Fluffy Tail
@@ -201,27 +201,27 @@ struct ItemStorage7: ItemStorage {
         let crystals = version == GameVersion.USUM ? ItemStorage7.pouchZCrystalsUSUM : ItemStorage7.pouchZCrystals
         let crystalsHeld = version == GameVersion.USUM ? ItemStorage7.pouchZCrystalsHeldUSUM : ItemStorage7.pouchZCrystalsHeld
 
-        let index = crystals.firstIndex(of: itemKey) ?? -1
+        let index = crystals.firstIndex(of: UInt16(itemKey)) ?? -1
         if index < 0 {
             return 0
         }
 
-        return crystalsHeld.firstIndex(of: index) ?? 0
+        return crystalsHeld.firstIndex(of: UInt16(index)) ?? 0
     }
 
     func getCrystalKey(itemKey: Int) -> Int {
         let crystals = version == GameVersion.USUM ? ItemStorage7.pouchZCrystalsUSUM : ItemStorage7.pouchZCrystals
         let crystalsHeld = version == GameVersion.USUM ? ItemStorage7.pouchZCrystalsHeldUSUM : ItemStorage7.pouchZCrystalsHeld
 
-        let index = crystalsHeld.firstIndex(of: itemKey) ?? -1
+        let index = crystalsHeld.firstIndex(of: UInt16(itemKey)) ?? -1
         if index < 0 {
             return 0
         }
 
-        return crystals.firstIndex(of: index) ?? 0
+        return crystals.firstIndex(of: UInt16(index)) ?? 0
     }
 
-    func getItems(type: InventoryType) -> [Int] {
+    func getItems(type: InventoryType) -> [UInt16] {
         switch type {
         case .Medicine:
             return ItemStorage7.pouchMedicine
@@ -260,11 +260,11 @@ struct ItemStorage7: ItemStorage {
         }
         
         let items = getItems(type: type)
-        if (!items.contains(itemIndex)) {
+        if (!items.contains(UInt16(itemIndex))) {
             return false
         }
         
-        return ItemStorage7.unreleased.contains(itemIndex)
+        return ItemStorage7.unreleased.contains(UInt16(itemIndex))
     }
 }
 

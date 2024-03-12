@@ -10,23 +10,23 @@ import Foundation
 struct ItemStorage9: ItemStorage {
     static let instance = ItemStorage9()
     
-    private static let pouchMedicine: [Int] = [
+    private static let pouchMedicine: [UInt16] = [
         0017, 0018, 0019, 0020, 0021, 0022, 0023, 0024, 0025, 0026,
         0027, 0028, 0029, 0030, 0031, 0032, 0033, 0034, 0035, 0036,
         0037, 0038, 0039, 0040, 0041, 0708, 0709,
     ]
     
-    private static let pouchBall: [Int] = [
+    private static let pouchBall: [UInt16] = [
         0001, 0002, 0003, 0004, 0005, 0006, 0007, 0008, 0009, 0010,
         0011, 0012, 0013, 0014, 0015, 0016, 0492, 0493, 0494, 0495,
         0496, 0497, 0498, 0499, 0500, 0576, 0851, 1785,
     ]
     
-    private static let pouchBattle: [Int] = [
+    private static let pouchBattle: [UInt16] = [
         0055, 0056, 0057, 0058, 0059, 0060, 0061, 0062, 0063,
     ]
     
-    private static let pouchBerries: [Int] = [
+    private static let pouchBerries: [UInt16] = [
         0149, 0150, 0151, 0152, 0153, 0154, 0155, 0156, 0157, 0158,
         0159, 0160, 0161, 0162, 0163, 0169, 0170, 0171, 0172, 0173,
         0174, 0184, 0185, 0186, 0187, 0188, 0189, 0190, 0191, 0192,
@@ -35,7 +35,7 @@ struct ItemStorage9: ItemStorage {
         0686, 0687, 0688,
     ]
     
-    private static let pouchOther: [Int] = [
+    private static let pouchOther: [UInt16] = [
         0045, 0046, 0047, 0048, 0049, 0050, 0051, 0052, 0053, 0080,
         0081, 0082, 0083, 0084, 0085, 0107, 0108, 0109, 0110, 0111,
         0112, 0135, 0136, 0213, 0214, 0217, 0218, 0219, 0220, 0221,
@@ -64,7 +64,7 @@ struct ItemStorage9: ItemStorage {
         2413, 2414, 2415, 2416, 2479, 2482, 2549,
     ]
     
-    private static let pouchTM: [Int] = [
+    private static let pouchTM: [UInt16] = [
         0328, 0329, 0330, 0331, 0332, 0333, 0334, 0335, 0336, 0337,
         0338, 0339, 0340, 0341, 0342, 0343, 0344, 0345, 0346, 0347,
         0348, 0349, 0350, 0351, 0352, 0353, 0354, 0355, 0356, 0357,
@@ -90,12 +90,12 @@ struct ItemStorage9: ItemStorage {
         2280, 2281, 2282, 2283, 2284, 2285, 2286, 2287, 2288, 2289,
     ]
     
-    private static let pouchTreasure: [Int] = [
+    private static let pouchTreasure: [UInt16] = [
         0086, 0087, 0088, 0089, 0090, 0091, 0092, 0094, 0106, 0571,
         0580, 0581, 0582, 0583, 1842, 1843,
     ]
     
-    private static let pouchPicnic: [Int] = [
+    private static let pouchPicnic: [UInt16] = [
         1888, 1889, 1890, 1891, 1892, 1893, 1894, 1895, 1896, 1897,
         1898, 1899, 1900, 1901, 1902, 1903, 1904, 1905, 1906, 1907,
         1908, 1909, 1910, 1911, 1912, 1913, 1914, 1915, 1916, 1917,
@@ -115,7 +115,7 @@ struct ItemStorage9: ItemStorage {
         2435, 2436, 2437, 2548, 2551, 2552,
     ]
     
-    private static let pouchEvent: [Int] = [
+    private static let pouchEvent: [UInt16] = [
         0078, 0466, 0628, 0629, 0631, 0632, 0638, 0703, 0765, 0943,
         0944, 0945, 0946, 1267, 1278, 1587, 1589, 1590, 1591, 1829,
         1830, 1831, 1832, 1833, 1834, 1835, 1836, 1857, 1858, 2405,
@@ -125,7 +125,7 @@ struct ItemStorage9: ItemStorage {
         2547, 2550, 2553, 2554, 2555, 2556, 2557,
     ]
     
-    private static let pouchMaterial: [Int] = [
+    private static let pouchMaterial: [UInt16] = [
         1956, 1957, 1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965,
         1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975,
         1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985,
@@ -154,7 +154,7 @@ struct ItemStorage9: ItemStorage {
         2512, 2513, 2514, 2515, 2516, 2517, 2518, 2519, 2520, 2521,
     ]
     
-    static let unreleased: [Int] = [
+    static let unreleased: [UInt16] = [
         0016, // Cherish Ball
         0111, // Odd Keystone
         0485, // Red Apricorn
@@ -196,7 +196,7 @@ struct ItemStorage9: ItemStorage {
         return !ItemStorage9.unreleased.contains(itemIndex)
     }
     
-    func getItems(type: InventoryType) -> [Int] {
+    func getItems(type: InventoryType) -> [UInt16] {
         switch type {
         case .Items:
             return ItemStorage9.pouchOther

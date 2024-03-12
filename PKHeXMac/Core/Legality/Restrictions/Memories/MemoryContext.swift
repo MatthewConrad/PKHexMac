@@ -19,7 +19,7 @@ protocol MemoryContext {
     func canHoldItem(item: Int) -> Bool
 
     func isUsedKeyItemUnspecific(item: Int) -> Bool
-    func isUsedKeyItemSpecific(item: Int) -> Bool
+    func isUsedKeyItemSpecific(item: Int, species: Species) -> Bool
 
     func canObtainMemory(memory: UInt8) -> Bool
     func canObtainMemoryOT(version: GameVersion, memory: UInt8) -> Bool

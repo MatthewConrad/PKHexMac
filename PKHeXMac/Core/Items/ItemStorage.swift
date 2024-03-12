@@ -15,5 +15,5 @@ protocol ItemStorage {
     func isLegal(type: InventoryType, itemIndex: Int, itemCount: Int) -> Bool
 
     /// Gets all possible item IDs that can exist in the given pouch `type`.
-    func getItems(type: InventoryType) -> [Int]
+    func getItems(type: InventoryType) -> [UInt16]
 }

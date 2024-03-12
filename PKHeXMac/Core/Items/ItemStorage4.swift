@@ -15,7 +15,7 @@ struct ItemStorage4: ItemStorage {
     static let instanceHGGS = ItemStorage4(version: GameVersion.HGSS)
 
     /* Items */
-    private static let pouchItems: [Int] = [
+    private static let pouchItems: [UInt16] = [
         68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79,
         80, 81, 82, 83, 84, 85, 86, 87, 88, 89,
         90, 91, 92, 93, 94, 95, 96, 97, 98, 99,
@@ -34,27 +34,27 @@ struct ItemStorage4: ItemStorage {
         320, 321, 322, 323, 324, 325, 326, 327
     ]
     // Platinum adds Griseous Orb
-    private static let pouchItemsPt: [Int] = (pouchItems + [112]).sorted()
+    private static let pouchItemsPt: [UInt16] = (pouchItems + [112]).sorted()
 
     /* Key Items */
-    private static let pouchKey: [Int] = [
+    private static let pouchKey: [UInt16] = [
         428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439,
         440, 441, 442, 443, 444, 445, 446, 447, 448, 449,
         450, 451, 452, 453, 454, 455, 456, 457, 458, 459,
         460, 461, 462, 463, 464
     ]
 
-    private static let keyItemsPt: [Int] = [465, 466, 467]
-    private static let pouchKeyPt: [Int] = pouchKey + keyItemsPt
+    private static let keyItemsPt: [UInt16] = [465, 466, 467]
+    private static let pouchKeyPt: [UInt16] = pouchKey + keyItemsPt
 
-    private static let pouchKeyHGSS: [Int] = [
+    private static let pouchKeyHGSS: [UInt16] = [
         434, 435, 437, 444, 445, 446, 447, 450, 456, 464, 465, 466, 468, 469,
         470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484,
         501, 502, 503, 504, 532, 533, 534, 535, 536
     ]
 
     /* TMs & HMs */
-    private static let pouchTM: [Int] = [
+    private static let pouchTM: [UInt16] = [
         328, 329, 330, 331, 332, 333, 334, 335, 336, 337,
         338, 339, 340, 341, 342, 343, 344, 345, 346, 347,
         348, 349, 350, 351, 352, 353, 354, 355, 356, 357,
@@ -66,16 +66,16 @@ struct ItemStorage4: ItemStorage {
         408, 409, 410, 411, 412, 413, 414, 415, 416, 417,
         418, 419
     ]
-    private static let pouchHM: [Int] = [420, 421, 422, 423, 424, 425, 426, 427]
-    private static let pouchTMHM: [Int] = pouchTM + pouchHM
+    private static let pouchHM: [UInt16] = [420, 421, 422, 423, 424, 425, 426, 427]
+    private static let pouchTMHM: [UInt16] = pouchTM + pouchHM
 
     /* Mail */
-    private static let pouchMail: [Int] = [
+    private static let pouchMail: [UInt16] = [
         137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148
     ]
 
     /* Medicine */
-    private static let pouchMedicine: [Int] = [
+    private static let pouchMedicine: [UInt16] = [
         17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29,
         30, 31, 32, 33, 34, 35, 36, 37, 38, 39,
         40, 41, 42, 43, 44, 45, 46, 47, 48, 49,
@@ -83,7 +83,7 @@ struct ItemStorage4: ItemStorage {
     ]
 
     /* Berries */
-    private static let pouchBerries: [Int] = [
+    private static let pouchBerries: [UInt16] = [
         149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159,
         160, 161, 162, 163, 164, 165, 166, 167, 168, 169,
         170, 171, 172, 173, 174, 175, 176, 177, 178, 179,
@@ -94,7 +94,7 @@ struct ItemStorage4: ItemStorage {
     ]
 
     /* Battle */
-    private static let pouchBattle: [Int] = [
+    private static let pouchBattle: [UInt16] = [
         // stat ups
         55, 56, 57, 58, 59, 60, 61, 62,
         // in-battle
@@ -102,15 +102,15 @@ struct ItemStorage4: ItemStorage {
     ]
 
     /* PokeBalls */
-    private static let pouchBall: [Int] = [
+    private static let pouchBall: [UInt16] = [
         1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
     ]
     // HGSS adds apriball
-    private static let pouchApriBall: [Int] = [492, 493, 494, 495, 496, 497, 498, 499, 500]
-    private static let pouchBallHGSS: [Int] = pouchBall + pouchApriBall
+    private static let pouchApriBall: [UInt16] = [492, 493, 494, 495, 496, 497, 498, 499, 500]
+    private static let pouchBallHGSS: [UInt16] = pouchBall + pouchApriBall
 
     /* Misc */
-    private static let unreleased: [Int] = [
+    private static let unreleased: [UInt16] = [
         005, // Safari ball
         016, // Cherish
         147, // Mosaic Mail
@@ -127,7 +127,7 @@ struct ItemStorage4: ItemStorage {
         return true
     }
 
-    func getItems(type: InventoryType) -> [Int] {
+    func getItems(type: InventoryType) -> [UInt16] {
         switch type {
         case .Items:
             return if version == GameVersion.DP {

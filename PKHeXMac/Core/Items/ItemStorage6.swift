@@ -14,11 +14,11 @@ struct ItemStorage6: ItemStorage {
     static let instanceORAS = ItemStorage6(version: GameVersion.ORAS)
 
     /* Items */
-    private static let baseItems1: [Int] = [
+    private static let baseItems1: [UInt16] = [
         001, 002, 003, 004, 005, 006, 007, 008, 009, 010, 011, 012, 013, 014, 015, 016, 055, 056,
         057, 058, 059, 060, 061, 062, 063, 064,
     ]
-    private static let baseItems2: [Int] = [
+    private static let baseItems2: [UInt16] = [
         068, 069, 070, 071, 072, 073, 074, 075,
         076, 077, 078, 079, 080, 081, 082, 083, 084, 085, 086, 087, 088, 089, 090, 091, 092, 093, 094,
         099, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 112, 116, 117, 118, 119, 135, 136,
@@ -35,15 +35,15 @@ struct ItemStorage6: ItemStorage {
         667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685,
         699, 704, 710, 711, 715,
     ]
-    private static let flutes: [Int] = [065, 066, 067]
+    private static let flutes: [UInt16] = [065, 066, 067]
 
-    private static let pouchItems: [Int] = baseItems1 + flutes + baseItems2
-    private static let pouchItemsORAS: [Int] = baseItems1 + baseItems2 + [
+    private static let pouchItems: [UInt16] = baseItems1 + flutes + baseItems2
+    private static let pouchItemsORAS: [UInt16] = baseItems1 + baseItems2 + [
         534, 535, 752, 753, 754, 755, 756, 757, 758, 759, 760, 761, 762, 763, 764, 767, 768, 769, 770,
     ]
 
     /* Key Items */
-    private static let pouchKey: [Int] = [
+    private static let pouchKey: [UInt16] = [
         216, 431, 442, 445, 446, 447, 450, 465, 466, 471, 628,
         629, 631, 632, 638, 641, 642, 643, 651, 689, 695, 696, 697, 698,
         700, 701, 702, 703, 705, 712, 713, 714,
@@ -51,7 +51,7 @@ struct ItemStorage6: ItemStorage {
         // Illegal
         // 716, 717, 706, 707,
     ]
-    private static let pouchKeyORAS: [Int] = [
+    private static let pouchKeyORAS: [UInt16] = [
         216, 445, 446, 447, 465, 466, 471, 628, 629, 631, 632, 638, 697,
 
         // Illegal
@@ -62,7 +62,7 @@ struct ItemStorage6: ItemStorage {
     ]
 
     /* TMs & HMs */
-    private static let pouchTMHM: [Int] = [
+    private static let pouchTMHM: [UInt16] = [
         328, 329, 330, 331, 332, 333, 334, 335, 336, 337,
         338, 339, 340, 341, 342, 343, 344, 345, 346, 347,
         348, 349, 350, 351, 352, 353, 354, 355, 356, 357,
@@ -80,19 +80,19 @@ struct ItemStorage6: ItemStorage {
         420, 421, 422, 423, 424,
     ]
 
-    private static let pouchTMHMORAS: [Int] = pouchTMHM + [425, 737]
+    static let pouchTMHMORAS: [UInt16] = pouchTMHM + [425, 737]
 
     /* Medicine */
-    private static let pouchMedicine: [Int] = [
+    private static let pouchMedicine: [UInt16] = [
         017, 018, 019, 020, 021, 022, 023, 024, 025, 026, 027, 028, 029, 030, 031, 032, 033,
         034, 035, 036, 037, 038, 039, 040, 041, 042, 043, 044, 045, 046, 047, 048, 049, 050, 051,
         052, 053, 054, 134, 504, 565, 566, 567, 568, 569, 570, 571, 591, 645, 708, 709,
     ]
     // ORAS moves Flutes from Items to Medicine
-    private static let pouchMedicineORAS: [Int] = pouchMedicine + [065, 066, 067]
+    private static let pouchMedicineORAS: [UInt16] = pouchMedicine + [065, 066, 067]
 
     /* Berries */
-    private static let pouchBerries: [Int] = [
+    static let pouchBerries: [UInt16] = [
         149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159,
         160, 161, 162, 163, 164, 165, 166, 167, 168, 169,
         170, 171, 172, 173, 174, 175, 176, 177, 178, 179,
@@ -106,7 +106,7 @@ struct ItemStorage6: ItemStorage {
         688, // Maranga Berry
     ]
 
-    static let unreleased: [Int] = [
+    static let unreleased: [UInt16] = [
         005, // Safari Ball
         016, // Cherish Ball
         492, // Fast Ball
@@ -134,7 +134,7 @@ struct ItemStorage6: ItemStorage {
         561, // Dragon Gemt
         562, // Dark Gem
         563, // Steel Gem
-        576, // Dream Ball  
+        576, // Dream Ball
         584, // Relic Copper
         585, // Relic Silver
         587, // Relic Vase
@@ -151,11 +151,11 @@ struct ItemStorage6: ItemStorage {
         return if type == .KeyItems {
             true
         } else {
-            !ItemStorage6.unreleased.contains(itemIndex)
+            !ItemStorage6.unreleased.contains(UInt16(itemIndex))
         }
     }
 
-    func getItems(type: InventoryType) -> [Int] {
+    func getItems(type: InventoryType) -> [UInt16] {
         if type == .Berries {
             return ItemStorage6.pouchBerries
         } else if version == GameVersion.ORAS {

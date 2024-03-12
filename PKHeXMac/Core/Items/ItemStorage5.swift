@@ -14,7 +14,7 @@ struct ItemStorage5: ItemStorage {
     static let instanceB2W2 = ItemStorage5(version: GameVersion.B2W2)
 
     /* Items */
-    private static let pouchItems: [Int] = [
+    private static let pouchItems: [UInt16] = [
         01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15, 16,
         55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69,
         70, 71, 72, 73, 74, 75, 76, 77, 78, 79,
@@ -42,16 +42,16 @@ struct ItemStorage5: ItemStorage {
     ]
 
     /* Key Items */
-    private static let pouchKeyBW: [Int] = [
+    private static let pouchKeyBW: [UInt16] = [
         437, 442, 447, 450, 465, 466, 471, 504, 533, 574, 578, 579, 616, 617, 621, 623, 624, 625, 626,
     ]
-    private static let pouchKeyB2W2: [Int] = [
+    private static let pouchKeyB2W2: [UInt16] = [
         437, 442, 447, 450, 453, 458, 465, 466, 471, 504, 578,
         616, 617, 621, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638,
     ]
 
     /* TMs & HMs */
-    private static let pouchTMHM: [Int] = [
+    private static let pouchTMHM: [UInt16] = [
         328, 329, 330, 331, 332, 333, 334, 335, 336, 337,
         338, 339, 340, 341, 342, 343, 344, 345, 346, 347,
         348, 349, 350, 351, 352, 353, 354, 355, 356, 357,
@@ -68,14 +68,14 @@ struct ItemStorage5: ItemStorage {
     ]
 
     /* Medicine */
-    private static let pouchMedicine: [Int] = [
+    private static let pouchMedicine: [UInt16] = [
         17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29,
         30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49,
         50, 51, 52, 53, 54, 134, 504, 565, 566, 567, 568, 569, 570, 591,
     ]
 
     /* Berries */
-    private static let pouchBerries: [Int] = [
+    private static let pouchBerries: [UInt16] = [
         149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159,
         160, 161, 162, 163, 164, 165, 166, 167, 168, 169,
         170, 171, 172, 173, 174, 175, 176, 177, 178, 179,
@@ -85,7 +85,7 @@ struct ItemStorage5: ItemStorage {
         210, 211, 212,
     ]
 
-    static let unreleased: [Int] = [
+    static let unreleased: [UInt16] = [
         005, // Safari Ball
         016, // Cherish Ball
         260, // Red Scarf
@@ -111,7 +111,7 @@ struct ItemStorage5: ItemStorage {
         return true
     }
 
-    func getItems(type: InventoryType) -> [Int] {
+    func getItems(type: InventoryType) -> [UInt16] {
         switch type {
         case .Items:
             return ItemStorage5.pouchItems
