@@ -165,6 +165,16 @@ struct MemoryContext6: MemoryContext {
         false // TODO:
     }
     
+    static func getRandomFeeling(memory: Int, max: Int = 24) -> UInt8 {
+        let bits = MemoryContext8Data.memoryFeelings[memory]
+        repeat {
+            let feel = Int.random(in: 0 ..< max)
+            if (bits & (1 << feel)) != 0 {
+                return UInt8(feel + 1)
+            }
+        } while true
+    }
+    
     func canHaveIntensity(memory: UInt8, intensity: UInt8) -> Bool {
         return if intensity > MemoryContext6.maxIntensity {
             false

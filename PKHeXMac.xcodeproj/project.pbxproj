@@ -161,6 +161,12 @@
 		FFDA55F02B9E9E8000376E0E /* MemoryContext8.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55EF2B9E9E8000376E0E /* MemoryContext8.swift */; };
 		FFDA55F22B9FE57000376E0E /* MemoryContext6Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55F12B9FE57000376E0E /* MemoryContext6Data.swift */; };
 		FFDA55F42B9FF49700376E0E /* MemoryContext8Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55F32B9FF49700376E0E /* MemoryContext8Data.swift */; };
+		FFDA55F62BA8F66F00376E0E /* MemoryPermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55F52BA8F66F00376E0E /* MemoryPermissions.swift */; };
+		FFDA55F82BA8F81600376E0E /* MemoryOTSettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55F72BA8F81600376E0E /* MemoryOTSettable.swift */; };
+		FFDA55FA2BA8F89D00376E0E /* MemoryHTSettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55F92BA8F89D00376E0E /* MemoryHTSettable.swift */; };
+		FFDA55FC2BA8FB1000376E0E /* MemoryVariableSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55FB2BA8FB1000376E0E /* MemoryVariableSet.swift */; };
+		FFDA55FE2BA8FB6000376E0E /* TrainerMemorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55FD2BA8FB6000376E0E /* TrainerMemorable.swift */; };
+		FFDA56012BA8FCD800376E0E /* LegalityCheckStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56002BA8FCD800376E0E /* LegalityCheckStrings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -321,6 +327,12 @@
 		FFDA55EF2B9E9E8000376E0E /* MemoryContext8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryContext8.swift; sourceTree = "<group>"; };
 		FFDA55F12B9FE57000376E0E /* MemoryContext6Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryContext6Data.swift; sourceTree = "<group>"; };
 		FFDA55F32B9FF49700376E0E /* MemoryContext8Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryContext8Data.swift; sourceTree = "<group>"; };
+		FFDA55F52BA8F66F00376E0E /* MemoryPermissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryPermissions.swift; sourceTree = "<group>"; };
+		FFDA55F72BA8F81600376E0E /* MemoryOTSettable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryOTSettable.swift; sourceTree = "<group>"; };
+		FFDA55F92BA8F89D00376E0E /* MemoryHTSettable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryHTSettable.swift; sourceTree = "<group>"; };
+		FFDA55FB2BA8FB1000376E0E /* MemoryVariableSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryVariableSet.swift; sourceTree = "<group>"; };
+		FFDA55FD2BA8FB6000376E0E /* TrainerMemorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainerMemorable.swift; sourceTree = "<group>"; };
+		FFDA56002BA8FCD800376E0E /* LegalityCheckStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalityCheckStrings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -365,6 +377,9 @@
 				FFDA55DE2B9E470100376E0E /* HyperTrainable.swift */,
 				FFDA55E02B9E5BD100376E0E /* ScaledSizable.swift */,
 				FFDA55E42B9E876500376E0E /* NatureSettable.swift */,
+				FFDA55F72BA8F81600376E0E /* MemoryOTSettable.swift */,
+				FFDA55F92BA8F89D00376E0E /* MemoryHTSettable.swift */,
+				FFDA55FD2BA8FB6000376E0E /* TrainerMemorable.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -423,6 +438,7 @@
 		FF31D2F62B73080E00EB420C /* Legality */ = {
 			isa = PBXGroup;
 			children = (
+				FFDA55FF2BA8FCC700376E0E /* Formatting */,
 				FF5068292B94D71A00DF64A8 /* Restrictions */,
 				FF5068212B92D7A200DF64A8 /* RNG */,
 				FF5068122B91941400DF64A8 /* LearnSource */,
@@ -766,15 +782,25 @@
 		FFDA55E62B9E984D00376E0E /* Memories */ = {
 			isa = PBXGroup;
 			children = (
+				FFDA55EB2B9E9B4900376E0E /* Memories.swift */,
 				FFDA55E72B9E985800376E0E /* MemoryArgType.swift */,
 				FFDA55E92B9E989D00376E0E /* MemoryContext.swift */,
-				FFDA55EB2B9E9B4900376E0E /* Memories.swift */,
 				FFDA55ED2B9E9CE100376E0E /* MemoryContext6.swift */,
-				FFDA55EF2B9E9E8000376E0E /* MemoryContext8.swift */,
 				FFDA55F12B9FE57000376E0E /* MemoryContext6Data.swift */,
+				FFDA55EF2B9E9E8000376E0E /* MemoryContext8.swift */,
 				FFDA55F32B9FF49700376E0E /* MemoryContext8Data.swift */,
+				FFDA55F52BA8F66F00376E0E /* MemoryPermissions.swift */,
+				FFDA55FB2BA8FB1000376E0E /* MemoryVariableSet.swift */,
 			);
 			path = Memories;
+			sourceTree = "<group>";
+		};
+		FFDA55FF2BA8FCC700376E0E /* Formatting */ = {
+			isa = PBXGroup;
+			children = (
+				FFDA56002BA8FCD800376E0E /* LegalityCheckStrings.swift */,
+			);
+			path = Formatting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -854,6 +880,7 @@
 				FF31D3452B82863F00EB420C /* LocationRemapState.swift in Sources */,
 				FF5068A52B96CBF700DF64A8 /* FormArgument.swift in Sources */,
 				FF31D32C2B79762300EB420C /* LocationSet6.swift in Sources */,
+				FFDA55FE2BA8FB6000376E0E /* TrainerMemorable.swift in Sources */,
 				FF5068832B96B18D00DF64A8 /* FatefulEncounterReadable.swift in Sources */,
 				FF5068332B94E99800DF64A8 /* PersonalAbility.swift in Sources */,
 				FF31D2EA2B71D04700EB420C /* TrainerID32.swift in Sources */,
@@ -881,6 +908,7 @@
 				FF31D3022B730BC900EB420C /* Move.swift in Sources */,
 				FF31D32A2B79750600EB420C /* LocationSet4.swift in Sources */,
 				FF31D33B2B8278C400EB420C /* Locations8.swift in Sources */,
+				FFDA55F82BA8F81600376E0E /* MemoryOTSettable.swift in Sources */,
 				FF31D3482B82897A00EB420C /* HeldItemLumpImage.swift in Sources */,
 				FF50689F2B96CB6400DF64A8 /* DynamaxLevel.swift in Sources */,
 				FFDA55E32B9E5EFA00376E0E /* PK9.swift in Sources */,
@@ -894,7 +922,9 @@
 				FF5068042B9139E800DF64A8 /* ItemStorage8BDSP.swift in Sources */,
 				FF5068892B96B3F400DF64A8 /* LangNicknamedTemplate.swift in Sources */,
 				FFDA55D02B9E27F500376E0E /* BattleStats.swift in Sources */,
+				FFDA55FC2BA8FB1000376E0E /* MemoryVariableSet.swift in Sources */,
 				FF5068412B94EF0F00DF64A8 /* PersonalType.swift in Sources */,
+				FFDA55F62BA8F66F00376E0E /* MemoryPermissions.swift in Sources */,
 				FF5068682B9521E000DF64A8 /* MoveInfo.swift in Sources */,
 				FF50683F2B94EE8C00DF64A8 /* PersonalMisc.swift in Sources */,
 				FFDA55D82B9E33CC00376E0E /* HandlerUpdatable.swift in Sources */,
@@ -955,6 +985,7 @@
 				FF31D3532B85AAED00EB420C /* ItemStorage2.swift in Sources */,
 				FF31D3002B730B3F00EB420C /* Gender.swift in Sources */,
 				FF31D30A2B73224200EB420C /* Region.swift in Sources */,
+				FFDA56012BA8FCD800376E0E /* LegalityCheckStrings.swift in Sources */,
 				FF50689D2B96CAFA00DF64A8 /* ContestStats.swift in Sources */,
 				FF50681C2B92D19600DF64A8 /* PersonalFormInfo.swift in Sources */,
 				FF50682D2B94E26B00DF64A8 /* BaseStat.swift in Sources */,
@@ -992,6 +1023,7 @@
 				FF5068A12B96CB8C00DF64A8 /* FatefulEncounter.swift in Sources */,
 				FF31D2FA2B7309D400EB420C /* Species.swift in Sources */,
 				FF5068522B951EF200DF64A8 /* MoveInfo2.swift in Sources */,
+				FFDA55FA2BA8F89D00376E0E /* MemoryHTSettable.swift in Sources */,
 				FF31D3232B74838500EB420C /* Lock.swift in Sources */,
 				FF5068162B91943400DF64A8 /* LearnOption.swift in Sources */,
 				FF50686A2B9527A900DF64A8 /* BattleMoves.swift in Sources */,

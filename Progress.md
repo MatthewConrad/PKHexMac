@@ -720,7 +720,7 @@
 
 - [ ] BaseLegalityFormatter
 - [ ] ILegalityFormatter
-- [ ] LegalityCheckStrings
+- [x] LegalityCheckStrings
 - [ ] LegalityFormatting
 
 ### Learnset
@@ -829,16 +829,16 @@
 
 #### Memories
 
-- [ ] Memories
-- [ ] MemoryArgType
-- [ ] MemoryContext
-- [ ] MemoryContext6
-- [ ] MemoryContext6Data
-- [ ] MemoryContext8
-- [ ] MemoryContext8Data
+- [x] Memories
+- [x] MemoryArgType
+- [x] MemoryContext
+- [x] MemoryContext6
+- [x] MemoryContext6Data
+- [x] MemoryContext8
+- [x] MemoryContext8Data
 - [ ] MemoryPermissions
 - [ ] MemoryRules
-- [ ] MemoryVariableSet
+- [x] MemoryVariableSet
 
 ### RNG
 
