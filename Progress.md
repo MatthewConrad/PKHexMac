@@ -1148,8 +1148,8 @@
 - [x] IAffection
 - [x] IAlpha
 - [x] IAppliedMarkings
-- [/] IAwakened
-- [x] IBattleVersion
+- [/] IAwakened (pending PB7)
+- [/] IBattleVersion (pending Moveset interface)
 - [x] ICaughtData2
 - [x] IContestStats
 - [x] IDynamaxLevel

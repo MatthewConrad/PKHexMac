@@ -8,8 +8,8 @@
 import Foundation
 
 /// Exposes information about the stat boots gained when Awakened
-/// - remark: used only in LGP/E
-protocol Awakened {
+/// - remark: used only in LGP/E. Formerly `IAwakened`
+protocol Awakenable {
     var avHP: UInt8 { get set }
     var avATK: UInt8 { get set }
     var avDEF: UInt8 { get set }
@@ -18,7 +18,7 @@ protocol Awakened {
     var avSPE: UInt8 { get set }
 }
 
-extension Awakened {
+extension Awakenable {
     var awakeningMax: UInt8 { 200 }
 
     func getAVs() -> [UInt8] {
@@ -84,7 +84,7 @@ extension Awakened {
         Int(avHP + avATK + avDEF + avSPE + avSPA + avSPD)
     }
 
-    func isAwakeningAboveOrEqual(initial: Awakened) -> Bool {
+    func isAwakeningAboveOrEqual(initial: Awakenable) -> Bool {
         let all = getAVs(),
             initialAll = initial.getAVs()
 
@@ -97,7 +97,7 @@ extension Awakened {
         return true
     }
 
-    func isAwakeningBelow(initial: Awakened) -> Bool {
+    func isAwakeningBelow(initial: Awakenable) -> Bool {
         !isAwakeningAboveOrEqual(initial: initial)
     }
 

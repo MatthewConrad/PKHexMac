@@ -12,5 +12,5 @@ protocol HandlerUpdatable {
     func belongsTo(trainer: TrainerInfo) -> Bool
     
     /// Updates the entity to match the TrainerInfo
-    func updateHandler(trainer: TrainerInfo)
+    mutating func updateHandler(trainer: TrainerInfo)
 }

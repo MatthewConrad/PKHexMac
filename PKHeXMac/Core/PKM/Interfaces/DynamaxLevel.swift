@@ -8,6 +8,6 @@
 import Foundation
 
 /// Exposes info about Dynamax potential.
-protocol DynamaxLevel: DynamaxLevelReadable {
+protocol DynamaxLevelable: DynamaxLevelReadable {
     var dynamaxLevel: UInt8 { get set }
 }

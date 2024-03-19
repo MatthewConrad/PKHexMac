@@ -8,7 +8,8 @@
 import Foundation
 
 /// Met data interface for details introduced by `GameVersion.C` in Gen 2
-protocol CaughtData2 {
+/// - remark: Formerly CaughtData2
+protocol CatchableGen2 {
     var caughtData: UInt16 { get set }
     var metTimeOfDay: Int { get set }
     var metLevel: UInt8 { get set }

@@ -8,6 +8,6 @@
 import Foundation
 
 /// Exposes Favorite designation in `GameVersion.GG`
-protocol Favorite {
+protocol Favoritable {
     var isFavorite: Bool { get set }
 }
