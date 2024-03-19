@@ -836,7 +836,7 @@
 - [x] MemoryContext6Data
 - [x] MemoryContext8
 - [x] MemoryContext8Data
-- [ ] MemoryPermissions
+- [/] MemoryPermissions
 - [ ] MemoryRules
 - [x] MemoryVariableSet
 
@@ -1155,30 +1155,30 @@
 - [x] IDynamaxLevel
 - [x] IFatefulEncounter
 - [x] IFavorite
-- [/] IFormArgument
-- [ ] IGanbaru
-- [ ] IGeoTrack
-- [ ] IGigantamax
-- [ ] IGroundTile
-- [ ] IHandlerLanguage
-- [ ] IHomeTrack
-- [ ] IHyperTrain
-- [ ] IMemoryHT
-- [ ] IMemoryOT
-- [ ] IMoveShop8
-- [ ] INature
-- [ ] INoble
-- [ ] IObedienceLevel
-- [ ] IRegionOrigin
-- [ ] ISanityChecksum
-- [ ] IScaledSize
-- [ ] IShadowCapture
-- [ ] ISociability
-- [ ] ITechRecord
-- [ ] ITeraType
+- [/] IFormArgument (need to implement functions on PKMProtocol)
+- [x] IGanbaru
+- [x] IGeoTrack
+- [x] IGigantamax
+- [x] IGroundTile
+- [x] IHandlerLanguage
+- [x] IHomeTrack
+- [x] IHyperTrain
+- [x] IMemoryHT
+- [x] IMemoryOT
+- [/] IMoveShop8 (need Learnset protocol)
+- [x] INature
+- [x] INoble
+- [/] IObedienceLevel (need PKM.currentLevel)
+- [x] IRegionOrigin
+- [x] ISanityChecksum
+- [x] IScaledSize
+- [x] IShadowCapture
+- [x] ISociability
+- [x] ITechRecord
+- [x] ITeraType
 - [x] ITrainerID
 - [x] ITrainerID32
-- [ ] ITrainerMemories
+- [x] ITrainerMemories
 
 #### Metadata
 

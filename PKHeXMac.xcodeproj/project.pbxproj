@@ -167,6 +167,16 @@
 		FFDA55FC2BA8FB1000376E0E /* MemoryVariableSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55FB2BA8FB1000376E0E /* MemoryVariableSet.swift */; };
 		FFDA55FE2BA8FB6000376E0E /* TrainerMemorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA55FD2BA8FB6000376E0E /* TrainerMemorable.swift */; };
 		FFDA56012BA8FCD800376E0E /* LegalityCheckStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56002BA8FCD800376E0E /* LegalityCheckStrings.swift */; };
+		FFDA56032BA900F800376E0E /* TeraType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56022BA900F800376E0E /* TeraType.swift */; };
+		FFDA56052BA9092500376E0E /* TechRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56042BA9092500376E0E /* TechRecord.swift */; };
+		FFDA56072BA90A7200376E0E /* Noble.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56062BA90A7200376E0E /* Noble.swift */; };
+		FFDA56092BA90ABD00376E0E /* ObedienceLevelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56082BA90ABD00376E0E /* ObedienceLevelable.swift */; };
+		FFDA560B2BA90C1600376E0E /* MoveShop8.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA560A2BA90C1600376E0E /* MoveShop8.swift */; };
+		FFDA560D2BA90D5800376E0E /* RegionOrigin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA560C2BA90D5800376E0E /* RegionOrigin.swift */; };
+		FFDA560F2BA90EC100376E0E /* SanityChecksum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA560E2BA90EC100376E0E /* SanityChecksum.swift */; };
+		FFDA56112BA90F4A00376E0E /* ShadowCapturable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56102BA90F4A00376E0E /* ShadowCapturable.swift */; };
+		FFDA56132BA90F8A00376E0E /* Sociable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56122BA90F8A00376E0E /* Sociable.swift */; };
+		FFDA56152BA90FBD00376E0E /* GeoTrackable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56142BA90FBD00376E0E /* GeoTrackable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -333,6 +343,16 @@
 		FFDA55FB2BA8FB1000376E0E /* MemoryVariableSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryVariableSet.swift; sourceTree = "<group>"; };
 		FFDA55FD2BA8FB6000376E0E /* TrainerMemorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainerMemorable.swift; sourceTree = "<group>"; };
 		FFDA56002BA8FCD800376E0E /* LegalityCheckStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalityCheckStrings.swift; sourceTree = "<group>"; };
+		FFDA56022BA900F800376E0E /* TeraType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeraType.swift; sourceTree = "<group>"; };
+		FFDA56042BA9092500376E0E /* TechRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechRecord.swift; sourceTree = "<group>"; };
+		FFDA56062BA90A7200376E0E /* Noble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Noble.swift; sourceTree = "<group>"; };
+		FFDA56082BA90ABD00376E0E /* ObedienceLevelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObedienceLevelable.swift; sourceTree = "<group>"; };
+		FFDA560A2BA90C1600376E0E /* MoveShop8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveShop8.swift; sourceTree = "<group>"; };
+		FFDA560C2BA90D5800376E0E /* RegionOrigin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionOrigin.swift; sourceTree = "<group>"; };
+		FFDA560E2BA90EC100376E0E /* SanityChecksum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanityChecksum.swift; sourceTree = "<group>"; };
+		FFDA56102BA90F4A00376E0E /* ShadowCapturable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowCapturable.swift; sourceTree = "<group>"; };
+		FFDA56122BA90F8A00376E0E /* Sociable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sociable.swift; sourceTree = "<group>"; };
+		FFDA56142BA90FBD00376E0E /* GeoTrackable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoTrackable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -354,12 +374,7 @@
 				FF5068942B96B53E00DF64A8 /* AppliedMarkings.swift */,
 				FF5068962B96B81C00DF64A8 /* Awakened.swift */,
 				FF5068692B9527A900DF64A8 /* BattleMoves.swift */,
-				FF50687E2B96A8A600DF64A8 /* Hatchable.swift */,
-				FF5068802B96AAED00DF64A8 /* Meetable.swift */,
-				FF31D2E72B71CDF900EB420C /* TrainerID.swift */,
-				FF31D2E92B71D04700EB420C /* TrainerID32.swift */,
-				FF31D2E62B71CDE600EB420C /* Metadata */,
-				FF5068772B96A43600DF64A8 /* Templates */,
+				FFDA55CF2B9E27F500376E0E /* BattleStats.swift */,
 				FF5068982B96C85400DF64A8 /* BattleVersion.swift */,
 				FF50689A2B96CAAB00DF64A8 /* CaughtData2.swift */,
 				FF50689C2B96CAFA00DF64A8 /* ContestStats.swift */,
@@ -368,18 +383,33 @@
 				FF5068A22B96CBCB00DF64A8 /* Favorite.swift */,
 				FF5068A42B96CBF700DF64A8 /* FormArgument.swift */,
 				FFDA55CD2B9E1DF000376E0E /* Ganbaru.swift */,
-				FFDA55CF2B9E27F500376E0E /* BattleStats.swift */,
 				FFDA55D12B9E332600376E0E /* Gigantamaxable.swift */,
 				FFDA55D32B9E336100376E0E /* GroundTile.swift */,
 				FFDA55D52B9E33A000376E0E /* HandlerLanguage.swift */,
 				FFDA55D72B9E33CC00376E0E /* HandlerUpdatable.swift */,
+				FF50687E2B96A8A600DF64A8 /* Hatchable.swift */,
 				FFDA55DC2B9E411800376E0E /* HomeTrackable.swift */,
 				FFDA55DE2B9E470100376E0E /* HyperTrainable.swift */,
-				FFDA55E02B9E5BD100376E0E /* ScaledSizable.swift */,
-				FFDA55E42B9E876500376E0E /* NatureSettable.swift */,
-				FFDA55F72BA8F81600376E0E /* MemoryOTSettable.swift */,
+				FF5068802B96AAED00DF64A8 /* Meetable.swift */,
 				FFDA55F92BA8F89D00376E0E /* MemoryHTSettable.swift */,
+				FFDA55F72BA8F81600376E0E /* MemoryOTSettable.swift */,
+				FFDA55E42B9E876500376E0E /* NatureSettable.swift */,
+				FFDA55E02B9E5BD100376E0E /* ScaledSizable.swift */,
+				FFDA56042BA9092500376E0E /* TechRecord.swift */,
+				FFDA56022BA900F800376E0E /* TeraType.swift */,
+				FF31D2E72B71CDF900EB420C /* TrainerID.swift */,
+				FF31D2E92B71D04700EB420C /* TrainerID32.swift */,
 				FFDA55FD2BA8FB6000376E0E /* TrainerMemorable.swift */,
+				FF31D2E62B71CDE600EB420C /* Metadata */,
+				FF5068772B96A43600DF64A8 /* Templates */,
+				FFDA56062BA90A7200376E0E /* Noble.swift */,
+				FFDA56082BA90ABD00376E0E /* ObedienceLevelable.swift */,
+				FFDA560A2BA90C1600376E0E /* MoveShop8.swift */,
+				FFDA560C2BA90D5800376E0E /* RegionOrigin.swift */,
+				FFDA560E2BA90EC100376E0E /* SanityChecksum.swift */,
+				FFDA56102BA90F4A00376E0E /* ShadowCapturable.swift */,
+				FFDA56122BA90F8A00376E0E /* Sociable.swift */,
+				FFDA56142BA90FBD00376E0E /* GeoTrackable.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -893,12 +923,14 @@
 				FF50685C2B951FC000DF64A8 /* MoveInfo7.swift in Sources */,
 				FF5068082B913E9900DF64A8 /* ItemStorage8SWSH.swift in Sources */,
 				FF5068912B96B4E200DF64A8 /* ScaledSizeReadable.swift in Sources */,
+				FFDA560B2BA90C1600376E0E /* MoveShop8.swift in Sources */,
 				FF31D3512B85AA4300EB420C /* ItemStorage1.swift in Sources */,
 				FF5068852B96B1B500DF64A8 /* FixedOTFriendship.swift in Sources */,
 				FF50685E2B951FEE00DF64A8 /* MoveInfo7b.swift in Sources */,
 				FFDA55E82B9E985800376E0E /* MemoryArgType.swift in Sources */,
 				FF31D3142B746BB400EB420C /* BasicStrings.swift in Sources */,
 				FF31D3282B79721B00EB420C /* LocationSet0.swift in Sources */,
+				FFDA560F2BA90EC100376E0E /* SanityChecksum.swift in Sources */,
 				FFDA55EA2B9E989D00376E0E /* MemoryContext.swift in Sources */,
 				FF50687F2B96A8A600DF64A8 /* Hatchable.swift in Sources */,
 				FF31D2E02B71CB3F00EB420C /* OriginMark.swift in Sources */,
@@ -908,6 +940,7 @@
 				FF31D3022B730BC900EB420C /* Move.swift in Sources */,
 				FF31D32A2B79750600EB420C /* LocationSet4.swift in Sources */,
 				FF31D33B2B8278C400EB420C /* Locations8.swift in Sources */,
+				FFDA56152BA90FBD00376E0E /* GeoTrackable.swift in Sources */,
 				FFDA55F82BA8F81600376E0E /* MemoryOTSettable.swift in Sources */,
 				FF31D3482B82897A00EB420C /* HeldItemLumpImage.swift in Sources */,
 				FF50689F2B96CB6400DF64A8 /* DynamaxLevel.swift in Sources */,
@@ -925,6 +958,7 @@
 				FFDA55FC2BA8FB1000376E0E /* MemoryVariableSet.swift in Sources */,
 				FF5068412B94EF0F00DF64A8 /* PersonalType.swift in Sources */,
 				FFDA55F62BA8F66F00376E0E /* MemoryPermissions.swift in Sources */,
+				FFDA56132BA90F8A00376E0E /* Sociable.swift in Sources */,
 				FF5068682B9521E000DF64A8 /* MoveInfo.swift in Sources */,
 				FF50683F2B94EE8C00DF64A8 /* PersonalMisc.swift in Sources */,
 				FFDA55D82B9E33CC00376E0E /* HandlerUpdatable.swift in Sources */,
@@ -960,6 +994,7 @@
 				FF50680C2B91776000DF64A8 /* Breeding.swift in Sources */,
 				FF31D32F2B79CC3900EB420C /* Locations.swift in Sources */,
 				FF50687D2B96A7BC00DF64A8 /* DynamaxLevelReadable.swift in Sources */,
+				FFDA56072BA90A7200376E0E /* Noble.swift in Sources */,
 				FF5068662B95216600DF64A8 /* MoveInfo9.swift in Sources */,
 				FF31D3372B82777100EB420C /* Locations7.swift in Sources */,
 				FF5068602B95206600DF64A8 /* MoveInfo8.swift in Sources */,
@@ -979,16 +1014,20 @@
 				FF31D33D2B8279E800EB420C /* Locations8a.swift in Sources */,
 				FF5068792B96A48200DF64A8 /* AlphaReadable.swift in Sources */,
 				FF31D3062B731E2A00EB420C /* Nature.swift in Sources */,
+				FFDA56032BA900F800376E0E /* TeraType.swift in Sources */,
 				FF31D2F12B71E8C800EB420C /* GameVersion.swift in Sources */,
 				FF31D3042B730C1900EB420C /* MoveType.swift in Sources */,
 				FF4A9D5C2B71BD1E00C4B5F5 /* PKHeXMacApp.swift in Sources */,
 				FF31D3532B85AAED00EB420C /* ItemStorage2.swift in Sources */,
 				FF31D3002B730B3F00EB420C /* Gender.swift in Sources */,
+				FFDA56112BA90F4A00376E0E /* ShadowCapturable.swift in Sources */,
 				FF31D30A2B73224200EB420C /* Region.swift in Sources */,
 				FFDA56012BA8FCD800376E0E /* LegalityCheckStrings.swift in Sources */,
 				FF50689D2B96CAFA00DF64A8 /* ContestStats.swift in Sources */,
+				FFDA56052BA9092500376E0E /* TechRecord.swift in Sources */,
 				FF50681C2B92D19600DF64A8 /* PersonalFormInfo.swift in Sources */,
 				FF50682D2B94E26B00DF64A8 /* BaseStat.swift in Sources */,
+				FFDA56092BA90ABD00376E0E /* ObedienceLevelable.swift in Sources */,
 				FF50686C2B969AEE00DF64A8 /* Affection.swift in Sources */,
 				FF5068742B969C6900DF64A8 /* Shiny.swift in Sources */,
 				FF31D2F82B73081A00EB420C /* Core.swift in Sources */,
@@ -1007,6 +1046,7 @@
 				FFDA55E52B9E876500376E0E /* NatureSettable.swift in Sources */,
 				FF50688D2B96B46E00DF64A8 /* NatureReadable.swift in Sources */,
 				FF31D35D2B86E70300EB420C /* ItemStorage3.swift in Sources */,
+				FFDA560D2BA90D5800376E0E /* RegionOrigin.swift in Sources */,
 				FF5068972B96B81C00DF64A8 /* Awakened.swift in Sources */,
 				FFDA55E12B9E5BD100376E0E /* ScaledSizable.swift in Sources */,
 				FFDA55DB2B9E342300376E0E /* TrainerInfo.swift in Sources */,
