@@ -272,7 +272,7 @@
 - [ ] LegalityAnalysis
 - [ ] LegalityAnalyzer
 - [ ] MoveListSuggest
-- [ ] MoveSourceType
+- [x] MoveSourceType
 
 ### Bulk
 
@@ -451,11 +451,10 @@
 
 ##### Enums
 
-- [ ] AbilityPermission
-- [ ] EncounterMatchRating
-- [ ] HiddenAbilityPermission
-- [ ] Shiny
-- [ ] SlotType
+- [x] AbilityPermission
+- [x] EncounterMatchRating
+- [x] HiddenAbilityPermission (_combined with Ability Permission_)
+- [x] Shiny
 
 ##### Gen1
 
@@ -782,7 +781,7 @@
 
 ##### Shared
 
-- [ ] IEggSource
+- [x] IEggSource
 - [ ] ILearnSource
 - [ ] IReminderSource
 - [x] LearnOption

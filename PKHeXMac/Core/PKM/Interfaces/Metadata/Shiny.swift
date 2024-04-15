@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol Shiny {
+protocol Shinyable {
     var isShiny: Bool { get }
 }

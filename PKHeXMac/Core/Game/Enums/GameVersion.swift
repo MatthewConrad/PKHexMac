@@ -567,7 +567,7 @@ enum GCVersion: Int, CaseIterable, Comparable {
         case .CXD:
             return GameVersion.CXD
         default:
-            return GameVersion.Unknown
+            return GameVersion.InvalidGame
         }
     }
 }

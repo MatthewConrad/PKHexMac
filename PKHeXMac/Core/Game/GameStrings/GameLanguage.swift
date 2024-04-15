@@ -21,6 +21,10 @@ enum GameLanguage {
         return LanguageCodes.count
     }
 
+    static func language2Char(lang: Int) -> String {
+        lang >= LanguageCount ? DefaultLanguage : LanguageCodes[lang]
+    }
+
     /// Gets the index of a given language.
     /// - parameters:
     ///   - lang: a valid LanguageCode

@@ -9,7 +9,7 @@ import Foundation
 
 protocol PKMProtocol: SpeciesForm, BattleStats, BattleMoves, Ganbaru, TrainerID32, Meetable, Hatchable, Shiny, LangNick, GameValueLimit, FatefulEncounterable, NatureSettable {
     // TODO: figure out proper way to handle readonly Extensions, Extension
-    
+
     var sizeParty: Int { get }
     var sizeStored: Int { get }
 
@@ -47,7 +47,12 @@ protocol PKMProtocol: SpeciesForm, BattleStats, BattleMoves, Ganbaru, TrainerID3
     var originalTrainerName: String { get set }
     var originalTrainerGender: UInt8 { get set }
 
+    var PID: UInt { get set }
+
     var language: Int { get set }
+
+    var TSV: UInt { get }
+    var PSV: UInt { get }
 }
 
 extension PKMProtocol {
@@ -83,6 +88,11 @@ extension PKMProtocol {
     }
 
     var TrainerIDDisplayFormat: TrainerIDFormat { self.getTrainerIDFormat() }
+
+    var isShiny: Bool { self.TSV == self.PSV }
+    var shinyXOR: UInt16 {
+        let tmp = self.ID32 ^ self.PID
+    }
 
     var RS: Bool { [.R, .S].contains(self.version) }
     var E: Bool { self.version == .E }

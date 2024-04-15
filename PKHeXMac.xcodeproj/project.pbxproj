@@ -177,6 +177,11 @@
 		FFDA56112BA90F4A00376E0E /* ShadowCapturable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56102BA90F4A00376E0E /* ShadowCapturable.swift */; };
 		FFDA56132BA90F8A00376E0E /* Sociable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56122BA90F8A00376E0E /* Sociable.swift */; };
 		FFDA56152BA90FBD00376E0E /* GeoTrackable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56142BA90FBD00376E0E /* GeoTrackable.swift */; };
+		FFDA56172BCC8B9C00376E0E /* EggSourceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56162BCC8B9C00376E0E /* EggSourceable.swift */; };
+		FFDA56192BCC8C6900376E0E /* MoveSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56182BCC8C6900376E0E /* MoveSourceType.swift */; };
+		FFDA561E2BCC909300376E0E /* AbilityPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA561D2BCC909300376E0E /* AbilityPermission.swift */; };
+		FFDA56202BCC931C00376E0E /* EncounterMatchRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA561F2BCC931C00376E0E /* EncounterMatchRating.swift */; };
+		FFDA56222BCCB66700376E0E /* Shiny.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56212BCCB66700376E0E /* Shiny.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -353,6 +358,11 @@
 		FFDA56102BA90F4A00376E0E /* ShadowCapturable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowCapturable.swift; sourceTree = "<group>"; };
 		FFDA56122BA90F8A00376E0E /* Sociable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sociable.swift; sourceTree = "<group>"; };
 		FFDA56142BA90FBD00376E0E /* GeoTrackable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoTrackable.swift; sourceTree = "<group>"; };
+		FFDA56162BCC8B9C00376E0E /* EggSourceable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggSourceable.swift; sourceTree = "<group>"; };
+		FFDA56182BCC8C6900376E0E /* MoveSourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveSourceType.swift; sourceTree = "<group>"; };
+		FFDA561D2BCC909300376E0E /* AbilityPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityPermission.swift; sourceTree = "<group>"; };
+		FFDA561F2BCC931C00376E0E /* EncounterMatchRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncounterMatchRating.swift; sourceTree = "<group>"; };
+		FFDA56212BCCB66700376E0E /* Shiny.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shiny.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -468,6 +478,7 @@
 		FF31D2F62B73080E00EB420C /* Legality */ = {
 			isa = PBXGroup;
 			children = (
+				FFDA561A2BCC907D00376E0E /* Encounters */,
 				FFDA55FF2BA8FCC700376E0E /* Formatting */,
 				FF5068292B94D71A00DF64A8 /* Restrictions */,
 				FF5068212B92D7A200DF64A8 /* RNG */,
@@ -475,6 +486,7 @@
 				FF50680D2B918E3600DF64A8 /* Tables */,
 				FF31D2F72B73081A00EB420C /* Core.swift */,
 				FF50680B2B91776000DF64A8 /* Breeding.swift */,
+				FFDA56182BCC8C6900376E0E /* MoveSourceType.swift */,
 			);
 			path = Legality;
 			sourceTree = "<group>";
@@ -617,10 +629,10 @@
 		FF4A9D6A2B71BD3600C4B5F5 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				FF50684E2B951E7C00DF64A8 /* Moves */,
 				FF31D2EE2B71E8B800EB420C /* Game */,
 				FF31D3462B82896F00EB420C /* Items */,
 				FF31D2F62B73080E00EB420C /* Legality */,
+				FF50684E2B951E7C00DF64A8 /* Moves */,
 				FF5068192B92D17800DF64A8 /* PersonalInfo */,
 				FF4A9D6B2B71BD4200C4B5F5 /* PKM */,
 				FF31D34B2B858ABE00EB420C /* Saves */,
@@ -686,6 +698,7 @@
 			isa = PBXGroup;
 			children = (
 				FF5068152B91943400DF64A8 /* LearnOption.swift */,
+				FFDA56162BCC8B9C00376E0E /* EggSourceable.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -833,6 +846,32 @@
 			path = Formatting;
 			sourceTree = "<group>";
 		};
+		FFDA561A2BCC907D00376E0E /* Encounters */ = {
+			isa = PBXGroup;
+			children = (
+				FFDA561B2BCC908300376E0E /* Templates */,
+			);
+			path = Encounters;
+			sourceTree = "<group>";
+		};
+		FFDA561B2BCC908300376E0E /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				FFDA561C2BCC908700376E0E /* Enums */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		FFDA561C2BCC908700376E0E /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				FFDA561D2BCC909300376E0E /* AbilityPermission.swift */,
+				FFDA561F2BCC931C00376E0E /* EncounterMatchRating.swift */,
+				FFDA56212BCCB66700376E0E /* Shiny.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -904,6 +943,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFDA56202BCC931C00376E0E /* EncounterMatchRating.swift in Sources */,
 				FF4A9D5E2B71BD1E00C4B5F5 /* ContentView.swift in Sources */,
 				FF5068542B951F1300DF64A8 /* MoveInfo3.swift in Sources */,
 				FF31D2F32B71ED9300EB420C /* GameConsole.swift in Sources */,
@@ -952,6 +992,7 @@
 				FF5068482B94F8E800DF64A8 /* PersonalInfo1.swift in Sources */,
 				FF5068952B96B53E00DF64A8 /* AppliedMarkings.swift in Sources */,
 				FF5067FC2B8A422000DF64A8 /* ItemStorage5.swift in Sources */,
+				FFDA56222BCCB66700376E0E /* Shiny.swift in Sources */,
 				FF5068042B9139E800DF64A8 /* ItemStorage8BDSP.swift in Sources */,
 				FF5068892B96B3F400DF64A8 /* LangNicknamedTemplate.swift in Sources */,
 				FFDA55D02B9E27F500376E0E /* BattleStats.swift in Sources */,
@@ -975,6 +1016,7 @@
 				FF5068452B94EFEC00DF64A8 /* PersonalInfo.swift in Sources */,
 				FF31D34F2B858AD300EB420C /* InventoryType.swift in Sources */,
 				FF31D3312B7B0A5000EB420C /* Locations4.swift in Sources */,
+				FFDA56192BCC8C6900376E0E /* MoveSourceType.swift in Sources */,
 				FF5068392B94EDE800DF64A8 /* PersonalTM.swift in Sources */,
 				FFDA55EC2B9E9B4900376E0E /* Memories.swift in Sources */,
 				FF31D2FE2B730AA000EB420C /* Ball.swift in Sources */,
@@ -1006,6 +1048,7 @@
 				FF5068A32B96CBCB00DF64A8 /* Favorite.swift in Sources */,
 				FF5068182B92C0A700DF64A8 /* FormInfo.swift in Sources */,
 				FF50680A2B91434F00DF64A8 /* ItemStorage9.swift in Sources */,
+				FFDA56172BCC8B9C00376E0E /* EggSourceable.swift in Sources */,
 				FF5068812B96AAED00DF64A8 /* Meetable.swift in Sources */,
 				FFDA55D62B9E33A000376E0E /* HandlerLanguage.swift in Sources */,
 				FF4A9D702B71C0B000C4B5F5 /* AlcremieDecoration.swift in Sources */,
@@ -1063,6 +1106,7 @@
 				FF5068A12B96CB8C00DF64A8 /* FatefulEncounter.swift in Sources */,
 				FF31D2FA2B7309D400EB420C /* Species.swift in Sources */,
 				FF5068522B951EF200DF64A8 /* MoveInfo2.swift in Sources */,
+				FFDA561E2BCC909300376E0E /* AbilityPermission.swift in Sources */,
 				FFDA55FA2BA8F89D00376E0E /* MemoryHTSettable.swift in Sources */,
 				FF31D3232B74838500EB420C /* Lock.swift in Sources */,
 				FF5068162B91943400DF64A8 /* LearnOption.swift in Sources */,
