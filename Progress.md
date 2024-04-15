@@ -615,22 +615,22 @@
 - [ ] IEncounterInfo
 - [ ] IEncounterMatch
 - [ ] IEncounterTemplate
-- [ ] ILocation
+- [x] ILocation
 
 ###### Properties
 
-- [ ] IEncounterFormRandom
-- [ ] IFixedAbilityNumber
-- [ ] IFixedBall
-- [ ] IFixedGender
-- [ ] IFixedIVSet
-- [ ] IFixedNature
-- [ ] IFixedNickname
-- [ ] IFixedTrainer
-- [ ] IFlawlessIVCount
-- [ ] IFlawlessIVCountConditional
-- [ ] IHatchCycle
-- [ ] ILevelRange
+- [x] IEncounterFormRandom
+- [x] IFixedAbilityNumber
+- [x] IFixedBall
+- [x] IFixedGender
+- [x] IFixedIVSet
+- [x] IFixedNature
+- [x] IFixedNickname
+- [x] IFixedTrainer
+- [x] IFlawlessIVCount
+- [x] IFlawlessIVCountConditional (_combined into same file as IFlawlessIVCount_)
+- [x] IHatchCycle
+- [x] ILevelRange
 - [ ] IMoveset
 - [ ] IRandomCorrelation
 - [ ] IRelearn
@@ -648,7 +648,7 @@
 
 - [ ] EncounterEgg
 - [ ] EncounterInvalid
-- [ ] IndividualValidSet
+- [x] IndividualValidSet
 - [ ] Moveset
 
 #### Verifiers

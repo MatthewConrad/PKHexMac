@@ -182,6 +182,21 @@
 		FFDA561E2BCC909300376E0E /* AbilityPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA561D2BCC909300376E0E /* AbilityPermission.swift */; };
 		FFDA56202BCC931C00376E0E /* EncounterMatchRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA561F2BCC931C00376E0E /* EncounterMatchRating.swift */; };
 		FFDA56222BCCB66700376E0E /* Shiny.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56212BCCB66700376E0E /* Shiny.swift */; };
+		FFDA56252BCCBCB500376E0E /* Locateable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56242BCCBCB500376E0E /* Locateable.swift */; };
+		FFDA56282BCCBF1600376E0E /* EncounterFormRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56272BCCBF1600376E0E /* EncounterFormRandom.swift */; };
+		FFDA562C2BCCBF9900376E0E /* FixedAbilityNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA562B2BCCBF9900376E0E /* FixedAbilityNumber.swift */; };
+		FFDA562E2BCCBFCF00376E0E /* FixedBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA562D2BCCBFCF00376E0E /* FixedBall.swift */; };
+		FFDA56302BCCC03300376E0E /* FixedGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA562F2BCCC03300376E0E /* FixedGender.swift */; };
+		FFDA56332BCCC0FE00376E0E /* IndividualValueSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56322BCCC0FE00376E0E /* IndividualValueSet.swift */; };
+		FFDA56352BCCC13C00376E0E /* FixedIVSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56342BCCC13C00376E0E /* FixedIVSet.swift */; };
+		FFDA56372BCCC3F500376E0E /* FixedNature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56362BCCC3F500376E0E /* FixedNature.swift */; };
+		FFDA56392BCCC47D00376E0E /* FixedNickname.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56382BCCC47D00376E0E /* FixedNickname.swift */; };
+		FFDA563B2BCCC56000376E0E /* FixedTrainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA563A2BCCC56000376E0E /* FixedTrainer.swift */; };
+		FFDA563D2BCCC5BF00376E0E /* FlawlessIVCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA563C2BCCC5BF00376E0E /* FlawlessIVCount.swift */; };
+		FFDA563F2BCCC62B00376E0E /* HatchCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA563E2BCCC62B00376E0E /* HatchCycle.swift */; };
+		FFDA56412BCCC72700376E0E /* LevelRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56402BCCC72700376E0E /* LevelRange.swift */; };
+		FFDA56432BCCCA5100376E0E /* Moveset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56422BCCCA5100376E0E /* Moveset.swift */; };
+		FFDA56452BCCCA8800376E0E /* Moveset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56442BCCCA8800376E0E /* Moveset.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -363,6 +378,21 @@
 		FFDA561D2BCC909300376E0E /* AbilityPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityPermission.swift; sourceTree = "<group>"; };
 		FFDA561F2BCC931C00376E0E /* EncounterMatchRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncounterMatchRating.swift; sourceTree = "<group>"; };
 		FFDA56212BCCB66700376E0E /* Shiny.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shiny.swift; sourceTree = "<group>"; };
+		FFDA56242BCCBCB500376E0E /* Locateable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locateable.swift; sourceTree = "<group>"; };
+		FFDA56272BCCBF1600376E0E /* EncounterFormRandom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncounterFormRandom.swift; sourceTree = "<group>"; };
+		FFDA562B2BCCBF9900376E0E /* FixedAbilityNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedAbilityNumber.swift; sourceTree = "<group>"; };
+		FFDA562D2BCCBFCF00376E0E /* FixedBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedBall.swift; sourceTree = "<group>"; };
+		FFDA562F2BCCC03300376E0E /* FixedGender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedGender.swift; sourceTree = "<group>"; };
+		FFDA56322BCCC0FE00376E0E /* IndividualValueSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualValueSet.swift; sourceTree = "<group>"; };
+		FFDA56342BCCC13C00376E0E /* FixedIVSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedIVSet.swift; sourceTree = "<group>"; };
+		FFDA56362BCCC3F500376E0E /* FixedNature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedNature.swift; sourceTree = "<group>"; };
+		FFDA56382BCCC47D00376E0E /* FixedNickname.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedNickname.swift; sourceTree = "<group>"; };
+		FFDA563A2BCCC56000376E0E /* FixedTrainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedTrainer.swift; sourceTree = "<group>"; };
+		FFDA563C2BCCC5BF00376E0E /* FlawlessIVCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlawlessIVCount.swift; sourceTree = "<group>"; };
+		FFDA563E2BCCC62B00376E0E /* HatchCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HatchCycle.swift; sourceTree = "<group>"; };
+		FFDA56402BCCC72700376E0E /* LevelRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelRange.swift; sourceTree = "<group>"; };
+		FFDA56422BCCCA5100376E0E /* Moveset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moveset.swift; sourceTree = "<group>"; };
+		FFDA56442BCCCA8800376E0E /* Moveset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moveset.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -857,6 +887,8 @@
 		FFDA561B2BCC908300376E0E /* Templates */ = {
 			isa = PBXGroup;
 			children = (
+				FFDA56312BCCC0EA00376E0E /* Shared */,
+				FFDA56232BCCBC5F00376E0E /* Interfaces */,
 				FFDA561C2BCC908700376E0E /* Enums */,
 			);
 			path = Templates;
@@ -870,6 +902,43 @@
 				FFDA56212BCCB66700376E0E /* Shiny.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		FFDA56232BCCBC5F00376E0E /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				FFDA56262BCCBEAC00376E0E /* Properties */,
+				FFDA56242BCCBCB500376E0E /* Locateable.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		FFDA56262BCCBEAC00376E0E /* Properties */ = {
+			isa = PBXGroup;
+			children = (
+				FFDA56272BCCBF1600376E0E /* EncounterFormRandom.swift */,
+				FFDA562B2BCCBF9900376E0E /* FixedAbilityNumber.swift */,
+				FFDA562D2BCCBFCF00376E0E /* FixedBall.swift */,
+				FFDA562F2BCCC03300376E0E /* FixedGender.swift */,
+				FFDA56342BCCC13C00376E0E /* FixedIVSet.swift */,
+				FFDA56362BCCC3F500376E0E /* FixedNature.swift */,
+				FFDA56382BCCC47D00376E0E /* FixedNickname.swift */,
+				FFDA563A2BCCC56000376E0E /* FixedTrainer.swift */,
+				FFDA563C2BCCC5BF00376E0E /* FlawlessIVCount.swift */,
+				FFDA563E2BCCC62B00376E0E /* HatchCycle.swift */,
+				FFDA56402BCCC72700376E0E /* LevelRange.swift */,
+				FFDA56422BCCCA5100376E0E /* Moveset.swift */,
+			);
+			path = Properties;
+			sourceTree = "<group>";
+		};
+		FFDA56312BCCC0EA00376E0E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				FFDA56322BCCC0FE00376E0E /* IndividualValueSet.swift */,
+				FFDA56442BCCCA8800376E0E /* Moveset.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -956,11 +1025,14 @@
 				FF31D2EA2B71D04700EB420C /* TrainerID32.swift in Sources */,
 				FF31D2E52B71CD4400EB420C /* SpeciesForm.swift in Sources */,
 				FF31D2E82B71CDF900EB420C /* TrainerID.swift in Sources */,
+				FFDA563D2BCCC5BF00376E0E /* FlawlessIVCount.swift in Sources */,
+				FFDA562C2BCCBF9900376E0E /* FixedAbilityNumber.swift in Sources */,
 				FF5068642B95213900DF64A8 /* MoveInfo8b.swift in Sources */,
 				FF50684D2B951A6E00DF64A8 /* PokeblockFlavor.swift in Sources */,
 				FF31D2ED2B71E79F00EB420C /* EntityContext.swift in Sources */,
 				FF5068022B9132F500DF64A8 /* ItemStorage7.swift in Sources */,
 				FF50685C2B951FC000DF64A8 /* MoveInfo7.swift in Sources */,
+				FFDA56332BCCC0FE00376E0E /* IndividualValueSet.swift in Sources */,
 				FF5068082B913E9900DF64A8 /* ItemStorage8SWSH.swift in Sources */,
 				FF5068912B96B4E200DF64A8 /* ScaledSizeReadable.swift in Sources */,
 				FFDA560B2BA90C1600376E0E /* MoveShop8.swift in Sources */,
@@ -976,6 +1048,7 @@
 				FF31D2E02B71CB3F00EB420C /* OriginMark.swift in Sources */,
 				FF5068722B969C3900DF64A8 /* LangNick.swift in Sources */,
 				FF31D3352B82762500EB420C /* Locations6.swift in Sources */,
+				FFDA56372BCCC3F500376E0E /* FixedNature.swift in Sources */,
 				FF50682B2B94D77000DF64A8 /* Vivillon3DS.swift in Sources */,
 				FF31D3022B730BC900EB420C /* Move.swift in Sources */,
 				FF31D32A2B79750600EB420C /* LocationSet4.swift in Sources */,
@@ -994,6 +1067,7 @@
 				FF5067FC2B8A422000DF64A8 /* ItemStorage5.swift in Sources */,
 				FFDA56222BCCB66700376E0E /* Shiny.swift in Sources */,
 				FF5068042B9139E800DF64A8 /* ItemStorage8BDSP.swift in Sources */,
+				FFDA56452BCCCA8800376E0E /* Moveset.swift in Sources */,
 				FF5068892B96B3F400DF64A8 /* LangNicknamedTemplate.swift in Sources */,
 				FFDA55D02B9E27F500376E0E /* BattleStats.swift in Sources */,
 				FFDA55FC2BA8FB1000376E0E /* MemoryVariableSet.swift in Sources */,
@@ -1009,6 +1083,7 @@
 				FF5068232B92D7AE00DF64A8 /* PIDType.swift in Sources */,
 				FFDA55CE2B9E1DF000376E0E /* Ganbaru.swift in Sources */,
 				FF31D3192B74703700EB420C /* GameStrings.swift in Sources */,
+				FFDA56302BCCC03300376E0E /* FixedGender.swift in Sources */,
 				FF50685A2B951F9E00DF64A8 /* MoveInfo6.swift in Sources */,
 				FF5068562B951F3F00DF64A8 /* MoveInfo4.swift in Sources */,
 				FF5068702B969C0300DF64A8 /* Generation.swift in Sources */,
@@ -1031,6 +1106,7 @@
 				FF31D2E22B71CC5900EB420C /* PKM.swift in Sources */,
 				FF50681E2B92D2DF00DF64A8 /* FormItem.swift in Sources */,
 				FF31D35F2B86EF9600EB420C /* ItemStorage4.swift in Sources */,
+				FFDA56352BCCC13C00376E0E /* FixedIVSet.swift in Sources */,
 				FF50687B2B96A4A000DF64A8 /* ContestStatsReadable.swift in Sources */,
 				FF50684B2B95081100DF64A8 /* PersonalTable1.swift in Sources */,
 				FF50680C2B91776000DF64A8 /* Breeding.swift in Sources */,
@@ -1044,6 +1120,7 @@
 				FFDA55F42B9FF49700376E0E /* MemoryContext8Data.swift in Sources */,
 				FFDA55F02B9E9E8000376E0E /* MemoryContext8.swift in Sources */,
 				FF31D2FC2B730A2A00EB420C /* Ability.swift in Sources */,
+				FFDA56392BCCC47D00376E0E /* FixedNickname.swift in Sources */,
 				FF50688F2B96B4B600DF64A8 /* ObedienceLevelReadable.swift in Sources */,
 				FF5068A32B96CBCB00DF64A8 /* Favorite.swift in Sources */,
 				FF5068182B92C0A700DF64A8 /* FormInfo.swift in Sources */,
@@ -1059,6 +1136,7 @@
 				FF31D3062B731E2A00EB420C /* Nature.swift in Sources */,
 				FFDA56032BA900F800376E0E /* TeraType.swift in Sources */,
 				FF31D2F12B71E8C800EB420C /* GameVersion.swift in Sources */,
+				FFDA562E2BCCBFCF00376E0E /* FixedBall.swift in Sources */,
 				FF31D3042B730C1900EB420C /* MoveType.swift in Sources */,
 				FF4A9D5C2B71BD1E00C4B5F5 /* PKHeXMacApp.swift in Sources */,
 				FF31D3532B85AAED00EB420C /* ItemStorage2.swift in Sources */,
@@ -1070,6 +1148,7 @@
 				FFDA56052BA9092500376E0E /* TechRecord.swift in Sources */,
 				FF50681C2B92D19600DF64A8 /* PersonalFormInfo.swift in Sources */,
 				FF50682D2B94E26B00DF64A8 /* BaseStat.swift in Sources */,
+				FFDA563B2BCCC56000376E0E /* FixedTrainer.swift in Sources */,
 				FFDA56092BA90ABD00376E0E /* ObedienceLevelable.swift in Sources */,
 				FF50686C2B969AEE00DF64A8 /* Affection.swift in Sources */,
 				FF5068742B969C6900DF64A8 /* Shiny.swift in Sources */,
@@ -1080,6 +1159,7 @@
 				FF31D31F2B74777700EB420C /* ResourceUtil.swift in Sources */,
 				FF5067FE2B8A4C1900DF64A8 /* ItemStorage6.swift in Sources */,
 				FF5068872B96B1D700DF64A8 /* GigantamaxReadable.swift in Sources */,
+				FFDA56412BCCC72700376E0E /* LevelRange.swift in Sources */,
 				FF31D31B2B7470A600EB420C /* GameLanguage.swift in Sources */,
 				FF5068262B92DD6400DF64A8 /* LCRNG.swift in Sources */,
 				FFDA55EE2B9E9CE100376E0E /* MemoryContext6.swift in Sources */,
@@ -1089,17 +1169,21 @@
 				FFDA55E52B9E876500376E0E /* NatureSettable.swift in Sources */,
 				FF50688D2B96B46E00DF64A8 /* NatureReadable.swift in Sources */,
 				FF31D35D2B86E70300EB420C /* ItemStorage3.swift in Sources */,
+				FFDA563F2BCCC62B00376E0E /* HatchCycle.swift in Sources */,
 				FFDA560D2BA90D5800376E0E /* RegionOrigin.swift in Sources */,
 				FF5068972B96B81C00DF64A8 /* Awakened.swift in Sources */,
+				FFDA56252BCCBCB500376E0E /* Locateable.swift in Sources */,
 				FFDA55E12B9E5BD100376E0E /* ScaledSizable.swift in Sources */,
 				FFDA55DB2B9E342300376E0E /* TrainerInfo.swift in Sources */,
 				FF31D3262B796FBE00EB420C /* LocationSet.swift in Sources */,
+				FFDA56432BCCCA5100376E0E /* Moveset.swift in Sources */,
 				FF31D3122B746A2300EB420C /* ComboItem.swift in Sources */,
 				FF50680F2B918E6600DF64A8 /* SpeciesCategory.swift in Sources */,
 				FF5068112B91920400DF64A8 /* FormChange.swift in Sources */,
 				FF5068932B96B52500DF64A8 /* Alpha.swift in Sources */,
 				FF5068432B94EFAD00DF64A8 /* PersonalTable.swift in Sources */,
 				FF4A9D6E2B71BD5E00C4B5F5 /* PokeSizeDetailed.swift in Sources */,
+				FFDA56282BCCBF1600376E0E /* EncounterFormRandom.swift in Sources */,
 				FF5068062B913DB600DF64A8 /* ItemStorage8LA.swift in Sources */,
 				FF5068372B94ED8A00DF64A8 /* PersonalEncounter.swift in Sources */,
 				FF31D3432B827C9100EB420C /* LocationsHOME.swift in Sources */,
