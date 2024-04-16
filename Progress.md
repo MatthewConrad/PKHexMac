@@ -6,7 +6,7 @@
 
 - [ ] CommonEdits
 - [ ] HiddenPower
-- [ ] IBattleTemplate
+- [x] IBattleTemplate
 - [ ] IPKMView
 - [ ] IPlugin
 - [ ] ISaveFileProvider
@@ -358,7 +358,7 @@
 
 #### Generator
 
-- [ ] EncounterCriteria
+- [x] EncounterCriteria
 - [ ] EncounterFinder
 - [ ] EncounterGenerator
 - [ ] PeekEnumerator
@@ -611,7 +611,7 @@
 
 - [ ] IEncounterable
 - [ ] IEncounterArea
-- [ ] IEncounterConvertible
+- [x] IEncounterConvertible
 - [ ] IEncounterInfo
 - [ ] IEncounterMatch
 - [ ] IEncounterTemplate
@@ -639,9 +639,8 @@
 
 ###### RNG
 
-- [ ] IMagnetStatic
-- [ ] INumberedSlot
-- [ ] ISlotRNGType
+- [x] IMagnetStatic
+- [x] INumberedSlot
 
 ##### Shared
 

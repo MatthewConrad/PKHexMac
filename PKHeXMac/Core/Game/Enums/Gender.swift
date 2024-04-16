@@ -8,7 +8,7 @@
 import Foundation
 
 /// Gender a PKM can have
-enum Gender: Int, CaseIterable {
+enum Gender: UInt8, CaseIterable {
     case Male = 0,
          Female = 1,
          Genderless = 2

@@ -200,6 +200,12 @@
 		FFDA56472BCDFE2D00376E0E /* RandomCorrelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56462BCDFE2D00376E0E /* RandomCorrelation.swift */; };
 		FFDA56492BCDFF0400376E0E /* RestrictVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56482BCDFF0400376E0E /* RestrictVersion.swift */; };
 		FFDA564B2BCDFF2D00376E0E /* ShinyPotential.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA564A2BCDFF2D00376E0E /* ShinyPotential.swift */; };
+		FFDA564E2BCDFFA300376E0E /* MagnetStatic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA564D2BCDFFA300376E0E /* MagnetStatic.swift */; };
+		FFDA56512BCE017B00376E0E /* LeadRequired.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56502BCE017B00376E0E /* LeadRequired.swift */; };
+		FFDA56532BCE06C600376E0E /* NumberedSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56522BCE06C600376E0E /* NumberedSlot.swift */; };
+		FFDA56552BCE072D00376E0E /* EncounterConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56542BCE072D00376E0E /* EncounterConvertible.swift */; };
+		FFDA56582BCE07EB00376E0E /* EncounterCriteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56572BCE07EB00376E0E /* EncounterCriteria.swift */; };
+		FFDA565B2BCE0D0E00376E0E /* BattleTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA565A2BCE0D0E00376E0E /* BattleTemplate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -399,6 +405,12 @@
 		FFDA56462BCDFE2D00376E0E /* RandomCorrelation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomCorrelation.swift; sourceTree = "<group>"; };
 		FFDA56482BCDFF0400376E0E /* RestrictVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictVersion.swift; sourceTree = "<group>"; };
 		FFDA564A2BCDFF2D00376E0E /* ShinyPotential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShinyPotential.swift; sourceTree = "<group>"; };
+		FFDA564D2BCDFFA300376E0E /* MagnetStatic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnetStatic.swift; sourceTree = "<group>"; };
+		FFDA56502BCE017B00376E0E /* LeadRequired.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadRequired.swift; sourceTree = "<group>"; };
+		FFDA56522BCE06C600376E0E /* NumberedSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberedSlot.swift; sourceTree = "<group>"; };
+		FFDA56542BCE072D00376E0E /* EncounterConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncounterConvertible.swift; sourceTree = "<group>"; };
+		FFDA56572BCE07EB00376E0E /* EncounterCriteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncounterCriteria.swift; sourceTree = "<group>"; };
+		FFDA565A2BCE0D0E00376E0E /* BattleTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleTemplate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -665,6 +677,7 @@
 		FF4A9D6A2B71BD3600C4B5F5 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				FFDA56592BCE0D0300376E0E /* Editing */,
 				FF31D2EE2B71E8B800EB420C /* Game */,
 				FF31D3462B82896F00EB420C /* Items */,
 				FF31D2F62B73080E00EB420C /* Legality */,
@@ -773,6 +786,7 @@
 		FF5068212B92D7A200DF64A8 /* RNG */ = {
 			isa = PBXGroup;
 			children = (
+				FFDA564F2BCE017000376E0E /* Frame */,
 				FF5068242B92DD4700DF64A8 /* Algorithms */,
 				FF5068222B92D7AE00DF64A8 /* PIDType.swift */,
 			);
@@ -885,6 +899,7 @@
 		FFDA561A2BCC907D00376E0E /* Encounters */ = {
 			isa = PBXGroup;
 			children = (
+				FFDA56562BCE07D800376E0E /* Generator */,
 				FFDA561B2BCC908300376E0E /* Templates */,
 			);
 			path = Encounters;
@@ -913,8 +928,10 @@
 		FFDA56232BCCBC5F00376E0E /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
+				FFDA564C2BCDFF9B00376E0E /* RNG */,
 				FFDA56262BCCBEAC00376E0E /* Properties */,
 				FFDA56242BCCBCB500376E0E /* Locateable.swift */,
+				FFDA56542BCE072D00376E0E /* EncounterConvertible.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -948,6 +965,39 @@
 				FFDA56442BCCCA8800376E0E /* Moveset.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		FFDA564C2BCDFF9B00376E0E /* RNG */ = {
+			isa = PBXGroup;
+			children = (
+				FFDA564D2BCDFFA300376E0E /* MagnetStatic.swift */,
+				FFDA56522BCE06C600376E0E /* NumberedSlot.swift */,
+			);
+			path = RNG;
+			sourceTree = "<group>";
+		};
+		FFDA564F2BCE017000376E0E /* Frame */ = {
+			isa = PBXGroup;
+			children = (
+				FFDA56502BCE017B00376E0E /* LeadRequired.swift */,
+			);
+			path = Frame;
+			sourceTree = "<group>";
+		};
+		FFDA56562BCE07D800376E0E /* Generator */ = {
+			isa = PBXGroup;
+			children = (
+				FFDA56572BCE07EB00376E0E /* EncounterCriteria.swift */,
+			);
+			path = Generator;
+			sourceTree = "<group>";
+		};
+		FFDA56592BCE0D0300376E0E /* Editing */ = {
+			isa = PBXGroup;
+			children = (
+				FFDA565A2BCE0D0E00376E0E /* BattleTemplate.swift */,
+			);
+			path = Editing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1053,9 +1103,11 @@
 				FF31D3282B79721B00EB420C /* LocationSet0.swift in Sources */,
 				FFDA560F2BA90EC100376E0E /* SanityChecksum.swift in Sources */,
 				FFDA55EA2B9E989D00376E0E /* MemoryContext.swift in Sources */,
+				FFDA564E2BCDFFA300376E0E /* MagnetStatic.swift in Sources */,
 				FF50687F2B96A8A600DF64A8 /* Hatchable.swift in Sources */,
 				FF31D2E02B71CB3F00EB420C /* OriginMark.swift in Sources */,
 				FF5068722B969C3900DF64A8 /* LangNick.swift in Sources */,
+				FFDA56512BCE017B00376E0E /* LeadRequired.swift in Sources */,
 				FF31D3352B82762500EB420C /* Locations6.swift in Sources */,
 				FFDA56372BCCC3F500376E0E /* FixedNature.swift in Sources */,
 				FF50682B2B94D77000DF64A8 /* Vivillon3DS.swift in Sources */,
@@ -1081,6 +1133,7 @@
 				FFDA55D02B9E27F500376E0E /* BattleStats.swift in Sources */,
 				FFDA55FC2BA8FB1000376E0E /* MemoryVariableSet.swift in Sources */,
 				FF5068412B94EF0F00DF64A8 /* PersonalType.swift in Sources */,
+				FFDA56582BCE07EB00376E0E /* EncounterCriteria.swift in Sources */,
 				FFDA564B2BCDFF2D00376E0E /* ShinyPotential.swift in Sources */,
 				FFDA55F62BA8F66F00376E0E /* MemoryPermissions.swift in Sources */,
 				FFDA56132BA90F8A00376E0E /* Sociable.swift in Sources */,
@@ -1093,6 +1146,7 @@
 				FF5068232B92D7AE00DF64A8 /* PIDType.swift in Sources */,
 				FFDA55CE2B9E1DF000376E0E /* Ganbaru.swift in Sources */,
 				FF31D3192B74703700EB420C /* GameStrings.swift in Sources */,
+				FFDA565B2BCE0D0E00376E0E /* BattleTemplate.swift in Sources */,
 				FFDA56302BCCC03300376E0E /* FixedGender.swift in Sources */,
 				FF50685A2B951F9E00DF64A8 /* MoveInfo6.swift in Sources */,
 				FF5068562B951F3F00DF64A8 /* MoveInfo4.swift in Sources */,
@@ -1135,6 +1189,7 @@
 				FF5068A32B96CBCB00DF64A8 /* Favorite.swift in Sources */,
 				FF5068182B92C0A700DF64A8 /* FormInfo.swift in Sources */,
 				FF50680A2B91434F00DF64A8 /* ItemStorage9.swift in Sources */,
+				FFDA56532BCE06C600376E0E /* NumberedSlot.swift in Sources */,
 				FFDA56172BCC8B9C00376E0E /* EggSourceable.swift in Sources */,
 				FF5068812B96AAED00DF64A8 /* Meetable.swift in Sources */,
 				FFDA55D62B9E33A000376E0E /* HandlerLanguage.swift in Sources */,
@@ -1171,6 +1226,7 @@
 				FF5068872B96B1D700DF64A8 /* GigantamaxReadable.swift in Sources */,
 				FFDA56412BCCC72700376E0E /* LevelRange.swift in Sources */,
 				FF31D31B2B7470A600EB420C /* GameLanguage.swift in Sources */,
+				FFDA56552BCE072D00376E0E /* EncounterConvertible.swift in Sources */,
 				FF5068262B92DD6400DF64A8 /* LCRNG.swift in Sources */,
 				FFDA55EE2B9E9CE100376E0E /* MemoryContext6.swift in Sources */,
 				FFDA55F22B9FE57000376E0E /* MemoryContext6Data.swift in Sources */,

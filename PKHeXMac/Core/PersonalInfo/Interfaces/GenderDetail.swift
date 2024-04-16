@@ -15,7 +15,7 @@ protocol GenderDetail {
 }
 
 extension GenderDetail {
-    func fixedGender() -> Int {
+    func fixedGender() -> UInt8 {
         return if self.genderless {
             2
         } else if self.onlyFemale {
@@ -28,13 +28,13 @@ extension GenderDetail {
     }
 
     /// Gets a random valid gender
-    func getRandomGender() -> Int {
+    func getRandomGender() -> UInt8 {
         let fixed = self.fixedGender()
 
         return if fixed > -1 {
             fixed
         } else {
-            Int.random(in: 0 ... 1)
+            UInt8.random(in: 0 ... 1)
         }
     }
 }
