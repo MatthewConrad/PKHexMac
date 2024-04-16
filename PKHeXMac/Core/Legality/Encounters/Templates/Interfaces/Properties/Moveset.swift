@@ -12,3 +12,10 @@ import Foundation
 protocol Movesettable {
     var moves: Moveset { get }
 }
+
+/// Exposes what move IDs are in the relearn moves list on encounter.
+/// - remark: formerly `IRelearn`
+protocol Relearn {
+    /// Move IDs are in the relearn moves list on encounter.
+    var relearn: Moveset { get }
+}

@@ -631,12 +631,11 @@
 - [x] IFlawlessIVCountConditional (_combined into same file as IFlawlessIVCount_)
 - [x] IHatchCycle
 - [x] ILevelRange
-- [ ] IMoveset
-- [ ] IRandomCorrelation
-- [ ] IRelearn
-- [ ] IRestrictVersion
-- [ ] IShinyPotential
-- [ ] IVersion
+- [x] IMoveset
+- [x] IRandomCorrelation
+- [x] IRelearn (_combined into same file as IMoveset_)
+- [x] IRestrictVersion
+- [x] IShinyPotential
 
 ###### RNG
 
@@ -649,7 +648,7 @@
 - [ ] EncounterEgg
 - [ ] EncounterInvalid
 - [x] IndividualValidSet
-- [ ] Moveset
+- [x] Moveset
 
 #### Verifiers
 

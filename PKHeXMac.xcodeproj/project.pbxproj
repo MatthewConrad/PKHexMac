@@ -197,6 +197,9 @@
 		FFDA56412BCCC72700376E0E /* LevelRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56402BCCC72700376E0E /* LevelRange.swift */; };
 		FFDA56432BCCCA5100376E0E /* Moveset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56422BCCCA5100376E0E /* Moveset.swift */; };
 		FFDA56452BCCCA8800376E0E /* Moveset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56442BCCCA8800376E0E /* Moveset.swift */; };
+		FFDA56472BCDFE2D00376E0E /* RandomCorrelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56462BCDFE2D00376E0E /* RandomCorrelation.swift */; };
+		FFDA56492BCDFF0400376E0E /* RestrictVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56482BCDFF0400376E0E /* RestrictVersion.swift */; };
+		FFDA564B2BCDFF2D00376E0E /* ShinyPotential.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA564A2BCDFF2D00376E0E /* ShinyPotential.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -393,6 +396,9 @@
 		FFDA56402BCCC72700376E0E /* LevelRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelRange.swift; sourceTree = "<group>"; };
 		FFDA56422BCCCA5100376E0E /* Moveset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moveset.swift; sourceTree = "<group>"; };
 		FFDA56442BCCCA8800376E0E /* Moveset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moveset.swift; sourceTree = "<group>"; };
+		FFDA56462BCDFE2D00376E0E /* RandomCorrelation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomCorrelation.swift; sourceTree = "<group>"; };
+		FFDA56482BCDFF0400376E0E /* RestrictVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictVersion.swift; sourceTree = "<group>"; };
+		FFDA564A2BCDFF2D00376E0E /* ShinyPotential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShinyPotential.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -928,6 +934,9 @@
 				FFDA563E2BCCC62B00376E0E /* HatchCycle.swift */,
 				FFDA56402BCCC72700376E0E /* LevelRange.swift */,
 				FFDA56422BCCCA5100376E0E /* Moveset.swift */,
+				FFDA56462BCDFE2D00376E0E /* RandomCorrelation.swift */,
+				FFDA56482BCDFF0400376E0E /* RestrictVersion.swift */,
+				FFDA564A2BCDFF2D00376E0E /* ShinyPotential.swift */,
 			);
 			path = Properties;
 			sourceTree = "<group>";
@@ -1072,6 +1081,7 @@
 				FFDA55D02B9E27F500376E0E /* BattleStats.swift in Sources */,
 				FFDA55FC2BA8FB1000376E0E /* MemoryVariableSet.swift in Sources */,
 				FF5068412B94EF0F00DF64A8 /* PersonalType.swift in Sources */,
+				FFDA564B2BCDFF2D00376E0E /* ShinyPotential.swift in Sources */,
 				FFDA55F62BA8F66F00376E0E /* MemoryPermissions.swift in Sources */,
 				FFDA56132BA90F8A00376E0E /* Sociable.swift in Sources */,
 				FF5068682B9521E000DF64A8 /* MoveInfo.swift in Sources */,
@@ -1164,6 +1174,7 @@
 				FF5068262B92DD6400DF64A8 /* LCRNG.swift in Sources */,
 				FFDA55EE2B9E9CE100376E0E /* MemoryContext6.swift in Sources */,
 				FFDA55F22B9FE57000376E0E /* MemoryContext6Data.swift in Sources */,
+				FFDA56492BCDFF0400376E0E /* RestrictVersion.swift in Sources */,
 				FF5068622B9520F400DF64A8 /* MoveInfo8a.swift in Sources */,
 				FFDA55D22B9E332600376E0E /* Gigantamaxable.swift in Sources */,
 				FFDA55E52B9E876500376E0E /* NatureSettable.swift in Sources */,
@@ -1197,6 +1208,7 @@
 				FF50686A2B9527A900DF64A8 /* BattleMoves.swift in Sources */,
 				FF50682F2B94E75900DF64A8 /* EffortValueYield.swift in Sources */,
 				FF5068312B94E79E00DF64A8 /* GenderDetail.swift in Sources */,
+				FFDA56472BCDFE2D00376E0E /* RandomCorrelation.swift in Sources */,
 				FFDA55DF2B9E470100376E0E /* HyperTrainable.swift in Sources */,
 				FF50689B2B96CAAB00DF64A8 /* CaughtData2.swift in Sources */,
 			);
