@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol PKMProtocol: SpeciesForm, BattleStats, BattleMoves, Ganbaru, TrainerID32, Meetable, Hatchable, Shiny, LangNick, GameValueLimit, FatefulEncounterable, NatureSettable {
+protocol PKMProtocol: SpeciesForm, BattleStats, BattleMoves, Ganbaru, TrainerID32, Meetable, Hatchable, Shinyable, LangNick, GameValueLimit, FatefulEncounterable, NatureSettable {
     // TODO: figure out proper way to handle readonly Extensions, Extension
 
     var sizeParty: Int { get }
@@ -44,8 +44,12 @@ protocol PKMProtocol: SpeciesForm, BattleStats, BattleMoves, Ganbaru, TrainerID3
     var version: GameVersion { get set }
     var trainerIDDisplayFormat: TrainerIDFormat { get }
 
+    var gender: UInt8 { get set }
+
     var originalTrainerName: String { get set }
     var originalTrainerGender: UInt8 { get set }
+
+    var encryptionConstant: UInt { get set }
 
     var PID: UInt { get set }
 
@@ -156,6 +160,8 @@ extension PKMProtocol {
             0
         }
     }
+
+    var isUntraded: Bool { false }
 
     mutating func applyTrainerInfo(info: TrainerInfo) {
         self.originalTrainerName = info.OT

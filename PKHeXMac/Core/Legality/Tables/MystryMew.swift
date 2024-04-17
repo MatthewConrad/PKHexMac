@@ -47,7 +47,7 @@ enum MystryMew {
 
         let position = (random % (MystryMew.perRestrictedSeed - 1)) + 1
 
-        for index in 0 ... position {
+        for _ in 0 ... position {
             seed = LCRNG.next5(seed: seed)
         }
 
@@ -60,7 +60,7 @@ enum MystryMew {
         }
 
         var newSeed = seed
-        for i in 0 ..< 5 {
+        for _ in 0 ..< 5 {
             newSeed = LCRNG.prev5(seed: newSeed)
             if seed <= Int.max {
                 return MystryMew.seeds.firstIndex(of: newSeed) ?? -1

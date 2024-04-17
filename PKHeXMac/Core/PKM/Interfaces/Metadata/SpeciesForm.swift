@@ -9,5 +9,6 @@ import Foundation
 
 protocol SpeciesForm {
     var species: Species { get }
+    // TODO: convert to UInt8
     var form: Int { get }
 }

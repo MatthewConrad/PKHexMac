@@ -164,7 +164,7 @@ enum LCRNG {
     /// Advances the RNG seed to the next state value a specified amount of times
     static func advance(seed: Int, frames: Int) -> Int {
         var newSeed = seed
-        for index in 0 ..< frames {
+        for _ in 0 ..< frames {
             newSeed = next(seed: seed)
         }
 
@@ -174,7 +174,7 @@ enum LCRNG {
     /// Reverses the RNG seed to the next state value a specified amount of times
     static func reverse(seed: Int, frames: Int) -> Int {
         var newSeed = seed
-        for index in 0 ..< frames {
+        for _ in 0 ..< frames {
             newSeed = prev(seed: seed)
         }
 

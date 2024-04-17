@@ -669,7 +669,7 @@
 - [ ] EncounterOrigin
 - [ ] EvolutionChain
 - [ ] EvolutionHistory
-- [ ] EvolutionRuleTweak
+- [x] EvolutionRuleTweak
 - [ ] EvolutionSet
 - [ ] EvolutionTree
 - [ ] IEvolutionNetwork
@@ -698,10 +698,10 @@
 
 #### Methods
 
-- [ ] EvoCriteria
-- [ ] EvolutionCheckResult
-- [ ] EvolutionMethod
-- [ ] EvolutionType
+- [x] EvoCriteria
+- [x] EvolutionCheckResult
+- [/] EvolutionMethod (_must finish after ToxtricityUtil_)
+- [x] EvolutionType
 
 #### Reversal
 
