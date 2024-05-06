@@ -212,6 +212,14 @@
 		FFDA56652BCF680E00376E0E /* EvolutionCheckResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56642BCF680E00376E0E /* EvolutionCheckResult.swift */; };
 		FFDA56672BCF689500376E0E /* EvolutionMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56662BCF689500376E0E /* EvolutionMethod.swift */; };
 		FFDA56692BCF6A6D00376E0E /* EvolutionRuleTweak.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56682BCF6A6D00376E0E /* EvolutionRuleTweak.swift */; };
+		FFDA566B2BE7EC8700376E0E /* EncounterTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA566A2BE7EC8700376E0E /* EncounterTemplate.swift */; };
+		FFDA566D2BE7EDD500376E0E /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA566C2BE7EDD500376E0E /* Experience.swift */; };
+		FFDA566F2BE860AC00376E0E /* EncounterArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA566E2BE860AC00376E0E /* EncounterArea.swift */; };
+		FFDA56712BE8612C00376E0E /* EncounterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56702BE8612C00376E0E /* EncounterInfo.swift */; };
+		FFDA56732BE8618300376E0E /* Encounterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56722BE8618300376E0E /* Encounterable.swift */; };
+		FFDA56752BE8626900376E0E /* EncounterInvalid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56742BE8626900376E0E /* EncounterInvalid.swift */; };
+		FFDA56772BE864C700376E0E /* EncounterEgg.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56762BE864C700376E0E /* EncounterEgg.swift */; };
+		FFDA56792BE8717700376E0E /* RandUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56782BE8717700376E0E /* RandUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -423,6 +431,14 @@
 		FFDA56642BCF680E00376E0E /* EvolutionCheckResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionCheckResult.swift; sourceTree = "<group>"; };
 		FFDA56662BCF689500376E0E /* EvolutionMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionMethod.swift; sourceTree = "<group>"; };
 		FFDA56682BCF6A6D00376E0E /* EvolutionRuleTweak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionRuleTweak.swift; sourceTree = "<group>"; };
+		FFDA566A2BE7EC8700376E0E /* EncounterTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncounterTemplate.swift; sourceTree = "<group>"; };
+		FFDA566C2BE7EDD500376E0E /* Experience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
+		FFDA566E2BE860AC00376E0E /* EncounterArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncounterArea.swift; sourceTree = "<group>"; };
+		FFDA56702BE8612C00376E0E /* EncounterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncounterInfo.swift; sourceTree = "<group>"; };
+		FFDA56722BE8618300376E0E /* Encounterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encounterable.swift; sourceTree = "<group>"; };
+		FFDA56742BE8626900376E0E /* EncounterInvalid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncounterInvalid.swift; sourceTree = "<group>"; };
+		FFDA56762BE864C700376E0E /* EncounterEgg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncounterEgg.swift; sourceTree = "<group>"; };
+		FFDA56782BE8717700376E0E /* RandUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -502,6 +518,7 @@
 			children = (
 				FF31D2EC2B71E79F00EB420C /* EntityContext.swift */,
 				FF31D2F22B71ED9300EB420C /* GameConsole.swift */,
+				FFDA566C2BE7EDD500376E0E /* Experience.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -568,6 +585,7 @@
 			children = (
 				FF31D31E2B74777700EB420C /* ResourceUtil.swift */,
 				FF31D3222B74838500EB420C /* Lock.swift */,
+				FFDA56782BE8717700376E0E /* RandUtil.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -944,8 +962,12 @@
 				FFDA564C2BCDFF9B00376E0E /* RNG */,
 				FFDA56262BCCBEAC00376E0E /* Properties */,
 				FFDA56242BCCBCB500376E0E /* Locateable.swift */,
+				FFDA566E2BE860AC00376E0E /* EncounterArea.swift */,
 				FFDA56542BCE072D00376E0E /* EncounterConvertible.swift */,
 				FFDA565C2BCF603D00376E0E /* EncounterMatch.swift */,
+				FFDA566A2BE7EC8700376E0E /* EncounterTemplate.swift */,
+				FFDA56702BE8612C00376E0E /* EncounterInfo.swift */,
+				FFDA56722BE8618300376E0E /* Encounterable.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -977,6 +999,8 @@
 			children = (
 				FFDA56322BCCC0FE00376E0E /* IndividualValueSet.swift */,
 				FFDA56442BCCCA8800376E0E /* Moveset.swift */,
+				FFDA56742BE8626900376E0E /* EncounterInvalid.swift */,
+				FFDA56762BE864C700376E0E /* EncounterEgg.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -1108,6 +1132,8 @@
 				FFDA56202BCC931C00376E0E /* EncounterMatchRating.swift in Sources */,
 				FF4A9D5E2B71BD1E00C4B5F5 /* ContentView.swift in Sources */,
 				FF5068542B951F1300DF64A8 /* MoveInfo3.swift in Sources */,
+				FFDA566F2BE860AC00376E0E /* EncounterArea.swift in Sources */,
+				FFDA566D2BE7EDD500376E0E /* Experience.swift in Sources */,
 				FF31D2F32B71ED9300EB420C /* GameConsole.swift in Sources */,
 				FF31D3452B82863F00EB420C /* LocationRemapState.swift in Sources */,
 				FF5068A52B96CBF700DF64A8 /* FormArgument.swift in Sources */,
@@ -1115,6 +1141,7 @@
 				FFDA55FE2BA8FB6000376E0E /* TrainerMemorable.swift in Sources */,
 				FF5068832B96B18D00DF64A8 /* FatefulEncounterReadable.swift in Sources */,
 				FF5068332B94E99800DF64A8 /* PersonalAbility.swift in Sources */,
+				FFDA566B2BE7EC8700376E0E /* EncounterTemplate.swift in Sources */,
 				FF31D2EA2B71D04700EB420C /* TrainerID32.swift in Sources */,
 				FF31D2E52B71CD4400EB420C /* SpeciesForm.swift in Sources */,
 				FF31D2E82B71CDF900EB420C /* TrainerID.swift in Sources */,
@@ -1124,6 +1151,7 @@
 				FF50684D2B951A6E00DF64A8 /* PokeblockFlavor.swift in Sources */,
 				FF31D2ED2B71E79F00EB420C /* EntityContext.swift in Sources */,
 				FF5068022B9132F500DF64A8 /* ItemStorage7.swift in Sources */,
+				FFDA56772BE864C700376E0E /* EncounterEgg.swift in Sources */,
 				FF50685C2B951FC000DF64A8 /* MoveInfo7.swift in Sources */,
 				FFDA56332BCCC0FE00376E0E /* IndividualValueSet.swift in Sources */,
 				FF5068082B913E9900DF64A8 /* ItemStorage8SWSH.swift in Sources */,
@@ -1189,6 +1217,7 @@
 				FF5068562B951F3F00DF64A8 /* MoveInfo4.swift in Sources */,
 				FF5068702B969C0300DF64A8 /* Generation.swift in Sources */,
 				FF31D3392B82782400EB420C /* Locations7b.swift in Sources */,
+				FFDA56732BE8618300376E0E /* Encounterable.swift in Sources */,
 				FF5068452B94EFEC00DF64A8 /* PersonalInfo.swift in Sources */,
 				FF31D34F2B858AD300EB420C /* InventoryType.swift in Sources */,
 				FF31D3312B7B0A5000EB420C /* Locations4.swift in Sources */,
@@ -1238,11 +1267,14 @@
 				FF31D3062B731E2A00EB420C /* Nature.swift in Sources */,
 				FFDA56032BA900F800376E0E /* TeraType.swift in Sources */,
 				FF31D2F12B71E8C800EB420C /* GameVersion.swift in Sources */,
+				FFDA56792BE8717700376E0E /* RandUtil.swift in Sources */,
 				FFDA562E2BCCBFCF00376E0E /* FixedBall.swift in Sources */,
 				FF31D3042B730C1900EB420C /* MoveType.swift in Sources */,
+				FFDA56752BE8626900376E0E /* EncounterInvalid.swift in Sources */,
 				FF4A9D5C2B71BD1E00C4B5F5 /* PKHeXMacApp.swift in Sources */,
 				FF31D3532B85AAED00EB420C /* ItemStorage2.swift in Sources */,
 				FF31D3002B730B3F00EB420C /* Gender.swift in Sources */,
+				FFDA56712BE8612C00376E0E /* EncounterInfo.swift in Sources */,
 				FFDA56112BA90F4A00376E0E /* ShadowCapturable.swift in Sources */,
 				FF31D30A2B73224200EB420C /* Region.swift in Sources */,
 				FFDA56012BA8FCD800376E0E /* LegalityCheckStrings.swift in Sources */,

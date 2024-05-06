@@ -7,6 +7,7 @@
 
 import Foundation
 
+// TODO: swap to enums for species, move, etc.
 protocol GameValueLimit {
     var maxSpeciesID: Int { get }
     var maxMoveID: Int { get }

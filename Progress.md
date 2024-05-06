@@ -609,12 +609,12 @@
 
 ##### Interfaces
 
-- [ ] IEncounterable
-- [ ] IEncounterArea
+- [x] IEncounterable
+- [x] IEncounterArea
 - [x] IEncounterConvertible
-- [ ] IEncounterInfo
-- [ ] IEncounterMatch
-- [ ] IEncounterTemplate
+- [x] IEncounterInfo
+- [x] IEncounterMatch
+- [/] IEncounterTemplate (_need to add final conditional after MysteryGift_)
 - [x] ILocation
 
 ###### Properties
@@ -644,8 +644,8 @@
 
 ##### Shared
 
-- [ ] EncounterEgg
-- [ ] EncounterInvalid
+- [/] EncounterEgg (_need EggStateLegality, LearnSource, EntityBlank, etc..._)
+- [x] EncounterInvalid
 - [x] IndividualValidSet
 - [x] Moveset
 
@@ -1259,7 +1259,7 @@
 - [ ] EntityGender
 - [ ] EntityPID
 - [ ] EntitySorting
-- [ ] Experience
+- [x] Experience
 - [x] GameConsole
 - [ ] Language
 - [ ] PKX
@@ -1351,7 +1351,7 @@
 
 ### Abstractions
 
-- [ ] ITrainerInfo
+- [x] ITrainerInfo
 - [ ] SimpleTrainerInfo
 
 ### Access
@@ -1913,7 +1913,7 @@
 - [ ] MessageStrings
 - [ ] NetUtil
 - [ ] PathUtil
-- [ ] RandUtil
+- [x] RandUtil
 - [ ] ReflectUtil
 - [ ] ResourceUtil
 - [ ] StringUtil

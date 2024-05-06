@@ -10,7 +10,7 @@ import Foundation
 /// Console region flags for the 3DS
 /// - remark: not to be confused with Region3DSIndex
 struct Region3DSFlags: OptionSet {
-    let rawValue: Int
+    let rawValue: UInt8
 
     static let None = Region3DSFlags([])
     static let Japan = Region3DSFlags(rawValue: 1 << 0)
@@ -27,8 +27,8 @@ struct Region3DSFlags: OptionSet {
 
 /// Provides information for Vivillon origins with respect to the 3DS game data
 enum Vivillon3DS {
-    static let maxWildFormID = 17
-    static let fancyFormID = 18
+    static let maxWildFormID: UInt8 = 17
+    static let fancyFormID: UInt8 = 18
 
     // List of valid regions
     private static let regionTable: [Region3DSFlags] = [
@@ -65,8 +65,8 @@ enum Vivillon3DS {
       This results in O(1) performance, better than O(log(n)) for the binary search approach.
       None of the these countries with same form have form 0, so we can use that as a sentinel value.
      */
-    private static let XX = 0
-    private static let sameCountry: [Int] =
+    private static let XX: UInt8 = 0
+    private static let sameCountry: [UInt8] =
         [
             XX, XX, XX, XX, XX, XX, XX, XX, 09, 09, XX, 09, 09, 09, 15, 14,
             XX, 09, XX, 15, XX, XX, XX, 09, 09, 17, 15, 17, 09, 09, 15, 17,
@@ -87,7 +87,7 @@ enum Vivillon3DS {
      do it this way instead of region_country so that the byte[] form is better ordered for better file compression :)
      777 entries, so we can use a binary search to find the form. Worst case is log2(777) = 10 comparisons.
      */
-    private static let diffCountryRegion: [Int] =
+    private static let diffCountryRegion: [UInt8] =
         [
             0x0100, 0x0102, 0x0103, 0x0104, 0x0105, 0x0106, 0x0107, 0x0108, 0x0109, 0x010A, 0x010B, 0x010C, 0x010D, 0x010E, 0x010F, 0x0110,
             0x0111, 0x0112, 0x0113, 0x0114, 0x0115, 0x0116, 0x0117, 0x0118, 0x0119, 0x011A, 0x011B, 0x011C, 0x011D, 0x011E, 0x011F, 0x0120,
@@ -140,7 +140,7 @@ enum Vivillon3DS {
             0xA91D, 0xA91E, 0xA91F, 0xA920, 0xA921, 0xA922, 0xA923, 0xA924, 0xA925,
         ]
 
-    private static let diffForm: [Int] = [
+    private static let diffForm: [UInt8] = [
         05, 05, 02, 02, 05, 05, 05, 05, 05, 05, 05, 05, 05, 05, 05, 05,
         05, 05, 05, 05, 05, 05, 05, 05, 05, 05, 05, 05, 05, 05, 05, 05,
         05, 05, 05, 05, 05, 05, 05, 05, 05, 05, 03, 05, 05, 05, 05, 13,
@@ -192,21 +192,21 @@ enum Vivillon3DS {
         13, 13, 13, 13, 13, 13, 13, 03, 13,
     ]
 
-    private static func getConsoleRegionFlag(consoleRegion: Int) -> Region3DSFlags {
+    private static func getConsoleRegionFlag(consoleRegion: UInt8) -> Region3DSFlags {
         return Region3DSFlags(rawValue: 1 << consoleRegion)
     }
 
     /// Compares the Vivillon pattern against its region to determine legality.
-    static func isPatternValid(form: Int, consoleRegion: Int) -> Bool {
+    static func isPatternValid(form: UInt8, consoleRegion: UInt8) -> Bool {
         return if form >= Vivillon3DS.regionTable.count {
             false
         } else {
-            Vivillon3DS.regionTable[form].hasFlag(getConsoleRegionFlag(consoleRegion: consoleRegion))
+            Vivillon3DS.regionTable[Int(form)].hasFlag(getConsoleRegionFlag(consoleRegion: consoleRegion))
         }
     }
 
     /// Compares the pattern against its country and subregion to dertermine if could have natively been obtained
-    static func isPatternNative(form: Int, country: Int, region: Int) -> Bool {
+    static func isPatternNative(form: UInt8, country: UInt8, region: UInt8) -> Bool {
         if form > Vivillon3DS.maxWildFormID {
             return false
         }
@@ -215,12 +215,12 @@ enum Vivillon3DS {
             return false
         }
 
-        let same = Vivillon3DS.sameCountry[country]
+        let same = Vivillon3DS.sameCountry[Int(country)]
         if same != Vivillon3DS.XX {
             return form == same
         }
 
-        let tuple: Int = (country << 8) | region
+        let tuple: UInt8 = (country << 8) | region
         let index = Vivillon3DS.diffCountryRegion.firstIndex(of: tuple) ?? -1
 
         return if index >= 0 {
@@ -231,17 +231,17 @@ enum Vivillon3DS {
     }
 
     /// Gets a compatible Vivillon pattern based on its country and subregion
-    static func getPattern(country: Int, region: Int) -> Int {
+    static func getPattern(country: UInt8, region: UInt8) -> UInt8 {
         if country >= Vivillon3DS.sameCountry.count {
             return 0
         }
 
-        let same = Vivillon3DS.sameCountry[country]
+        let same = Vivillon3DS.sameCountry[Int(country)]
         if same != Vivillon3DS.XX {
             return same
         }
 
-        let tuple: Int = (country << 8) | region
+        let tuple: UInt8 = (country << 8) | region
         let index = Vivillon3DS.diffCountryRegion.firstIndex(of: tuple) ?? -1
 
         return if index >= 0 {

@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol PKMProtocol: SpeciesForm, BattleStats, BattleMoves, Ganbaru, TrainerID32, Meetable, Hatchable, Shinyable, LangNick, GameValueLimit, FatefulEncounterable, NatureSettable {
+protocol PKMProtocol: SpeciesFormSettable, BattleStats, BattleMoves, Ganbaru, TrainerID32, Meetable, Hatchable, Shinyable, LangNick, GameValueLimit, FatefulEncounterable, NatureSettable {
     // TODO: figure out proper way to handle readonly Extensions, Extension
 
     var sizeParty: Int { get }
@@ -45,9 +45,16 @@ protocol PKMProtocol: SpeciesForm, BattleStats, BattleMoves, Ganbaru, TrainerID3
     var trainerIDDisplayFormat: TrainerIDFormat { get }
 
     var gender: UInt8 { get set }
+    var ability: Ability { get set }
+    var abilityNumber: Int { get set }
+
+    var exp: UInt { get set }
 
     var originalTrainerName: String { get set }
     var originalTrainerGender: UInt8 { get set }
+
+    var ball: UInt8 { get set }
+    var metLevel: UInt8 { get set }
 
     var encryptionConstant: UInt { get set }
 
@@ -92,6 +99,27 @@ extension PKMProtocol {
     }
 
     var TrainerIDDisplayFormat: TrainerIDFormat { self.getTrainerIDFormat() }
+
+    var statNature: Nature {
+        get {
+            self.nature
+        }
+
+        set {
+            self.nature = newValue
+        }
+    }
+
+    var abilityNumber: Int { 0 }
+    var PIDAbility: Int {
+        return if self.generation > 5 || self.format > 5 {
+            -1
+        } else if self.version == .CXD {
+            personalInfo.getIndex(ability: self.ability) // Can mismatch; not tied to PID
+        } else {
+            Int((self.Gen5 ? PID >> 16 : PID) & 1)
+        }
+    }
 
     var isShiny: Bool { self.TSV == self.PSV }
     var shinyXOR: UInt16 {
@@ -161,7 +189,24 @@ extension PKMProtocol {
         }
     }
 
-    var isUntraded: Bool { false }
+    var currentLevel: UInt8 {
+        get {
+            Experience.getLevel(exp: self.exp, growth: self.personalInfo.expGrowth)
+        }
+
+        set {
+            self.exp = Experience.getEXP(level: newValue, growth: self.personalInfo.expGrowth)
+        }
+    }
+
+    var isOriginValid: Bool {
+        self.species.rawValue <= maxSpeciesID
+    }
+
+    /// Returns false if the Met Location has been overwritten via generational transfer
+    var hasOriginalMetLocation: Bool {
+        !(self.format < 3 || self.VC || (self.generation <= 4 && self.format != self.generation))
+    }
 
     mutating func applyTrainerInfo(info: TrainerInfo) {
         self.originalTrainerName = info.OT
@@ -176,5 +221,26 @@ extension PKMProtocol {
         self.version = info.version
 
         // TODO: finish after IRegionOrigin
+    }
+
+    /// Applies the desired Ability option (0 / 1 / 2)
+    mutating func refreshAbility(_ n: Int) {
+        self.abilityNumber = 1 << n
+
+        if n < personalInfo.abilityCount {
+            self.ability = personalInfo.getAbility(index: n)
+        }
+    }
+
+    /// Applies a `PID` to the `PKM` according to the specified `gender`
+    /// - remark: if a `PKM` originated prior to Gen6, the `EncryptionConstant` is updated
+    mutating func setPIDGender(_ gender: UInt8) {
+        // TODO: write me!
+    }
+
+    /// Applies a `PID` to the `PKM` according to the specified `nature`
+    /// - remark: if a `PKM` originated prior to Gen6, the `EncryptionConstant` is updated
+    mutating func setPIDNature(_ nature: Nature) {
+        // TODO: write me!
     }
 }

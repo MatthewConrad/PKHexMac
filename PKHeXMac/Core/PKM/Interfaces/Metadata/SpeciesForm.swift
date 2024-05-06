@@ -12,3 +12,8 @@ protocol SpeciesForm {
     // TODO: convert to UInt8
     var form: Int { get }
 }
+
+protocol SpeciesFormSettable: SpeciesForm {
+    var species: Species { get set }
+    var form: UInt8 { get set }
+}

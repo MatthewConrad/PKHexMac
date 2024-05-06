@@ -277,7 +277,7 @@ struct EncounterCriteria: FixedNature, FixedAbilityNumber, ShinyPotential {
     
     static func getCriteria(template: BattleTemplate, info: PersonalInfo) -> EncounterCriteria {
         EncounterCriteria(
-            gender: getGenderPermissions(gender: template.gender, detail: info),
+            gender: getGenderPermissions(requested: template.gender, detail: info),
             nature: Nature(fromInt: template.nature.rawValue),
             ability: getAbilityPermissions(ability: template.ability, personal: info),
             shiny: template.shiny ? .always : .never,

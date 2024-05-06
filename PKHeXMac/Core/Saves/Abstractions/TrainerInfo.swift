@@ -17,6 +17,25 @@ protocol TrainerInfo: TrainerID32 {
 }
 
 extension TrainerInfo {
+    func applyTo(pk: inout PKMProtocol) {
+        pk.originalTrainerName = self.OT
+        pk.TID16 = self.TID16
+        pk.SID16 = pk.format < 3 || pk.VC ? 0 : self.SID16
+        pk.originalTrainerGender = self.gender
+        pk.language = self.language
+        pk.version = self.version
+
+        guard var pkOrigin = pk as? RegionOrigin else {
+            return
+        }
+
+        guard let trOrigin = self as? RegionOrigin else {
+            return
+        }
+
+        pkOrigin.copyRegionOrigin(from: trOrigin)
+    }
+
     func isMatchVersion(pk: PKMProtocol) -> Bool {
         return if self.version == pk.version {
             true
