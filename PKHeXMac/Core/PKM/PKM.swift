@@ -208,21 +208,6 @@ extension PKMProtocol {
         !(self.format < 3 || self.VC || (self.generation <= 4 && self.format != self.generation))
     }
 
-    mutating func applyTrainerInfo(info: TrainerInfo) {
-        self.originalTrainerName = info.OT
-        self.TID16 = info.TID16
-
-        if self.format < 3 || self.VC {
-            self.SID16 = info.SID16
-        }
-
-        self.originalTrainerGender = info.gender
-        self.language = info.language
-        self.version = info.version
-
-        // TODO: finish after IRegionOrigin
-    }
-
     /// Applies the desired Ability option (0 / 1 / 2)
     mutating func refreshAbility(_ n: Int) {
         self.abilityNumber = 1 << n

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF0CABFC2C3A22DC0061F415 /* EvolutionUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CABFB2C3A22DC0061F415 /* EvolutionUtil.swift */; };
 		FF31D2DE2B71C72800EB420C /* PokeSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2DD2B71C72800EB420C /* PokeSize.swift */; };
 		FF31D2E02B71CB3F00EB420C /* OriginMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2DF2B71CB3F00EB420C /* OriginMark.swift */; };
 		FF31D2E22B71CC5900EB420C /* PKM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2E12B71CC5900EB420C /* PKM.swift */; };
@@ -220,9 +221,14 @@
 		FFDA56752BE8626900376E0E /* EncounterInvalid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56742BE8626900376E0E /* EncounterInvalid.swift */; };
 		FFDA56772BE864C700376E0E /* EncounterEgg.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56762BE864C700376E0E /* EncounterEgg.swift */; };
 		FFDA56792BE8717700376E0E /* RandUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56782BE8717700376E0E /* RandUtil.swift */; };
+		FFDA567D2BFC0BEF00376E0E /* RibbonIndex3.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA567C2BFC0BEF00376E0E /* RibbonIndex3.swift */; };
+		FFDA56812BFC0CD100376E0E /* RibbonVerifierArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56802BFC0CD100376E0E /* RibbonVerifierArguments.swift */; };
+		FFDA56842BFC0D9300376E0E /* EvolutionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56832BFC0D9300376E0E /* EvolutionGroup.swift */; };
+		FFDA56862BFC0DC800376E0E /* EvolutionOrigin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56852BFC0DC800376E0E /* EvolutionOrigin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF0CABFB2C3A22DC0061F415 /* EvolutionUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionUtil.swift; sourceTree = "<group>"; };
 		FF31D2DD2B71C72800EB420C /* PokeSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeSize.swift; sourceTree = "<group>"; };
 		FF31D2DF2B71CB3F00EB420C /* OriginMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginMark.swift; sourceTree = "<group>"; };
 		FF31D2E12B71CC5900EB420C /* PKM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKM.swift; sourceTree = "<group>"; };
@@ -439,6 +445,10 @@
 		FFDA56742BE8626900376E0E /* EncounterInvalid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncounterInvalid.swift; sourceTree = "<group>"; };
 		FFDA56762BE864C700376E0E /* EncounterEgg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncounterEgg.swift; sourceTree = "<group>"; };
 		FFDA56782BE8717700376E0E /* RandUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandUtil.swift; sourceTree = "<group>"; };
+		FFDA567C2BFC0BEF00376E0E /* RibbonIndex3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RibbonIndex3.swift; sourceTree = "<group>"; };
+		FFDA56802BFC0CD100376E0E /* RibbonVerifierArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RibbonVerifierArguments.swift; sourceTree = "<group>"; };
+		FFDA56832BFC0D9300376E0E /* EvolutionGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionGroup.swift; sourceTree = "<group>"; };
+		FFDA56852BFC0DC800376E0E /* EvolutionOrigin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionOrigin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -555,6 +565,7 @@
 		FF31D2F62B73080E00EB420C /* Legality */ = {
 			isa = PBXGroup;
 			children = (
+				FFDA567E2BFC0CC100376E0E /* Verifiers */,
 				FFDA565E2BCF60AC00376E0E /* Evolutions */,
 				FFDA561A2BCC907D00376E0E /* Encounters */,
 				FFDA55FF2BA8FCC700376E0E /* Formatting */,
@@ -708,6 +719,7 @@
 		FF4A9D6A2B71BD3600C4B5F5 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				FFDA567A2BFC0BDD00376E0E /* Ribbons */,
 				FFDA56592BCE0D0300376E0E /* Editing */,
 				FF31D2EE2B71E8B800EB420C /* Game */,
 				FF31D3462B82896F00EB420C /* Items */,
@@ -1041,6 +1053,7 @@
 		FFDA565E2BCF60AC00376E0E /* Evolutions */ = {
 			isa = PBXGroup;
 			children = (
+				FFDA56822BFC0D8700376E0E /* EvolutionGroup */,
 				FFDA565F2BCF60B100376E0E /* Methods */,
 				FFDA56682BCF6A6D00376E0E /* EvolutionRuleTweak.swift */,
 			);
@@ -1056,6 +1069,48 @@
 				FFDA56662BCF689500376E0E /* EvolutionMethod.swift */,
 			);
 			path = Methods;
+			sourceTree = "<group>";
+		};
+		FFDA567A2BFC0BDD00376E0E /* Ribbons */ = {
+			isa = PBXGroup;
+			children = (
+				FFDA567B2BFC0BE200376E0E /* Past */,
+			);
+			path = Ribbons;
+			sourceTree = "<group>";
+		};
+		FFDA567B2BFC0BE200376E0E /* Past */ = {
+			isa = PBXGroup;
+			children = (
+				FFDA567C2BFC0BEF00376E0E /* RibbonIndex3.swift */,
+			);
+			path = Past;
+			sourceTree = "<group>";
+		};
+		FFDA567E2BFC0CC100376E0E /* Verifiers */ = {
+			isa = PBXGroup;
+			children = (
+				FFDA567F2BFC0CC500376E0E /* Ribbons */,
+			);
+			path = Verifiers;
+			sourceTree = "<group>";
+		};
+		FFDA567F2BFC0CC500376E0E /* Ribbons */ = {
+			isa = PBXGroup;
+			children = (
+				FFDA56802BFC0CD100376E0E /* RibbonVerifierArguments.swift */,
+			);
+			path = Ribbons;
+			sourceTree = "<group>";
+		};
+		FFDA56822BFC0D8700376E0E /* EvolutionGroup */ = {
+			isa = PBXGroup;
+			children = (
+				FFDA56832BFC0D9300376E0E /* EvolutionGroup.swift */,
+				FFDA56852BFC0DC800376E0E /* EvolutionOrigin.swift */,
+				FF0CABFB2C3A22DC0061F415 /* EvolutionUtil.swift */,
+			);
+			path = EvolutionGroup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1142,6 +1197,7 @@
 				FF5068832B96B18D00DF64A8 /* FatefulEncounterReadable.swift in Sources */,
 				FF5068332B94E99800DF64A8 /* PersonalAbility.swift in Sources */,
 				FFDA566B2BE7EC8700376E0E /* EncounterTemplate.swift in Sources */,
+				FFDA567D2BFC0BEF00376E0E /* RibbonIndex3.swift in Sources */,
 				FF31D2EA2B71D04700EB420C /* TrainerID32.swift in Sources */,
 				FF31D2E52B71CD4400EB420C /* SpeciesForm.swift in Sources */,
 				FF31D2E82B71CDF900EB420C /* TrainerID.swift in Sources */,
@@ -1195,6 +1251,7 @@
 				FF5068892B96B3F400DF64A8 /* LangNicknamedTemplate.swift in Sources */,
 				FFDA55D02B9E27F500376E0E /* BattleStats.swift in Sources */,
 				FFDA55FC2BA8FB1000376E0E /* MemoryVariableSet.swift in Sources */,
+				FFDA56862BFC0DC800376E0E /* EvolutionOrigin.swift in Sources */,
 				FF5068412B94EF0F00DF64A8 /* PersonalType.swift in Sources */,
 				FFDA56632BCF60C600376E0E /* EvolutionType.swift in Sources */,
 				FFDA56582BCE07EB00376E0E /* EncounterCriteria.swift in Sources */,
@@ -1274,6 +1331,7 @@
 				FF4A9D5C2B71BD1E00C4B5F5 /* PKHeXMacApp.swift in Sources */,
 				FF31D3532B85AAED00EB420C /* ItemStorage2.swift in Sources */,
 				FF31D3002B730B3F00EB420C /* Gender.swift in Sources */,
+				FFDA56812BFC0CD100376E0E /* RibbonVerifierArguments.swift in Sources */,
 				FFDA56712BE8612C00376E0E /* EncounterInfo.swift in Sources */,
 				FFDA56112BA90F4A00376E0E /* ShadowCapturable.swift in Sources */,
 				FF31D30A2B73224200EB420C /* Region.swift in Sources */,
@@ -1283,7 +1341,9 @@
 				FF50681C2B92D19600DF64A8 /* PersonalFormInfo.swift in Sources */,
 				FF50682D2B94E26B00DF64A8 /* BaseStat.swift in Sources */,
 				FFDA563B2BCCC56000376E0E /* FixedTrainer.swift in Sources */,
+				FF0CABFC2C3A22DC0061F415 /* EvolutionUtil.swift in Sources */,
 				FFDA56092BA90ABD00376E0E /* ObedienceLevelable.swift in Sources */,
+				FFDA56842BFC0D9300376E0E /* EvolutionGroup.swift in Sources */,
 				FF50686C2B969AEE00DF64A8 /* Affection.swift in Sources */,
 				FF5068742B969C6900DF64A8 /* Shiny.swift in Sources */,
 				FF31D2F82B73081A00EB420C /* Core.swift in Sources */,

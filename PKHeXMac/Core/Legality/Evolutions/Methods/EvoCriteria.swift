@@ -19,10 +19,19 @@ struct EvoCriteria: SpeciesForm, LevelRange, CustomStringConvertible {
     var method: EvolutionType
 
     var requiresLevelUp: Bool { levelUpRequired != 0 }
-    var sentinelNotReached: EvolutionType { .invalid }
+    static var sentinelNotReached: EvolutionType { .invalid }
 
     var description: String {
         "\(species)\(form != 0 ? "-\(form)" : "") [\(levelMin), \(levelMax)] via \(method)"
+    }
+
+    init() {
+        species = .None
+        form = 0
+        levelMin = 1
+        levelMax = 100
+        levelUpRequired = 100
+        method = .invalid
     }
 
     func isBetterDevolution(reference: EvoCriteria) -> Bool {
@@ -34,7 +43,7 @@ struct EvoCriteria: SpeciesForm, LevelRange, CustomStringConvertible {
     }
 
     func isBetterEvolution(reference: EvoCriteria) -> Bool {
-        guard reference.method != sentinelNotReached else {
+        guard reference.method != EvoCriteria.sentinelNotReached else {
             return true
         }
 

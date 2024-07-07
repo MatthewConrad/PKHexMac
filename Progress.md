@@ -686,9 +686,9 @@
 - [ ] EvolutionGroup7b
 - [ ] EvolutionGroupHOME
 - [ ] EvolutionGroupUtil
-- [ ] EvolutionOrigin
-- [ ] EvolutionUtil
-- [ ] IEvolutionGroup
+- [x] EvolutionOrigin
+- [x] EvolutionUtil
+- [x] IEvolutionGroup
 
 #### Forward
 
