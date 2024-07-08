@@ -10,7 +10,7 @@ import Foundation
 /// Evolution Info tracking how an evolution was performed, as well as the end result species and form
 struct EvoCriteria: SpeciesForm, LevelRange, CustomStringConvertible {
     var species: Species
-    var form: Int
+    var form: UInt8
 
     var levelMin: UInt8
     var levelMax: UInt8
@@ -32,6 +32,15 @@ struct EvoCriteria: SpeciesForm, LevelRange, CustomStringConvertible {
         levelMax = 100
         levelUpRequired = 100
         method = .invalid
+    }
+
+    init(species: Species, form: UInt8, levelMin: UInt8, levelMax: UInt8, levelUpRequired: UInt8, method: EvolutionType) {
+        self.species = species
+        self.form = form
+        self.levelMin = levelMin
+        self.levelMax = levelMax
+        self.levelUpRequired = levelUpRequired
+        self.method = method
     }
 
     func isBetterDevolution(reference: EvoCriteria) -> Bool {

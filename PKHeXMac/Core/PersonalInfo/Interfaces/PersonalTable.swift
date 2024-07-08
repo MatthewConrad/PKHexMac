@@ -18,14 +18,14 @@ protocol PersonalTable {
     subscript(index: Int) -> T { get }
     
     /// Alternate way of fetching getFormEntry
-    subscript(species: Species, form: Int) -> T { get }
+    subscript(species: Species, form: UInt8) -> T { get }
     
     /// Gets the PersonalInfo entry index for a given species and form
-    func getFormIndex(species: Species, form: Int) -> Int
+    func getFormIndex(species: Species, form: UInt8) -> Int
     
     /// Gets the PersonalInfo entry for a given species and form
-    func getFormEntry(species: Species, form: Int) -> T
+    func getFormEntry(species: Species, form: UInt8) -> T
     
     func isSpeciesInGame(species: Species) -> Bool
-    func isPresentInGame(species: Species, form: Int) -> Bool
+    func isPresentInGame(species: Species, form: UInt8) -> Bool
 }

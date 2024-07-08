@@ -64,6 +64,9 @@ protocol PKMProtocol: SpeciesFormSettable, BattleStats, BattleMoves, Ganbaru, Tr
 
     var TSV: UInt { get }
     var PSV: UInt { get }
+
+    var isUntraded: Bool { get }
+    var isOriginValid: Bool { get }
 }
 
 extension PKMProtocol {
@@ -197,6 +200,10 @@ extension PKMProtocol {
         set {
             self.exp = Experience.getEXP(level: newValue, growth: self.personalInfo.expGrowth)
         }
+    }
+
+    var isUntraded: Bool {
+        false
     }
 
     var isOriginValid: Bool {

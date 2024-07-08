@@ -692,9 +692,9 @@
 
 #### Forward
 
-- [ ] EvolutionForwardPersonal
-- [ ] EvolutionForwardSpecies
-- [ ] IEvolutionForward
+- [x] EvolutionForwardPersonal
+- [x] EvolutionForwardSpecies
+- [x] IEvolutionForward
 
 #### Methods
 

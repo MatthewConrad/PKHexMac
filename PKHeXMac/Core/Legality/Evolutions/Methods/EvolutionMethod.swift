@@ -10,7 +10,7 @@ import Foundation
 /// Criteria for evolving to this branch in the `EvolutionTree`
 struct EvolutionMethod: SpeciesForm, CustomStringConvertible {
     var species: Species
-    var form: Int
+    var form: UInt8
     var argument: UInt16
     var method: EvolutionType
     var level: UInt8
@@ -26,12 +26,12 @@ struct EvolutionMethod: SpeciesForm, CustomStringConvertible {
 
     /// Returns the form that the Pokemon will have after evolution.
     /// - parameters:
-    ///     - form: un-evolved Form ID
+    ///     - sourceForm: un-evolved Form ID
     func getDestinationForm(sourceForm: UInt8) -> UInt8 {
         return if form == anyForm {
             sourceForm
         } else {
-            UInt8(form)
+            form
         }
     }
 
