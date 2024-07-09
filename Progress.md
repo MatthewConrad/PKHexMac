@@ -705,13 +705,14 @@
 
 #### Reversal
 
-- [ ] EvolutionLink
-- [ ] EvolutionNode
-- [ ] EvolutionReversal
-- [ ] EvolutionReversalLookup
-- [ ] EvolutionReversalPersonal
-- [ ] EvolutionReversalSpecies
-- [ ] IEvolutionReverse
+- [x] EvolutionLink
+- [x] EvolutionNode
+- [x] EvolutionReveral
+- [x] EvolutionReverseLookup
+- [x] EvolutionReversePersonal
+- [x] EvolutionReverseSpecies
+- [x] IEvolutionLookup
+- [x] IEvolutionReverse
 
 ### Formatting
 

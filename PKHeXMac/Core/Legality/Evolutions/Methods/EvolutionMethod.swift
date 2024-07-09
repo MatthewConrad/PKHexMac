@@ -24,6 +24,24 @@ struct EvolutionMethod: SpeciesForm, CustomStringConvertible {
         "\(species)-\(form) [\(argument)] @ \(level)\(requiresLevelUp ? "X" : "")"
     }
 
+    init() {
+        species = .None
+        form = 0
+        argument = 0
+        method = .UNUSED
+        level = 0
+        levelUp = 0
+    }
+
+    init(species: Species, form: UInt8, argument: UInt16, method: EvolutionType, level: UInt8, levelUp: UInt8) {
+        self.species = species
+        self.form = form
+        self.argument = argument
+        self.method = method
+        self.level = level
+        self.levelUp = levelUp
+    }
+
     /// Returns the form that the Pokemon will have after evolution.
     /// - parameters:
     ///     - sourceForm: un-evolved Form ID

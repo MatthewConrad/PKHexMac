@@ -11,6 +11,14 @@
 		FF0CABFF2C3A2F8E0061F415 /* EvolutionForward.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CABFE2C3A2F8E0061F415 /* EvolutionForward.swift */; };
 		FF0CAC012C3A320F0061F415 /* EvolutionForwardPersonal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC002C3A320F0061F415 /* EvolutionForwardPersonal.swift */; };
 		FF0CAC032C3A41FE0061F415 /* EvolutionForwardSpecies.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC022C3A41FE0061F415 /* EvolutionForwardSpecies.swift */; };
+		FF0CAC062C3C64B70061F415 /* EvolutionLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC052C3C64B70061F415 /* EvolutionLink.swift */; };
+		FF0CAC082C3C64FB0061F415 /* EvolutionNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC072C3C64FB0061F415 /* EvolutionNode.swift */; };
+		FF0CAC0A2C3C6B600061F415 /* EvolutionReverse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC092C3C6B600061F415 /* EvolutionReverse.swift */; };
+		FF0CAC0C2C3C6C210061F415 /* EvolutionLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC0B2C3C6C210061F415 /* EvolutionLookup.swift */; };
+		FF0CAC0E2C3C6F300061F415 /* EvolutionReversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC0D2C3C6F300061F415 /* EvolutionReversal.swift */; };
+		FF0CAC102C3C74970061F415 /* EvolutionReverseLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC0F2C3C74970061F415 /* EvolutionReverseLookup.swift */; };
+		FF0CAC122C3D8AD20061F415 /* EvolutionReversePersonal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC112C3D8AD20061F415 /* EvolutionReversePersonal.swift */; };
+		FF0CAC142C3D8FD40061F415 /* EvolutionReverseSpecies.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC132C3D8FD40061F415 /* EvolutionReverseSpecies.swift */; };
 		FF31D2DE2B71C72800EB420C /* PokeSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2DD2B71C72800EB420C /* PokeSize.swift */; };
 		FF31D2E02B71CB3F00EB420C /* OriginMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2DF2B71CB3F00EB420C /* OriginMark.swift */; };
 		FF31D2E22B71CC5900EB420C /* PKM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2E12B71CC5900EB420C /* PKM.swift */; };
@@ -235,6 +243,14 @@
 		FF0CABFE2C3A2F8E0061F415 /* EvolutionForward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionForward.swift; sourceTree = "<group>"; };
 		FF0CAC002C3A320F0061F415 /* EvolutionForwardPersonal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionForwardPersonal.swift; sourceTree = "<group>"; };
 		FF0CAC022C3A41FE0061F415 /* EvolutionForwardSpecies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionForwardSpecies.swift; sourceTree = "<group>"; };
+		FF0CAC052C3C64B70061F415 /* EvolutionLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionLink.swift; sourceTree = "<group>"; };
+		FF0CAC072C3C64FB0061F415 /* EvolutionNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionNode.swift; sourceTree = "<group>"; };
+		FF0CAC092C3C6B600061F415 /* EvolutionReverse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionReverse.swift; sourceTree = "<group>"; };
+		FF0CAC0B2C3C6C210061F415 /* EvolutionLookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionLookup.swift; sourceTree = "<group>"; };
+		FF0CAC0D2C3C6F300061F415 /* EvolutionReversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionReversal.swift; sourceTree = "<group>"; };
+		FF0CAC0F2C3C74970061F415 /* EvolutionReverseLookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionReverseLookup.swift; sourceTree = "<group>"; };
+		FF0CAC112C3D8AD20061F415 /* EvolutionReversePersonal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionReversePersonal.swift; sourceTree = "<group>"; };
+		FF0CAC132C3D8FD40061F415 /* EvolutionReverseSpecies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionReverseSpecies.swift; sourceTree = "<group>"; };
 		FF31D2DD2B71C72800EB420C /* PokeSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeSize.swift; sourceTree = "<group>"; };
 		FF31D2DF2B71CB3F00EB420C /* OriginMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginMark.swift; sourceTree = "<group>"; };
 		FF31D2E12B71CC5900EB420C /* PKM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKM.swift; sourceTree = "<group>"; };
@@ -476,6 +492,21 @@
 				FF0CAC022C3A41FE0061F415 /* EvolutionForwardSpecies.swift */,
 			);
 			path = Forward;
+			sourceTree = "<group>";
+		};
+		FF0CAC042C3C649D0061F415 /* Reversal */ = {
+			isa = PBXGroup;
+			children = (
+				FF0CAC052C3C64B70061F415 /* EvolutionLink.swift */,
+				FF0CAC072C3C64FB0061F415 /* EvolutionNode.swift */,
+				FF0CAC092C3C6B600061F415 /* EvolutionReverse.swift */,
+				FF0CAC0B2C3C6C210061F415 /* EvolutionLookup.swift */,
+				FF0CAC0D2C3C6F300061F415 /* EvolutionReversal.swift */,
+				FF0CAC0F2C3C74970061F415 /* EvolutionReverseLookup.swift */,
+				FF0CAC112C3D8AD20061F415 /* EvolutionReversePersonal.swift */,
+				FF0CAC132C3D8FD40061F415 /* EvolutionReverseSpecies.swift */,
+			);
+			path = Reversal;
 			sourceTree = "<group>";
 		};
 		FF31D2E32B71CCB500EB420C /* Interfaces */ = {
@@ -1069,6 +1100,7 @@
 		FFDA565E2BCF60AC00376E0E /* Evolutions */ = {
 			isa = PBXGroup;
 			children = (
+				FF0CAC042C3C649D0061F415 /* Reversal */,
 				FF0CABFD2C3A2F7B0061F415 /* Forward */,
 				FFDA56822BFC0D8700376E0E /* EvolutionGroup */,
 				FFDA565F2BCF60B100376E0E /* Methods */,
@@ -1222,6 +1254,7 @@
 				FFDA562C2BCCBF9900376E0E /* FixedAbilityNumber.swift in Sources */,
 				FF5068642B95213900DF64A8 /* MoveInfo8b.swift in Sources */,
 				FF50684D2B951A6E00DF64A8 /* PokeblockFlavor.swift in Sources */,
+				FF0CAC062C3C64B70061F415 /* EvolutionLink.swift in Sources */,
 				FF31D2ED2B71E79F00EB420C /* EntityContext.swift in Sources */,
 				FF5068022B9132F500DF64A8 /* ItemStorage7.swift in Sources */,
 				FFDA56772BE864C700376E0E /* EncounterEgg.swift in Sources */,
@@ -1235,6 +1268,7 @@
 				FF50685E2B951FEE00DF64A8 /* MoveInfo7b.swift in Sources */,
 				FFDA55E82B9E985800376E0E /* MemoryArgType.swift in Sources */,
 				FF31D3142B746BB400EB420C /* BasicStrings.swift in Sources */,
+				FF0CAC0C2C3C6C210061F415 /* EvolutionLookup.swift in Sources */,
 				FF31D3282B79721B00EB420C /* LocationSet0.swift in Sources */,
 				FFDA560F2BA90EC100376E0E /* SanityChecksum.swift in Sources */,
 				FFDA55EA2B9E989D00376E0E /* MemoryContext.swift in Sources */,
@@ -1249,10 +1283,12 @@
 				FF31D3022B730BC900EB420C /* Move.swift in Sources */,
 				FF31D32A2B79750600EB420C /* LocationSet4.swift in Sources */,
 				FF31D33B2B8278C400EB420C /* Locations8.swift in Sources */,
+				FF0CAC102C3C74970061F415 /* EvolutionReverseLookup.swift in Sources */,
 				FFDA56152BA90FBD00376E0E /* GeoTrackable.swift in Sources */,
 				FFDA55F82BA8F81600376E0E /* MemoryOTSettable.swift in Sources */,
 				FF31D3482B82897A00EB420C /* HeldItemLumpImage.swift in Sources */,
 				FF50689F2B96CB6400DF64A8 /* DynamaxLevel.swift in Sources */,
+				FF0CAC082C3C64FB0061F415 /* EvolutionNode.swift in Sources */,
 				FFDA55E32B9E5EFA00376E0E /* PK9.swift in Sources */,
 				FF31D2DE2B71C72800EB420C /* PokeSize.swift in Sources */,
 				FF31D3172B746FE800EB420C /* ProgramLanguage.swift in Sources */,
@@ -1315,6 +1351,7 @@
 				FF50687B2B96A4A000DF64A8 /* ContestStatsReadable.swift in Sources */,
 				FF50684B2B95081100DF64A8 /* PersonalTable1.swift in Sources */,
 				FF50680C2B91776000DF64A8 /* Breeding.swift in Sources */,
+				FF0CAC0A2C3C6B600061F415 /* EvolutionReverse.swift in Sources */,
 				FF31D32F2B79CC3900EB420C /* Locations.swift in Sources */,
 				FF50687D2B96A7BC00DF64A8 /* DynamaxLevelReadable.swift in Sources */,
 				FFDA56072BA90A7200376E0E /* Noble.swift in Sources */,
@@ -1333,6 +1370,7 @@
 				FFDA56532BCE06C600376E0E /* NumberedSlot.swift in Sources */,
 				FFDA56172BCC8B9C00376E0E /* EggSourceable.swift in Sources */,
 				FF5068812B96AAED00DF64A8 /* Meetable.swift in Sources */,
+				FF0CAC142C3D8FD40061F415 /* EvolutionReverseSpecies.swift in Sources */,
 				FFDA55D62B9E33A000376E0E /* HandlerLanguage.swift in Sources */,
 				FF4A9D702B71C0B000C4B5F5 /* AlcremieDecoration.swift in Sources */,
 				FF31D30C2B7322A400EB420C /* LanguageID.swift in Sources */,
@@ -1369,12 +1407,14 @@
 				FF5068352B94ED3100DF64A8 /* PersonalEgg.swift in Sources */,
 				FF31D34A2B858A4100EB420C /* ItemStorage.swift in Sources */,
 				FFDA565D2BCF603D00376E0E /* EncounterMatch.swift in Sources */,
+				FF0CAC122C3D8AD20061F415 /* EvolutionReversePersonal.swift in Sources */,
 				FF0CAC032C3A41FE0061F415 /* EvolutionForwardSpecies.swift in Sources */,
 				FF31D31F2B74777700EB420C /* ResourceUtil.swift in Sources */,
 				FF5067FE2B8A4C1900DF64A8 /* ItemStorage6.swift in Sources */,
 				FF0CAC012C3A320F0061F415 /* EvolutionForwardPersonal.swift in Sources */,
 				FF5068872B96B1D700DF64A8 /* GigantamaxReadable.swift in Sources */,
 				FFDA56412BCCC72700376E0E /* LevelRange.swift in Sources */,
+				FF0CAC0E2C3C6F300061F415 /* EvolutionReversal.swift in Sources */,
 				FF31D31B2B7470A600EB420C /* GameLanguage.swift in Sources */,
 				FFDA56552BCE072D00376E0E /* EncounterConvertible.swift in Sources */,
 				FF5068262B92DD6400DF64A8 /* LCRNG.swift in Sources */,
