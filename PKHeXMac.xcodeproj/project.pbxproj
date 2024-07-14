@@ -19,6 +19,10 @@
 		FF0CAC102C3C74970061F415 /* EvolutionReverseLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC0F2C3C74970061F415 /* EvolutionReverseLookup.swift */; };
 		FF0CAC122C3D8AD20061F415 /* EvolutionReversePersonal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC112C3D8AD20061F415 /* EvolutionReversePersonal.swift */; };
 		FF0CAC142C3D8FD40061F415 /* EvolutionReverseSpecies.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC132C3D8FD40061F415 /* EvolutionReverseSpecies.swift */; };
+		FF0CAC162C4488080061F415 /* EvolutionHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC152C4488080061F415 /* EvolutionHistory.swift */; };
+		FF0CAC182C448AA00061F415 /* EvolutionChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC172C448AA00061F415 /* EvolutionChain.swift */; };
+		FF0CAC1A2C4496D90061F415 /* EvolutionTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC192C4496D90061F415 /* EvolutionTree.swift */; };
+		FF0CAC1C2C449A6E0061F415 /* EvolutionNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC1B2C449A6E0061F415 /* EvolutionNetwork.swift */; };
 		FF31D2DE2B71C72800EB420C /* PokeSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2DD2B71C72800EB420C /* PokeSize.swift */; };
 		FF31D2E02B71CB3F00EB420C /* OriginMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2DF2B71CB3F00EB420C /* OriginMark.swift */; };
 		FF31D2E22B71CC5900EB420C /* PKM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2E12B71CC5900EB420C /* PKM.swift */; };
@@ -251,6 +255,10 @@
 		FF0CAC0F2C3C74970061F415 /* EvolutionReverseLookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionReverseLookup.swift; sourceTree = "<group>"; };
 		FF0CAC112C3D8AD20061F415 /* EvolutionReversePersonal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionReversePersonal.swift; sourceTree = "<group>"; };
 		FF0CAC132C3D8FD40061F415 /* EvolutionReverseSpecies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionReverseSpecies.swift; sourceTree = "<group>"; };
+		FF0CAC152C4488080061F415 /* EvolutionHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionHistory.swift; sourceTree = "<group>"; };
+		FF0CAC172C448AA00061F415 /* EvolutionChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionChain.swift; sourceTree = "<group>"; };
+		FF0CAC192C4496D90061F415 /* EvolutionTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionTree.swift; sourceTree = "<group>"; };
+		FF0CAC1B2C449A6E0061F415 /* EvolutionNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionNetwork.swift; sourceTree = "<group>"; };
 		FF31D2DD2B71C72800EB420C /* PokeSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeSize.swift; sourceTree = "<group>"; };
 		FF31D2DF2B71CB3F00EB420C /* OriginMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginMark.swift; sourceTree = "<group>"; };
 		FF31D2E12B71CC5900EB420C /* PKM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKM.swift; sourceTree = "<group>"; };
@@ -1105,6 +1113,10 @@
 				FFDA56822BFC0D8700376E0E /* EvolutionGroup */,
 				FFDA565F2BCF60B100376E0E /* Methods */,
 				FFDA56682BCF6A6D00376E0E /* EvolutionRuleTweak.swift */,
+				FF0CAC152C4488080061F415 /* EvolutionHistory.swift */,
+				FF0CAC172C448AA00061F415 /* EvolutionChain.swift */,
+				FF0CAC192C4496D90061F415 /* EvolutionTree.swift */,
+				FF0CAC1B2C449A6E0061F415 /* EvolutionNetwork.swift */,
 			);
 			path = Evolutions;
 			sourceTree = "<group>";
@@ -1291,6 +1303,7 @@
 				FF0CAC082C3C64FB0061F415 /* EvolutionNode.swift in Sources */,
 				FFDA55E32B9E5EFA00376E0E /* PK9.swift in Sources */,
 				FF31D2DE2B71C72800EB420C /* PokeSize.swift in Sources */,
+				FF0CAC162C4488080061F415 /* EvolutionHistory.swift in Sources */,
 				FF31D3172B746FE800EB420C /* ProgramLanguage.swift in Sources */,
 				FF5068502B951E8400DF64A8 /* MoveInfo1.swift in Sources */,
 				FFDA55DD2B9E411800376E0E /* HomeTrackable.swift in Sources */,
@@ -1351,6 +1364,7 @@
 				FF50687B2B96A4A000DF64A8 /* ContestStatsReadable.swift in Sources */,
 				FF50684B2B95081100DF64A8 /* PersonalTable1.swift in Sources */,
 				FF50680C2B91776000DF64A8 /* Breeding.swift in Sources */,
+				FF0CAC182C448AA00061F415 /* EvolutionChain.swift in Sources */,
 				FF0CAC0A2C3C6B600061F415 /* EvolutionReverse.swift in Sources */,
 				FF31D32F2B79CC3900EB420C /* Locations.swift in Sources */,
 				FF50687D2B96A7BC00DF64A8 /* DynamaxLevelReadable.swift in Sources */,
@@ -1397,6 +1411,7 @@
 				FF50681C2B92D19600DF64A8 /* PersonalFormInfo.swift in Sources */,
 				FF50682D2B94E26B00DF64A8 /* BaseStat.swift in Sources */,
 				FFDA563B2BCCC56000376E0E /* FixedTrainer.swift in Sources */,
+				FF0CAC1A2C4496D90061F415 /* EvolutionTree.swift in Sources */,
 				FF0CABFC2C3A22DC0061F415 /* EvolutionUtil.swift in Sources */,
 				FFDA56092BA90ABD00376E0E /* ObedienceLevelable.swift in Sources */,
 				FFDA56842BFC0D9300376E0E /* EvolutionGroup.swift in Sources */,
@@ -1428,6 +1443,7 @@
 				FF31D35D2B86E70300EB420C /* ItemStorage3.swift in Sources */,
 				FFDA563F2BCCC62B00376E0E /* HatchCycle.swift in Sources */,
 				FFDA560D2BA90D5800376E0E /* RegionOrigin.swift in Sources */,
+				FF0CAC1C2C449A6E0061F415 /* EvolutionNetwork.swift in Sources */,
 				FF5068972B96B81C00DF64A8 /* Awakened.swift in Sources */,
 				FFDA56252BCCBCB500376E0E /* Locateable.swift in Sources */,
 				FFDA55E12B9E5BD100376E0E /* ScaledSizable.swift in Sources */,

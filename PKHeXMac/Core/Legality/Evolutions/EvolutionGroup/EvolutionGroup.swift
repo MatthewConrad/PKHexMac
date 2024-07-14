@@ -10,27 +10,25 @@ import Foundation
 // Checks soure of a move in games that it represents.
 protocol EvolutionGroup {
     /// Gets the previous generation group to traverse to continue processing.
-    func getPrevious(pk: PKMProtocol, enc: EvolutionOrigin) -> EvolutionGroup
+    func getPrevious(pk: PKMProtocol, enc: EvolutionOrigin) -> EvolutionGroup?
 
     /// Gets the next generation group to traverse to continue processing.
-    func getNext(pk: PKMProtocol, enc: EvolutionOrigin) -> EvolutionGroup
+    func getNext(pk: PKMProtocol, enc: EvolutionOrigin) -> EvolutionGroup?
 
     /// Walks down the evolution chain to find previous evolutions.
     func devolve(result: inout [EvoCriteria], pk: PKMProtocol, enc: EvolutionOrigin) -> Int
 
     /// Walks up the evolution chain to find the evolution path.
-    func evolve(result: inout [EvoCriteria], pk: PKMProtocol, enc: EvolutionOrigin) -> Int
+    func evolve(result: inout [EvoCriteria], pk: PKMProtocol, enc: EvolutionOrigin, history: EvolutionHistory) -> Int
 
     /// Discards all entries that do not exist in the group
     func discardForOrigin(result: inout [EvoCriteria], pk: PKMProtocol, enc: EvolutionOrigin)
 }
 
-extension EvolutionGroup {
-    static func getGroup(context: EntityContext) -> EvolutionGroup {
-        
-    }
+// declaring enum instead of using `extension` because need static func
+enum EvolutionGroupUtil {
+    static func getGroup(context: EntityContext) -> EvolutionGroup {}
 }
-
 
 /// Provides information about how to evolve to the next evolution stage.
 protocol EvolutionEnvironment {

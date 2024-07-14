@@ -667,8 +667,8 @@
 ### Evolutions
 
 - [ ] EncounterOrigin
-- [ ] EvolutionChain
-- [ ] EvolutionHistory
+- [/] EvolutionChain (_need EvolutionGroup1, EvolutionGroup2_)
+- [x] EvolutionHistory
 - [x] EvolutionRuleTweak
 - [ ] EvolutionSet
 - [ ] EvolutionTree

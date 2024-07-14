@@ -32,13 +32,13 @@ struct EvolutionOrigin {
     let levelMax: UInt8
     let options: OriginOptions
 
-    init(species: Species, version: GameVersion, generation: UInt8, levelMin: UInt8, levelMax: UInt8, options: OriginOptions?) {
+    init(species: Species, version: GameVersion, generation: UInt8, levelMin: UInt8, levelMax: UInt8, options: OriginOptions = .none) {
         self.species = species
         self.version = version
         self.generation = generation
         self.levelMin = levelMin
         self.levelMax = levelMax
-        self.options = options ?? .none
+        self.options = options
     }
 
     /// Checks if evolution checks against the Entity should be skipped when evolving or devolving.
