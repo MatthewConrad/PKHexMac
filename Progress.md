@@ -666,13 +666,13 @@
 
 ### Evolutions
 
-- [ ] EncounterOrigin
+- [x] EncounterOrigin
 - [/] EvolutionChain (_need EvolutionGroup1, EvolutionGroup2_)
 - [x] EvolutionHistory
 - [x] EvolutionRuleTweak
-- [ ] EvolutionSet
-- [ ] EvolutionTree
-- [ ] IEvolutionNetwork
+- [x] EvolutionSet
+- [/] EvolutionTree
+- [x] IEvolutionNetwork
 
 #### EvolutionGroup
 

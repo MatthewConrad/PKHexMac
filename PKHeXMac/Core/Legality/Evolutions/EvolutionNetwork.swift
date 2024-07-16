@@ -17,7 +17,23 @@ protocol EvolutionNetwork {
 
 extension EvolutionNetwork {
     /// Gets all species the `species`-`form` can evolve to and from, in order of evo stage
-    func getEvolutionsAndPreEvolutions(species: Species, form: UInt8) -> AnyIterator<SpeciesForm> {}
+    func getEvolutionsAndPreEvolutions(species: Species, form: UInt8) -> AnyIterator<SpeciesForm> {
+        var hasReturnedSelf = false
+
+        return AnyIterator {
+            for preEvo in reverse.getPreEvolutions(species: species, form: form) {
+                return preEvo
+            }
+
+            if !hasReturnedSelf {
+                return DefaultSpeciesForm(species: species, form: form)
+            } else {
+                for evo in forward.getEvolutions(species: species, form: form) {
+                    return evo
+                }
+            }
+        }
+    }
 
     /// Checks if the requested `species`-`form` has any common evolutions with `otherSpecies`-`otherForm`
     func isSpeciesDerivedFrom(species: Species, form: UInt8, otherSpecies: Species, otherForm: UInt8, ignoreForm: Bool = true) -> Bool {
@@ -33,7 +49,7 @@ extension EvolutionNetwork {
 
             return evo.form == otherForm
         }
-        
+
         return false
     }
 

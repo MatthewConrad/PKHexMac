@@ -7,6 +7,11 @@
 
 import Foundation
 
-enum EvolutionTree {
+struct EvolutionTree: EvolutionNetwork {
+    var forward: EvolutionForward
+    var reverse: EvolutionReverse
+
     static let maxEvolutions: Int = 3
+
+    private func getViaSpecies(table: any PersonalTable, entries: [[EvolutionMethod]]) -> EvolutionTree {}
 }

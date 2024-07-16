@@ -15,6 +15,7 @@ protocol PersonalInfo: BaseStat, EffortValueYield, GenderDetail, PersonalFormInf
     var expGrowth: UInt8 { get set }
 }
 
+/// Originally implemented as `abstract class PersonalInfo`
 extension PersonalInfo {
     var ratioMagicGenderless: UInt8 { 255 }
     var ratioMagicFemale: UInt8 { 254 }

@@ -27,11 +27,11 @@ struct PersonalTable1: PersonalTable {
     }
     
     func isSpeciesInGame(species: Species) -> Bool { species < maxSpecies }
-    func isPresentInGame(species: Species, form: Int) -> Bool {
+    func isPresentInGame(species: Species, form: UInt8) -> Bool {
         form == 0 && isSpeciesInGame(species: species)
     }
     
-    func getFormIndex(species: Species, form: Int) -> Int {
+    func getFormIndex(species: Species, form: UInt8) -> Int {
         isSpeciesInGame(species: species) ? species.rawValue : 0
     }
 
@@ -39,11 +39,11 @@ struct PersonalTable1: PersonalTable {
         table[index < table.count ? index : 0]
     }
     
-    subscript(species: Species, form: Int) -> PersonalInfo1 {
+    subscript(species: Species, form: UInt8) -> PersonalInfo1 {
         table[getFormIndex(species: species, form: form)]
     }
     
-    func getFormEntry(species: Species, form: Int) -> PersonalInfo1 {
+    func getFormEntry(species: Species, form: UInt8) -> PersonalInfo1 {
         table[getFormIndex(species: species, form: form)]
     }
     

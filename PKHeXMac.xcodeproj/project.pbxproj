@@ -23,6 +23,12 @@
 		FF0CAC182C448AA00061F415 /* EvolutionChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC172C448AA00061F415 /* EvolutionChain.swift */; };
 		FF0CAC1A2C4496D90061F415 /* EvolutionTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC192C4496D90061F415 /* EvolutionTree.swift */; };
 		FF0CAC1C2C449A6E0061F415 /* EvolutionNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC1B2C449A6E0061F415 /* EvolutionNetwork.swift */; };
+		FF0CAC1E2C45F9C40061F415 /* PersonalTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC1D2C45F9C40061F415 /* PersonalTable.swift */; };
+		FF0CAC202C45FC470061F415 /* EncounterOrigin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC1F2C45FC470061F415 /* EncounterOrigin.swift */; };
+		FF0CAC222C45FD7B0061F415 /* LocationEdits.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC212C45FD7B0061F415 /* LocationEdits.swift */; };
+		FF0CAC242C4600990061F415 /* EvolutionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC232C4600990061F415 /* EvolutionSet.swift */; };
+		FF0CAC272C46056F0061F415 /* BinaryUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC262C46056F0061F415 /* BinaryUtils.swift */; };
+		FF0CAC292C4608A10061F415 /* EvolutionGroup1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC282C4608A10061F415 /* EvolutionGroup1.swift */; };
 		FF31D2DE2B71C72800EB420C /* PokeSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2DD2B71C72800EB420C /* PokeSize.swift */; };
 		FF31D2E02B71CB3F00EB420C /* OriginMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2DF2B71CB3F00EB420C /* OriginMark.swift */; };
 		FF31D2E22B71CC5900EB420C /* PKM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31D2E12B71CC5900EB420C /* PKM.swift */; };
@@ -259,6 +265,12 @@
 		FF0CAC172C448AA00061F415 /* EvolutionChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionChain.swift; sourceTree = "<group>"; };
 		FF0CAC192C4496D90061F415 /* EvolutionTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionTree.swift; sourceTree = "<group>"; };
 		FF0CAC1B2C449A6E0061F415 /* EvolutionNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionNetwork.swift; sourceTree = "<group>"; };
+		FF0CAC1D2C45F9C40061F415 /* PersonalTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalTable.swift; sourceTree = "<group>"; };
+		FF0CAC1F2C45FC470061F415 /* EncounterOrigin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncounterOrigin.swift; sourceTree = "<group>"; };
+		FF0CAC212C45FD7B0061F415 /* LocationEdits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationEdits.swift; sourceTree = "<group>"; };
+		FF0CAC232C4600990061F415 /* EvolutionSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionSet.swift; sourceTree = "<group>"; };
+		FF0CAC262C46056F0061F415 /* BinaryUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryUtils.swift; sourceTree = "<group>"; };
+		FF0CAC282C4608A10061F415 /* EvolutionGroup1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionGroup1.swift; sourceTree = "<group>"; };
 		FF31D2DD2B71C72800EB420C /* PokeSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeSize.swift; sourceTree = "<group>"; };
 		FF31D2DF2B71CB3F00EB420C /* OriginMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginMark.swift; sourceTree = "<group>"; };
 		FF31D2E12B71CC5900EB420C /* PKM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKM.swift; sourceTree = "<group>"; };
@@ -517,6 +529,14 @@
 			path = Reversal;
 			sourceTree = "<group>";
 		};
+		FF0CAC252C46054B0061F415 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FF0CAC262C46056F0061F415 /* BinaryUtils.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		FF31D2E32B71CCB500EB420C /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
@@ -753,6 +773,7 @@
 		FF4A9D5A2B71BD1E00C4B5F5 /* PKHeXMac */ = {
 			isa = PBXGroup;
 			children = (
+				FF0CAC252C46054B0061F415 /* Utilities */,
 				FF4A9D5F2B71BD1F00C4B5F5 /* Assets.xcassets */,
 				FF4A9D5D2B71BD1E00C4B5F5 /* ContentView.swift */,
 				FF4A9D6A2B71BD3600C4B5F5 /* Core */,
@@ -856,6 +877,7 @@
 				FF5068492B95080600DF64A8 /* Table */,
 				FF5068462B94F8DF00DF64A8 /* Info */,
 				FF50681A2B92D18800DF64A8 /* Interfaces */,
+				FF0CAC1D2C45F9C40061F415 /* PersonalTable.swift */,
 			);
 			path = PersonalInfo;
 			sourceTree = "<group>";
@@ -1101,6 +1123,7 @@
 			isa = PBXGroup;
 			children = (
 				FFDA565A2BCE0D0E00376E0E /* BattleTemplate.swift */,
+				FF0CAC212C45FD7B0061F415 /* LocationEdits.swift */,
 			);
 			path = Editing;
 			sourceTree = "<group>";
@@ -1117,6 +1140,8 @@
 				FF0CAC172C448AA00061F415 /* EvolutionChain.swift */,
 				FF0CAC192C4496D90061F415 /* EvolutionTree.swift */,
 				FF0CAC1B2C449A6E0061F415 /* EvolutionNetwork.swift */,
+				FF0CAC1F2C45FC470061F415 /* EncounterOrigin.swift */,
+				FF0CAC232C4600990061F415 /* EvolutionSet.swift */,
 			);
 			path = Evolutions;
 			sourceTree = "<group>";
@@ -1170,6 +1195,7 @@
 				FFDA56832BFC0D9300376E0E /* EvolutionGroup.swift */,
 				FFDA56852BFC0DC800376E0E /* EvolutionOrigin.swift */,
 				FF0CABFB2C3A22DC0061F415 /* EvolutionUtil.swift */,
+				FF0CAC282C4608A10061F415 /* EvolutionGroup1.swift */,
 			);
 			path = EvolutionGroup;
 			sourceTree = "<group>";
@@ -1326,6 +1352,7 @@
 				FFDA55F62BA8F66F00376E0E /* MemoryPermissions.swift in Sources */,
 				FFDA56132BA90F8A00376E0E /* Sociable.swift in Sources */,
 				FF5068682B9521E000DF64A8 /* MoveInfo.swift in Sources */,
+				FF0CAC1E2C45F9C40061F415 /* PersonalTable.swift in Sources */,
 				FF50683F2B94EE8C00DF64A8 /* PersonalMisc.swift in Sources */,
 				FFDA55D82B9E33CC00376E0E /* HandlerUpdatable.swift in Sources */,
 				FF31D3332B7B0D8800EB420C /* Locations5.swift in Sources */,
@@ -1368,6 +1395,7 @@
 				FF0CAC0A2C3C6B600061F415 /* EvolutionReverse.swift in Sources */,
 				FF31D32F2B79CC3900EB420C /* Locations.swift in Sources */,
 				FF50687D2B96A7BC00DF64A8 /* DynamaxLevelReadable.swift in Sources */,
+				FF0CAC242C4600990061F415 /* EvolutionSet.swift in Sources */,
 				FFDA56072BA90A7200376E0E /* Noble.swift in Sources */,
 				FF5068662B95216600DF64A8 /* MoveInfo9.swift in Sources */,
 				FF31D3372B82777100EB420C /* Locations7.swift in Sources */,
@@ -1377,6 +1405,7 @@
 				FFDA55F02B9E9E8000376E0E /* MemoryContext8.swift in Sources */,
 				FF31D2FC2B730A2A00EB420C /* Ability.swift in Sources */,
 				FFDA56392BCCC47D00376E0E /* FixedNickname.swift in Sources */,
+				FF0CAC272C46056F0061F415 /* BinaryUtils.swift in Sources */,
 				FF50688F2B96B4B600DF64A8 /* ObedienceLevelReadable.swift in Sources */,
 				FF5068A32B96CBCB00DF64A8 /* Favorite.swift in Sources */,
 				FF5068182B92C0A700DF64A8 /* FormInfo.swift in Sources */,
@@ -1398,6 +1427,7 @@
 				FFDA562E2BCCBFCF00376E0E /* FixedBall.swift in Sources */,
 				FF31D3042B730C1900EB420C /* MoveType.swift in Sources */,
 				FFDA56752BE8626900376E0E /* EncounterInvalid.swift in Sources */,
+				FF0CAC222C45FD7B0061F415 /* LocationEdits.swift in Sources */,
 				FF4A9D5C2B71BD1E00C4B5F5 /* PKHeXMacApp.swift in Sources */,
 				FF31D3532B85AAED00EB420C /* ItemStorage2.swift in Sources */,
 				FF31D3002B730B3F00EB420C /* Gender.swift in Sources */,
@@ -1407,6 +1437,7 @@
 				FF31D30A2B73224200EB420C /* Region.swift in Sources */,
 				FFDA56012BA8FCD800376E0E /* LegalityCheckStrings.swift in Sources */,
 				FF50689D2B96CAFA00DF64A8 /* ContestStats.swift in Sources */,
+				FF0CAC202C45FC470061F415 /* EncounterOrigin.swift in Sources */,
 				FFDA56052BA9092500376E0E /* TechRecord.swift in Sources */,
 				FF50681C2B92D19600DF64A8 /* PersonalFormInfo.swift in Sources */,
 				FF50682D2B94E26B00DF64A8 /* BaseStat.swift in Sources */,
@@ -1439,6 +1470,7 @@
 				FF5068622B9520F400DF64A8 /* MoveInfo8a.swift in Sources */,
 				FFDA55D22B9E332600376E0E /* Gigantamaxable.swift in Sources */,
 				FFDA55E52B9E876500376E0E /* NatureSettable.swift in Sources */,
+				FF0CAC292C4608A10061F415 /* EvolutionGroup1.swift in Sources */,
 				FF50688D2B96B46E00DF64A8 /* NatureReadable.swift in Sources */,
 				FF31D35D2B86E70300EB420C /* ItemStorage3.swift in Sources */,
 				FFDA563F2BCCC62B00376E0E /* HatchCycle.swift in Sources */,

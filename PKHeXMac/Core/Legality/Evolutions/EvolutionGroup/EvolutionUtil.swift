@@ -95,6 +95,23 @@ enum EvolutionUtil {
         return getLocalEvolutionArray(result: Array(result[start ..< end]))
     }
 
+    static func discard<T: PersonalTable>(result: inout [EvoCriteria], pt: T) {
+        // Iterate through result, and if entry is not present in the game, shift other entries down and zero out the last entry
+        for i in 0 ..< result.count {
+            var evo = result[i]
+
+            if evo.species == .None {
+                break
+            }
+
+            if pt.isPresentInGame(species: evo.species, form: evo.form) {
+                continue
+            }
+
+            shiftDown(result: &result[i ..< result.count])
+        }
+    }
+
     static func shiftDown(result: inout [EvoCriteria]) {
         for i in 1 ..< result.count {
             result[i - 1] = result[i]
