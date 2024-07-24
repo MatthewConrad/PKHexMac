@@ -16,26 +16,26 @@ struct EvolutionReversePersonal: EvolutionReverse {
     }
 
     private static func getLineage(t: any PersonalTable, entries: [[EvolutionMethod]]) -> EvolutionReverseLookup {
-        var maxSpecies = t.maxSpecies
+        let maxSpecies = t.maxSpecies
         var lineage = EvolutionReverseLookup(maxSpecies: maxSpecies)
 
         for sSpeciesVal in 1 ... maxSpecies.rawValue {
-            var formCount = t[sSpeciesVal].formCount
+            let formCount = t[sSpeciesVal].formCount
 
             for sFormVal in 0 ..< formCount {
                 let sourceSpecies = Species(intValue: sSpeciesVal)
                 let sourceForm = UInt8(sFormVal)
-                var index = t.getFormIndex(species: sourceSpecies, form: sourceForm)
+                let index = t.getFormIndex(species: sourceSpecies, form: sourceForm)
 
                 for evo in entries[index] {
-                    var descSpecies = evo.species
+                    let descSpecies = evo.species
 
                     if descSpecies == .None {
                         break
                     }
 
-                    var descForm = evo.getDestinationForm(sourceForm: sourceForm)
-                    var link = EvolutionLink(method: evo, species: sourceSpecies, form: sourceForm)
+                    let descForm = evo.getDestinationForm(sourceForm: sourceForm)
+                    let link = EvolutionLink(method: evo, species: sourceSpecies, form: sourceForm)
 
                     lineage.register(link: link, species: descSpecies, form: descForm)
                 }

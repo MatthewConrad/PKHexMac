@@ -49,7 +49,7 @@ struct SingleLevelRange: LevelRange {
     var levelMax: UInt8
 
     init(level: UInt8) {
-        self.levelMax = level
+        self.levelMin = level
         self.levelMax = level
     }
 }

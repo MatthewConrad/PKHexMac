@@ -27,7 +27,7 @@ extension EvolutionReverse {
     }
 
     func getPreEvolutions(species: Species, form: UInt8) -> AnyIterator<SpeciesForm> {
-        var node = lineage[species, form]
+        let node = lineage[species, form]
 
         return AnyIterator {
             // no convergent evolutions; first method is enough
@@ -45,7 +45,7 @@ extension EvolutionReverse {
     }
 
     func tryDevolve<T>(_ head: T, pk: PKMProtocol, currentMaxLevel: UInt8, levelMin: UInt8, skipChecks: Bool, tweak: EvolutionRuleTweak) -> (success: Bool, result: EvoCriteria) where T: SpeciesForm {
-        var node = lineage[head.species, head.form]
+        let node = lineage[head.species, head.form]
 
         return node.tryDevolve(pk: pk, currentMaxLevel: currentMaxLevel, levelMin: levelMin, skipChecks: skipChecks, tweak: tweak)
     }

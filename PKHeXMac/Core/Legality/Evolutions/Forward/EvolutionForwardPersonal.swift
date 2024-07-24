@@ -43,7 +43,7 @@ struct EvolutionForwardPersonal: EvolutionForward {
     }
 
     func tryEvolve<T>(_ head: T, next: SpeciesForm, pk: PKMProtocol, currentMaxLevel: UInt8, levelMin: UInt8, skipChecks: Bool, tweak: EvolutionRuleTweak) -> (success: Bool, result: EvoCriteria) where T: SpeciesForm {
-        var evoMethods = getForward(species: head.species, form: head.form)
+        let evoMethods = getForward(species: head.species, form: head.form)
         for method in evoMethods {
             if method.species != next.species {
                 continue

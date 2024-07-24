@@ -43,8 +43,8 @@ enum EvolutionChain {
     }
 
     private static func evolutionChainsSearch(pk: PKMProtocol, origin: EvolutionOrigin, context: EntityContext, encSpecies: Species, chain: inout [EvoCriteria]) -> EvolutionHistory {
-        var history = EvolutionHistory()
-        var length = getOriginChain(result: &chain, pk: pk, origin: origin, encSpecies: encSpecies, discard: origin.isDiscardRequired(format: pk.format))
+        let history = EvolutionHistory()
+        let length = getOriginChain(result: &chain, pk: pk, origin: origin, encSpecies: encSpecies, discard: origin.isDiscardRequired(format: pk.format))
         var chainContext = context
 
         if length == 0 {
@@ -73,7 +73,7 @@ enum EvolutionChain {
         var group = EvolutionGroupUtil.getGroup(context: chainContext)
         while true {
             _ = group.evolve(result: &chain, pk: pk, enc: origin, history: history)
-            var previous = group.getNext(pk: pk, enc: origin)
+            let previous = group.getNext(pk: pk, enc: origin)
 
             guard let prev = previous else {
                 break
@@ -89,7 +89,7 @@ enum EvolutionChain {
     static func getOriginChain(pk: PKMProtocol, origin: EvolutionOrigin, encSpecies: Species = .None, discard: Bool = true) -> [EvoCriteria] {
         var result = Array(repeating: EvoCriteria(), count: EvolutionTree.maxEvolutions)
 
-        var count = getOriginChain(result: &result, pk: pk, origin: origin, encSpecies: encSpecies, discard: discard)
+        let count = getOriginChain(result: &result, pk: pk, origin: origin, encSpecies: encSpecies, discard: discard)
 
         if count == 0 {
             return []
@@ -107,8 +107,8 @@ enum EvolutionChain {
     /// Gets a list of `EvoCriteria` that represent the possible original states of the `pk`
     /// - returns: number of valid evolutions found
     static func getOriginChain(result: inout [EvoCriteria], pk: PKMProtocol, origin: EvolutionOrigin, encSpecies: Species = .None, discard: Bool = true) -> Int {
-        var species = encSpecies
-        var form = pk.form
+        let species = encSpecies
+        let form = pk.form
 
         if pk.isEgg && !origin.skipChecks {
             result[0] = EvoCriteria(species: species, form: form, levelMin: origin.levelMax, levelMax: origin.levelMax, levelUpRequired: 0, method: .UNUSED)
@@ -117,7 +117,7 @@ enum EvolutionChain {
 
         result[0] = EvoCriteria(species: species, form: form, levelMin: 0, levelMax: origin.levelMax, levelUpRequired: 0, method: .UNUSED)
 
-        var count = devolveFrom(result: &result, pk: pk, origin: origin, context: pk.context, encSpecies: encSpecies, discard: discard)
+        let count = devolveFrom(result: &result, pk: pk, origin: origin, context: pk.context, encSpecies: encSpecies, discard: discard)
 
         var chain = Array(result[..<count])
         EvolutionUtil.cleanDevolve(result: &chain, levelMin: origin.levelMin)
@@ -140,7 +140,7 @@ enum EvolutionChain {
 
         while true {
             _ = group.devolve(result: &result, pk: pk, enc: origin)
-            var previous = group.getPrevious(pk: pk, enc: origin)
+            let previous = group.getPrevious(pk: pk, enc: origin)
 
             guard let prev = previous else {
                 break

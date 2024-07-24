@@ -13,5 +13,7 @@ struct EvolutionTree: EvolutionNetwork {
 
     static let maxEvolutions: Int = 3
 
-    private func getViaSpecies(table: any PersonalTable, entries: [[EvolutionMethod]]) -> EvolutionTree {}
+    private func getViaSpecies(table: any PersonalTable, entries: [[EvolutionMethod]]) -> EvolutionTree {
+        fatalError("not implemented!")
+    }
 }

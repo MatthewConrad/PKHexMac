@@ -18,7 +18,7 @@ protocol EncounterTemplate: SpeciesForm, Version, Generation, Shinyable, LevelRa
 extension EncounterTemplate {
     // TODO: add
     func isWithinEncounterRange(pk: PKMProtocol) -> Bool {
-        var level = pk.currentLevel
+        let level = pk.currentLevel
 
         if !pk.hasOriginalMetLocation {
             return self.isLevelWithinRange(lvl: level)

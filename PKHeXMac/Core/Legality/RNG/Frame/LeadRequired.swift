@@ -80,7 +80,7 @@ enum LeadRequired: UInt8 {
 
     func getDisplayAbility() -> (ability: Ability, isFail: Bool, condition: EncounterTriggerCondition) {
         var isFail = false
-        var leadReq = self
+        let leadReq = self
 
         if leadReq.isFailTuple() || leadReq == .IntimidateKeenEyeFail {
             isFail = true

@@ -28,7 +28,7 @@ enum EvolutionSet {
 
         var result: [EvolutionMethod] = Array(repeating: EvolutionMethod(), count: data.count / SIZE)
 
-        var offset = 0
+        let offset = 0
         for i in 0 ..< result.count {
             result[i] = getMethod(entry: data[offset ..< offset + SIZE], levelUp: levelUp)
         }
@@ -46,6 +46,6 @@ enum EvolutionSet {
         let level: UInt8 = Array(entry[7 ..< 8])[0]
         let levelUp: UInt8 = type.isLevelUpRequired() ? levelUp : 0
 
-        return EvolutionMethod(species: species, form: form, argument: arg, method: type, level: levelUp, levelUp: levelUp)
+        return EvolutionMethod(species: species, form: form, argument: arg, method: type, level: level, levelUp: levelUp)
     }
 }

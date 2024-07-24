@@ -23,7 +23,7 @@ extension GenderDetail {
         } else if self.onlyMale {
             0
         } else {
-            -1
+            255
         }
     }
 
@@ -31,7 +31,7 @@ extension GenderDetail {
     func getRandomGender() -> UInt8 {
         let fixed = self.fixedGender()
 
-        return if fixed > -1 {
+        return if fixed < 255 {
             fixed
         } else {
             UInt8.random(in: 0 ... 1)

@@ -127,6 +127,7 @@ extension PKMProtocol {
     var isShiny: Bool { self.TSV == self.PSV }
     var shinyXOR: UInt16 {
         let tmp = self.ID32 ^ self.PID
+        return UInt16(tmp ^ (tmp >> 16))
     }
 
     var RS: Bool { [.R, .S].contains(self.version) }

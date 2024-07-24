@@ -12,7 +12,7 @@ struct EncounterInvalid: Encounterable {
     static let instance = EncounterInvalid()
     
     let species: Species
-    let form: Int
+    let form: UInt8
     let levelMin: UInt8
     let levelMax: UInt8
     let isEgg: Bool

@@ -23,7 +23,7 @@
 		FF0CAC182C448AA00061F415 /* EvolutionChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC172C448AA00061F415 /* EvolutionChain.swift */; };
 		FF0CAC1A2C4496D90061F415 /* EvolutionTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC192C4496D90061F415 /* EvolutionTree.swift */; };
 		FF0CAC1C2C449A6E0061F415 /* EvolutionNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC1B2C449A6E0061F415 /* EvolutionNetwork.swift */; };
-		FF0CAC1E2C45F9C40061F415 /* PersonalTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC1D2C45F9C40061F415 /* PersonalTable.swift */; };
+		FF0CAC1E2C45F9C40061F415 /* PersonalTables.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC1D2C45F9C40061F415 /* PersonalTables.swift */; };
 		FF0CAC202C45FC470061F415 /* EncounterOrigin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC1F2C45FC470061F415 /* EncounterOrigin.swift */; };
 		FF0CAC222C45FD7B0061F415 /* LocationEdits.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC212C45FD7B0061F415 /* LocationEdits.swift */; };
 		FF0CAC242C4600990061F415 /* EvolutionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CAC232C4600990061F415 /* EvolutionSet.swift */; };
@@ -139,7 +139,7 @@
 		FF50686C2B969AEE00DF64A8 /* Affection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50686B2B969AEE00DF64A8 /* Affection.swift */; };
 		FF5068702B969C0300DF64A8 /* Generation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50686F2B969C0300DF64A8 /* Generation.swift */; };
 		FF5068722B969C3900DF64A8 /* LangNick.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068712B969C3900DF64A8 /* LangNick.swift */; };
-		FF5068742B969C6900DF64A8 /* Shiny.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068732B969C6900DF64A8 /* Shiny.swift */; };
+		FF5068742B969C6900DF64A8 /* Shinyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068732B969C6900DF64A8 /* Shinyable.swift */; };
 		FF5068762B969C7D00DF64A8 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068752B969C7D00DF64A8 /* Version.swift */; };
 		FF5068792B96A48200DF64A8 /* AlphaReadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5068782B96A48200DF64A8 /* AlphaReadable.swift */; };
 		FF50687B2B96A4A000DF64A8 /* ContestStatsReadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50687A2B96A4A000DF64A8 /* ContestStatsReadable.swift */; };
@@ -217,7 +217,7 @@
 		FFDA563D2BCCC5BF00376E0E /* FlawlessIVCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA563C2BCCC5BF00376E0E /* FlawlessIVCount.swift */; };
 		FFDA563F2BCCC62B00376E0E /* HatchCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA563E2BCCC62B00376E0E /* HatchCycle.swift */; };
 		FFDA56412BCCC72700376E0E /* LevelRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56402BCCC72700376E0E /* LevelRange.swift */; };
-		FFDA56432BCCCA5100376E0E /* Moveset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56422BCCCA5100376E0E /* Moveset.swift */; };
+		FFDA56432BCCCA5100376E0E /* Movesettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56422BCCCA5100376E0E /* Movesettable.swift */; };
 		FFDA56452BCCCA8800376E0E /* Moveset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56442BCCCA8800376E0E /* Moveset.swift */; };
 		FFDA56472BCDFE2D00376E0E /* RandomCorrelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56462BCDFE2D00376E0E /* RandomCorrelation.swift */; };
 		FFDA56492BCDFF0400376E0E /* RestrictVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA56482BCDFF0400376E0E /* RestrictVersion.swift */; };
@@ -265,7 +265,7 @@
 		FF0CAC172C448AA00061F415 /* EvolutionChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionChain.swift; sourceTree = "<group>"; };
 		FF0CAC192C4496D90061F415 /* EvolutionTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionTree.swift; sourceTree = "<group>"; };
 		FF0CAC1B2C449A6E0061F415 /* EvolutionNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionNetwork.swift; sourceTree = "<group>"; };
-		FF0CAC1D2C45F9C40061F415 /* PersonalTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalTable.swift; sourceTree = "<group>"; };
+		FF0CAC1D2C45F9C40061F415 /* PersonalTables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalTables.swift; sourceTree = "<group>"; };
 		FF0CAC1F2C45FC470061F415 /* EncounterOrigin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncounterOrigin.swift; sourceTree = "<group>"; };
 		FF0CAC212C45FD7B0061F415 /* LocationEdits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationEdits.swift; sourceTree = "<group>"; };
 		FF0CAC232C4600990061F415 /* EvolutionSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionSet.swift; sourceTree = "<group>"; };
@@ -384,7 +384,7 @@
 		FF50686B2B969AEE00DF64A8 /* Affection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Affection.swift; sourceTree = "<group>"; };
 		FF50686F2B969C0300DF64A8 /* Generation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generation.swift; sourceTree = "<group>"; };
 		FF5068712B969C3900DF64A8 /* LangNick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LangNick.swift; sourceTree = "<group>"; };
-		FF5068732B969C6900DF64A8 /* Shiny.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shiny.swift; sourceTree = "<group>"; };
+		FF5068732B969C6900DF64A8 /* Shinyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shinyable.swift; sourceTree = "<group>"; };
 		FF5068752B969C7D00DF64A8 /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
 		FF5068782B96A48200DF64A8 /* AlphaReadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaReadable.swift; sourceTree = "<group>"; };
 		FF50687A2B96A4A000DF64A8 /* ContestStatsReadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContestStatsReadable.swift; sourceTree = "<group>"; };
@@ -462,7 +462,7 @@
 		FFDA563C2BCCC5BF00376E0E /* FlawlessIVCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlawlessIVCount.swift; sourceTree = "<group>"; };
 		FFDA563E2BCCC62B00376E0E /* HatchCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HatchCycle.swift; sourceTree = "<group>"; };
 		FFDA56402BCCC72700376E0E /* LevelRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelRange.swift; sourceTree = "<group>"; };
-		FFDA56422BCCCA5100376E0E /* Moveset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moveset.swift; sourceTree = "<group>"; };
+		FFDA56422BCCCA5100376E0E /* Movesettable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movesettable.swift; sourceTree = "<group>"; };
 		FFDA56442BCCCA8800376E0E /* Moveset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moveset.swift; sourceTree = "<group>"; };
 		FFDA56462BCDFE2D00376E0E /* RandomCorrelation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomCorrelation.swift; sourceTree = "<group>"; };
 		FFDA56482BCDFF0400376E0E /* RestrictVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictVersion.swift; sourceTree = "<group>"; };
@@ -592,7 +592,7 @@
 				FF5068272B94C9BA00DF64A8 /* GameValueLimit.swift */,
 				FF50686F2B969C0300DF64A8 /* Generation.swift */,
 				FF5068712B969C3900DF64A8 /* LangNick.swift */,
-				FF5068732B969C6900DF64A8 /* Shiny.swift */,
+				FF5068732B969C6900DF64A8 /* Shinyable.swift */,
 				FF5068752B969C7D00DF64A8 /* Version.swift */,
 			);
 			path = Metadata;
@@ -755,7 +755,6 @@
 		FF4A9D4F2B71BD1E00C4B5F5 = {
 			isa = PBXGroup;
 			children = (
-				FF31D3202B747CAB00EB420C /* Resources */,
 				FF31D3102B74499900EB420C /* Progress.md */,
 				FF4A9D5A2B71BD1E00C4B5F5 /* PKHeXMac */,
 				FF4A9D592B71BD1E00C4B5F5 /* Products */,
@@ -773,13 +772,14 @@
 		FF4A9D5A2B71BD1E00C4B5F5 /* PKHeXMac */ = {
 			isa = PBXGroup;
 			children = (
-				FF0CAC252C46054B0061F415 /* Utilities */,
 				FF4A9D5F2B71BD1F00C4B5F5 /* Assets.xcassets */,
 				FF4A9D5D2B71BD1E00C4B5F5 /* ContentView.swift */,
 				FF4A9D6A2B71BD3600C4B5F5 /* Core */,
 				FF4A9D642B71BD1F00C4B5F5 /* PKHeXMac.entitlements */,
 				FF4A9D5B2B71BD1E00C4B5F5 /* PKHeXMacApp.swift */,
 				FF4A9D612B71BD1F00C4B5F5 /* Preview Content */,
+				FF31D3202B747CAB00EB420C /* Resources */,
+				FF0CAC252C46054B0061F415 /* Utilities */,
 			);
 			path = PKHeXMac;
 			sourceTree = "<group>";
@@ -877,7 +877,7 @@
 				FF5068492B95080600DF64A8 /* Table */,
 				FF5068462B94F8DF00DF64A8 /* Info */,
 				FF50681A2B92D18800DF64A8 /* Interfaces */,
-				FF0CAC1D2C45F9C40061F415 /* PersonalTable.swift */,
+				FF0CAC1D2C45F9C40061F415 /* PersonalTables.swift */,
 			);
 			path = PersonalInfo;
 			sourceTree = "<group>";
@@ -1075,7 +1075,7 @@
 				FFDA563C2BCCC5BF00376E0E /* FlawlessIVCount.swift */,
 				FFDA563E2BCCC62B00376E0E /* HatchCycle.swift */,
 				FFDA56402BCCC72700376E0E /* LevelRange.swift */,
-				FFDA56422BCCCA5100376E0E /* Moveset.swift */,
+				FFDA56422BCCCA5100376E0E /* Movesettable.swift */,
 				FFDA56462BCDFE2D00376E0E /* RandomCorrelation.swift */,
 				FFDA56482BCDFF0400376E0E /* RestrictVersion.swift */,
 				FFDA564A2BCDFF2D00376E0E /* ShinyPotential.swift */,
@@ -1352,7 +1352,7 @@
 				FFDA55F62BA8F66F00376E0E /* MemoryPermissions.swift in Sources */,
 				FFDA56132BA90F8A00376E0E /* Sociable.swift in Sources */,
 				FF5068682B9521E000DF64A8 /* MoveInfo.swift in Sources */,
-				FF0CAC1E2C45F9C40061F415 /* PersonalTable.swift in Sources */,
+				FF0CAC1E2C45F9C40061F415 /* PersonalTables.swift in Sources */,
 				FF50683F2B94EE8C00DF64A8 /* PersonalMisc.swift in Sources */,
 				FFDA55D82B9E33CC00376E0E /* HandlerUpdatable.swift in Sources */,
 				FF31D3332B7B0D8800EB420C /* Locations5.swift in Sources */,
@@ -1447,7 +1447,7 @@
 				FFDA56092BA90ABD00376E0E /* ObedienceLevelable.swift in Sources */,
 				FFDA56842BFC0D9300376E0E /* EvolutionGroup.swift in Sources */,
 				FF50686C2B969AEE00DF64A8 /* Affection.swift in Sources */,
-				FF5068742B969C6900DF64A8 /* Shiny.swift in Sources */,
+				FF5068742B969C6900DF64A8 /* Shinyable.swift in Sources */,
 				FF31D2F82B73081A00EB420C /* Core.swift in Sources */,
 				FF5068582B951F6000DF64A8 /* MoveInfo5.swift in Sources */,
 				FF5068352B94ED3100DF64A8 /* PersonalEgg.swift in Sources */,
@@ -1481,7 +1481,7 @@
 				FFDA55E12B9E5BD100376E0E /* ScaledSizable.swift in Sources */,
 				FFDA55DB2B9E342300376E0E /* TrainerInfo.swift in Sources */,
 				FF31D3262B796FBE00EB420C /* LocationSet.swift in Sources */,
-				FFDA56432BCCCA5100376E0E /* Moveset.swift in Sources */,
+				FFDA56432BCCCA5100376E0E /* Movesettable.swift in Sources */,
 				FF31D3122B746A2300EB420C /* ComboItem.swift in Sources */,
 				FF50680F2B918E6600DF64A8 /* SpeciesCategory.swift in Sources */,
 				FF5068112B91920400DF64A8 /* FormChange.swift in Sources */,

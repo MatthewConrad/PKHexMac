@@ -81,8 +81,6 @@ struct EvolutionMethod: SpeciesForm, CustomStringConvertible {
             }
 
             return contestStats.contestBeauty >= argument || skipChecks ? .valid : .lowContestStat
-
-            return .lowContestStat
         case .levelUpNatureAmped, .levelUpNatureLowKey:
             // TODO: finish after ToxtricityUtil
             return .valid

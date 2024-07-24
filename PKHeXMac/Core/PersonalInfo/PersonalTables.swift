@@ -8,7 +8,9 @@
 import Foundation
 
 struct PersonalTables {
-    private func getTable(game: String) -> Data {}
+    private func getTable(game: String) -> Data {
+        fatalError("not implemented!")
+    }
     
     private func populateGen3Tutors() {
         

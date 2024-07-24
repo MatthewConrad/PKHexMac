@@ -55,11 +55,13 @@ extension TrainerInfo {
         } else if pk.format == 3 {
             true // Gen3 does not check OT Gender nor Pokemon Version
         } else if self.gender != pk.originalTrainerGender {
-            if pk.format == 2, let cd = pk as? CaughtData2 {
-                cd.caughtData == 0
-            } else {
-                false
-            }
+            // TODO: CaughtData2
+//            if pk.format == 2, let cd = pk as? CaughtData2 {
+//                cd.caughtData == 0
+//            } else {
+//                false
+//            }
+            false
         } else {
             true
         }
@@ -74,11 +76,13 @@ extension TrainerInfo {
         } else if self.gender != pk.originalTrainerGender {
             false
         } else if self.version != pk.version {
-            if let pk9 = pk as? PK9, pk9.version == .AnyGame {
-                true
-            } else {
-                false
-            }
+            // TODO: restore after PK9
+//            if let pk9 = pk as? PK9, pk9.version == .AnyGame {
+//                true
+//            } else {
+//                false
+//            }
+            false
         } else if self.OT != pk.originalTrainerName {
             false
         } else {

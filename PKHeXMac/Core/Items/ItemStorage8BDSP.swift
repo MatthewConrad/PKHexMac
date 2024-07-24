@@ -106,7 +106,7 @@ struct ItemStorage8BDSP: ItemStorage {
         return if type == .KeyItems {
             true
         } else {
-            !ItemStorage8BDSP.unreleased.contains(itemIndex)
+            !ItemStorage8BDSP.unreleased.contains(UInt16(itemIndex))
         }
     }
 
@@ -145,7 +145,7 @@ struct ItemStorage8BDSP: ItemStorage {
     
     func getInventoryPouch(itemIndex: Int) -> InventoryType {
         for type in ItemStorage8BDSP.validTypes {
-            if getItems(type: type).contains(itemIndex) {
+            if getItems(type: type).contains(UInt16(itemIndex)) {
                 return type
             }
         }

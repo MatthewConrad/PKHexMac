@@ -87,7 +87,7 @@ enum Vivillon3DS {
      do it this way instead of region_country so that the byte[] form is better ordered for better file compression :)
      777 entries, so we can use a binary search to find the form. Worst case is log2(777) = 10 comparisons.
      */
-    private static let diffCountryRegion: [UInt8] =
+    private static let diffCountryRegion: [UInt16] =
         [
             0x0100, 0x0102, 0x0103, 0x0104, 0x0105, 0x0106, 0x0107, 0x0108, 0x0109, 0x010A, 0x010B, 0x010C, 0x010D, 0x010E, 0x010F, 0x0110,
             0x0111, 0x0112, 0x0113, 0x0114, 0x0115, 0x0116, 0x0117, 0x0118, 0x0119, 0x011A, 0x011B, 0x011C, 0x011D, 0x011E, 0x011F, 0x0120,
@@ -220,7 +220,7 @@ enum Vivillon3DS {
             return form == same
         }
 
-        let tuple: UInt8 = (country << 8) | region
+        let tuple = UInt16((country << 8) | region)
         let index = Vivillon3DS.diffCountryRegion.firstIndex(of: tuple) ?? -1
 
         return if index >= 0 {
@@ -241,7 +241,7 @@ enum Vivillon3DS {
             return same
         }
 
-        let tuple: UInt8 = (country << 8) | region
+        let tuple = UInt16((country << 8) | region)
         let index = Vivillon3DS.diffCountryRegion.firstIndex(of: tuple) ?? -1
 
         return if index >= 0 {

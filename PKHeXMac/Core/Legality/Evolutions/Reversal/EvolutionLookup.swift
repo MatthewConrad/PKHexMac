@@ -14,7 +14,7 @@ protocol EvolutionLookup {
 extension EvolutionLookup {
     /// Reverse from current state to see what evolutions the `pk` may have existed as.
     func devolve(result: inout [EvoCriteria], head: EvoCriteria, species: Species, form: UInt8, pk: PKMProtocol, levelMax: inout UInt8, levelMin: UInt8, skipChecks: Bool, stopSpecies: Species, tweak: EvolutionRuleTweak) -> Int {
-        var head = result.count > 0 ? result[0] : EvoCriteria(species: species, form: form, levelMin: 0, levelMax: levelMax, levelUpRequired: 0, method: .invalid)
+        let head = result.count > 0 ? result[0] : EvoCriteria(species: species, form: form, levelMin: 0, levelMax: levelMax, levelUpRequired: 0, method: .invalid)
 
         let counter = EvolutionReversal.devolve(lineage: self, result: &result, head: head, pk: pk, currentMaxLevel: levelMax, levelMin: levelMin, skipChecks: skipChecks, stopSpecies: stopSpecies, tweak: tweak)
 

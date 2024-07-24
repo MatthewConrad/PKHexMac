@@ -34,4 +34,8 @@ enum RibbonIndex3: UInt8, Comparable {
          toughHyper,
          toughMaster,
          MAX
+    
+    static func < (lhs: RibbonIndex3, rhs: RibbonIndex3) -> Bool {
+        return lhs.rawValue < rhs.rawValue
+    }
 }

@@ -193,7 +193,7 @@ struct ItemStorage9: ItemStorage {
     }
     
     func isLegal(type: InventoryType, itemIndex: Int, itemCount: Int) -> Bool {
-        return !ItemStorage9.unreleased.contains(itemIndex)
+        return !ItemStorage9.unreleased.contains(UInt16(itemIndex))
     }
     
     func getItems(type: InventoryType) -> [UInt16] {
@@ -225,7 +225,7 @@ struct ItemStorage9: ItemStorage {
     
     func getInventoryPouch(itemIndex: Int) -> InventoryType {
         for type in ItemStorage9.validTypes {
-            if getItems(type: type).contains(itemIndex) {
+            if getItems(type: type).contains(UInt16(itemIndex)) {
                 return type
             }
         }

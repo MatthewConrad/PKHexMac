@@ -98,7 +98,7 @@ enum EvolutionUtil {
     static func discard<T: PersonalTable>(result: inout [EvoCriteria], pt: T) {
         // Iterate through result, and if entry is not present in the game, shift other entries down and zero out the last entry
         for i in 0 ..< result.count {
-            var evo = result[i]
+            let evo = result[i]
 
             if evo.species == .None {
                 break
@@ -108,7 +108,7 @@ enum EvolutionUtil {
                 continue
             }
 
-            shiftDown(result: &result[i ..< result.count])
+//            shiftDown(result: &result[i ..< result.count])
         }
     }
 

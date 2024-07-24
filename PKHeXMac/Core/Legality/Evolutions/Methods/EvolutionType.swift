@@ -82,7 +82,8 @@ enum EvolutionType: UInt8 {
          useMoveStrongStyle = 92, // Overqwil
 
          // Used as placeholder for internal logic
-         invalid = -1
+         // originally unchecked((byte)-1), but that ultimately overflows to 255
+         invalid = 255
 
     func isTrade() -> Bool {
         [.trade, .tradeHeldItem, .tradeShelmetKarrablast].contains(self)

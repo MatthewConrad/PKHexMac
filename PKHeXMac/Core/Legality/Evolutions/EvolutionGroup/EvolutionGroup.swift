@@ -27,7 +27,9 @@ protocol EvolutionGroup {
 
 // declaring enum instead of using `extension` because need static func
 enum EvolutionGroupUtil {
-    static func getGroup(context: EntityContext) -> EvolutionGroup {}
+    static func getGroup(context: EntityContext) -> EvolutionGroup {
+        fatalError("not implemented!")
+    }
 }
 
 /// Provides information about how to evolve to the next evolution stage.

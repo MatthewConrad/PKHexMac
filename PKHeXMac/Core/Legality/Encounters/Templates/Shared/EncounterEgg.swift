@@ -9,7 +9,7 @@ import Foundation
 
 struct EncounterEgg: Encounterable {
     let species: Species
-    let form: Int
+    let form: UInt8
     let level: UInt8
 
     let generation: UInt8
@@ -106,5 +106,6 @@ struct EncounterEgg: Encounterable {
 
     func convertToPKM(trainer: TrainerInfo, criteria: EncounterCriteria) -> PKMProtocol {
         // TODO: finish after more PKM-related work
+        fatalError("not implemented!")
     }
 }

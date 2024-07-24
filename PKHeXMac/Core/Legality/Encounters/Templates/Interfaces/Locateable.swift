@@ -28,8 +28,8 @@ extension Locateable {
             return nil
         }
 
-        let isEgg = loc != self.location
+//        let isEgg = loc != self.location
         // TODO: finish after GameInfo
-        return ""
+        fatalError("not implemented!")
     }
 }
