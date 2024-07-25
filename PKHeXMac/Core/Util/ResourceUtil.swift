@@ -45,4 +45,24 @@ enum TextUtil {
     static func GetFullResourceName(fileName: String, langCode: String, type: String) -> String {
         return "\(type)_\(fileName)_\(langCode)"
     }
+
+    static func getFileTest() -> Data? {
+        guard let path2 = Bundle.main.url(forResource: "personal_b2w2", withExtension: "", subdirectory: "byte/personal") else {
+            fatalError("Could not read file")
+        }
+
+        let data = try? Data(contentsOf: path2)
+
+        return data
+    }
+    
+    static func getTextFileTest() -> String? {
+        guard let path = Bundle.main.url(forResource: "badwords", withExtension: "txt", subdirectory: "text") else {
+            fatalError("could not read file")
+        }
+        
+        let data = try? String(contentsOf: path)
+        
+        return data
+    }
 }
